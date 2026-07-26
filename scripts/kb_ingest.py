@@ -27,7 +27,7 @@ warnings.filterwarnings("ignore")
 os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "0")
 
-ROOT = Path("/root/.openclaw/workspace/econ-paper-check-skill")
+ROOT = Path(__file__).resolve().parent.parent
 PARSED_ROOT = ROOT / "knowledge_base/examples/parsed"
 METADATA_ROOT = ROOT / "knowledge_base/examples/metadata"
 VDB_ROOT = ROOT / "knowledge_base/vector_db/active"

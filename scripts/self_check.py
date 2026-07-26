@@ -29,6 +29,52 @@ from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 
+# ---------- diagnostic_result.json Schema 校验 ----------
+
+REQUIRED_ISSUE_FIELDS = [
+    "issue_id", "level", "domain", "location", "evidence",
+    "evidence_strength", "explanation", "suggestion",
+]
+RED_EXTRA_REQUIRED = ["normative_basis"]  # 红色 issue 额外必填
+REQUIRED_TOP_FIELDS = ["overall_risk_level", "summary_counts"]
+
+
+def validate_diagnostic_result(path: Path) -> tuple[bool, list[str]]:
+    """校验 diagnostic_result.json 必填字段。返回 (通过, 错误列表)。"""
+    errors: list[str] = []
+    data = json.loads(path.read_text(encoding="utf-8"))
+
+    # 顶层必填
+    for f in REQUIRED_TOP_FIELDS:
+        if f not in data or data[f] is None:
+            errors.append(f"顶层缺必填字段: {f}")
+
+    issues = data.get("issues", [])
+    if not isinstance(issues, list):
+        errors.append("issues 不是 list")
+        return False, errors
+
+    for i, iss in enumerate(issues):
+        for f in REQUIRED_ISSUE_FIELDS:
+            if f not in iss or iss.get(f) in (None, ""):
+                errors.append(f"issue[{i}]({iss.get('issue_id','?')})缺必填字段: {f}")
+        # 红色额外校验
+        if iss.get("level") == "红色":
+            nb = iss.get("normative_basis")
+            if nb is None or (isinstance(nb, dict) and not nb):
+                errors.append(
+                    f"issue[{i}]({iss.get('issue_id','?')})红色但 normative_basis 为空 "
+                    f"— 应通过 kb_query.py 填充规范依据"
+                )
+
+    # pass_items 基础校验
+    for i, p in enumerate(data.get("pass_items", []) or []):
+        if "id" not in p or not p.get("id"):
+            errors.append(f"pass_item[{i}]缺 id")
+        if "text" not in p or not p.get("text"):
+            errors.append(f"pass_item[{i}]({p.get('id','?')})缺 text")
+
+    return (len(errors) == 0, errors)
 
 # ---------- 分项检查 ----------
 
@@ -180,7 +226,25 @@ def main() -> int:
     ap.add_argument("--json", action="store_true", help="输出 JSON")
     ap.add_argument("--with-vision", action="store_true",
                     help="可选：用合成 PNG 走一次 Ark（需 ARK_API_KEY）")
+    ap.add_argument("--validate", metavar="DIAGNOSTIC_JSON",
+                    help="校验 diagnostic_result.json 的 Schema 合规性（阻塞性门禁）")
     args = ap.parse_args()
+
+    # --validate 模式：只校验 Schema，不走自检流程
+    if args.validate:
+        path = Path(args.validate).expanduser().resolve()
+        if not path.exists():
+            print(f"❌ 文件不存在：{path}", file=sys.stderr)
+            return 2
+        passed, errors = validate_diagnostic_result(path)
+        if passed:
+            print(f"✅ Schema 校验通过：{path}")
+            return 0
+        else:
+            print(f"❌ Schema 校验失败（{len(errors)} 项）：")
+            for e in errors:
+                print(f"   - {e}")
+            return 1
 
     r = run(with_vision=args.with_vision)
 

@@ -1,6 +1,24 @@
-version: '1.3'
+version: '1.6.2'
 skill_name: 经管论文智检
 description: 规则注册表，负责管理规则组、触发顺序、不适用逻辑和冲突处理。v2迭代修正版。
+
+# === 能力口径说明（对外宣称口径以本段为权威来源）===
+# 本 Skill 检测能力由三类构成，合计 71 项：
+#   A. 已注册规则 57 条（non_model_rules 31 + model_rules 26）— agent 按条件触发执行
+#   B. 强制交叉核对 7 项（semantic_check_protocol.md §9bis）— agent 必须逐项执行并留痕
+#   C. 红色硬伤边界 7 条（evidence_requirement.md §9bis）— 命中则强制判红不得降级
+# 三类在报告中应分别统计并展示，不得混为一谈。
+# 规则数变更：修改 non_model_rules.yaml 或 model_rules.yaml 中 rules 列表后，
+# 必须同步更新本段数字。
+capability_breakdown:
+  total_items: 71
+  registered_rules: 57
+  registered_rules_breakdown:
+    non_model_rules: 31
+    model_rules: 26
+  mandatory_cross_checks: 7
+  hard_red_lines: 7
+
 global_principles:
 - 必须先生成 paper_profile，再触发规则。
 - 必须先生成 trigger_plan，再执行规则。

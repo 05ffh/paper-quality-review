@@ -1,4 +1,4 @@
-version: '1.3'
+version: '1.6.2'
 skill_name: 经管论文智检
 description: 非模型类问题规则库，覆盖选题、文献、数据变量、结构表达、摘要、图表和参考文献等问题。v2迭代修正版。
 global_principles:

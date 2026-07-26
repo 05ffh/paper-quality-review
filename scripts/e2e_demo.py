@@ -10,7 +10,7 @@ M1 端到端演示：issue → 附改进参照卡片 → 报告片段
 """
 import sys
 from pathlib import Path
-ROOT = Path("/root/.openclaw/workspace/econ-paper-check-skill")
+ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from scripts.build_reference_card import build_cards_for_issues, build_norm_basis_md

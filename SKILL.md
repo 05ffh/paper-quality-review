@@ -137,8 +137,36 @@ python3 scripts/parse_paper.py <用户论文.docx|.pdf> --out <workdir>/paper_te
 **第五步：证据门禁。**
 按 evidence_requirement.md：无证据不输出；弱证据转灰色；红色必须强证据 + 可定位。parse_warnings 中的表格/公式相关项一律转灰色。**凡命中 9bis 红色硬伤强制清单，一律判红，不得降级。**
 
+**第五步半：知识库规范查询（必须执行，不得跳过）。**
+对本轮检出的每个黄色及红色 issue，按 issue 所属领域调用 `scripts/kb_query.py`：
+
+```bash
+python3 scripts/kb_query.py --prefer A --issue-type <citation|methods|writing|figures_tables|summary> --query "<issue描述>"
+```
+
+- citation 类（引用/参考文献问题）→ KB-A GB/T 7714 规范
+- methods 类（方法/模型/数据问题）→ KB-A 伍德里奇教材规范
+- writing 类（写作/表达/结构问题）→ KB-A 写作规范
+- figures_tables 类（图表问题）→ KB-A 图表规范
+
+查询结果写入对应 issue 的 `normative_basis` 字段（格式：`{source, clause, quote}`），作为**规范依据**（唯一可作错误判定依据的一层）。未命中规范条目的 issue，`normative_basis` 字段写入 `null` 并追加 `review_notice: "当前 KB-A 未覆盖该条目"`，**不得以 KB-B 范例代替 KB-A 规范作错误依据**。详见 SKILL.md 第 9 节三层证据分离规则。
+
 **第六步：写出 diagnostic_result.json。**
 严格按 issue_schema.md 字段结构。数量控制：红 3-8、黄 5-12、绿 3-8、灰 0-6、语言 ≤20；红色不设下限。总体风险按 issue_schema.md 第 10 节强制映射确定。
+
+**第六步半：输出 Schema 校验（阻塞性门禁）。**
+写出 `diagnostic_result.json` 后，**必须立即运行 Schema 校验**：
+
+```bash
+python3 scripts/self_check.py --validate <workdir>/diagnostic_result.json
+```
+
+校验检查以下**必填字段**（任一缺失即阻断，不得进入第七步）：
+- 每个 issue：`issue_id`、`level`、`domain`、`location`、`evidence`、`evidence_strength`、`explanation`、`suggestion`
+- 红色 issue 额外必填：`normative_basis`（不得为 null）
+- 顶层：`overall_risk_level`、`summary_counts`{pass,red,yellow,green,manual,na}
+
+校验失败时：修整 diagnostic_result.json 补齐缺失字段，重新校验，直至通过。**禁止在 Schema 校验失败的情况下进入渲染。**
 
 **第七步：渲染报告。**
 ```bash

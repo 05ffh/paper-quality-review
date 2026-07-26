@@ -18,7 +18,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-ROOT = Path("/root/.openclaw/workspace/econ-paper-check-skill")
+ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from scripts.kb_query import search  # 模块级便捷入口

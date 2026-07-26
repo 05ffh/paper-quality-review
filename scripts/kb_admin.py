@@ -43,7 +43,7 @@ import warnings
 warnings.filterwarnings("ignore")
 os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
 
-ROOT = Path("/root/.openclaw/workspace/econ-paper-check-skill")
+ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 VDB_ROOT = ROOT / "knowledge_base/vector_db"

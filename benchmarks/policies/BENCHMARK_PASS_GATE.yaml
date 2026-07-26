@@ -1,0 +1,93 @@
+# BENCHMARK_PASS_GATE.yaml — 基准测试通过硬性门禁
+#
+# 本文件是所有 benchmark runner 的强制契约。每次 benchmark 运行结果
+# 必须逐条对照本文件判定"是否真的可以通过"，不得仅以"进程退出码=0"为准。
+#
+# 修改本文件的权限：仅 P0 技术问题闭环时由技术负责人审批变更。
+# 最后更新：2026-07-16（基于跨智能体交叉验证审计）
+
+version: "1.0.0"
+last_updated: "2026-07-16"
+
+# ========== 一、通过定义 ==========
+# benchmark 通过 = 以下 6 项全部满足。任一失败则整体判定 FAIL。
+pass_definition:
+  condition_1:
+    id: "exit_code_zero"
+    description: "进程正常退出，exit code 为 0"
+    weight: "mandatory"
+  condition_2:
+    id: "schema_valid"
+    description: "输出通过 diagnostic_result.json Schema 校验（scripts/self_check.py --validate）"
+    weight: "mandatory"
+  condition_3:
+    id: "must_hit_rules_triggered"
+    description: "本 benchmark 预期触发的规则中，至少 80% 的真实命中（非占位/空列表/默认模板）"
+    weight: "mandatory"
+  condition_4:
+    id: "must_not_false_trigger"
+    description: "本 benchmark 预期不应触发的规则中，0 条误触发（误触发权重等于漏检）"
+    weight: "mandatory"
+  condition_5:
+    id: "evidence_and_basis_present"
+    description: "每个红色/黄色 issue 的 evidence 字段非空，红色 issue 的 normative_basis 非空"
+    weight: "mandatory"
+  condition_6:
+    id: "scoresheet_consistent"
+    description: "Scorecard 汇总的 pass/red/yellow/green/manual/na 计数与逐条 issue 计数一致"
+    weight: "mandatory"
+
+# ========== 二、占位与空跑判定 ==========
+# 以下情形一律计为 FAIL，不得计入通过数：
+placeholder_and_empty_rules:
+  - id: "empty_issues_list"
+    pattern: "issues 字段为空列表且 paper_profile 显示本应触发 ≥3 条规则时"
+    action: "判定 FAIL · 标记为 SKIP-EMPTY"
+  - id: "all_gray_no_red_yellow"
+    pattern: "issue 全部为灰色需人工确认，且红色/黄色数量为 0，同时 paper_text 中存在可读表格"
+    action: "判定 FAIL · 标记为 SKIP-DEGRADED"
+  - id: "placeholder_evidence"
+    pattern: "evidence 字段含占位文本（如'未找到可引用片段'、'此项基于全文缺失信号触发'）"
+    action: "单个 issue 计为 SKIP（不通过），不影响其他 issue"
+  - id: "fixed_template_output"
+    pattern: "diagnostic_result.json 与 example fixture 逐字段一致（hash 相同），说明走了固定模板"
+    action: "判定 FAIL · 标记为 SKIP-TEMPLATE"
+  - id: "missing_normative_basis_on_red"
+    pattern: "红色 issue 的 normative_basis 为 null 或空 dict"
+    action: "单个 issue 降为灰色，该 issue 不通过；≥3 个红色出现此情况则整体 FAIL"
+
+# ========== 三、视觉能力判定 ==========
+vision_acceptance:
+  - id: "vision_not_called"
+    pattern: "视觉 fixture 运行后 VISION_TRACE 日志为空"
+    action: "该 fixture 判定 NOT-RUN · 不得计入通过数"
+  - id: "vision_mock_passthrough"
+    pattern: "provider_type=mock 且视觉结果用于红色判定"
+    action: "该 fixture 判定 FAIL · mock 结果不得作为红色依据"
+  - id: "vision_real_pass"
+    pattern: "provider_type=ark 且 hard_gates_passed=true 且 extraction_score ≥ 0.75"
+    action: "该 fixture 可计为通过 · 但全视觉证据不得判红（见 evidence_requirement.md §9ter）"
+
+# ========== 四、端到端报告传递规则 ==========
+# 底层任一关键失败项必须传递到最终 Scorecard，不得出现"底层失败但汇总绿色"
+scorecard_failover:
+  - if: "condition_2 (schema_valid) 失败"
+    then: "Scorecard overall 强制标记 FAIL · 正常 exit code 也无效"
+  - if: "condition_3 (must_hit) 低于 80% 阈值"
+    then: "Scorecard 对应规则组标记 DEGRADED · overall 标记 FAIL"
+  - if: "placeholder_and_empty_rules 中任一 id 触发"
+    then: "该 fixture 在 Scorecard 中标记 SKIPPED · 不计入 pass 统计"
+  - if: "vision fixture NOT-RUN 但基线声称 VISION_SUPPORTED"
+    then: "VISION_SUPPORTED 降级为 VISION_PLACEHOLDER · overall 降一档"
+
+# ========== 五、Public Claims 对齐规则 ==========
+# 任何对外文档/README 中的能力声明，必须与本 gate 的口径一致
+public_claims_alignment:
+  - source: "README.md §能力速览"
+    must_match: "capability_breakdown.total_items = 71"
+    check: "57 rules + 7 cross-checks + 7 hard-red-lines"
+  - source: "SKILL.md §9"
+    must_match: "三层证据分离规则"
+    check: "KB-A 作规范依据 / KB-B 不作错误依据"
+  - source: "arkclaw.yaml"
+    must_match: "version 字段与 rules/*.yaml 一致"
