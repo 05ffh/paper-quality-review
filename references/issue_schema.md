@@ -2,40 +2,65 @@
 
 # 经管论文智检 Skill：结构化诊断结果 Schema
 
+> **权威来源说明：** 本节字段名以 `scripts/render_report.py` 的实际读取字段为准。
+> 凡本节与 render_report.py 不一致处，以 render_report.py 为准。
+
 ## 1. 顶层结构
 
-diagnostic_result 应包含：
+diagnostic_result.json 为**平铺结构**（无顶层 `diagnostic_result` 包装），应包含：
 
-- paper_profile_summary
-- overall_risk_level
-- summary_counts
-- pass_items
-- issues
-- not_applicable_items
-- manual_confirmation_items
-- priority_actions
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `paper_profile` | object | 是 | 论文画像（非 paper_profile_summary） |
+| `overall_risk_level` | string | 是 | "低风险" / "中风险" / "高风险" / "需人工确认" |
+| `summary_counts` | object | 是 | 问题计数。见 §2 |
+| `pass_items` | list[object] | 是 | 通过项列表。每项含 `id`, `domain`, `text`, `evidence` |
+| `issues` | list[object] | 是 | 问题列表（含红/黄/绿/灰各级）。每项字段见 §3 |
+| `not_applicable_items` | list[object] | 是 | 不适用规则组。每项含 `id`, `rule_group`, `reason` |
+| `manual_confirmation_items` | list[object] | 是 | 需人工确认项。每项含 `id`, `item`, `location`, `reason`, `how_to_check` |
+| `priority_actions` | list[object] | 是 | 优先修改行动。每项含 `priority`, `action`, `issue_ref`, `expected` |
 
-## 2. diagnostic_result 示例
+## 2. summary_counts 计数结构
 
-{
-  "diagnostic_result": {
-    "paper_profile_summary": {},
-    "overall_risk_level": "低风险 / 中风险 / 高风险 / 需人工确认",
-    "summary_counts": {
-      "pass_items": 0,
-      "red_issues": 0,
-      "yellow_issues": 0,
-      "green_suggestions": 0,
-      "manual_confirmation_items": 0,
-      "not_applicable_items": 0
-    },
-    "pass_items": [],
-    "issues": [],
-    "not_applicable_items": [],
-    "manual_confirmation_items": [],
-    "priority_actions": []
-  }
+```json
+"summary_counts": {
+  "pass": 6,
+  "red": 2,
+  "yellow": 5,
+  "green": 3,
+  "manual": 2,
+  "na": 4
 }
+```
+
+| 键 | 含义 | 对应 render_report.py 行 |
+|---|---|---|
+| `pass` | 通过项数量 | 225 |
+| `red` | 红色必改问题数量（非 red_issues） | 226 |
+| `yellow` | 黄色建议补充数量（非 yellow_issues） | 227 |
+| `green` | 绿色优化提升数量（非 green_suggestions） | 228 |
+| `manual` | 灰色需人工确认数量 | 229 |
+| `na` | 不适用项数量 | 230 |
+
+### 2bis. pass_items 条目结构
+
+```json
+{ "id": "PASS-01", "domain": "结构表达与学术规范质检", "text": "论文已呈现...", "evidence": "段落#1" }
+```
+
+### 2ter. manual_confirmation_items 条目结构
+
+```json
+{ "id": "MC-01", "item": "回归表可能为图片", "location": "表格#2", "reason": "无法稳定识别系数", "how_to_check": "请人工核对回归表内容" }
+```
+
+### 2quater. priority_actions 条目结构
+
+```json
+{ "priority": 1, "action": "补充变量定义表...", "issue_ref": "DV-VAR-001", "expected": "提升变量口径可复核性" }
+```
+
+—— priority_actions **必须是对象列表，不得为字符串列表**。render_report.py 按 `pa.get("priority")` 等字典方式读取，字符串列表将导致 AttributeError。
 
 ## 3. issue 字段
 

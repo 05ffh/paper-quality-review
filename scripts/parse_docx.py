@@ -31,6 +31,7 @@ class TextUnit:
     index: int
     text: str
     heading_level: Optional[int] = None
+    table_rows: Optional[list[list[str]]] = None  # v1.7: 二维表格结构
 
 
 def normalize_text(text: str) -> str:
@@ -73,7 +74,16 @@ def read_docx(path: Path) -> tuple[List[TextUnit], List[str]]:
         if child.tag == qn("w:p"):
             para = Paragraph(child, doc)
             text = normalize_text(para.text)
+
+            # P2-1: 检测段落内的图片和公式对象
+            for run in child.findall(qn("w:r")):
+                if run.find(qn("w:drawing")) is not None:
+                    warnings.append(f"段落#{para_idx}含图片对象，图片内容未解析")
+                if run.find(qn("m:oMath")) is not None or run.find(qn("m:oMathPara")) is not None:
+                    warnings.append(f"段落#{para_idx}含公式对象，公式内容未解析")
+
             if not text:
+                para_idx += 1
                 continue
             style_name = (para.style.name or "") if para.style else ""
             if "Heading" in style_name or "标题" in style_name:
@@ -85,13 +95,14 @@ def read_docx(path: Path) -> tuple[List[TextUnit], List[str]]:
             para_idx += 1
         elif child.tag == qn("w:tbl"):
             table = Table(child, doc)
-            rows = []
+            rows_2d: list[list[str]] = []
             for row in table.rows:
                 cells = [normalize_text(cell.text) for cell in row.cells]
                 if any(cells):
-                    rows.append(" | ".join(cells))
-            if rows:
-                units.append(TextUnit("table", table_idx, "\n".join(rows), None))
+                    rows_2d.append(cells)
+            if rows_2d:
+                flat_text = "\n".join(" | ".join(r) for r in rows_2d)
+                units.append(TextUnit("table", table_idx, flat_text, None, table_rows=rows_2d))
             else:
                 warnings.append(f"表格#{table_idx} 无可读取文本，可能为图片或复杂嵌入对象，需人工确认")
             table_idx += 1

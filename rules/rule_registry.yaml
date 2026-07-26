@@ -11,11 +11,11 @@ description: 规则注册表，负责管理规则组、触发顺序、不适用�
 # 规则数变更：修改 non_model_rules.yaml 或 model_rules.yaml 中 rules 列表后，
 # 必须同步更新本段数字。
 capability_breakdown:
-  total_items: 71
-  registered_rules: 57
+  total_items: 76
+  registered_rules: 62
   registered_rules_breakdown:
     non_model_rules: 31
-    model_rules: 26
+    model_rules: 31
   mandatory_cross_checks: 7
   hard_red_lines: 7
 
@@ -169,6 +169,16 @@ rule_groups:
     rule_ids:
     - MM-VAL-001
     - MM-VAL-002
+  model_ml_rules:
+    domain: 方法模型与实证结果质检
+    source: rules/model_rules.yaml
+    note: v1.7新增，ML模型专项检查（训练/测试集、过拟合、特征重要性、超参数、评估指标）
+    rule_ids:
+    - MM-ML-001
+    - MM-ML-002
+    - MM-ML-003
+    - MM-ML-004
+    - MM-ML-005
 new_rules_v2:
   description: 迭代v2新增规则，2026-07-15。
   added_rules:

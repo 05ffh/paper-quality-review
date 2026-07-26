@@ -518,6 +518,87 @@ model_level_adjustment_policy:
   - 回归表为图片或无法解析。
   - 模型公式为图片或复杂嵌入对象。
   - 是否需要某高级模型属于导师判断范围。
+model_ml_rules:
+  group_label: 机器学习模型规则（v1.7新增）
+  applies_when:
+  - detected_methods contains XGBoost or RandomForest or NeuralNetwork or SVM or LightGBM or CatBoost or GBM or 机器学习 or 随机森林 or 神经网络 or 支持向量机
+  rules:
+  - rule_id: MM-ML-001
+    group_id: model_ml_rules
+    domain: 方法模型与实证结果质检
+    issue_type: ML模型数据集划分说明不足
+    default_level: 黄色：建议补充
+    applies_when:
+    - detected_methods contains XGBoost or RandomForest or NeuralNetwork or SVM or LightGBM or CatBoost or GBM or 机器学习
+    inspect_locations:
+    - 研究设计
+    - 模型设定
+    - 实证分析
+    trigger_signals:
+    - 使用ML模型但未说明训练/测试集划分比例
+    - 未说明随机种子或分层抽样方式
+    evidence_requirement: 必须确认论文使用ML模型且未检测到数据集划分说明。
+    suggestion_template: 建议报告训练/测试集比例、随机种子和分层抽样方式，确保结果可复现。
+  - rule_id: MM-ML-002
+    group_id: model_ml_rules
+    domain: 方法模型与实证结果质检
+    issue_type: ML模型过拟合检验缺失
+    default_level: 黄色：建议补充
+    applies_when:
+    - detected_methods contains XGBoost or RandomForest or NeuralNetwork or SVM or LightGBM or CatBoost or GBM or 机器学习
+    inspect_locations:
+    - 实证分析
+    - 稳健性检验
+    trigger_signals:
+    - 使用ML模型但未提供交叉验证结果
+    - 未讨论过拟合风险或学习曲线
+    evidence_requirement: 必须确认论文使用ML模型且未检测到过拟合检验。
+    suggestion_template: 建议补充交叉验证结果或学习曲线，并讨论模型泛化能力与过拟合风险。
+  - rule_id: MM-ML-003
+    group_id: model_ml_rules
+    domain: 方法模型与实证结果质检
+    issue_type: ML模型特征重要性未报告
+    default_level: 黄色：建议补充
+    applies_when:
+    - detected_methods contains XGBoost or RandomForest or LightGBM or CatBoost or GBM or 机器学习
+    inspect_locations:
+    - 实证分析
+    - 结果分析
+    trigger_signals:
+    - 使用树模型或特征重要性可解释的ML方法但未报告特征重要性排序
+    evidence_requirement: 必须确认论文使用可输出特征重要性的ML方法且未报告。
+    suggestion_template: 建议报告特征重要性排序（如SHAP值、Gini重要性），并与经济学直觉对比分析。
+  - rule_id: MM-ML-004
+    group_id: model_ml_rules
+    domain: 方法模型与实证结果质检
+    issue_type: ML模型超参数透明度不足
+    default_level: 绿色：优化提升
+    applies_when:
+    - detected_methods contains XGBoost or RandomForest or NeuralNetwork or LightGBM or CatBoost or GBM or 机器学习
+    inspect_locations:
+    - 研究设计
+    - 模型设定
+    trigger_signals:
+    - 使用ML模型但未报告关键超参数取值
+    - 未说明调优方法（网格搜索/贝叶斯优化等）
+    evidence_requirement: 必须确认论文使用ML模型且未报告超参数。
+    suggestion_template: 建议报告关键超参数取值及调优方法，提升模型透明度与可复现性。
+  - rule_id: MM-ML-005
+    group_id: model_ml_rules
+    domain: 方法模型与实证结果质检
+    issue_type: ML模型评估指标与业务目标不匹配
+    default_level: 黄色：建议补充
+    applies_when:
+    - detected_methods contains XGBoost or RandomForest or NeuralNetwork or SVM or LightGBM or CatBoost or GBM or 机器学习
+    inspect_locations:
+    - 实证分析
+    - 结果分析
+    - 结论
+    trigger_signals:
+    - 分类任务仅报告Accuracy而未报告F1/AUC/Recall
+    - 不平衡分类任务未讨论评估指标选择理由（如违约预测应重点关注Recall）
+    evidence_requirement: 必须确认论文使用ML分类模型且评估指标选择与业务目标不匹配。
+    suggestion_template: 建议根据研究目标选择合适的评估指标：违约预测应关注Recall和AUC，分类任务应补充F1值。
 model_conflict_resolution_policy:
 - conflict: 论文写机制分析但未设置中介变量和中介模型
   resolution: 不触发中介效应规则；改由文献理论链条规则或通用机制解释规则处理。

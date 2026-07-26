@@ -694,6 +694,45 @@ judgment_logic_corrections_v3:
   - rule_id: SN-LANG-001
     improvement: 增加术语全文一致性扫描
     logic: 发现术语笔误后，遍历全文所有text单元，列出完整idx清单（如idx 89/117/127/148），而非只标注一处，确保修改彻底。
+- rule_id: SN-REF-003
+  group_id: non_model_structure_norm_rules
+  domain: 结构表达与学术规范质检
+  issue_type: 参考文献编号格式缺失或不规范
+  default_level: 黄色：建议补充
+  applies_to:
+  - 经管类实证论文
+  - 经管类课程论文
+  - 案例分析论文
+  - 问卷调查论文
+  - 调查数据库论文
+  - 理论综述型论文
+  inspect_locations:
+  - 参考文献
+  trigger_signals:
+  - 参考文献列表每条不以 [数字] 开头（如 [1], [2], [3]...）
+  - 参考文献全部无编号
+  - 正文多处 [数字] 引用在参考文献列表中无法找到对应条目
+  evidence_requirement: 必须引用参考文献列表中的具体条目。
+  suggestion_template: 建议按 GB/T 7714 格式为参考文献加顺序编号（[1], [2], [3]...），并逐条核对正文引用与列表的双向对应。
+- rule_id: MM-COEF-001
+  group_id: non_model_data_variable_rules
+  domain: 方法模型与实证结果质检
+  issue_type: 关键经济变量回归系数方向与理论预期矛盾且未解释
+  default_level: 红色：必改问题
+  applies_to:
+  - 经管类实证论文
+  inspect_locations:
+  - 回归结果表
+  - 基准回归
+  - 结果分析
+  trigger_signals:
+  - 回归表中 ROA（盈利能力）对正向结果变量（如信用评级、企业价值、创新产出）的系数显著为负
+  - 回归表中 Loss（亏损虚拟变量）对正向结果变量的系数显著为正
+  - 回归表中 Leverage（杠杆率）对信用评级的系数显著为正（理论上高杠杆应降级）
+  - 系数方向矛盾且正文未提供经济解释（如"可能因…导致""这与预期不同是因为…"）
+  downgrade_condition: 若正文已就该反常方向提供了经济解释（即使不够充分），由红色降为黄色。
+  evidence_requirement: 必须同时引用回归表系数和正文（或正文缺失解释的证据）。
+  suggestion_template: 建议检查数据口径与模型设定是否正确。若系数方向确实与理论预期相反，应在正文中提供可能的经济解释（如样本期特殊、行业特征、制度背景），不得仅报告系数而不讨论方向矛盾。
 normalization_policy:
   allowed_paper_types:
   - 经管类实证论文
