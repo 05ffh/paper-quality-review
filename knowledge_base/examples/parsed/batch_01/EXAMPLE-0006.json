@@ -1,0 +1,797 @@
+{
+  "paper_id": "EXAMPLE-0006",
+  "source_sha256": "f31cb98e4f31ae8441b23a74a9c0cce9a656068d03c5b958b2c01f737c8bea42",
+  "topic_hint": "方福前等：数字基础设施与代际收入向上流动性",
+  "paper_type": "empirical",
+  "method_tags": [
+    "DID",
+    "面板模型",
+    "调节效应",
+    "工具变量",
+    "问卷调查"
+  ],
+  "clean_units": 130,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "方福前等：数字基础设施与代际收入向上流动性",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "少文献从人力资本和社会资本角度探讨了影响代际向上流动的因素。然而，少有文献探讨中国新发展阶段的特征事实对农村户籍子代实现代际向上流动的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "中国新发展阶段的特征事实之一是数字基础设施对经济社会发展的推动作用越来越大。2013年施行“宽带中国”政策后，中国网络覆盖率迅速扩大、网速显著提高、网络使用时长不断增加。根据宽带发展联盟2016年发布的《“宽带中国”示范城市经验案例集》以及工业和信息化部的相关数据，作为“宽带中国”示范城市的德州市，速率在8Mbps及以上的宽带用户渗透率达94.3％，吴忠市的农村电子商务覆盖率达50％。“宽带中国”政策实施的第一年，中国网民的平均每周上网时长比上一年增加4.5小时。数字基础设施的不断强化为数字经济发展奠定了重要基础。中国新闻网在2017年发文指出：“宽带中国”政策促进了数字经济的爆发式增长。2021年，中国数字经济规模占GDP的比重已经达到39.8％，其中，数字经济对非农行业的渗透率最高，已达到61.7％，对农业的渗透率则为8.9％。相应地，服务业中数字化相关就业的比重高达60.2％。①中国数字经济发展呈现出了蓬勃生命力。党的二十大报告指出要“加快发展数字经济，促进数字经济和实体经济深度融合”，2023年政府工作报告指出要“支持平台经济发展”。作为数字经济发展的重要推动力，以上数据初步表明，通过促进数字经济发展，数字基础设施或许能够为农村户籍劳动力提供更多高质量的工作机会，从而提高其收入水平，推动代际收入向上流动。②多数文献主要研究了数字基础设施的经济增长效应，少有文献关注数字基础设施对公平的影响，尤其是对以代际流动为代表的更能体现社会机会结构的公平性与开放性的纵向公平的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "本文将从理论和实证角度探讨数字基础设施对代际收入向上流动的影响以及机制。本文聚焦农村，首先在新古典增长模型以及代际收入流动框架基础上，构建数字基础设施影响代际收入向上流动的数理逻辑，然后将“宽带中国”政策外生冲击作为数字基础设施发展状况的代理变量，将其与CFPS数据相结合，利用DID模型实证检验数字基础设施对代际收入向上流动的影响与机制。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "本文的边际贡献主要体现在以下三方面：在研究视角上，考察了数字基础设施对农村户籍子代实现代际收入向上流动的影响及作用机制。对这一问题的探讨源于当前中国刚性的社会流动现状、共同富裕的发展目标以及数字经济蓬勃发展的经济背景。本文讲述了中国新发展阶段的故事，并基于新发展阶段的经济发展特点补充了代际流动的影响因素分析，拓展了数字基础设施的经济效应研究，具有重要的理论和现实意义。在研究方法上，将理论分析与实证检验相结合，实现了经典理论与中国新发展阶段特征事实的有效对接。本文首先将数字要素纳入对新古典增长模型以及代际收入流动框架的分析中，通过求解个体效用最大化、厂商利润最大化等问题，推导了数字基础设施对代际收入向上流动的影响。然后利用“宽带中国”政策这一外生冲击和CFPS数据，使用DID方法和工具变量法等内生性分析方法识别了数字基础设施对代际收入向上流动的因果效应。在政策层面上，本文为政府和决策部门进一步加强数字基础设施建设，改善农村户籍子代的人力资本和社会资本，为农村户籍子代提供高质量的宏观发展机遇，最终提高社会流动性提供了有力的理论和实证支持。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "本文余下的内容安排如下：第二部分对相关文献进行综述；第三部分在新古典增长模型以及代际收入流动理论分析框架基础上，从理论角度探讨数字基础设施对代际收入向上流动的影响；第四部分提出本文的实证模型，介绍使用的数据；第五部分实证检验数字基础设施对农村户籍子代实现代际收入向上流动的影响；第六部分讨论作用机制；第七部分总结全文，并提出政策含义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "①数据来源于中国信息通信研究院发布的《中国数字经济发展报告（2022年）》以及《中国数字经济发展白皮书（2021年）》。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "②实际上，国家层面也已经开始重视数字基础设施对提高社会流动性的作用。2019年，中共中央办公厅、国务院办公厅印发的《关于促进劳动力和人才社会性流动体制机制改革的意见》明确提出要“发展新一代信息技术、高端装备、数字创意等新兴产业，实施传统产业智能化改造提升工程，培育智慧农业、现代物流等产业，提供更高质量流动机会”。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "二、文献综述",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "与数字基础设施对代际收入向上流动的影响有关的研究主要包括以下两类：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "第一类文献是代际流动的影响因素研究。Sorokin（1927）最早将社会流动定义为个人或社会对象从一个位置到另一个位置的转变，并划分为垂直流动与水平流动、代内流动与代际流动。相对于横向的代内流动，与财富和地位的传承密切相关的代际间向上流动更能反映出一个社会机会结构的公平性与开放性。多数文献将人力资本和社会资本视作影响代际流动的重要因素。Becker＆Tomes（1979）和Cunha＆Heckman（2007）认为，与父母投资密切相关的认知或非认识能力都对代际流动具有重要作用。Solon（2004）等发现政府的教育开支能够促进父母对孩子的投资，增加孩子人力资本，促进代际向上流动。陈钊等（2009）和Aizer＆ Currie（2014）也得到了类似结论。仇立平和肖日葵（2011）发现父代可以通过声望影响子代。Diprete（2020）认为对于高度不平等的国家，相较于受教育年限，在更高水平的大学中获得的社会资本对于代际流动具有更重要的作用。Blau＆Duncan（1967）认为如果大多数社会成员主要依靠阶层出身和家庭背景获得社会地位，会阻碍社会流动，如果主要依靠个人努力得到人力资本，则能促进社会流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "从以上文献可以看出，目前多数文献主要将人力资本和社会资本视为影响代际流动的重要因素，而研究经济社会环境、特别是发展的阶段性特征对代际流动影响的文献较少，这不利于理解社会整体的政治、经济和制度环境在代际流动方面的作用。虽然也有少数文献讨论了工业化（Diprete，2020）、市场化（Mocetti et al．，2022）和法治与公平（Diprete，2020）对代际流动的影响，但这些因素基本是在中国改革开放以来各个发展阶段都存在的因素，而不是新发展阶段最具代表性的因素。数字经济已经成为新发展阶段引领经济增长的新动力。忽视数字基础设施对代际流动的影响，不利于科学认识新发展阶段的特征事实及其社会福利效应，从而不利于有针对性地制定实施改革和发展举措来促进社会流动，实现共同富裕，推动经济高质量发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "第二类文献是有关数字基础设施的经济效应研究。一些文献探讨了数字基础设施对经济增长或生产率的影响。Czerich et al．（2011）利用OECD国家1996-2007年的面板数据，基于工具变量法证实了互联网对经济增长的促进作用。方福前和田鸽（2020）利用中国1992-2016年的省级面板数据研究发现，通信基础设施在促进中国经济增长时具有规模效应。黄群慧等（2019）指出城市互联网发展指数每提高1％，制造业企业的生产率提高0.3％。Harris（1998）指出互联网可以降低生产、交易等经济成本，促进知识、信息等的产生与传播，改善要素配置效率。一些文献还研究了数字基础设施对微观个体经济效率的影响。Forman et al．（2012）发现高级互联网的使用使得教育水平高、人口总量大、收入水平高和IT技术更密集地区的工资增长更快。杨蕙馨和李春梅（2013）指出，网络的信息获取和工作搜寻优势有助于收入的提高。宁光杰和林子亮（2014）运用企业调查数据研究发现，信息技术应用导致高技能劳动力比例和收入提高。Hjort＆Poulsen（2019）实证研究发现高速网络通过促进出口等方式使工资收入提高了2.4-3.3个百分点。李三希等（2021）研究了数字经济背景下的大数据、个人信息保护和价格歧视问题，认为消费者总剩余和社会总福利在无个人信息保护和完全一级价格歧视时达到最大。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "可以看出，现有文献侧重于研究数字基础设施对经济效率的影响，而有关数字基础设施对社会公平的影响的研究还较少，少数可供参考的研究如张勋等（2019）将数字金融指数和CFPS数据相结合，研究发现数字金融显著改善了农村低收入家庭的收入状况。张景娜和朱俊丰（2020）均发现互联网的发展能够提高女性的劳动参与率。田鸽和张勋（2022）实证检验发现，通过促进工业互联网和消费互联网的发展，数字经济分别促进了高、低技能劳动力实现非农就业。这些文献为本文进一步从社会流动视角研究数字基础设施对社会公平的影响，从而以更加长远的视角评价数字基础",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "2023年第5期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "场运气”，结合（15）式， 能够促进代际收入向上流动，因而能得到数字要素促进代际收入向上流动的第三条机制：数字要素可以增加子代的“市场运气”，从而促进代际收入的向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "数字基础设施的作用归根结底源于数字要素的性质。通过构建理论模型，本文初步厘清了数字基础设施促进农村户籍子代实现代际收入向上流动的影响以及作用机制，由此得出如下推论：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "推论一：数字基础设施能够促进农村户籍子代实现代际收入的向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "推论二：数字基础设施有助于提高父代对农村户籍子代的人力资本投资回报，从而促进代际收入的向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "推论三：对于农村户籍子代，数字基础设施能够通过减少子代对父代低水平社会资本的继承从而提高其社会资本，促进代际收入的向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "推论四：数字基础设施可以增加子代的“市场运气”，从而促进代际收入的向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "这四条推论与工业主义的观点不谋而合，即随着依据家庭地位等先赋因素形成的社会分配机制被逐渐打破，人力资本自致因素将对个人社会地位产生越来越大的作用，社会流动性将不断增强。家庭先赋因素与人力资本自致因素对社会流动的影响会受到工业化与技术发展等宏观因素的调节（阳义南和连玉君，2015）。作为工业化与技术发展的产物，数字基础设施也可以通过影响家庭先赋因素与人力资本自致因素而影响社会流动。对于人力资本自致因素，依托于信息富集和知识产品复制成本低等特点，数字基础设施既可以通过缓解农村户籍子代与工作岗位之间的信息不对称约束，促进其从事与自身能力更加匹配的工作，从而充分发挥现有人力资本的价值，还可以为其提供便利的学习机会，缓解教育资源不足约束，从而直接增加其人力资本，两种情况都能带来更高的收入，因此数字基础设施有助于提高父代对子代的人力资本投资回报，促进代际收入向上流动。对于家庭先赋因素，基于信息的高通达性以及沟通交流的便捷性，数字基础设施能够为农村户籍子代重新建构高水平的社会资本，使其不再依赖于父代的低水平社会资本，即数字基础设施可以强化市场机制的作用从而冲破传统制度的机会垄断（李春玲，1997），进而促进代际收入的向上流动。此外，通过充分发挥数字技术对传统产业的赋能作用、对市场竞争的增强作用以及对社会监督、公平与法治的促进作用，数字基础设施还能够为子代实现代际收入向上流动创造好的“市场运气”。根据推论二和推论三，数字基础设施通过改善劳动力的人力资本和社会资本，实现了对劳动力供给侧的赋能，实际上是从“推力”角度促进了代际收入向上流动。根据推论四，数字基础设施通过增加劳动力面临的“市场运气”，为劳动力提供更多高质量的就业机会，实现了对劳动力需求侧的赋能，实际上是从“拉力”角度促进了代际收入向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "以上基于新古典增长模型和代际收入流动框架构建的模型为研究数字基础设施对代际收入向上流动的影响及机制提供了理论基础。接下来，本文将对这些理论进行实证检验。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "四、实证模型与数据介绍",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "（一）基准模型",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "2013年，《国务院关于印发“宽带中国”战略及实施方案的通知》（以下简称《通知》）发布。《通知》对于在2014年、2015年和2016年选择试点城市实施“宽带中国”政策进行了部署，并提出了重点任务：推进区域宽带网络协调发展、加快宽带网络优化升级、提高宽带网络应用水平、促进宽带网络产业链不断完善、增强宽带网络安全保障能力。这一政策取得了巨大成效，网络覆盖率不断扩大，网速不断提高。从经济效应来看，示范城市吴忠市大力开展电子商务进农村服务，实现了工业品下乡和农特产进城双向流通。可以看出，“宽带中国”战略强化了数字基础设施，因此，可以利用“宽带中国”政策外生冲击研究数字基础设施对代际收入向上流动的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "将“宽带中国”政策的试点城市作为处理组，其余城市作为控制组，建立如下双重差分（DID）",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "方福前等：数字基础设施与代际收入向上流动性",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "（二）更换被解释变量和核心解释变量",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "为增强基准回归结论的稳健性，进一步对被解释变量进行详细分析。首先，将被解释变量为0的情况做进一步区分：将父代收入位于同代收入分布的前50％，而子代收入位于同代收入分布的后50％视作发生了代际收入的向下流动，记为-1，而将父代收入和子代收入均位于同代的前50％或后50％视作未发生代际收入流动，仍然记为0。其次，以子代相对收入与父代相对收入的差异定义是否发生了代际收入的向上流动，如果子代的相对收入高于父代，则视作发生了代际收入的向上流动，记为1，否则记为0。最后，借鉴阳义南和连玉君（2015）等研究，计算地市层面父代与子代收入等级的相关系数作为代际收入水平继承性的反映。分别将以上新的赋值方式对数字基础设施发展状况回归，回归结果表明，数字基础设施仍然显著促进了代际收入向上流动。本文还通过更换核心解释变量以强化基准回归结论的稳健性。本文以互联网发展指数来代理数字基础设施发展状况，①回归结果表明，互联网发展指数越高，越有助于农民子代实现代际收入的向上流动。由于互联网发展指数存在较大内生性，本文仍然主要使用“宽带中国”政策作为数字基础设施发展状况的代理变量。②",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "（三）内生性分析",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "1．遗漏变量分析",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "首先，一些文献将基因作为父代影响子代的重要渠道（阳义南和连玉君，2015），因此基因也可能干扰“宽带中国”政策效果的识别。一些文献通过构造非血亲父子或错配基因样本（Plug，2004）等新样本来控制基因等家庭潜在特征的影响。借鉴这些做法，由于CFPS对个体的智力水平、语言表达能力、阅读理解能力和待人接物水平按照从低到高的顺序用1-7进行了评分，这些变量的均值可视作个人的综合能力。由于个人综合能力与基因密切相关，本文选取父母与子代的综合能力之差的绝对值高于均值③的样本作为基因错配样本重新进行回归。结果表明，数字基础设施仍然显著促进了代际收入的向上流动（限于篇幅，不再报告所有的遗漏变量分析的实证结果）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "其次，交通改善、城乡工资差距拉大也是吸引农民前往城市工作从而实现代际收入流动的重要因素，因此本文分别增加个体所在市的公路密度、按地区GDP平均的基础设施建设投资完成额、城镇居民人均可支配收入与农民人均纯收入的比值作为新的控制变量，或将样本限制在没有从农村迁往城市的样本中进行分样本回归，回归结果表明，数字基础设施仍然显著促进了农民子代实现代际收入的向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "最后，在大城市生活的其他政策也会影响个体收入。例如，2014年全国推行“差别化落户政策”，一些特大城市开始疏解流动人口，这显然将抑制流动人口的收入提高。本文按照城区人口规模将城市划分为特大城市和非特大城市两类。由于2014年的“差别化落户政策”将影响2015年的样本，因此本文在表2第（3）列基础上增加“是否是2015年”与“是否是特大城市”的交互项，此时DID项的系数依然显著，排除了“差别化落户政策”的混淆作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "2．平行趋势检验",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "为保证数字基础设施的作用并非源于处理组和控制组在政策开始前的系统性差异，表3第（1）列进行平行趋势检验。可以看出，处理组和控制组在政策实施前2期和前1期均不具有系统",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "①互联网发展指数由移动电话用户数、互联网宽带接入用户数、在信息传输、计算机服务和软件业的就业人数、电信业务收入以及普惠金融指数等指标通过主成分分析得到。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "② 限于篇幅，更换被解释变量和核心解释变量后的回归结果不在正文报告。如有需要，可联系作者获取。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "③ 除非特别交代，本文在将全部样本划分为两组时，均以基期分组变量的均值为界，以尽可能保证分组变量的外生性。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "2023年第5期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "（一）数字基础设施有助于提高父代对子代的人力资本投资回报",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "根据理论模型的推论二，数字基础设施有助于提高父代对农民子代的人力资本投资回报，从而促进代际收入的向上流动。这一方面可能是由于数字基础设施能够促进子代现有人力资本价值的充分发挥，另一方面或许与数字基础设施直接增加了子代人力资本，从而与父代对子代原有的人力资本投资形成互补有关，这样，数字基础设施便同时促进了子代人力资本的集约边际与拓展边际的实现。无论是现有人力资本价值的充分发挥还是人力资本的直接增加，都能带来更高的收入，提高父代对子代的人力资本投资回报。特别地，对于农民子代，由于户籍制度使其在获取教育资源方面存在劣势，因此，数字基础设施通过给予农民子代更多提升人力资本的机会，有助于打破户籍制度约束，从而促进农民子代实现代际收入的向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "首先，检验数字基础设施能否促进现有人力资本价值的充分发挥。数字基础设施带来的丰富信息资源能够缓解劳动力与岗位之间的信息不对称约束，促进劳动力从事与自身能力更加匹配的工作，提高单位能力的收入水平，这便提高了现有人力资本的价值。在表5第（1）列，本文利用个体综合能力等级与收入等级之差的绝对值来表示收入与能力的分离程度，并计算了子代这一分离程度与父代的差值，然后将这一差值对数字基础设施发展状况回归。结果表明，相较于父代，数字基础设施更加提高了子代的能力与收入的匹配度，因而更加促进了子代现有人力资本价值的充分发挥。此外，能力和收入之间的高效匹配意味着一定范围内，单位能力可以获得更高收入。表5第（2）列表明，数字基础设施的确更加提高了子代单位能力的收入水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "表5 数字基础设施促进代际收入向上流动的机制：充分发挥子代现有人力资本的价值",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "被解释变量 | (1) | (2)\n被解释变量 | 收入与能力分离程度的\n子代与父代差异 | 单位能力的收入水平的\n子代与父代差异\n是否为处理组x\n是否开始实施政策 | -0.209\n(0.108) | 0.0641\n(0.0273)\n观测值 | 6230 | 6230\nR2 | 0.034 | 0.044",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "注：表5控制了省市、个体和家庭、父母层面的控制变量、个体和父母的经验及经验平方，还控制了个体和时间固定效应。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "接着检验数字基础设施能否直接增加子代的人力资本。本文将子代综合能力对数字基础设施发展状况回归，结果发现数字基础设施显著提高了子代的综合能力，证实了数字基础设施有助于直接增加子代人力资本。这或许与数字经济时代“信息为王”的特点有关，即数字基础设施促进了信息的富集、传播，因而降低了知识产品的边际成本，这有利于个体进行在线学习培训，加快教育数字化进程，为劳动力提供传统的学校教育以外的提高人力资本的新渠道，这显然能够提高人力资本。通过构造网络学习相对频率、①教育数字化指数②以及是否参加非学历教育变量，本文验证了数字基础设施能够通过提高网络学习频率，推动教育数字化进程，提高非学历教育参与率，从而直接增加子代人力资本，与父代对子代的人力资本投资互补（回归结果不再报告）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "①为避免所观察到的数字基础设施对网络学习的促进作用源于网络本身的使用频率提高，本文利用CFPS数据，首先计算了个体使用互联网进行学习、社交、工作、娱乐和购物的平均频率，然后以使用互联网学习的频率与这一平均频率的比值表示网络学习的相对频率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "②本文采用国际机器人联盟（international federation of robotics，IFR）发布的2009-2017年中国各行业的机器人数量数据，借鉴Acemoglu＆ Restrepo（2020）以及王永钦和董雯（2020）的构造方法，计算城市层面的教育数字化水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "方福前等：数字基础设施与代际收入向上流动性",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "以上分析表明，从人力资本角度来看，数字基础设施既可以充分发挥子代现有人力资本的价值，还能够直接增加子代的人力资本，从而与父代对子代原有的人力资本投资形成互补。这两种方式都能带来更高的收入，因此数字基础设施有利于破解教育资源对农民子代的约束，提高父代对子代的人力资本投资回报，促进代际收入的向上流动，这就证实了推论二。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "（二）数字基础设施减少了子代对父代社会资本的继承",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "由于农村户籍父代的社会资本水平较低，因此，根据理论模型的推论三，数字基础设施或许可以减少农民子代对父代低水平社会资本的继承，提高其社会资本，从而促进代际收入的向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "本文数据无法直接衡量子代对父代社会资本的继承性，因此间接检验这一推论。信任是社会资本的重要维度，假设对父母的信任程度越低，意味着父代的社会资本更不易传递至子代，子代对父代社会资本的继承性就越弱。表6第（1）列表明，数字基础设施显著降低了子代对父母的信任程度，因此子代对父代的低水平社会资本的继承性减弱，有助于子代实现代际收入向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "进一步地，社会资本之于收入的重要性主要由于社会资本可以带来有用的信息，降低求职和晋升等过程中的信息不对称问题，而基于网络的高连接性以及交流的便捷性，数字基础设施恰好能够促进信息的畅通，为农民子代重新建构高水平的社会资本，即可以充分利用互联网的信息渠道功能打开视野，获取高质量信息，进入与父代不同的上升通道。表6第（2）列表明，数字基础设施提高了农民子代对互联网信息渠道功能的重视程度。②表6第（3）-（4）列表明，数字基础设施降低了子代通过亲戚朋友找工作的频率，而促进了其通过具有更多就业信息和更高质量就业机会的网络职业介绍机构（如智联招聘等在线招聘平台）寻找工作的频率，③再次说明数字基础设施能够减少农民子代对低水平社会资本的依赖，进而促进其代际收入的向上流动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "上述发现具有很强的现实意义。在就业信息不对称和市场分割背景下，父代的优质工作经验和社会资本对子代就业的影响增大，子代可以以低廉的成本获得某些工作信息（邢春冰，2006），降低了代际流动性。而以信息富集为主要特点的数字基础设施可以通过提供市场化就业信息，打破信息闭塞约束，为低水平社会资本的个体提供更多向上流动的机会，缩小数字鸿沟。总而言之，这部分从社会资本角度分析，发现数字基础设施可以通过发挥信息资源优势，减少农民子代对父代社会资本的继承，从而间接改善其社会资本，促进其实现代际收入向上流动，证实了推论三。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "表6 数字基础设施促进代际收入向上流动的机制：减少了子代对父代社会资本的继承",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 1,
+      "text": "被解释变量 | (1) | (2) | (3) | (4)\n被解释变量 | 是否信任父母 | 对互联网信息渠道\n功能的重视程度 | 是否通过亲戚\n朋友找工作 | 是否通过网络职业\n介绍机构找工作\n是否为处理组x\n是否开始实施政策 | -0.237\n(0.105) | 0.215\n(0.111) | -0.211\n(0.109) | 0.158***\n(0.0579)\n观测值 | 3463 | 2796 | 1738 | 1738\nR2 | 0.043 | 0.191 | 0.100 | 0.099",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "注：表6均控制了省市、个体和家庭、父母层面的控制变量、个体和父母的经验及经验平方，还控制了个体和时间固定效应。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "① CFPS无法提供父代对子代的人力资本投资数据，由于人力资本的直接增加和价值的充分发挥都能带来更高收入，因此通过研究数字基础设施能否充分发挥子代现有人力资本价值或直接增加人力资本，可以间接说明数字基础设施能够提高父代对子代的人力资本投资回报。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "②CFPS问卷询问了受访者对于“互联网作为信息渠道的重要程度”的看法，按照重要性从低到高用1-5进行了评分。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "③ CFPS问卷分别询问了受访者是否通过亲戚朋友或职业介绍机构找工作。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "方福前等：数字基础设施与代际收入向上流动性",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "指数计算方法，本文首先计算了各地级市的市场化指数，然后将这一指数对“宽带中国”政策实施情况回归，研究发现数字基础设施显著提高了市场化指数。进一步将市场化指数替换为CFPS中的工作数量，研究发现数字基础设施的发展使子代从事的工作数量增加了，这就从微观角度再次说明了数字基础设施有助于提高市场活力，促进农民子代实现代际收入向上流动（回归结果不再报告）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "3．数字基础设施增强了社会监督、促进了公平与法治",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "通过促进产业创新、提高市场化水平，数字基础设施从整体上为劳动力提供了获取高收入的机会，然而，由于户籍制度和歧视等制度性以及非制度性障碍的存在，农村劳动力在获取优质机会方面存在劣势，因此，只有在“蛋糕做大”的基础上进一步促进“蛋糕”的合理分配，才能使经济发展的果实公平地惠及农村劳动力，提高社会流动性。数字基础设施所蕴含的网络互联、信息透明等特点可以对经济主体以及国家职能部门的行为起到良好的监督作用，或许能够更好地维护农民利益，促进农民代际收入向上流动。例如，相较于传统媒体，以数字媒体技术为支撑的微博可以及时迅速曝光社会新闻，揭露不公现象，电子政务、数字政府和电子法院等数字经济下新的行政司法方式也拓宽了对行政司法机关的监督渠道，有助于提高行政司法能力和效力，保障弱势群体利益，促进社会公平与法治，为农民子代实现向上流动提供良好的政治和法治保障。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "本文将CFPS中是否在网站上发表意见、通过网络了解政治信息的相对频率作为受访者参与互联网监督情况的代理变量，将CFPS中个体是否因贫富差距遭受不公对待、是否遭受政府不合理收费以及中国社会科学院法学研究所发布的司法和政府透明度作为所处地级市的公平与法治情况的代理变量，分别将这些变量对数字基础设施发展状况回归，结果表明，一方面，数字基础设施通过促进受访者在网上发表意见、关注政治信息，增强了受访者对社会的监督行为；另一方面，数字基础设施通过降低劳动者因贫富差距遭受不公对待以及遭受政府不合理收费的概率，提高司法和政府透明度，维护了社会的公平与法治。受益于数字基础设施所推动的良好的监督、公平与法治环境，不同户籍身份的劳动者可以公平地参与分配。这表明数字基础设施可以在不断提高经济效率的同时促进农村劳动力共享发展成果，增加社会流动性（回归结果不再报告）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "通过促进产业创新，提高市场化水平，增强社会监督，促进公平与法治，数字基础设施能够优化劳动力的需求侧条件，为农村劳动力创造良好的宏观发展机遇，在这些“市场运气”的作用下，农民子代得以实现代际收入的向上流动，推论四得以验证。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "这一部分分别从劳动力供给侧和需求侧分析了数字基础设施促进代际收入向上流动的机制。对于劳动力供给侧，数字基础设施通过提高父代对农民子代人力资本投资的回报，减少农民子代对父代社会资本的继承，实现了对农民子代的数字化赋能。对于劳动力需求侧，数字基础设施通过促进产业创新，提高市场化水平，增强社会监督，促进公平与法治，为农民子代向上流动提供了“市场运气”，实现了对劳动力需求侧的数字化赋能。因此，数字基础设施既为农民子代向上流动提供了发展机遇，又为其抓住这一机遇准备了客观条件，最终畅通了向上流动通道。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "七、结论与政策含义",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "本文通过构建理论模型和利用DID方法进行实证检验，探讨了数字基础设施对农民子代实现代际收入向上流动的影响，并分别从劳动力供给侧和需求侧检验了这一影响背后的作用机制。本文的研究表明，数字基础设施显著促进了代际收入向上流动。一方面，数字基础设施通过发挥信息化、网络化的作用，促进了农民子代现有人力资本价值的充分发挥，并直接增加了其人力资本，提高了父代对农民子代人力资本投资的回报。数字基础设施还通过发挥信息和通讯技术的作用，促进",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "2023年第5期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "了农民子代减少对父代社会资本的继承，提高了农民子代的社会资本。通过改善农民子代的人力资本和社会资本等劳动力供给侧条件，数字基础设施有助于代际收入流动。另一方面，通过促进产业创新，提高市场化水平，增强社会监督，促进公平与法治，数字基础设施增加了农民子代的“市场运气”，改善了劳动力需求侧条件，为农民子代提供了实现代际收入流动的宏观发展机遇。通过分别促进劳动力供给侧和需求侧在数字化背景下的发展，数字基础设施有助于打破户籍制度约束，帮助农民子代实现代际收入的向上流动，促进共同富裕，推进中国式现代化。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "本文的研究具有如下政策启示：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "首先，由于数字基础设施有利于代际收入向上流动，因此需要持续推进数字基础设施建设，不断提高全社会数字化水平。为此，需要引领数字网络技术创新，不断扩大宽带覆盖率，提高网速，增强网络的稳定性、安全性，促进“网络强国”和“数字中国”建设。尤其需要加大农村地区的数字基础设施建设力度，切实保障“网络到户”，以充分发挥数字基础设施在促进社会流动方面的作用。此外，为实现党的二十大报告所指出的“促进数字经济和实体经济深度融合”，在数字基础设施的规划建设之初，要充分考虑数字基础设施的可转化性，扩大数实融合的可能空间，切实发挥数字基础设施对实体经济的催化剂作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "其次，由于数字基础设施对代际收入向上流动的促进作用依赖于劳动力人力资本和社会资本的提高，因此，需着力发挥数字基础设施对农民素质的赋能作用，推动其劳动生产率的提高。为此，在确保“网络到户”的基础上，政府需增加对农民数字技能的培训，组织专人入村到户传授数字网络操作技能。在此基础上，政府要推进各类公益性线上学习培训平台建设，结合农民的特点与多样化需求，提供多种类、专业性、实用性知识产品（例如如何高效操作机器，如何科学育种等），提高平台质量。此外，还要促进人才评价标准改革，提高社会对于网络学习所获技能的认可。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "最后，由于数字基础设施对代际收入向上流动的促进作用还依赖于产业创新、市场化发展以及良好的监督、公平与法治环境等“市场运气”，因此，一方面，需进一步用数字技术赋能产业创新，提高各产业的“数字”含量，以提高全要素生产率。例如，对于非农行业，需加快5G商用步伐，推动在机器人、计算机视觉、自然语言处理、深度学习、智能驾驶等人工智能领域的基础研究，促进智能制造业和服务业数字化发展，打造具有国际竞争力的数字产业集群，丰富创新数字经济背景下的经济发展业态，从而为农民子代提供良好的非农就业环境，促进其收入增加。对于农业和农村，应当把数字基础设施建设和数字技术应用作为科技强农兴农的重要手段纳入农业强国和农业农村现代化建设之中，强化数字技术在农产品研发、生产、营销、售后等各个环节的应用，发展订单农业，促进智慧生产，促进农产品直播，保障快递到村，网络信息到户，进一步推进淘宝村发展，不断提高农业收入。另一方面，需要充分发挥数字基础设施对供应链和产业链的赋能作用，畅通各环节的信息交流，以创造和完善健康有序的市场化环境，激发市场活力，从而给予农村劳动力更多提高收入的机会。此外，政府也要加强数字化治理，完善电子政务、数字政府、微博等数字化媒介的监督功能，提高政府行政的及时性、高效性与透明性，切实维护社会公平与法治秩序，努力消除户籍制度和歧视等制度性以及非制度性障碍，为畅通农民子代上升渠道，实现共同富裕保驾护航。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "陈钊、陆铭、佐藤宏，2009：《谁进入了高收入行业？-关系、户籍与生产率的作用》，《经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "仇立平、肖日葵，2011：《文化资本与社会经济地位获得》，《中国社会科学》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "方福前、田鸽，2020：《基础设施对中国经济增长的影响及机制研究-基于扩展的Baro增长模型》，《经济理论与经济管理》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "黄群慧、余泳泽、张松林，2019：《互联网发展与制造业生产率提升：内在机制与中国经验》，《中国工业经济》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "方福前等：数字基础设施与代际收入向上流动性",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "李春玲，1997：《社会结构变迁中的城镇社会流动》，《社会学研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "李力行、周广肃，2015：《家庭借贷约束、公共教育支出与社会流动性》，《经济学（季刊）》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "李三希、武玙璠、鲍仁杰，2021：《大数据、个人信息保护和价格歧视-基于垂直差异化双寡头模型的分析》，《经济研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "梁超、王素素，2020：《教育公共品配置调整对人力资本的影响-基于撤点并校的研究》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "宁光杰、林子亮，2014：《信息技术应用、企业组织变革与劳动力技能需求变化》，《经济研究》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "田鸽、张勋，2022：《数字经济，非农就业与社会分工》，《管理世界》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "汪德华、邹杰、毛中根，2019：《“扶教育之贫”的增智和增收效应-对20世纪90年代“国家贫困地区义务教育工程”的评估》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "王永钦、董雯，2020：《机器人的兴起如何影响中国劳动力市场？-来自制造业上市公司的证据》，《经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "吴晓刚，2007：《中国的户籍制度与代际职业流动》，《社会学研究》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "邢春冰，2006：《中国农村非农就业机会的代际流动》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "杨蕙馨、李春梅，2013：《中国信息产业技术进步对劳动力就业及工资差距的影响》，《中国工业经济》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "阳义南、连玉君，2015：《中国社会代际流动性的动态解析-CGSS与CLDS混合横截面数据的经验证据》，《管理世界》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "张景娜、朱俊丰，2020：《互联网使用与农村劳动力转移程度-兼论对家庭分工模式的影响》，财经科学》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "张勋、万广华、张佳佳、何宗樾，2019：《数字经济、普惠金融与包容性增长》，《经济研究》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "Acemoglu, D., and P. Restrepo,2020,\"Robots and Jobs: Evidence from US Labor Markets\",Journal of Political Economy,128 (6),2188-2244.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "Aizer,A., and J. Currie, 2014,\"The Intergenerational Transmission of Iequality:Maternal Disadvantage and Health at Birth\", Science,344(6186),856-861.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "Becker,G.S.,and N. Tomes, 1979,\"An Equilibrium Theory of the Distribution of Income and Intergenerational Mobility\",Journal of Political Economy,87(6),1153-1189.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "Blau,P.M.,and O.D. Duncan,1967,The American Occupational Structure,Wiley Press,New York, US.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "Cunha,F.,and J. Heckman,2007,\"The Technology of Skill Formation\",American Economic Retiew,97(2),31-47.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "Czemich,N.,O.Falck,T. Kretschmer, and L. Woessmann, 2011,\"Broadband Infrastructure and Economic Growth\",Economic Journal,121(552),505-532.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "Diprete, T. A., 2020,“The Impact of Inequality on Intergenerational Mobility\",Annual Retiew of Sociology,46(1),379-398.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "Forman,C.,A. Goldfarb, and S. Greenstein, 2012,\"The Internet and Local Wages:A Puzzle\", American Economie Review,102 (1),556-575.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "Fowlie,M.,S. Holland, and E. Mansur,2012,\"What Do Emissions Markets Deliver and to Whom? Evidence from Southern California's Nox Trading Program\", American Economic Retiewe,102(2),965-993.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "Harris, R. G., 1998,\"The Internet as a GPT: Factor Market Implications\", NBER Working Paper, 13886.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "Hjort,J.,and J. Poulsen,2019,“The Arrival of Fast Internet and Employment in Africa\", American Economic Retiew,109(3), 1032-1079.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "Mocetti,S.,G. Roma, and E. Rubolino, 2022,\"Knocking on Parents' Doors: Regulation and Intergenerational Mobility\",Journal of Human Resources,57(2),525-554.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "Olivetti,C., and M. Paserman, 2015,\"In the Name of the Son(and the Daughter):Intergenerational Mobility in the United States, 1850-1940\",American Economic Reriew,105(8),2695-2724.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "Plug,E.,2004,\"Estimating the Effect of Mother's Schooling on Children's Schooling Using a Sample of Adoptees\",American Economic Retiew,94(1),358-368.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "Qian,N.,2008,\"Missing Women and the Price of Tea in China:The Effect of Sex-specific Eamings on Sex Imbalance\",Quarterly Journal of Economics,123(3),1251-1285.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "Ramsey, F. P., 1928,\"A Mathematical Theory of Saving\",Economic Journal,12(38),543-559.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "Solon,G.,2004,“A Model of Intergenerational Mobility Variation over Time and Place\",Generational Income Mobility in North America and Europe,Cambridge University Press,Cambridge,UK.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "Sorokin,P.A.,1927,Social Mobility,Harper and Brothers Press,New York,US.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "2023年第5期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "Digital Infrastructure and the Intergenerational Income upward Mobility:",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "The Quasi-natural Experiment Based on “Broadband China”",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "FANG Fuqian\",TIAN and ZHANG Xund",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "(a:School of Economics,Renmin University of China;b:School of Economics,",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "Capital University of Economics and Business;c:School of Statistics,Beijing",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "Normal University;d:Institutes of Digital Finance,Peking University)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "Summary:Common prosperity is the essential requirement of socialism. However,the household registration system has hindered the upward mobility of individuals with rural household registration,which harms social equity. Therefore,it is necessary to remove institutional barriers including the household registration system, promote the offspring of rural household registration to realize intergenerational upward mobility so as to promote cmmon prosperity.Digital infrastructure is increasingly promoting economic and social development,then, can the digial infrastructure promote the vertical equity represented by intergenerational mobility,which can better reflect the fairness and openness of the development opportunity? By studying the impacts of digital infrastruture on the intergenerational income upward mobility of the offspring of rural household registration, this paper has laid a foundation for a better understanding of the impacts of the characteristics of the new development stage on intergenerational upward mobility and evaluating the role of digital infrastructure on equity and efficiency more comprehensively,and provides strong support for government to further strengthen digital infrastructure so as to improve social mobility.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "This papermainly studies the impacts of digital infrastructure on the intergenerational income mobility of the offspring of rural household registration from theoretical and empirical perspectives, and explores the mechanisms of the effects. Specifically,this paper first incorporates digital elements into traditional neoclassical growth models and intergenerational income mobility frameworks to research the impacts and the mechanisms of digital infrastructure on the intergenerational income mobility from theoretical perspectives.Then,combing the exogenous shock of“Broadband China\" policy with CFPS data, and using DID model and endogenous analysis methodssuch as instrumental variable method and so on, this paper empirically examines the impacts and explores the mechanisms of the effects from the labor supply side and the labor demand side.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "This paper finds that the digital infrastructure has promoted the intergenerational income upward mobility of the offspring of rural household registration greatly.from the labor supply side,for offspring of rural household registration,the digital infrastructure helps to improve the return of their parents' investments in their human capital, reduce their inheritance of their parents' weak social capital, which can promote the digital empowerment for labor demand side.From the labor demand side, the digital infrastructure can provide \"market luck\" for the offspring's achieving the intergenerational income upward mobility and promote the digital empowerment for labor demand side by promoting industrial innovation, improving marketization,strengthening social supervision, and promoting equity and the rule of law. Based on the research,the government first needs to continuously promote the construction of digital infrastructure, especially in rural areas. Secondly, it needs to focus on the empowerment of digital infrastructure on the farmers and promote the improvement of their labor productivity. Finally,since the promotion of digital infrastructure for the intergenerational income upward mobility also depends on “market luck\", on the one hand, it is necessary to further use digital technology to empower industrial innovation and improve total factor productivity.On the other hand,it is necessary to unblock information at all stages of the supply chain and industrial chain, and createa healthy and orderly market environment. In addition,the government should also use digital technology to strengthen digital governance.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "The innovations of this paper are mainly reflected in the following three aspects.In terms of the research perspectives, this paper examines the impacts of digital infrastructure on the intergenerational income upward mobility of the offspring of rural household registration and mechanisms. Based on the characteristics of the new development stage,this paper supplements the analysis of factors affecting intergenerational mobility and expands the research on the economic effects of digital infrastructure,which are significant theoretically and practically. In terms of the research methods, this paper combines theoretical analysis with empirical test to achieve a connection between classic theories and characteristics of China's new development stage. In terms of the policy-making, this paper provides strong theoretical and empirical support for the government to further strengthen the construction of digital infrastructure and ultimately improve social mobility. Keywords:Digital Infrastructure;Intergenerational Income upward Mobility;Household Registration System;Digital",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "Economy;Common Prosperity",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 126,
+      "text": "JEL Classification:L86, J62,J43",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 127,
+      "text": "（责任编辑：陈小亮）（校对：路 牧）",
+      "heading_level": null
+    }
+  ]
+}

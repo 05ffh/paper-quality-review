@@ -1,0 +1,784 @@
+{
+  "paper_id": "EXAMPLE-0016",
+  "source_sha256": "333e4bc5731cd2186a96d453fb6ab1ba658b7ead4d5e875f00f45fd64f7621fd",
+  "topic_hint": "客户企业数字化、供应商企业ESG表现",
+  "paper_type": "empirical",
+  "method_tags": [
+    "DID",
+    "面板模型",
+    "中介效应",
+    "工具变量"
+  ],
+  "clean_units": 128,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "客户企业数字化、供应商企业ESG表现",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "与供应链可持续发展＊",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "肖红军 沈洪涛 周艳坤",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "内容提要：数字技术的快速兴起和广泛渗透深入推动供应链数字化转型，为构建可持续供应链提供了机遇。本文利用2013-2021年A股上市公司及其供应商数据，从数字化赋能的角度探讨客户企业数字化对供应商企业ESG表现的影响。研究发现，客户企业数字化对供应商企业的ESG表现具有增进效应，即数字化对供应链可持续发展具有赋能效应，且这一效应具有非对称性，在客户企业数字化程度高于供应商企业数字化程度的条件下更显著。机制检验显示，客户企业数字化增进供应商企业ESG表现主要通过结构赋能效应（即提升供应链协同水平）和资源赋能效应（即缓解供应商要素约束）来实现。异质性分析发现，当客户企业所在城市的政府环境关注度高于供应商企业所在城市的政府环境关注度，以及客户企业与供应商企业之间的关系更紧密时，客户企业数字化对供应商企业ESG表现的促进作用更显著。效果检验表明，客户企业数字化促进供应商企业ESG表现有助于增强供应链韧性。本文丰富了可持续供应链的影响因素与实现机制研究，拓宽了企业数字化和供应链韧性研究边界，对推动我国供应链可持续发展、提升供应链韧性与安全水平具有重要启示。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "关键词：数字化 ESG 企业社会责任 可持续发展 供应链韧性",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "党的二十大报告指出，要“着力提升产业链供应链韧性和安全水平”。着眼于平衡经济、社会和环境关系的供应链可持续发展是提升供应链现代化水平、增强供应链韧性与弹性、保障供应链安全稳定的必然要求，构建可持续供应链（sustainable supply chain）成为供应链发展的新趋势和新方向。相较于传统供应链，可持续供应链依托于更具可见性的供应链环境，对供应链合作伙伴之间的信息沟通与共享、互动与协作提出更高要求。在传统技术手段下，构建可持续供应链面临着信息不对称导致的“机会主义”治理难、供需不匹配导致的“长鞭效应”破解难、能力不均衡导致的“履责堵点”打通难、管理成本高导致的“风险传染”防范难等多重挑战。数字技术的突破性发展和广泛渗透为应对这些挑战提供了难得机遇，构建数字化可持续供应链成为实现供应链可持续发展和安全稳定的新方式。目前，构建数字化可持续供应链仍然处于初步探索阶段，清晰回答“数字化是否以及如何赋能供应链可持续发展”对于深入理解和积极打造数字化可持续供应链具有重要现实意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "构建数字化可持续供应链的政策共识与实践探索引发学术界对数字化赋能供应链可持续发展问题的关注，相关研究主要有两类：第一类是数字化对供应链可持续发展经济维度的影响，主要探讨应用数字技术对传统供应链活动与业务流程带来的改变，以及供应链创新产生的新优势（Perano",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "肖红军，中国社会科学院工业经济研究所，邮政编码：100006，电子信箱：xiaohjxiaohj＠126．com；沈洪涛，暨南大学管理学院、暨南大学人与自然生命共同体重点实验室，邮政编码：510632，电子信箱：tshenht＠jnu．edu．cn；周艳坤（通讯作者），北京工商大学商学院，邮政编码：100048，电子信箱：zykruc＠163．com。本研究得到国家社会科学基金重大项目（20＆ZD073）、国家社会科学基金重点项目（21AGL003）、中国社会科学院登峰战略企业管理优势学科建设项目以及北京工商大学数字商科与首都发展创新中心项目（SZSK202313）的资助。作者感谢匿名审稿专家提供的建设性意见。当然，文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "et al．，2023）。这类研究聚焦于数字化对供应链商业活动与经济后果的影响（Loske＆Klumpp，2022），不涉及数字化对供应链非商业活动与非经济绩效的影响，现有的大多数研究属于这一类。第二类是数字化对供应链可持续发展社会和环境维度的影响，探讨各类数字技术应用对狭义可持续供应链带来的改变（Oguntegbe et al．，2021）。这类研究聚焦于数字化对供应链非商业活动与非经济绩效的影响（Munir et al．，2022），包括直接效应和间接效应。目前这类研究虽然不断增多，但总体上处于起步阶段，相关成果仍然较少，留有较多拓展空间。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "目前关于数字化对可持续供应链的影响研究尚存在三方面的缺口：一是缺乏供应链企业间互动的研究。区别于单一企业可持续发展，供应链可持续发展的焦点在于上下游企业的可持续发展表现，因此实现供应链可持续发展高度依赖于上下游企业之间的互动，尤其是客户企业对供应商企业的影响，数字化对构建可持续供应链的作用发挥也不例外。现有研究都是从客户企业角度探讨其数字化对可持续供应链绩效的影响，几乎都隐含地将“可持续供应链”作为一个整体置于客户企业可持续发展范畴内。相应地，其衡量均是基于客户企业视角，属于所谓的可持续供应链企业绩效（sustainable supply chain firm performance）（Oubrahim et al．，2023），供应链上下游企业的可持续发展表现在其中没有得到充分反映甚至被忽略，对客户企业数字化与供应链上下游企业可持续发展之间的互动缺乏关注。二是数字化赋能供应链可持续发展的条件与机制“黑箱”尚未真正打开。尽管一些研究已经关注到数字化对可持续供应链绩效的间接影响，开始探讨数字化通过提高效率、优化运营、改进流程、增强敏捷性（Thöni＆Tjoa，2017）和知识开发（Fantazy＆Tipu，2024）等方式促进供应链可持续发展，但他们都是基于客户企业视角而缺乏对供应链企业间互动的考虑，同时都隐含地假设客户企业与供应链上下游同步数字化，这实际上变成供应链上各企业数字化对自身可持续发展而非对真正意义的可持续供应链的赋能作用，客户企业数字化赋能供应链上下游企业可持续发展的机制和条件未得到有效揭示。三是缺乏大样本实证研究。目前关于数字化对供应链可持续发展的影响研究主要采取案例研究的质性方法（Oguntegbe et al．，2021）和问卷调查的实证方法（Ou-brahim et al．，2023），缺乏大样本实证检验，后者可以提供更准确和可靠的结果。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "本文深入供应链内部，利用2013-2021年A股上市公司及其供应商数据，从客户企业与供应商企业互动的视角研究数字化对供应链可持续发展的赋能作用，检验客户企业数字化能否促进供应商企业ESG表现，探寻客户企业数字化影响供应商企业ESG表现的作用机制和条件。本文可能的边际贡献包括：第一，揭示了数字化赋能供应链可持续发展的条件，丰富了数字化对可持续供应链绩效的直接效应研究。大样本实证检验发现，只有当客户企业数字化水平高于供应商企业数字化水平时，客户企业数字化对供应商企业ESG表现才呈现显著增进效应。这表明数字化对可持续供应链绩效的直接效应存在，但这一效应的出现是以特定情景条件为基础，由此对相关研究的肯定性观点（Oubrahim et al．，2023）和否定性结论（Fantazy＆Tipu，2024）都形成支持。第二，打开了数字化赋能供应链可持续发展的机制“黑箱”，深化了数字化对可持续供应链绩效的间接效应研究。本文克服已有关于数字化对可持续供应链绩效的间接效应研究的局限性（Karmaker et al．，2023），深入供应链内部，从供应链企业间互动的视角，研究发现客户企业数字化通过供应链企业间的结构赋能和资源赋能，提升供应商企业ESG表现，在微观层面真正打开数字化对供应链可持续发展的赋能机制“黑箱”。第三，发现了数字化赋能供应链可持续发展的更多积极后果，拓展了数字化提升供应链韧性的相关研究。目前关于数字化促进可持续供应链绩效的后果研究主要聚焦于客户企业视角，而关于数字化提升供应链韧性的机制研究主要关注于经济性活动（Belhadi et al．，2024），缺乏从社会视角的供应链可持续发展考察。本文从供需互动角度研究发现，客户企业数字化提升供应商企业ESG表现可以增强供应链韧性，不仅丰富了数字化赋能供应链可持续发展的后果研究，而且拓展了数字化提升供应链韧性的机制研究视角与维度。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "二、文献综述和研究假设",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "（一）文献综述",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "1．企业数字化",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "企业数字化是由数字技术创新使用及伴随关键资源和能力的战略杠杆形成的根本性变革过程，目的是从根本上提升企业并重新定义其对利益相关者的价值主张。企业数字化强调对企业商业模式、运营流程和客户体验的重塑，涵盖个体、组织和社会三个层次的变革，具有广泛显著的影响效应。目前已有大量研究关注到企业数字化的影响效应，主要聚焦于组织层面和跨组织层面。在组织层面，大量文献研究了企业数字化对企业自身的影响，包括两大类：一类是企业数字化对其经营表现的影响，从公司治理、运营效率、企业绩效、创新效应等方面肯定了企业数字化的积极作用（池毛毛等，2020；Gao et al．，2023）。另一类主要探讨企业数字化对自身可持续发展的影响，包括企业社会责任或ESG表现、碳减排和可持续发展绩效等（Haftor＆Climent，2021；肖红军等，2021）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "在跨组织层面，企业数字化不仅促进了其内部变革，也打破了企业外部边界，使企业之间建立起互联互通的商业网络，为实现供应链上企业跨界营运创造机遇。相关研究已开始关注企业数字化对供应链上下游的影响，主要包括三类：第一类是企业数字化对上游企业的影响，认为客户企业数字化可以驱动供应商企业提升数字化水平，显著提高供应商企业的创新水平（李云鹤等，2022；杨金玉等，2022）。第二类是企业数字化对下游企业的影响，认为供应商企业数字化能够为客户群体创造交付价值（Matarazzo et al．，2021），增加对客户的商业信用供给。第三类是企业数字化对供应链整体的影响，认为企业数字化可以优化供应链地理分布，改善供应链金融网络信任关系，提升供应链效率和绩效（Tan et al．，2023）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "2．企业ESG表现",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "ESG是近年来金融领域和企业领域的研究热点，大量文献围绕ESG投资和企业ESG开展研究。ESG投资是投资者在投资决策与活动中奉行ESG理念和考虑ESG因素（蔡贵龙和张亚楠，2023；唐棣和金星晔，2023），在ESG价值链中扮演重要驱动力的角色。企业ESG是企业可持续发展行动的构成领域，用于定义和描述企业希望达成的非财务结果（Baid＆ Jayaraman，2022），在ESG价值链中处于核心环节，本文研究的是企业ESG。目前关于企业ESG的研究涉及企业ESG信息披露、ESG衡量与评级、ESG鉴证、ESG主要议题和ESG管理等多个方面，其中企业ESG表现的前置影响因素和影响效应是企业ESG研究的热点。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "从前置影响因素看，既有研究关注国家层面因素、国内因素和企业层面因素对企业ESG表现的影响（Rau＆Yu，2024）。在国家层面，不同国家在经济发展水平、文化、制度质量和法律渊源等方面的差异将影响企业ESG实践和绩效（Cai et al．，2016；Pinheiro et al．，2024）。国内因素方面，政治关联和社会资本被认为是影响企业ESG行为和绩效的重要因素（Jha＆Cox，2015）。在企业层面，治理因素和运营因素对企业ESG表现具有重要影响，前者主要是高管团队特征和持股特征（雷雷等，2023），后者则包括组织弹性、企业数字化、并购行为等（肖红军等，2021；Liang＆Li，2023）。从影响效应看，大量研究关注企业ESG表现对企业绩效的影响，包括财务绩效、企业价值、创新绩效、就业绩效等（方先明和胡丁，2023；毛其淋和王玥清，2023；史永东和王淏淼，2023）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "3．可持续供应链",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "可持续供应链是供应链管理的重要内容，是将可持续发展理念贯穿于整个供应链过程，从战略高度将传统供应链管理目标由单一的经济维度扩展到经济效益、社会责任和环境保护三重底线，或者强调供应链管理的社会与环境维度。前者是广义的可持续供应链，后者是狭义的可持续供应链，本文聚焦于可持续供应链的狭义概念。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "从客户企业与供应商企业关系视角来看，可持续供应链的既有研究主要包括两类：第一类是研究客户企业在选择新供应商时，对供应商企业可持续发展表现的选择偏好。已有研究发现，客户企业在选择供应商时会考虑其环境或绿色表现、环境标准等，更偏好具有社会责任的供应商（Taoet al．，2023）。第二类是研究客户企业对供应商可持续发展的影响。早期文献主要采用问卷调查的方法，发现客户企业对供应商企业的可持续发展产生了正面影响。比如，Zhu＆Sarkis（2007）通过调查研究发现，客户企业会鼓励供应商企业实施绿色供应链管理，改善环境绩效。近期的更多研究采用实证方法，从供应链扩散或溢出、供应链协同的角度也发现了这一关系。比如，Tang et al.（2023）发现客户企业的ESG绩效会对供应商企业的ESG表现产生溢出效应。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "从数字化与可持续供应链之间关系来看，现有研究基本上都集中于数字化对可持续供应链的影响，主要观点可以概括为两类：第一类是研究发现数字化是可持续供应链实践的驱动因素。数字技术应用能够为可持续供应链实践提供决策信息支持，是实现可持续供应链整合的关键驱动因素，对可持续供应链实施具有推动作用（Khan et al．，2022）。第二类研究发现，数字化可以直接或间接地提高可持续供应链绩效。从直接影响效应看，在供应链管理中采用数字技术会对环境和社会的可持续发展绩效产生积极影响。数字化转型、工业4.0技术应用被认为可以显著提升可持续供应链绩效（Karmaker et al．，2023；Oubrahim et al．，2023）。然而，也有一些学者研究发现数字化对可持续供应链绩效没有直接影响效应（Fantazy＆Tipu，2024）。从间接影响效应来看，数字化对可持续供应链绩效的积极影响可以通过提高效率、优化运营、改进流程、增强敏捷性、增强可追溯性和透明度、提升担责性、知识开发等予以实现（Thöni＆ Tjoa，2017；Munir et al．，2022；Fantazy＆Tipu，2024）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "综上，尽管已有研究从客户企业视角和供应链整体层面对数字化与可持续供应链的关系做了探讨，为数字化赋能供应链可持续发展提供了一定学理支持，但缺乏深入供应链内部、考虑供应链企业间互动角度研究数字化对供应链可持续发展的赋能效应与机制，没能在微观层面真正打开数字化赋能供应链可持续发展的条件与机制“黑箱”。由于客户企业与供应商企业关系是推进供应链可持续发展实践的关键特征，成功的可持续供应链秘诀在于有效的供应商关系和适宜的合作，因此从客户一供应商互动视角研究数字化赋能供应链可持续发展尤为必要。本文基于赋能理论，深入考察客户企业数字化对供应商企业ESG表现的影响，以期在微观层面打开数字化赋能供应链可持续发展的条件与机制“黑箱”，为构建可持续供应链提供新的支持。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "（二）研究假设",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "20世纪80年代以来，赋能理论日益成为心理学、社会学和组织管理学的重要理论。在数字经济时代，赋能被赋予新涵义，数字化赋能（digital empowerment）概念应运而生。数字化赋能指的是应用数字技术变革组织结构、业务流程和管理系统，以及提高员工的技能、知识与信心（Leong et al.，2015）。数字化赋能存在组织内、组织间和组织外三种情境，供应链企业间的数字化赋能属于典型的组织间赋能。数字化赋能包括结构赋能、心理赋能和资源赋能三种类型（Leong et al．，2015）。结构赋能指的是改善外部客观条件而赋予组织采取行动的权力，使组织获得信息、资源和机会。心理赋能指的是通过提升社会心理、内在动机或者员工的主观解释（如自我意识、自信），使员工感到命运掌握在自己的手里。资源赋能指的是提高无能力者在获取、控制和管理资源方面的能力。由于组织间赋能通常不涉及心理赋能，因此供应链企业间赋能主要包括结构赋能和资源赋能。客户企业数字化可以推动供应链企业间形成数字化赋能，依托数字技术实现更有效的结构赋能和资源赋能，促进供应链协同和缓解被赋能企业的要素约束。鉴于此，本文认为客户企业数字化可以通过结构赋能效应和资源赋能效应两条路径影响供应商企业的ESG表现。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "1．结构赋能效应（即提升供应链协同水平）",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "供应链企业间的结构赋能主要是优化供应链的结构、流程和企业之间的联结关系，促进供应链",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "肖红军等：客户企业数字化、供应商企业ESG表现与供应链可持续发展",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "协同，即两个或两个以上的供应链功能主体通过信息共享、资源整合、业务协作等方式来响应客户需求。客户企业数字化可以增进供应链企业间的结构赋能，形成对供应链企业间的数字化结构赋能，即利用数字技术优化供应链结构、政策、渠道和改变条件状态（Khin＆Ho，2020），消除阻碍企业获得信息、机会、资源的结构性壁垒和障碍，形成强联结的关系嵌入和高度的结构嵌入，增进客户企业与供应商企业的信任合作、知识共享和共同行动，推动供应链多元主体形成稳固的利益共同体。进一步看，供应链可持续发展绩效高度依赖于供应链企业间的合作，构建可持续供应链需要客户企业与供应商企业建立良好的协同关系。客户企业数字化对供应链企业间的数字化结构赋能，可以促进供应链风险管理协同、运营协同和透明协同，进而增进供应商企业ESG表现。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "（1）风险管理协同，即客户企业数字化可以增进供应链风险联动管理和协作防控，最大限度降低供应链企业与供应链活动可能产生的社会与环境风险，提升供应商企业的ESG表现。供应链网络的风险传染特点决定了客户企业与供应商企业具有“一荣俱荣，一损俱损”的命运共同体关系，防范供应链ESG风险、增强供应链合法性是客户企业开展供应链管理的重要内容。在传统的供应链关系网络中，客户企业与供应商企业因为信息不对称而各自为政地管理自身的ESG风险，客户企业对供应商企业ESG风险的监督存在信息障碍和能力困难，对于系统性的供应链ESG风险缺乏风险联动管理机制。客户企业数字化通常会将供应链风险管理纳入供应链数字化中，既通过将数字技术深度嵌入供应链风险管理的底层架构，把供应商的ESG风险统筹纳入，实现对供应链ESG风险的实时识别、监控、跟踪和管理，又推动供应链上下游企业对接ESG风险的数字化管理，基于海量非结构化的数据共享形成ESG风险的联动管理机制。如此即可破解供应链上下游企业对ESG风险管理各自为政的问题，促进客户企业与供应商企业之间的ESG风险管理协同。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "（2）运营协同，即客户企业数字化可以增进供应链业务协同、资源协同与管理协同，最大限度提高供应链企业与供应链活动创造综合价值的效率，提升供应商企业的ESG表现。首先，客户企业数字化通常涉及供应链的流程重组与数字化再造。客户企业借助数字技术推动产供销一体化，实现客户企业与供应商企业之间的供需对接更加精准即时，供应链上下游的业务协同更加紧密高效，由此与业务协同相伴随的ESG行为协同也得到强化。其次，客户企业数字化必然涉及内外部的资源管理优化，推动供应链资源整合与优化配置，实现客户企业与供应商企业的资源共享和能力互补。通过客户企业数字化所形成的供应链知识共享、技术支持可以有效增强供应商企业践行ESG的能力（Pimenta et al.，2021），提升供应链的社会价值共创水平。最后，客户企业数字化可以实现供应链实时信息共享，极大提高企业的决策效率，推动供应链上下游的管理衔接与匹配。这样不仅避免客户一供应商之间的管理内耗，实现更优的运营协同，而且能够提升供应商企业的治理能力和管理效率，包括ESG管理能力。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "（3）透明协同，即客户企业数字化可以增进供应链信息共享和可见性，增强利益相关者和社会公众对供应链企业与供应链活动的责任治理，提升供应商企业的ESG表现。供应链透明度是有效满足环境和社会政策的重要方式，是可持续供应链管理的重要内容。在传统的供应链关系网络中，供应链透明度是一个挑战，既有供应链成员之间因为信息不对称和利益冲突而存在的信息披露不足问题，也有供应链链条过长难以跟踪、测量和监控不同层级供应商的环境与社会信息问题。客户企业数字化能够很大程度上破解这些挑战，主要方式是增强供应链可追溯性和增进供应链企业信息披露协同。从前者看，数字技术应用使得各类信息可记录、可追溯、可共享，能够更有效地记录产品或服务的相关信息并与供应链各环节关联起来，更方便在供应链中追踪产品或服务的历史、来源和移动，显著增强供应链可追溯性。从后者看，客户企业数字化能够提升自身的信息披露水平（肖红军等，2021），尤其是供应链信息披露，这对供应商企业的信息披露提出更高要求。供应商企业为了获得在供应链上及社会上的合法性，往往通过制度同构机制形成与客户企业的信息披露协同，提高供应商企业的社会与环境信息披露水平。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "2．资源赋能效应（即缓解供应商要素约束）",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "供应链企业间的资源赋能主要是增强被赋能企业获取、整合和释放资源的能力，包括资金、技术、专业知识和技能等。客户企业数字化有利于促进供应链企业间的资源赋能，形成对供应商企业的数字化资源赋能，即将数字技术作为连接资源的手段，依托数字技术推动资源获取方式创新与优化，增强供应商企业获取、控制和管理资源的能力，有效提升其应对不确定性的能力（池毛毛等，2020）。按照资源编排理论，面临资源约束的企业可以通过与供应链合作伙伴的网络关系获得竞争优势，供应商企业的资源约束能够通过供应链企业间的资源编排予以缓解甚至破解。客户企业数字化有利于供应链企业间的资源编排，包括资源共享、转化和协调。进一步来看，资源是企业实施ESG的基础和保障，较高的资源冗余尤其是非沉淀性冗余资源有利于增进企业实施ESG的意愿和行动（Chiu＆ Sharfman，2011）。客户企业数字化对供应链企业间所形成的数字化资源赋能，可以缓解供应商企业的融资约束，促进其绿色创新，破解供应商企业尤其是中小企业面临的资金约束和绿色技术瓶颈，进而提升供应商企业的ESG表现。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "（1）缓解融资约束，即客户企业数字化可以降低金融机构与供应链企业的信息不对称和融资成本，增加供应商企业的资金冗余和可投入于环境与社会行动的资金资源，提升供应商企业的ESG表现。客户企业数字化可以提高供应链的信息流动，增强供应链信息共享和透明度，增进金融机构与供应商企业的信息交互，促进他们之间贯通信息链条，便于金融机构掌握供应商企业多样化信息，降低金融机构与供应商企业之间的信息不对称，解决相互的弱信任问题，提高金融机构的贷款意愿。尤其是，客户企业将区块链技术应用于供应链管理，可以确保供应商企业的信息不可篡改，提高信息可信程度，解决融资中的逆向选择问题，降低融资成本，缓解融资约束程度。此外，客户企业数字化有利于搭建数字供应链金融平台，提高客户企业实施供应链金融的能力和水平。供应链金融将整个供应链作为一个整体进行授信，实现客户企业与供应商企业的“信用捆绑”（凌润泽等，2023），可以破解供应商企业特别是中小企业经营不确定性高、信息不对称和抵押担保能力弱等问题，缓解供应商企业的融资约束，增强对其开展可持续发展活动的支撑。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "（2）促进绿色创新。即客户企业数字化可以增进供应商企业绿色创新的意愿、能力和效率，减少供应商企业的环境负外部性和增加供应商企业的社会正外部性，提升供应商企业的ESG表现。数字化是绿色活动的重要驱动力，客户企业数字化有利于促进其进行绿色供应链整合（Benzidia et al.，2021），包括绿色信息共享、绿色流程协调和绿色战略联盟。首先，数字技术应用显著提升了供应链的绿色透明度和可见性，促进客户企业与供应商企业在环保信息和绿色技术信息上的即时共享，由此提升供应商企业开展绿色创新的意愿、能力和效率。其次，客户企业数字化可以促进供应链的全流程绿色管理，促使供应商企业形成更加清晰的绿色创新导向和战略，增强其绿色创新的流程化能力与资源配置效率。最后，数字技术应用有利于降低供应链企业间的环境信息不对称，促进客户企业与供应商企业开展绿色协作（Benzidia et al．，2021），包括建立绿色战略联盟，通过资源共享、成本分担、利益共享等提升供应商企业的绿色创新动力、能力和效率。供应商企业绿色创新不仅可以促进其绿色生产技术升级和生产流程更加清洁，形成更优的环境绩效，而且可以通过提升绿色生产环境、绿色产品提供和绿色技术扩散而对员工、客户和其他利益相关者创造积极价值、增加社会福利。综上，本文提出如下研究假设：",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "H1：客户企业数字化可以提升供应商企业的ESG表现。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "三、研究设计",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "（一）样本和数据",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "参考杨金玉等（2022），从国泰安经济金融研究数据库（CSMAR）获取2013-2021年中国A股上",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "2024年第3期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "续表3",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "变量 | (1) | (2)\n变量 | 客户数字化水平高于供应商数字化水平 | 客户数字化水平低于供应商数字化水平\nControls | Yes | Yes\n_cons | -1.127\n(-0.462) | -3.921\n(-5.544)\n年度固定效应 | Yes | Yes\n行业固定效应 | Yes | Yes\nN | 939 | 1548\nadj.R2 | 0.262 | 0.313",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "（三）稳健性检验",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "1．内生性问题的处理",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "（1）工具变量法。本文可能存在互为因果问题，即ESG表现较好的供应商企业可能会更吸引数字化程度高的客户企业。为解决这一问题，采用两阶段最小二乘（2SLS）工具变量法进行处理。选取数字产业人才投入作为工具变量，对于该工具变量的构造如下：首先，用客户企业所在地级市滞后一期的信息传输、计算机服务和软件业从业人员数量除以其所在省份滞后一期的信息传输、计算机服务和软件业从业人员总数，获得比值。然后，将该比值根据年份和客户企业所在省份平均分为五等份。最后，为工具变量进行定义，若该比值属于前两等份，则工具变量（IV）取值为1，否则为0。此外，考虑到样本中存在供应商企业和客户企业处于同一地级市的情况，客户企业的ESG表现可能受到该工具变量的影响，即不符合工具变量的排他性要求，本文将供应商企业和客户企业处于同一地级市的样本进行剔除。经过上述一系列处理后，本文认为该工具变量满足科学性要求。首先，客户企业数字化离不开所在地级市数字产业的人才支持，因此该工具变量满足相关性要求。其次，客户企业所在地级市数字产业人才投入的多少对非同一地级市的供应商企业ESG表现产生影响的可能性不大，即满足排他性要求。此外，我们还对工具变量进行了有效性检验，Cragg-Donald Wald F值为11.828，大于10，拒绝了弱工具变量假设，说明工具变量符合要求。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "利用2SLS工具变量法重新检验，结果见表4第（1）列和第（2）列。第一阶段的实证结果显示，工具变量IV的系数在5％的水平上显著为正，表明选取的工具变量符合相关性要求；第二阶段的实证结果显示，在控制内生性因素后，Digital＿customer的系数仍在5％的水平上显著为正，说明控制了内生性因素后客户企业数字化对供应商企业ESG表现的促进作用依然存在。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "（2）PSM方法。为克服数字化程度高和数字化程度低的供应链样本之间控制变量存在系统性差异带来的内生性问题，参考李云鹤等（2022），采用PSM方法进行检验。首先，将客户企业数字化按照年度和行业中位数进行分组，将样本分为高低两组；然后，选取基准回归的控制变量作为协变量，采用1：1可放回近邻卡尺匹配法（卡尺为0.01）进行匹配。匹配后，两组协变量均值不存在显著差异，满足平衡性假设。①最后，用匹配后的样本重新进行回归。结果如表4第（3）列所示，Digital＿customer的系数在5％的水平上显著为正，说明在对样本进行PSM后，客户企业数字化对供应商企业ESG表现依然有显著的促进作用。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "（3）DID方法。采用国有企业数字化转型这一政策冲击进一步克服内生性问题。2020年，国务院国资委办公厅下发《关于加快推进国有企业数字化转型工作的通知》，要求国有企业加快推进数字化转型。据此，构建DID模型考察客户企业数字化对供应商企业ESG表现的影响。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "① 因篇幅所限，PSM平衡性结果详见本刊网站登载的附录2。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "肖红军等：客户企业数字化、供应商企业ESG表现与供应链可持续发展",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "续表10",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 1,
+      "text": "变量 | (1) | (2) | (3)\n变量 | supply chain stability1 | supply chain stability2 | supply chain stability3\nN | 2186 | 1238 | 2504\nadj.R2 | 0.065 | 0.087 | 0.386",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "八、结论与启示",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "提升供应链现代化水平、保障供应链安全稳定是经济稳定持续增长的重要条件、推动高质量发展的重要支撑和构建新发展格局的重要基础，是加快中国式现代化建设的重要保障。提高供应链的可持续发展水平是增强供应链韧性、保障供应链安全稳定的重要途径。人工智能、大数据、云计算等数字技术的兴起为构建可持续供应链提供了前所未有的机遇，客户企业数字化能否以及如何提高供应链可持续发展水平是重要的研究问题。本文以2013-2021年A股上市公司及其供应商企业为研究对象，探讨客户企业数字化对供应商企业ESG表现的影响。研究发现，客户企业数字化对供应商企业的ESG表现具有赋能效应，且这一效应具有非对称性，在客户企业数字化程度高于供应商企业数字化程度的条件下更显著。机制检验发现，客户企业数字化增进供应商企业ESG表现主要通过结构赋能效应和资源赋能效应来实现，前者提升供应链协同水平，包括促进客户一供应商的风险管理协同、运营协同和透明协同，后者缓解供应商要素约束，包括缓解融资约束和促进绿色创新。异质性检验发现，当客户企业所在城市的政府对环境关注度高于供应商企业所在城市的政府对环境关注度时，以及当客户企业与供应商企业之间的关系更紧密时，客户企业数字化对供应商企业ESG表现的促进作用更显著。效果检验发现，客户企业数字化促进供应商企业ESG表现可以提高供应链韧性。为了保证研究结论稳健，本文使用了多种方法控制内生性问题，包括工具变量法、倾向得分匹配法、双重差分模型、Heckman两阶段模型和变动模型等。此外，还通过采用固定效应、更换解释变量的衡量和变换样本等进行了稳健性检验。本文的研究结论对于供应商企业、客户企业和政策制定者具有重要的启示意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "对于供应商企业，应该充分利用客户一供应商关系来提高自身的可持续发展水平。本文的研究表明，客户企业数字化有利于提高供应商企业的ESG表现，且在客户一供应商关系更紧密时这种效应更突出。因此，供应商企业应注重与客户企业紧密互动，与客户企业建立良好合作关系，不仅通过业务合作学习客户企业优秀的运营管理经验，而且通过强联结关系获得客户企业数字化释放的“红利”和赋能效应，提高ESG绩效。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "对于客户企业，要积极发挥核心企业的能动作用。本文研究发现，客户企业数字化通过结构赋能效应和资源赋能效应增进供应商企业的ESG表现，这一行为有利于供应链的可持续发展，也会提高供应链韧性。因此，客户企业的管理者应顺应数字经济的发展趋势，发挥核心企业的示范效应和赋能作用，鼓励和支持全行业企业开展数字化转型，为构建数字化可持续供应链做出积极贡献。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "对于政策制定者，应为构建数字化可持续供应链提供方向引导和政策支持。本文的研究表明，客户企业数字化提升供应商企业ESG表现后能够提高供应链韧性。因此，一方面，在制定保障供应链安全稳定的战略和政策时，应当重视构建数字化可持续供应链在其中的积极作用；另一方面，在制定推动企业ESG发展政策和企业数字化转型政策时，应当重视供应链核心企业的数字化，强调供应链企业间的数字化互动和可持续发展互动，发挥核心企业的赋能作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "本文研究还存在一定不足：一是囿于数据可得性和样本量，主检验只考虑了客户企业数字化与其直接上游企业ESG表现之间的关系，没有延伸到多层供应商企业，无法观测到客户企业数字化对",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "2024年第3期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "多层供应商企业ESG表现的影响；二是不同国家和地区在经济、政治、文化等方面存在较大差异，不同背景下客户企业数字化对供应链可持续发展的影响是重要且有趣的问题，但由于本文的研究是基于中国制度背景，使用中国供应链数据，无法观察到不同制度背景下研究结论是否存在差异；三是供应链韧性的指标目前尚缺乏公认的度量方法，尽管本文选用的变量参考了相关研究，但其科学性有待进一步论证和检验。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "蔡贵龙、张亚楠，2023：《基金ESG投资承诺效应》，《经济研究》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "陈世来、李青原，2021：《IPO、商业信用供给与企业绩效》，《南开管理评论》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "程华、樊沁怡、龚强，2023：《地方政府环境关注度、媒体监督和国有企业减排绩效》，《经济科学》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "池毛毛、叶丁菱、王俊晶、翟姗姗，2020：我国中小制造企业如何提升新产品开发绩效》，《南开管理评论》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "方先明、胡丁，2023：《企业ESG表现与创新》，《经济研究》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "葛鹏飞、韩永楠、武宵旭，2020：《中国创新与经济发展的耦合协调性测度与评价》，《数量经济技术经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "柯劭婧、马欧阳、许年行，2023：《竞争对手环保处罚的溢出效应研究》，《管理科学学报》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "雷雷、张大永、姬强，2023：《共同机构持股与企业ESG表现》．《经济研究》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "李云鹤、蓝齐芳、吴文锋，2022：《客户公司数字化转型的供应链扩散机制研究》．《中国工业经济》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "李志军、王善平，2011：《货币政策、信息披露质量与公司债务融资》，《会计研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "凌润泽、李彬、潘爱玲、王慧，2023：《供应链金融与企业债务期限选择》，《经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "毛其淋、王玥清，2023：《ESG的就业效应研究：来自中国上市公司的证据》，《经济研究》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "史永东、王淏淼，2023：《企业社会责任与公司价值》，《经济研究》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "唐棣、金星晔，2023：《碳中和背景下ESG投资者行为及相关研究前沿：综述与扩展》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "陶锋、王欣然、徐扬、朱盼，2023：《数字化转型、产业链供应链韧性与企业生产率》，《中国工业经济》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "肖红军、阳镇、刘美玉，2021：《企业数字化的社会责任促进效应：内外双重路径的检验》，《经济管理》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "谢红军、吕雪，2022：《负责任的国际投资：ESG与中国OFDI》，《经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "杨金玉、彭秋萍、葛震霆，2022：数字化转型的客户传染效应--供应商创新视角》，《中国工业经济第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "Baid,V.,and V.Jayaraman,2022,“Amplifying and Promoting the 'S' in ESG Investing:The Case for Social Responsibility in Sup-ply Chain Financing\",Managerial Finance,48(8),1279-1297.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "Belhadi,A.,V.Mani,S.S.Kamble,S.A.R.Khan,and S. Verma, 2024,\"Artificial Intelligence-Driven Innoation for Enhancing Supply Chain Resilience and Performance under the Effect of Supply Chain Dynamism:An Empirical Investigation\",Annals of Operations Research,333(2-3),627-652.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "Benzidia,S.,N.Makaoui,and O. Bentaha, 2021,\"The Impact of Big Data Analytics and Artificial Intelligence on Green Supply Chain Process Integration and Hospital Environmental Performance\",Technological Forecasting and Social Change, 165, 120557.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "Cai,Y.,C.H.Pan,and M. Statman,2016,\"Why do Countries Matter So Much in Corporate Social Performance?\", Journal of Corpo-rate Finance,41,591-609.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "Chiu,S.C.,and M.Sharfman,2011,\"Legitimacy,Visibility,and the Antecedents of Corporate Social Performance:An Investiga-tion of the Instrumental Perspective\",Journal ofManagement,37(6),1558-1585.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "Fantazy,K.,and S.A.A. Tipu, 2024, \"Linking Big Data Analytics Capability and Sustainable Supply Chain Performance:Mediat-ing Role of Knowledge Development\",Management Research Retiew,47(4),512-536.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "Gao,J.,W.F.Zhang,T.Guan,Q.H.Feng,and A. Mardani, 2023,\"The Effect of Manufacturing Agent Heterogeneity on Enter-prise Innovation Performance and Competitive Advantage in the Era of Digital Transformation\",Journal of Business Research,155(part A),113387.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "Hadlock,C.J.,and J.R. Pierce, 2010.\"New Evidence on Measuring Financial Constraints:Moving beyond the KZ Index\",Review of Financial Studies,23(5),1909-1940.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "Haftor,D.M.,and R.C. Climent, 2021,\"CO, Reduction Through Digital Transformation in Long-haul Transportation: Institutional Entrepreneurship to Unlock Product-service System Innovation\",Industrial Marketing Management,94,115-127.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "Houston, J.F.,and H. Shan, 2022,\"Corporate ESG Profiles and Banking Relationships\",Review of Financial Studies,35(7), 3373-3417.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "Jha,A.,and J.Cox,2015,\"Corporate Social Responsibility and Social Capital\",Journal of Banking &Finance,60,252-270.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "肖红军等：客户企业数字化、供应商企业ESG表现与供应链可持续发展",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "Karmaker, C. L., R. Al Aziz, T. Ahmed, S. M. Misbauddin, and Md. A. Moktadir, 2023,\"Impact of Industry 4.0 Technologies on Sustainable Supply Chain performance:The Mediating Role of Green Supply Chain Management Practices and Circular conomy\",Jour-nal of Cleaner Production,419,138249.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "Khan,S.A.,M.S.Mubarik,S. Kusi-Sarpong,H. Gupta, S. I. Zaman,and M. Mubarik, 2022,\"Blockchain Technologies as En-ablers of Supply Chain Mapping for Sustainable Supply Chains\",Business Strategy and the Environment, 31(8),3742-3756.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "Khin,S.,and T.C.Ho,2020,\"Digital Technology,Digial Capability and Organizational Performance: A Mediating Role of Digital Innovation\",International Journal of Innoration Science,11(2),177-195.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "Kim,Y.,L.N.Su,Z.Wang,and H.Wu,2021,\"The Effect of Trade Secrets Law on Stock Price Synchronicity:Evidence from the Inevitable Disclosure Doctrine\",Accounting Review,96(1),325-348.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "Lee.S.,and M. Oh,2019,“A Comparison of TF and TF-IDF Analysis for Trends of Blockchain in Health and Welfare\",Journal of the Korean Data and Information Science Society,30(5),123-145.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "Leong,C.,M.Ling,S.L.Pan,P.Rctham,and L. Kaewkitipong,2015,\"ICT-Enabled Community Empowerment in Crisis Re-sponse:Social Media in Thailand Flooding 2011\",Journal of the Association for Information Systems,16(3),174-212.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "Liang,L., and Y.Li, 2023,\"The Double-Edged Sword Effect of Organizational Resilience on ESG Performance\", Corporate Social Responsibility and Entironmental Management,30(6),2852-2872.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "Loske,D.,and M.Klumpp,2022,\"Verifying the Effects of Digitalisation in Retail Logistics:An Efficiency-Centred Approach\",In-ternational Journal of Logistics Research and Applications,25(2),203-227.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "Matarazzo,M.,L.Penco,G.Profumo,and R. Quaglia, 2021,\"Digital Transformation and Customer Value Creation in Made in Italy SMEs:A Dynamic Capabilities Perspective\",Journal of Business Research,123,642-656.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "Munir,M.A.,M.S.Habib, A. Hussain, M.A.Shahbaz, A.Qamar,T.Masood,M.Sultan,M.A.Mujtaba,S.Imran,M.Hasan,M. Akhtar, H.M.U.Ayub, and C. A. Salman,2022,\"Blockchain Adoption for Sustainable Supply Chain Management: Economic, Environ-mental,and Social Perspectives\",Frontiers in Energy Research,10,899632.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "Oguntegbe, K. F., N. Di Paola, and R. Vona, 2021,\"Blockchain Technology, Social Capital and Sustainable Supply Chain Manage-ment\",Sinergie halian Journal of Management,39(3),163-188.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "Oubrahim, L., N. Sefiani,and A. Happonen, 2023,\"The Influence of Digital Transformation and Supply Chain Integration on Over-all Sustainable Supply Chain Performance:An Empirical Analysis from Manufacturing Companies in Morocco\",Energies,16(2),1004.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "Perano,M.,A.Cammarano, V. Varriale, C. Del Regno, F. Michelino, and M. Caputo,2023,\"Embracing Supply Chain Digitaliza-tion and Unphysicalization to Enhance Supply Chain Performance:A Conceptual Framework\",International Journal of Physical Distribu-tion& Logistics Management,53(5/6),628-659.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "Pimenta,H.C.D.,P.Ball,and K. Salonitis, 2021, \"Supply Chain Environmental and Social SustainabilityPractice Diffusion:Bib-liometrics,Content Analysis and Conceptual Framework\",Corporate Social Responsibility and Entironmental Management,28(6), 1870-1890.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "Pinheiro,A.B., J.I.A.S. dos Santos, A.P.M.S.Cherobim, and A.P. Segatto, 2024,\"What Drives Environmental, Social and Gover-nance(ESG)Performance? The Role of Istitutional Quality\",Management of Entironmental Quality,35(2),427-444.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "Rau, P.R.,and T. Yu,2024,\"A Survey on ESG: Investors, Institutions and Firms\",China Finance Review International,14(1), 3-33.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "Tan,C.L.,Z.Tei,S.F.Yeo,S.Fern, K.H.Lai,A. Kumar,and L. Chung,2023,\"Nexus among Blockehain Visibility,Supply Chain Integration and Supply Chain Performance in the Digital Transformation Era\", Industrial Management & Data Systems,123(1), 229-252.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "Tang,J.,X.Wang,and Q.Liu, 2023,\"The Spillover Effect of Customers'ESG to Suppliers\",Pacific-Basin Finance Journal,78, 101947.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "Tao, R., J. Wu,and H.Zhao, 2023,\"Do Corporate Customers Prefer Socially Responsible Suppliers? An Instrumental Stakeholder Theory Perspective\",Journal of Business Ethics,185(3),689-712.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "Thöni,A.,and A.M.Tjoa, 2017,\"Information Technology for Sustainable Supply Chain Management:A Literature Survey\",Enter-prise Information Systems,11(6),828-858.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "Zhu,Q.,and J. Sarkis, 2007,\"The Moderating Effects of Institutional Pressures on Emergent Green Supply Chain Practices and Per-formance\", International Journal of Production Research,45(18),4333-4355.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "Customer Digitalization,Supplier ESG Performance and Supply",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "Chain Sustainability",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "XIAO Hongjun',SHEN Hongtaob and ZHOU Yankun",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "(a: Institute of Industrial Economics,Chinese Academy of Social Sciences;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "b:School of Management,Jinan University;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "c:Key Laboratory of Philosophy and Social Science in Guangdong Province,Jinan University;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "d:Business School,Beijing Technology and Business University)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "Summary:The sustainable development of supply chains that balance economic,social,and environmental relationships is an inevitable requirement for promoting the modernization of supply chains, improving supply chain resilience,and en-suring supply chain security and stability.The construction of sustainable supply chains has become a new trend in the evolution of supply chain management.Unlike conventional supply chains, sustainable supply chains depend on environ-ments with greater visibility, necessitating enhanced requirements for information communication and sharing, as well as for interaction and collaboration among supply chain partners.With conventional technological methods,establishing a sustainable supply chain encounters several obstacles, including information asymmetry,supply-demand mismatch,dispa-rate capabilities,and high management costs.The revolutionary advancements and extensive integration of digital tech-nology provide opportunities to overcome these obstacles. The development of a digital sustainable supply chain repre-sents a novel approach to achieving sustainable development and ensuring the stability of supply chains, and it also marks an important emerging research area within the field of supply chain management. However, this issue remains nascent in academic research. Answering the question of whether and how digitalization empowers the sustainable development of supply chains is crucial for a thorough understanding and proactive establishment of digital sustainable supply chains.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "Based on the empowerment theory and using data from Chinese A-share listed companies and their suppliers from 2013 to 2021,this paper investigates the empowering effect of digitalization on the sustainable development of the supply chain from the perspective of interaction between customer firms and their suppliers. We find that the digitization of cus-tomer firms positively influences the ESG performance of supplier firms, which means the empowering effect of digitali-zation on the sustainable development of the supply chain. Notably,this effect is asymmetrical,and it becomes more pro-nounced when the digitization of customer firms surpasses that of their suppliers.To ensure the robustness of the conclu-sions, this paper employs a series of approaches to address endogeneity problems and conduct robustness tests.The mechanism test shows that the improvement in suppliers' ESG performance driven by the digitization of customer firms is primarily facilitated by structural and resource empowerment effects.On the one hand,structural empowerment im-proves supply chain coordination including risk management, operational and transparency collaboration between cus-tomer firms and their suppliers.Resource empowerment,on the other hand, alleviates suppliers'resource constraints by easing financingrestrictions and encouraging green innovation. Further, heterogeneity analysis reveals that the positive impact of the digitizationof customer firms on suppliers' ESG performance is more significant when the local govern-ment environmental attention in the homecity of customer firms exceeds that of the suppliers' home city,and when the relationship between customers and suppliers is closer. Finally,the real-effect test shows that the improvement of suppli-ers' ESG performance driven by the digitization of customer firms contributes to stronger supply chain resilience.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "This paper makes several contributions as follows. Firstly, it delineates the specific conditions under which digitaliza-tion facilitates the sustainable development of supply chains,thereby broadening thescope of research into the direct im-pacts of digitalization on the performance of sustainable supply chains. Secondly,it elucidates the previously opaque mechanisms, often referred to as the \"black box\", through which digitalization promotes the sustainable development of supply chains,thus deepening the understanding of how digitalization influences sustainable supply chain performance. Thirdly,this paper highlights the beneficial outcomes of digitalization in fostering sustainable development of supply chains,contributing to expanding research on the ways that digitalization can bolster supply chain resilience.Lastly,our findings have practical regulatory implications and offer guidance on how to advance the sustainable development of China's supply chains and improve their resilience and security.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "Keywords:Digitalization; ESG; Corporate Social Responsibility; Sustainability; Supply Chain Resilience",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "JEL Classification: D22, G34,Q56",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "（责任编辑：王利娜）（校对：王红梅）",
+      "heading_level": null
+    }
+  ]
+}

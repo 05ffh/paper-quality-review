@@ -1,0 +1,995 @@
+{
+  "paper_id": "EXAMPLE-0010",
+  "source_sha256": "ca825e0ddcce97f4a9cd44b7525aef86ec53050fdff44427aaf9d3c6411d3d76",
+  "topic_hint": "知识产权行政保护与企业数字化转型＊",
+  "paper_type": "empirical",
+  "method_tags": [
+    "DID",
+    "面板模型",
+    "调节效应",
+    "工具变量",
+    "问卷调查"
+  ],
+  "clean_units": 163,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "知识产权行政保护与企业数字化转型＊",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "甄红线 王玺 方红星",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "内容提要：建设数字中国是数字时代推进中国式现代化的重要引擎，加强知识产权保护是提高国家经济竞争力的最大激励。那么，为实现企业数字化转型，具有中国特色的知识产权行政保护发挥了怎样的作用？本文以2010-2018年中国A股非金融类上市公司为样本，探究各省知识产权行政保护对上市公司数字化转型的影响机制和作用效果。研究发现，知识产权行政保护可以有效促进当地上市公司实现数字化转型。并且，加强知识产权行政保护能够显著增加企业研发支出和数字专利申请，进而促进企业数字化转型。进一步研究发现，知识产权行政保护、司法保护以及社会服务协同配合，强化了知识产权全链条保护。知识产权行政保护对企业数字化转型的促进作用在低研发补贴和低税收优惠的企业中更加显著。此外，知识产权行政保护通过促进企业数字化转型提高了企业全要素生产率。本文认为在建设中国特色和世界水平的知识产权强国背景下，应当充分发挥知识产权行政保护的优势，不断激发企业创新活力，加快推动数字经济与实体经济深度融合，为我国经济高质量发展注入强大动能。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "关键词：知识产权行政保护 数字化转型 知识产权全链条保护 司法保护 社会服务",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "建设数字中国是数字时代推进中国式现代化的重要引擎，是构筑国家竞争新优势的有力支撑。①当下，数字经济已经成为我国经济高质量发展的新引擎、深化供给侧结构性改革的主要抓手以及增强经济发展韧性的主要动力。促进企业数字化转型是构建数字经济底层基础，实现数字经济和实体经济有效融合的最关键步骤。数字资产确权是其中的薄弱环节和机制性堵点，也是数字经济发展面临的重大理论问题。数字化转型时期首先要解决的是数字资产权属问题。只有数字资产权属确定后，才可能明确相关数字资产权利并进行保护，对数字资产侵权行为进行有效打击。目前，中国对数字资产权属没有明确的定义，但知识产权是数字资产产权最接近的权属类型。从权利类型来看，数字资产产权与知识产权都是一种无形财产权，都具有“客体共享、利益排他”的特殊属性。而且知识产权保护的调整对象、制度目标及当前保护模式都与数字资产的保护最为接近（申卫星，2020）。司法实践中，2020年11月的《著作权法》修正案将数字化列入著作权的内容。②2022年，中国非同质化代币（non-fungible token，NFT）数字资产侵权第一案也参照了知识产权的相关法律。③因此，从理论和实务视角来看，与知识产权保护相关的法律法规和制度为企业数字资产产权的确权、行权和维权等提供了重要依据和参考，也为本文的实证研究提供了方向。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "＊甄红线、王玺、方红星，东北财经大学会计学院、中国内部控制研究中心，邮政编码：116025，电子信箱：zhx223＠163．com，wx10014870＠126．com，hxfang＠dufe．edu．cn。本文研究得到国家自然科学基金（72172029,71971046）和国家社会科学基金重大项目（19ZDA094）的资助。作者感谢第五届中国制度经济学论坛、第八届全国经济学研究生学术年会的支持。当然，文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "①《数字中国建设整体布局规划》，中国政府网，2023年2月27日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "②《全国人民代表大会常务委员会关于修改《中华人民共和国著作权法的决定》，中国人大网2020年11月11日发布。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "③ 章咪佳：《中国NFT第一案，昨天在杭州宣判了》，《钱江晚报》2022年4月21日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "2023年第11期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "党的十八大中以来，我国知识产权事业走出一条具有中国特色，符合中国式现代化的道路。在“十三五”期间，中国形成了“司法主导、行政并行”的知识产权保护体系。作为知识产权保护体系的主导，我国知识产权司法保护体系较为完备，逐步完成了商标法、专利法、著作权法的新一轮修改，建立了国际上最高标准的惩罚性赔偿制度。目前，中国知识产权相关法律制定已经达到国际标准（Hu ＆ Jefferson，2009；曹文泽和王迁，2018）。同时，司法审判的体制机制也在不断创新，知识产权法院和司法审判“三审合一”促进了高质量创新和企业数字化转型（黎文靖等，2021；周洲和吴馨童，2022）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "中国知识产权发展四十年来，知识产权行政保护为健全中国知识产权治理体系、强化知识产权保护作出了巨大贡献（董涛，2022）。2021年全国市场监管部门共查处知识产权领域违法案件5.2万件，较上年增长28.0％。①其中，查处专利违法案件1.0万件，较上年增长41.7％；全国知识产权系统共处理专利侵权纠纷行政裁决案件4.98万件，较上年增长17.4％；中国专利侵权纠纷行政执法办案量从2012年的2000余件发展到2020年的4.2万余件。②世界知识产权组织发布的《2021年全球创新指数报告》显示，中国创新指数从2013年的第35位升至2021年的第12位，是世界上进步最快的国家之一，在此过程中知识产权行政保护发挥了重要作用。③研究发现，加强知识产权行政保护能够有效降低专利被侵权的风险，增加企业研发投入，降低信息不对称，缓解融资约束（Ang et al．，2014；吴超鹏和唐菂，2016）。但是，迄今，鲜有文献关注中国知识产权行政保护对企业数字化转型的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "数字时代，知识产权侵权具有隐蔽性、复杂性和多发性的特点，对知识产权保护效率提出了新挑战。知识产权司法保护重在保护的权威性、终局性和公正性，在实践中，知识产权侵权诉讼案件经常面临“举证难、周期长、成本高、赔偿低”的问题，权利人“赢了官司，输了市场”的现象时有发生。④然而知识产权行政保护相比司法保护具有专业、高效、措施直接、迅速有力、相对简单和成本较低的特点，特别是处理多发性、群体性知识产权侵权事件，通过及时保护权利人的利益，发挥了知识产权侵权保护第一道防线和司法保护“分流阀”的作用。⑤因此，本文探究知识产权行政保护是否影响企业数字化转型，对于加快数字中国建设，推进中国式现代化具有重要的理论和现实意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "本文以2010-2018年中国A股非金融类上市公司为样本，基于跨省比较的视角，检验各省知识产权行政保护对当地上市公司数字化转型的影响和作用机理。研究发现，知识产权行政保护水平越高，当地企业数字化转型程度越高。机制分析发现，加强知识产权行政保护能够显著激发企业创新活力，增加企业研发支出和数字专利申请，促进企业数字化转型。发生知识产权侵权纠纷时，行政保护可以发挥第一道防线和司法保护“分流阀”的作用。同时，知识产权行政保护也与社会服务之间具有协同作用，共同促进企业数字化转型。考虑政府其他政策工具，知识产权行政保护在低研发补贴和低税收优惠组对企业数字化转型的影响更加显著。知识产权行政保护通过促进企业数字化转型提高了企业全要素生产率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "本文的边际贡献在于：第一，知识产权行政保护是中国特色知识产权保护制度的主要体现，具有历史必然性、现实必要性和战略重要性。强化知识产权行政保护，是保障经济高质量发展的需",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "①《2022年中国知识产权发展状况评价报告》，国家知识产权局2022年12月28日发布。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "② 吴汉东和刘鑫：《努力构建知识产权全链条保护新格局》，《光明日报》2022年2月24日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "③兰皓翔：《进一步提升知识产权行政保护能力（新论）》，《人民日报》2021年12月22日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "④ 高洁：《知识产权如何保护、执行难如何破解？最高法大法官们划重点了》，新华网2021年3月11日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "⑤ 郑晶晶：《发挥“分流阀”作用，化解专利侵权纠纷-以专利侵权行政裁决为视角》，《中国知识产权报》2020年1月1日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "甄红线等：知识产权行政保护与企业数字化转型",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "要，是知识产权制度有效运行的需要，也是建设中国特色、世界水平的知识产权强国的需要。①目前，知识产权保护方面的文献大多围绕知识产权司法保护展开，主要关注了“三审合一”司法审判模式（周洲和吴馨童，2022）、②知识产权法院（黎文靖等，2021）以及执法力度（吴超鹏和唐菂，2016）③等对企业决策的影响。本文立足于数字中国建设的时代背景，对知识产权行政保护如何推动企业数字化转型的机理进行了全面分析，丰富了知识产权行政保护的经济后果研究，为知识产权行政保护助推数字经济发展提供了理论支撑，也为后续的相关研究设计提供了参考。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "第二，建设数字中国是数字时代推进中国式现代化的重要引擎，伴随着数字经济蓬勃发展，知识产权侵权呈现出的隐蔽性、复杂性和多发性特征对知识产权保护效率提出了更高要求。与司法保护相比，知识产权行政保护具有效率高、成本低、专业性强、程序简便的特点。在此背景下，知识产权行政保护的经济后果尤其是对数字化转型的影响亟待实证检验。已有研究主要基于产业环境、制度环境以及社会环境探讨对企业数字化转型决策的影响（Verhoef et al．，2021；蔡跃洲，2021；宋晶和陈劲，2022）。本文基于知识产权行政保护的视角，丰富了企业数字化转型影响因素的实证研究文献。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "第三，强化知识产权全链条保护，加快形成知识产权保护的强大合力，是知识产权保护工作的重大创新。但是鲜有研究关注知识产权行政保护与司法保护、行业自律、公民诚信等环节共同作用产生的经济后果。本文以数字化转型为研究视角，验证了知识产权行政保护、司法保护以及社会服务对企业数字化转型的协同作用，不仅丰富了知识产权全链条保护相关领域的研究，也为推动知识产权强国战略实施提供了启示。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "本文的其余部分结构如下：第二部分为文献综述和研究假设；第三部分为研究设计；第四部分为实证结果；第五部分为进一步分析；第六部分为稳健性检验；第七部分为研究结论与启示。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "二、文献综述与研究假设",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "（一）企业数字化转型",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "企业是国家经济的微观主体，数字经济基础设施建设的核心是数字化企业。促进传统企业数字化转型才可能形成数字时代中国经济发展的内生动力。数字化转型是指信息、计算、通信和连接技术的结合，触发组织属性的重大变化，从而实现组织转型的过程（袁淳等，2021）。影响企业数字化转型的因素很多，大致分为三类：（1）产业环境因素，产业形态、产业价值创造方式的改变会推动企业数字化转型（Verhoef et al．，2021）；（2）制度环境因素，构建科技创新治理体系、实施智能型制造政策以及为企业搭建数字化技术平台等都能够促进企业数字化转型（Nadkarni et al．，2019；江玉国，2020；蔡跃洲，2021）；（3）社会环境因素，企业管理者的社会网络能够提供知识和技术资源，促进企业数字化转型（宋晶和陈劲，2022）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "从数字化转型的经济后果来看，企业实现数字化转型，必然带来生产方式和生产关系的改变，不仅可以改善企业经营模式，促进企业降本增效（陈剑等，2020；刘淑春等，2021）；更能优化企业的组织结构，增加企业柔性和反应速度（池毛毛等，2020）；同时，数字化转型也强化了企业的创新动能，是企业战略创新的重要途径（肖静华等，2014）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "（二）数字资产产权与知识产权",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "数字资产作为一种新的生产要素，首先应当确定其权属，进而才能确定相应的数字资产权利。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "① 许春明：《发挥知识产权行政保护优势》，法制日报》2022年4月27日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "②“三审合一”审判模式是将知识产权民事、行政和刑事案件统一受理的司法审判模式创新。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "③吴超鹏和唐菂（2016）基于行政执法、司法保护与执法效果三个维度构建了知识产权保护执法力度指标。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "2023年第11期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "数字资产权属与数字资产权利不明确、不规范，数字资产的利用和数据保护就无从谈起，数字经济与实体经济的融合发展更无从实现。目前法学界对于数字资产产权的主流观点分为三大类：第一类是将数据等数字资产与个人隐私相挂钩，关系到人的荣誉和尊严，认为数据等数字资产产权属于个人人格权的一部分（吴伟光，2016）。第二类是认为数字资产作为企业创新相关财产，应当将数字资产产权确认为知识产权（申卫星，2020）。还有学者认为数字资产属于企业的商业秘密，一旦数字资产被公开，对于原权利人的商业价值可能随之丧失（张怀印，2019）。但根据《民法典》第一百二十三条的规定，商业秘密属于知识产权客体，商业秘密保护通常被视为知识产权制度的兜底制度。①第三类则认为数字资产产权不同于财产权规定的物权和知识产权，是一种新型的财产权，不宜用既有的人格权、知识产权、商业秘密保护制度对其施以合理保护，应在立法中增设一种数字财产权（程啸，2018；童彬，2019）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "本文支持知识产权说。首先，数字资产产权的法律属性与知识产权最为接近。具体来说，知识产权作为一种无形财产权，具有“客体共享、利益排他”的特殊属性，即不必通过配置客体再间接地配置客体上的利益，而是直接对客体上的利益进行排他性配置。其次，数字资产产权和知识产权具有相似的调整对象，数字资产产权更多地以著作权、软件等形式存在，类似于知识产权的结果形式。二者需要借助符号来构建权利内容，并没有实际边界。再次，知识产权与数字资产产权具有相似的制度目标和保护模式，二者都是对所有者的赋权和权利限制。最后，加强知识产权保护和数字资产产权保护，才能对权利主体产生激励预期，推动更新升级和商业创新，充分发挥要素配置作用。基于此，本文试图从知识产权保护的视角探究其对企业数字化转型的影响机理。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "（三）研究假设",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "数字化转型是将传统生产模式与数字技术深入融合，借助技术创新对现有生产资源进行重组优化（袁淳等，2021）。企业数字化转型需要依托企业技术创新对数字资产进行识别、选择、过滤、存储和应用（吴非等，2021）。现实中，几乎所有数字资产都表现为数据编码形式，具有磨损小、可变性高和易复制的特点，使得模仿、窃取和复制成本下降，侵权行为增多。这些极大挫伤了企业创新的积极性，阻碍了数字技术更迭和数字化转型的进程。知识产权保护的目标是使知识产权价值与其创造成本之间的差异最大化，从而形成创新激励机制（Besen＆Raskind，1991）。已有研究发现，加强知识产权保护能够促进企业增加研发投入，提高企业专利成果产出量（吴超鹏和唐菂，2016），促进企业向高质量创新转变（黎文靖等，2021），增加企业数字技术创新（黄勃等，2023）。本文推测知识产权保护通过激发企业技术创新的动力以及数字技术创新促进了企业数字化转型。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "在数字时代，信息技术的发展使数字信息传输突破了传统时间和空间的限制，缩短了数字创新和应用的周期。②同时，数字信息具有无实体性的特征，数字化专利模仿和侵权的成本也随之降低，权利人很难发现侵权行为。知识产权侵权案件多、影响广，不仅损害知识产权权利人的利益，还扰乱了市场竞争秩序、危及产业的持续创新与发展（王淇，2016）。因此，知识产权侵权呈现出的隐蔽性、复杂性和多发性对知识产权保护效率提出了更高要求。与司法保护相比，知识产权行政保护具有效率高、成本低、专业性强、程序简便的特点。行政保护有利于促成侵权纠纷的快速解决，起到了司法保护“分流阀”和第一道防线的作用，减轻了司法压力。③",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "①《中华人民共和国民法典》，2020年5月28日第十三届全国人民代表大会第三次会议通过。其中，第一编第五章第一百二十三条规定，民事主体依法享有知识产权，知识产权是权利人依法就下列客体享有的专有的权利：（一）作品；（二）发明、实用新型、外观设计；（三）商标；（四）地理标志；（五）商业秘密；（六）集成电路布图设计；（七）植物新品种；（八）法律规定的其他客体。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "②付振强：《何以成为侵权“重灾区”？数字经济下的知识产权保护之痛》，人民政协网2022年4月19日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "③ 郑晶晶：《发挥“分流阀”作用，化解专利侵权纠纷-以专利侵权行政裁决为视角》，《中国知识产权报》2020年1月1日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "2023年第11期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "会治理等多种手段，从审查授权、行政执法、司法保护、仲裁调解、行业自律、公民诚信等环节完善保护体系，加强协同配合。本部分从知识产权行政保护与司法保护、社会服务之间的协同作用探究如何强化知识产权全链条保护。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "1．知识产权行政保护与司法保护",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "（1）知识产权法院",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "本文以知识产权法院试点建立作为外生冲击来研究知识产权司法保护和行政保护对于企业数字化转型的影响。中央全面深化改革领导小组于2014年6月通过《关于设立知识产权法院的方案》。①同年10月，最高人民法院发布《最高人民法院关于北京、上海、广州知识产权法院案件管辖的规定》在北京、上海和广州三地试点设立知识产权法院。②而期间其他地区并未设立知识产权法院，所以本文将三个试点地区的所有上市企业作为实验组，其他地区企业作为控制组，构建三重差分模型来评估知识产权司法保护、行政保护对于企业数字化转型的影响。具体模型如下：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "(3)",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "其中， 为识别实验组的虚拟变量，若上市公司办公地点位于知识产权法院试点省市（北京市、上海市和广东省除深圳市外的地区）取1，否则取0。表5Panel A展示了三重差分的回归结果。回归结果表明，知识产权法院建立后，实验组企业所在地行政保护水平越高，企业数字化转型程度越高。总之，考虑了知识产权司法保护的因素，知识产权行政保护水平的提升依然能够有效促进当地上市公司进行数字化转型。知识产权司法保护与行政保护二者具有协同作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "（2）知识产权司法审判案件",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "本文借鉴纪祥裕和顾乃华（2021）的方法，手工搜集各省份知识产权司法审判案件数量，并按照其年度中位数进行分组。表5 Panel B展示了分组回归结果。可以发现，知识产权行政保护都能显著促进企业数字化水平，但是在司法审判案件较多的省份，知识产权行政保护的作用更加显著，系数差异为0.247，在1％水平上显著。结果表明，知识产权行政保护确实可以节约司法资源，发挥第一道防线和司法保护“分流阀”的作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "2．知识产权行政保护和社会服务",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "知识产权社会服务是为社会公众和创新主体提供知识产权基础性服务的行为，主要包括知识产权服务机构和公民诚信，其为行政保护和司法保护提供了市场组织服务条件。本文考察了知识产权服务机构（知识产权代理公司和律师数量）以及公民诚信这两类知识产权社会服务条件下，知识产权行政保护水平对于企业数字化转型的影响程度。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "（1）知识产权服务机构",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "首先，知识产权代理公司是从事专利申请、版权登记、商标注册、侵权诉讼及海关备案等知识产权相关服务的专业机构。其数量的多少在一定程度上表明了企业对于知识产权保护的需求。知识产权代理机构越多，其提供的专业性服务越多。一方面，专业性服务能够降低企业受到知识产权侵害的可能性；另一方面，在企业知识产权受到侵害时，专业性服务能够缩短资料收集时间，加快审理进度，挽回企业专利损失。本文参照李莉等（2014）的方法，通过“天眼查”网站手工搜集各省知识产权代理公司数量。表5 Panel C列（1）和列（2）展示了根据省域内知识产权代理机",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "①《关于设立知识产权法院的方案》审议通过》，中国政府网2014年6月6日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "②《关于北京、上海、广州知识产权法院案件管辖的规定》，最高人民法院，2014年10月31日发布。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "甄红线等：知识产权行政保护与企业数字化转型",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "续表6",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "变量名称 | (1) | (2) | (3) | (4) | (5) | (6)\n变量名称 | Digitaltrans | Digitaltrans | Digitaltrans | Digitaltrans | Digitaltrans | \n变量名称 | Full Sample | Full Sample | Subsidies High | Subsidies Low | Tax Refund High | Tax Refund Low\n年份／行业固定效应 | 控制 | 控制 | 控制 | 控制 | 控制 | 控制\nN | 6557 | 13903 | 3387 | 3170 | 7585 | 6318\nR | 0.423 | 0.420 | 0.436 | 0.412 | 0.493 | 0.353",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "2．政府税收优惠",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "税收优惠是企业创新发展的重要政策工具之一。与政府研发补贴相比，税收优惠属于“事后补偿”政策，税收优惠产生的交易费用要显著低于研发补贴（周燕和潘遥，2019）。税收优惠将降低企业税收负担，提升资金流动性，将更多的资金投入到企业数字化转型的研发中。同时，税收优惠能够激励企业加大研发投入，促进资源有效配置。本文借鉴柳光强（2016）的方法，使用现金流量表中“收到的各项税收返还”占“收到的各项税收返还”、“支付的各项税费”之和的比例来衡量企业的税收优惠（Tax Refund），研究知识产权行政保护水平与政府税收优惠对企业数字化转型的影响。表6列（2）为加入税收返还的基准回归结果。知识产权行政保护水平和税收返还均能显著提升企业数字化转型水平。列（5）和列（6）为按照税收优惠中位数分组的回归检验。组间系数差异为0.132，在5％水平上显著，说明在税收优惠低组，知识产权行政保护促进企业数字化转型的效果更加显著，即知识产权行政保护与税收优惠为互补关系。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "（四）知识产权行政保护、企业数字化转型与全要素生产率",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "数字化转型作为企业顺应数字经济时代发展趋势的重要战略之一，其主要目标在于“降本增效”，实现资源合理配置，增加企业全要素生产率（黄群慧等，2019）。因此，本文借鉴吴超鹏和唐菂（2016）构建模型（4）来考察知识产权行政保护、数字化转型与企业全要素生产率的关系。具体回归模型如下：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "IPREdummy",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "(4)",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "模型 （4）中 为借鉴 Levinsohn ＆ Petrin（2003）计算得到的企业全要素生产率，IPREdummy 为各省知识产权行政保护水平的虚拟变量，若公司i第t-1年所在省份p知识产权行政保护水平大于当年各省中位数取1，其余取 0。 回归结果表明，随着知识产权行政保护水平的提升，企业数字化转型对企业全要素生产率的正效应增强。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "六、稳健性检验",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "（一）替换变量和筛选样本",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "首先，使用专利侵权纠纷行政裁决的结案率（SettledRate）作为知识产权行政保护水平的替代变量。其次，借鉴吴超鹏和唐菂（2016）的方法，使用主成分分析法构建的知识产权行政保护水平指标（IPPE）进行检验：（1）各省省委重视知识产权保护程度（IPP1），即2010-2018年间各省省委每年在省委机关报上宣传知识产权保护的文章数目除以当年该省委机关报所有文章数目；②（2）国家",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "① 限于篇幅，未报告实证结果，作者留存备索。",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "②各省的省委机关报为：《北京日报》、《天津日报》、《河北日报》、《山西日报》、《内蒙古日报》（汉语版）、《辽宁日报》、《吉林日报》、《黑龙江日报》、《解放日报》（上海）、《新华日报》（江苏）、《浙江日报》、《安徽日报》、《福建日报》、《江西日报》、《大众日报》（山东）、《河南日报》、《湖北日报》、《湖南日报》、《南方日报》（广东）、《广西日报》、《海南日报》、《重庆日报》、《四川日报》、《贵州日报》、《云南日报》、陕西日报》、《甘肃日报》、《青海日报》、《宁夏日报》、《新疆日报》（汉语版）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "2023年第11期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "知识产权局对专利侵权案件的受理情况，即专利的未被侵权率（IPP2），等于1减去一省知识产权局当年受理的专利侵权纠纷案件数除以该省当年累积授权专利数。二者在经过主成分分析法后得到知识产权行政保护水平指标（IPPE）。最后，本文剔除了北京、上海、广东的样本后重新进行回归。北京市、上海市和广东省的知识产权保护和创新水平都在全国领先，注册在这三地的上市公司大多是实力雄厚、创新能力强的公司。为了有效规避选择偏误，本文剔除了北京、上海、广东的样本重新进行回归。在替换解释变量和规避选择偏误后，结论依然稳健。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "（二）内生性问题",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "本文在研究知识产权行政保护水平和企业数字化转型的关系时，可能存在遗漏变量和互为因果的内生性问题。首先，知识产权行政保护水平对于企业数字化转型的影响可能遗漏了相关的其他控制变量，例如地方的制度、文化与创新意识等因素；其次，企业数字化转型水平越高，对于数字化转型过程中的知识产权保护提出了更高的要求，迫使地方知识产权行政保护水平提升，可能存在互为因果问题。本文使用工具变量法、样本匹配回归、一阶差分模型、外生冲击事件以及排除其他可能的解释等方法来缓解可能的内生性问题。②",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "1．工具变量2SLS。中国各地受西方影响的程度可以作为各地区产权制度实施程度的工具变量（方颖和赵扬，2011）。本文借鉴吴超鹏和唐菂（2016）选取两个外生工具变量进行两阶段最小二乘回归（two-stage least squares，2SLS）。第一个工具变量是英租界的哑变量（BritishSettlement），从清朝晚期到民国初期，一省若存在英租界则取1，否则取0。该数据来自杨遵道和叶凤美（1993），英国作为专利法和版权法的发源地，通常按照本国的价值观对租界进行管理，有利于提升当地知识产权保护意识。第二个工具变量是截至1992年各省由基督教传教士设立的大学数量（Christian Colleges）。基督教大学更多传授的是关于公民、法律和产权等制度内容，宣扬产权保护价值观，有助于培养现代市场经济所需要的产权保护意识。在使用工具变量回归后，结论依然稳健。另外，本文也参考吴超鹏和唐菂（2016）的方法，将企业数字化转型对知识产权行政保护进行回归，得到数字化转型中不能被知识产权行政保护解释的部分，即回归的残差。重复工具变量回归，工具变量对残差的回归系数不显著，证明了工具变量的外生性。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "2．样本匹配回归。为了缓解样本自选择的内生性问题，本文使用倾向得分匹配方法进行检验。协变量为公司规模、杠杆率、现金比率、管理层持股比例、第一大股东持股比例、总资产收益率、总资产周转率和市值账面比等主要控制变量。由于倾向得分匹配会受到协变量的干扰，所以本文还采取Hainmueller（2012）的熵平衡方法进行了样本匹配，结果依然稳健。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "3．一阶差分检验。知识产权行政保护影响企业数字化转型可能会受到遗漏变量的影响，有可能是公司未知、未观测的因素影响了企业数字化转型。本文借鉴Wruck＆ Wu（2021）使用一阶差分方法进行了稳健性检验。结果与前文基本一致。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "4．外生事件冲击。本文选取国家知识产权试点示范城市和《专利行政执法办法》修改两个外生事件。（1）国家知识产权试点示范城市。为了推动知识产权保护体系建设，国家知识产权局于2012年起评选出国家知识产权试点示范城市。截至2019年5月，已经评选出六批共77个国家知识产权示范城市。③知识产权示范城市建设的主要目的是充分发挥知识产权在驱动城市创新中的主要作用，其中申报条件之一明确要求，申报前一年专利行政执法和维权援助工作评价结果在全国",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "① 限于篇幅，未报告稳健性检验的实证结果及其具体分析，作者留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "② 限于篇幅，未报告内生性问题的实证结果及其具体分析，作者留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "③ 因篇幅所限，相关内容详见本刊网站登载的附录4。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "甄红线等：知识产权行政保护与企业数字化转型",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "或本省同类城市中位于前50％。①知识产权试点城市的评选有助于知识产权行政保护水平的不断提升。本文以知识产权试点示范城市作为外生冲击事件，进行多期双重差分检验。（2）《专利行政执法办法》修改。为深入推进依法行政，规范专利行政执法行为，保护专利权人和社会公众的合法权益，维护社会主义市场经济秩序，国家知识产权局于2011年2月1日起实施《专利行政执法办法》。该办法的实施为管理专利工作的部门加强专利行政执法力量建设，严格行政执法人员资格管理，落实行政执法责任制，规范开展行政执法行动提供了依据。2015年5月29日，国家知识产权局下发《国家知识产权局关于修改（专利行政执法办法）的决定》。此次修改的重点在于增强专利行政执法效率，加强知识产权行政保护能力。②在修改内容方面，其中多项内容关注电子商务平台等数字化方面的专利侵权行为。③本文将专利申请量大于同年中位数的省份作为实验组，专利申请量越多，该省受知识产权行政保护水平的影响越大。构建双重差分模型，利用外生冲击事件的实证结果与前文结论一致。④",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "5．排除其他创新和数字化政策的影响。本文样本期内地方政府实施的一系列政策可能会影响到企业数字化转型，尤其是涉及创新或数字化的政策。近年来，国家陆续实施“宽带中国”示范城市建设、创新型城市试点建设和智慧城市建设试点等政策。这些政策旨在促进创新驱动，推动数字经济发展，进而有效促进企业数字化转型（邱洋冬，2022；赖晓冰和岳书敬，2022）。本文借鉴聂长飞等（2023）的方法，控制相关政策的变量，检验知识产权行政保护水平与企业数字化转型的关系。在排除其他创新和数字化政策后，结果依然稳健。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "七、研究结论与政策启示",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "本文基于数字资产产权的知识产权说，以2010-2018年中国A股非金融类上市公司为样本，实证检验了知识产权行政保护水平对企业数字化转型的影响效果。研究发现，加强知识产权行政保护可以有效促进当地上市公司实现数字化转型。机制研究发现，加强知识产权行政保护能够显著增加企业研发支出和数字专利申请，进而促进企业数字化转型。知识产权行政保护、司法保护以及社会服务协同配合，强化了知识产权全链条保护。知识产权行政保护对企业数字化转型的促进作用在低研发补贴和低税收优惠的企业中更加显著。此外，知识产权行政保护通过促进企业数字化转型提高了企业全要素生产率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "本文具有重要的政策启示：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "第一，加强知识产权行政保护，充分发挥行政保护的效率优势。随着数字经济的发展，知识产权侵权案件多、影响广，不仅损害知识产权权利人的利益，还扰乱了市场竞争秩序，危及产业",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "①国家知识产权试点示范城市申报条件：（1）城市领导重视知识产权工作，将知识产权列入议事日程；（2）城市知识产权管理能力和水平在本省同类城市中位于前列；（3）在营造知识产权环境、推动企业知识产权创造、运用、保护和管理方面进行了有益尝试，并取得了一定成效；（4）拥有具备一定规模的优势产业，掌握一定数量的知识产权；（5）申报前一年专利行政执法和维权援助工作评价结果在全国或本省同类城市中位于前50％。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "②其中，将原先《专利行政执法办法（2011年）》第十九条更改为第二十一条，管理专利工作的部门处理专利侵权纠纷，应当自立案之日起3个月（原先为4个月）内结案。案件特别复杂需要延长期限的，应当由管理专利工作的部门负责人批准。经批准延长的期限，最多不超过1个月。专利行政执法办法的修改缩短了结案周期，提高了行政执法效率，提升了知识产权行政保护水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "③《国家知识产权局关于修改《专利行政执法办法》的决定》，其中增加第八条“管理专利工作的部门应当加强展会和电子商务领域的行政执法，快速调解、处理展会期间和电子商务平台上的专利侵权纠纷，及时查处假冒专利行为”和第四十三条第二款“管理专利工作的部门认定电子商务平台上的专利侵权行为成立，作出处理决定的，应当通知电子商务平台提供者及时对专利侵权产品或者依照专利方法直接获得的侵权产品相关网页采取删除、屏蔽或者断开链接等措施”。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "④ 回归检验发现，在《专利行政执法办法》修改后，实验组企业数字化水平的提高程度显著高于控制组，也就是《专利行政执法办法》修改对于企业数字化转型具有正的净效应，验证了知识产权行政保护水平提升能够有效促进企业数字化转型。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "2023年第11期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "的持续创新与发展。知识产权行政保护具备成本低、效率高、专业性强等特点，能够及时定分止争，切实维护权利人的基本权益。本文发现提升知识产权行政保护水平能够促进企业增加资本投入，提升全流程创新能力，促进企业数字化转型，提高生产效率。相关行政部门应当持续加强知识产权行政保护水平，保障创新主体合法权益，为企业在数字化转型过程中营造良好的信息环境和经营环境，促进数字经济赋能实体经济，进一步提升中国数字经济的创新能力和持续竞争力。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "第二，强化知识产权全链条保护。知识产权保护涉及的手段多样、渠道各异，单一模式或单一手段难以实现对所有类型和所有环节的保护，需要司法、行政、仲裁、调解、公证、鉴定、行业自治等手段综合运用，形成多元纠纷解决机制，实现知识产权全链条保护。同时，知识产权保护是一项系统工程，应当体现协同性，而不是保护机制相互掣肘。本文发现知识产权司法保护与行政保护具有协同作用，知识产权行政保护发挥了司法保护“分流阀”作用，减轻了司法压力。知识产权行政保护与知识产权服务机构、公民诚信之间具有协同作用。因此，应当持续强化知识产权全链条保护，走出一条中国特色知识产权发展之路，以中国式现代化为指引加快建设中国特色、世界水平的知识产权强国，为全面建成社会主义现代化强国提供有力支撑。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "第三，关注数字资产确权，保障数字资产权利。在大数据时代，数字资产已经成为生产的第五大要素，成为财产权利的重要组成部分，应纳入财产权的客体范围。数字资产确权是发挥企业发展潜能，支撑企业高质量发展的重要内容。但由于企业数字化进程情况复杂，还处于发展、摸索阶段，对于数字资产权利归属的认识必然要经历一个混沌到厘清的过程。目前不论是实务还是法理研究方面，都是基于知识产权相关法律法规对数字资产权利进行规范。但是，数字资产与知识产权还是有着本质区别。相关政府部门应当加快建立数字产权制度，开展数字资产计价研究，建立数据要素按价值贡献参与分配机制。知识产权工作部门应加快部署数据知识产权登记和管理工作，研究构建数据知识产权保护规则，确保数据权属得到充分保护、价值得到有效利用，为促进数据要素的流通和使用提供政策依据。完善数字资产的相关产权制度，真正发挥数字资产的生产效率提升作用，为经济社会发展提供不竭动力。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "蔡跃洲，2021：《中国共产党领导的科技创新治理及其数字化转型-数据驱动的新型举国体制构建完善视角》，《管理世界》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "曹文泽、王迁，2018：《中国知识产权法制四十年：历程、特征与展望》，《法学》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "陈和、黄依婷，2022：《政府创新补贴对企业数字化转型的影响-基于A股上市公司的经验证据》，《南方金融》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "陈剑、黄朔、刘运辉，2020：《从赋能到使能-数字化环境下的企业运营管理》，《管理世界》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "陈战光、宛晴、冯家丛、武传德，2018：政府补贴、知识产权保护与研发投入》，《投资研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "成琼文、丁红乙，2022：《税收优惠对资源型企业数字化转型的影响研究》，《管理学报》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "程啸，2018：《论大数据时代的个人数据权利》，《中国社会科学》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "池毛毛、叶丁菱、王俊晶、翟姗姗，2020：《我国中小制造企业如何提升新产品开发绩效-基于数字化赋能的视角》，《南开管理评论》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "董涛，2022：《国家治理现代化下的知识产权行政执法》，《中国法学》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "方颖、赵扬，2011：《寻找制度的工具变量：估计产权保护对中国经济增长的贡献》，《经济研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "何晴、刘净然、范庆泉，2022：《企业研发风险与补贴政策优化研究》，《经济研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "黄勃、李海彤、刘俊岐、雷敬华，2023：《数字技术创新与中国企业高质量发展-来自企业数字专利的证据》，《经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "黄群慧、余泳泽、张松林，2019：《互联网发展与制造业生产率提升：内在机制与中国经验》，《中国工业经济》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "纪祥裕、顾乃华，2021：《知识产权示范城市的设立会影响创新质量吗？》，《财经研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "甄红线等：知识产权行政保护与企业数字化转型",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "江玉国，2020：《工业企业“智造”转型的动力机制研究》，《科研管理》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "赖晓冰、岳书敬，2022：《智慧城市试点促进了企业数字化转型吗？-基于准自然实验的实证研究》，《外国经济与管理》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "黎文靖、彭远怀、谭有超，2021：《知识产权司法保护与企业创新-兼论中国企业创新结构的变迁》，《经济研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "李莉、闫斌、顾春霞，2014：《知识产权保护、信息不对称与高科技企业资本结构》，《管理世界》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "刘淑春、闫津臣、张思雪、林汉川，2021：《企业管理数字化变革能提升投入产出效率吗？》，《管理世界》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "柳光强，2016：《税收优惠、财政补贴政策的激励效应分析-基于信息不对称理论视角的实证研究》，《管理世界》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "卢现祥、笪琼瑶，2020：《知识溢出、知识产权保护与企业创新》，《江汉论坛》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "毛昊、陈大鹏、尹志锋，2019：《中国专利保护“双轨制”路径完善的理论分析与实证检验》，《中国软科学》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "聂长飞、冯苑、张东，2023：《知识产权保护与经济增长质量》，《统计研究》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "邱洋冬，2022：《网络基础设施建设驱动属地企业数字化转型-基于“宽带中国”试点政策的准自然实验》，《经济与管理》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "申卫星，2020：《论数据用益权》，《中国社会科学》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 126,
+      "text": "宋晶、陈劲，2022：《企业家社会网络对企业数字化建设的影响研究-战略柔性的调节作用》，《科学学研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 127,
+      "text": "童彬，2019：《数据财产权的理论分析和法律框架》，《重庆邮电大学学报（社会科学版）》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 128,
+      "text": "王淇，2016：《论专利行政执法对公共利益的保护》，《知识产权》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 129,
+      "text": "吴超鹏、唐菂，2016：《知识产权保护执法力度、技术创新与企业绩效-来自中国上市公司的证据》，《经济研究》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 130,
+      "text": "吴非、胡慧芷、林慧妍、任晓怡，2021：《企业数字化转型与资本市场表现-来自股票流动性的经验证据》，《管理世界》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 131,
+      "text": "吴汉东，2015：《国家治理能力现代化与法治化问题研究》，《法学评论》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 132,
+      "text": "吴伟光，2016：《大数据技术下个人数据信息私权保护论批判》，《政治与法律》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 133,
+      "text": "肖静华、谢康、吴瑶、冉佳森，2014：《企业与消费者协同演化动态能力构建：B2C电商梦芭莎案例研究》，《管理世界》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 134,
+      "text": "杨遵道、叶凤美，1993：《清政权半殖民地化研究》，高等教育出版社。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 135,
+      "text": "余泳泽、郭梦华、胡山，2020：《社会失信环境与民营企业成长-来自城市失信人的经验证据》，《中国工业经济》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 136,
+      "text": "袁淳、肖土盛、耿春晓、盛誉，2021：《数字化转型还是企业分工：专业化还是纵向一体化》，《中国工业经济》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 137,
+      "text": "张怀印，2019：《区块链技术与数字环境下的商业秘密保护》，《电子知识产权》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 138,
+      "text": "张牧扬、潘妍、余泳泽，2022：《社会信用、刚兑信仰与地方政府隐性债务》，《金融研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 139,
+      "text": "周燕、潘遥，2019：《财政补贴与税收减免-交易费用视角下的新能源汽车产业政策分析》，《管理世界》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 140,
+      "text": "周洲、吴馨童，2022：《知识产权保护对企业数字化转型的影响-来自“三审合一”改革的经验证据》，《科学学与科学技术管理》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 141,
+      "text": "Ang,J.S.,Y.Cheng,and C. Wu, 2014,\"Does Enforcementof Intellectual Property Rights Matter in China? Evidence from Financing and Investment Choice in the High-tech Industry\",Retien of Economics and Statistics,96(2),332-348.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 142,
+      "text": "Besen, S. M., and L. J. Raskind, 1991,\"An Introduction to the Law and Economics of Intellectual Property\",Journal of Economic Perspectives,5(1),3-27.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 143,
+      "text": "Hainmueller, J.,2012,\"Entropy Balancing for Causal Effects:A Multivariate Reweighting Method to Produce Balanced Samples in Observational Studies\",Political Analysis,20(1),25-46.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 144,
+      "text": "Hu,A.G.,and G. H. Jefferson, 2009,\"A Great Wall of Patents:What is behind China's Recent Patent Explosion?\",Journal of Development Economics,90(1),57-68.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 145,
+      "text": "Levinsohn,J.,and A. Petrin,2003,\"Estimating Production Functions using Inputs to Control for Unobservables\",Retiew of Economic Studies, 70(2),317-341.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 146,
+      "text": "Nadkami,S.,L. Pan,and T. Chen,2019,\"Only Timeline Will Tell:Temporal Framing of Competitive Announcements and Rivals' Responses\",Academy of Management Journal,62(1),117-143.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 147,
+      "text": "Verhoef,P. C.,T. Broekhuizen,Y. Bart, A. Bhattacharya, J. Q. Dong, N. Fabian, and M. Haenlein,2021,“Digital Transformation:A Multidiscilinary Reflection and Research Agenda\", Journal of Business Research, 122, 889-901.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 148,
+      "text": "Wruck,K. H., and Y. Wu,2021,\"The Relation between CEO Equity Incentives and the Quality of Accounting Disclosures:New Evidence\",Journal of Corporate Finance, 67, 101895.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 149,
+      "text": "2023年第11期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 150,
+      "text": "Administrative Protection of Intellectual Property",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 151,
+      "text": "Rights and Corporate Digital Transformation",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 152,
+      "text": "ZHEN Hongxian,WANG Xih and FANG Hongxing.b",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 153,
+      "text": "(a:School of Accounting, Dongbei University of Finance and Economics;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 154,
+      "text": "b:China Internal Control Research Center, Dongbei University of Finance and Economics)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 155,
+      "text": "Summary:The digital economy has become an important engine for high-quality development in China,a key driving force for deepening supply-side structural reforms, and a major support for enhancing economic resilience. The corporate digital transformation is the foundation of digital economic development. However,the confirmation of digital asse rights and interests is a weak link and institutional barrier in the corporate digital transformation.From the perspective of property types,both digital asset rights and interests and intellectual property rights(IPR) belong to intangible property rights and interests and have the unique attributes of “object sharing and beefit exclusion\".At the same time, the adjustment targets,institutional goals,and current protection models of IPR are closely related to the protection of digital assets. Therefore,laws,regulations, and institutions related to IPR provide a basic basis and reference for the confirmation, exercise,and protection of corporate digital asset rights and interests.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 156,
+      "text": "In the digital age,IPR infringement has the characteristics of concealment,complexity,and diversification,bringing new challenges to the efficiency of IPR protection.Compared with judicial protection,administrative protection of IPR has the advantages of specialization,high efficiency,direct and rapid measures,relative simplicity,and lower costs.It serves as the first line of defense in IPR protecton and a “diversion valve\" for judicial protection.Therefore, this paper takes A-share listed companies in China as samples and investigates the impact and mechanism of administrative protection of IPR on corporate digital transformation from a cross-provincial comparative perspective. This paper finds that administrative protection of IPR can significantly promote digital transformation.In addition,strengthening the administrative protection of IPR can significantly increase corporate R&D expenditures and patent applications in the field of the digital economy.This paper also finds that administrative protection of IPR,judicial protection, and social servicessynergistically strengthen the full-chain protection of IPR. The promoting effect of administrative protection of IPR on digital transformation is more significant in enterprises with low R&D subsidies and low tax incentives. In addition, administrative protection of IPR improves total factor productivity by promoting digital transformation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 157,
+      "text": "This paper's contributions are mainly reflected in the following aspects. Firstly,against the background of building a digital China,this paper comprehensively analyzes the mechanism of how administrative protection of IPR promotes digital transformation. Secondly,from the perspective of administrative protection of IPR,this paper enriches the empirical research on fctors influencing digital transformation. Thirdly, taking digital transformation as the research perspective,this paper verifies the synergistic effect of administrative protection of IPR,judicial protection,and social services on digital transformation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 158,
+      "text": "This paper offers the following implications.Firstly,we suggest strengthening the administrative protection of IPR, fully leveraging the efficiency advantages of administrative protection,facilitating the empowerment of the digital economy to the real economy,and further enhancing China's digital economy's innovation capabilities and sustained comptitiveness. Secondly,we suggest strengthening the full-chain protection of IPR, to embark on a distinctive path of IPR development tailored to China's needs and driven by the objective of Chinese modernization,and expedite the establishment of a capable IPR force worldwide. Thirdly,the government should focus on the confirmation of digital asset rights and interests to safeguard digital asset rights and interests and accelerate the establishment of the data property rights system by conducting research on data asset valuation and establishing a data element allocation mechanism based on value contribution.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 159,
+      "text": "Keywords: Administrative Protection of Intellectual Property Rights;Digitl Transformation; Full-chain Protection of Intellectual Property Rights;Judicial Protection;Social Services",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 160,
+      "text": "JEL Classification:D30,G32,G28",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 161,
+      "text": "（责任编辑：刘莹）（校对：曹 帅）",
+      "heading_level": null
+    }
+  ]
+}

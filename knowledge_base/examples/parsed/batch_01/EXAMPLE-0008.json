@@ -1,0 +1,601 @@
+{
+  "paper_id": "EXAMPLE-0008",
+  "source_sha256": "532848aa276f097559732c05c7486b250f840346c525e8596d6e69fa2b7de608",
+  "topic_hint": "黄勃等：数字技术创新与中国企业高质量发展",
+  "paper_type": "empirical",
+  "method_tags": [
+    "面板模型"
+  ],
+  "clean_units": 98,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "黄勃等：数字技术创新与中国企业高质量发展",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "营流程（Ciarli et al．，2021）和缓解信息不对称（Svahn et al．，2017）等角度分析了数字技术促进生产率长期增长的积极作用。然而，在微观层面，由于新兴技术在研发创新阶段需要投入大量无形资本，这些无形资本在短期内难以带来经济产出，导致数字技术在发展初期可能无助于提高生产率（Brynjolfsson et al．，2017；程文，2021），这引起了学术界对数字化时代“索洛悖论”的担忧（Brynjolfsson＆ Collis，2019）。另一方面，数字技术创新程度通常不会体现于企业年报和财务报表等常规信息披露渠道，这使数字技术创新在微观层面的指标测度上存在一定困难，并且现有文献采用年报关键词度量的数字化转型程度与数字技术创新在概念上截然不同（吴非等，2021）。因此，有关数字技术创新的大样本研究仍有所不足，尤其是关于数字技术创新对企业生产率的实际影响与作用机制，尚待学术界提出实证证据。值得注意的是，专利信息被视为反映企业创新水平的标尺，若通过专利信息识别企业的数字技术创新成果，则可以利用数字专利刻画企业数字技术创新水平（Liu et al．，2023；Corvello etal．，2023），以应对指标测度方面的困难。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "随着数字经济的蓬勃发展，中国在大数据、区块链等数字技术领域的专利申请量位居全球首位。①面对数字技术的高门槛、高成本、可模仿性等特点（Firk et al．，2021），如何在数字技术创新中获取经济效益成为了企业需要深入思考的重要问题（Teece，2018）。②在我国经济增长由要素驱动转向创新驱动的高质量发展阶段，提高全要素生产率不仅是实现高质量发展的关键途径，也是检验高质量发展最核心的指标之一（王一鸣，2022）。因此，本文利用全要素生产率衡量企业高质量发展水平，探究数字技术创新对企业全要素生产率的影响，不仅可以为数字技术赋能实体经济发展的理论机制提供证据支持，也可以为我国促进企业数字技术创新和推动企业高质量发展提供有益启示。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "结合上述研究背景，本文有两项工作重点。其一，借鉴数字创新领域内前沿文献的研究方法，构建中国企业数字技术创新水平的度量指标，为开展相关实证分析提供数据。其二，将根据数字技术的现实应用情况，分析数字技术推动实体经济发展的传导机制，厘清数字技术在企业组织管理、投资决策、资产运营和人力资本方面发挥的管理赋能、投资赋能、营运赋能与劳动赋能功能，从而剖析数字技术创新影响企业全要素生产率的作用机理。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "本文基于上市公司专利申请文件的文本信息，借助文本分析方法识别了数字专利，构建了企业数字技术创新水平的度量指标，并利用全要素生产率刻画企业高质量发展水平，进而考察数字技术创新与企业全要素生产率之间的关系以及其中的作用机制。研究发现，数字技术创新通过降低企业内部管控成本，提高投资决策质量与资产营运效率，以及改善劳动力资源结构，从而促进了企业全要素生产率提升，推动了企业高质量发展。在进一步分析中，围绕着数字技术创新的效率提升作用，本文从知识产权保护、数字基础设施、高新技术企业资质以及劳动密集程度的角度出发，考察了企业外部环境与内部条件的异质性影响，以及不同类别数字技术创新的作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "本文的研究贡献主要体现于如下方面：第一，数字创新是学术界高度关注的研究前沿，该领域的过往研究以理论推导（Acemoglu＆ Restrepo，2019；曲永义，2022）、文献综述（Kohli ＆ Melville，2019；刘洋等，2020）、叙事分析（Tumbas et al．，2018）与案例质性（Svahn et al．，2017）为主要范式，大多支持了数字技术创新促进微观生产率提升的观点。然而，目前的理论研究仍然难以弥补现实数据与理论推测之间的鸿沟。本文考察数字技术创新对企业全要素生产率的影响，丰富了企业数字技术创新的经济后果研究，为数字技术创新助推企业高质量发展提供了理论支撑，也为后续的相关研究设计提供了参考。第二，在经济高质量发展阶段，如何提升企业全要素生产率是当前的重要议",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "①国家互联网信息办公室《数字中国发展报告（2020年）》。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "②为此，Research Policy以“在数字经济的创新中获益”为主题组织了特刊。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "98",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "2023年第3期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "题，而数字技术是当前最具有代表性的新兴技术，有关企业数字技术创新的经济后果亟待实证检验（刘洋等，2020）。本文通过分析数字技术创新对企业高质量发展的引领作用，丰富了有关企业生产率影响因素的实证研究文献。第三，随着数字技术和实体经济深度融合，厘清数字技术对企业的赋能机制尤为重要。本文试图揭示数字技术创新的管理赋能、投资赋能、营运赋能与劳动赋能功能，相关研究结果不仅丰富了数字创新领域的文献，也为引导企业资本有效配置、优化劳动力资源结构等提供了启示。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "本文其他部分安排如下：第二部分为文献综述与理论分析；第三部分介绍实证研究设计；第四部分为主要实证结果与分析；第五部分为进一步分析；最后给出结论与政策启示。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "二、文献综述与理论分析",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "（一）数字技术创新相关文献综述",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "在研究之初，本文首先需要明确数字技术创新的定义。尽管现有文献在关于数字技术创新的定义上各有侧重，但大多数文献支持一个较为统一的定义：数字技术创新是指企业或者组织以数字技术为底层基础，创造出全新的产品、流程、组织和商业模式的过程及结果（Yoo et al．，2012；Nambisan et al．，2017）。在该定义中，数字技术是指信息、计算、沟通和连接技术及其组合，包括人工智能、大数据、云计算和区块链等技术（Vial，2019）；而创新一词则强调了创新过程与创新成果，在大多数研究中以专利产出作为具体表现。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "结合数字技术创新的定义与发展实践，一方面，已有文献探讨了数字技术创新的应用过程与实现路径。Acemoglu＆ Restrepo（2018）指出，新兴数字技术嵌入了实体企业各类型生产经营活动中，能够替代生产流程中的人力劳动，优化传统生产要素的配置，改变了原有的价值创造模式。创新的数字技术能够降低企业对资源要素的依赖，从而推动企业的商业模式转型，以提升资源利用效率。Tumbas et al．（2018）进一步对企业数字技术创新的实现路径进行了探讨，认为知识获取是推动企业数字技术创新的关键。在企业内部，高管成员有关数字技术的职业经历可以促进数字知识共享，有助于企业数字技术创新水平的提升（Firk et al．，2021）。在企业外部，企业与产业链上其他市场主体进行的沟通交流可以促进知识流动，有助于企业发现数字技术创新的机会（Kohli＆Melville，2019）。同时，企业通过并购数字行业的公司，可以跨过组织边界获取数字化相关知识与技术，进而增强企业的数字技术创新能力（Hanelt et al．，2021）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "另一方面，针对数字技术创新为企业带来的经济后果，现有文献基于案例调查和文本分析等方法进行了深入探究。具体而言，企业可以通过数字技术创新降低组织分部之间的信息不对称，进而改善企业的资源整合能力（Svahn et al．，2017），有助于提高企业营运效率和改善企业财务绩效（Liuet al．，2023）。同时，大数据技术的应用可以增强企业的研发创新能力与运营管理能力，有助于增大企业市场价值（张叶青等，2021）。此外，数字创新的产品与流程可以提高客户的满意度，进而促进客户忠诚度提升（Balci，2021）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "尽管已有文献从不同角度探析了企业数字技术创新的实现路径与经济后果，为数字创新领域的研究做出了有益补充，但仍然存在明显的研究缺口。首先，在研究范式上，有关数字技术创新促进生产率提升的学术观点大多来自于案例质性或理论分析的研究，仅有少量文献利用大样本实证分析方法探究数字技术创新的影响后果。其次，在指标测度上，大多数文献以企业年报为基础，刻画企业的数字化转型程度或数字技术应用情况（吴非等，2021；赵宸宇等，2021；张叶青等，2021）。但企业年报对数字技术的描述内容较为有限，而且其文本信息可能被管理层有意操纵，存在企业数字化“说而不做”的现象，导致企业的数字技术创新水平难以被准确衡量。此外，在研究主题上，虽然已有文献实证分析了人工智能技术对企业生产效率的提升作用（Yang，2022），但少有文献囊括",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "99",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "黄勃等：数字技术创新与中国企业高质量发展",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "各类数字技术，从而考察其为企业生产率带来的影响。综上所述可知，关于数字技术创新对企业全要素生产率影响机理的实证研究仍然相对匮乏。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "（二）数字技术创新影响企业高质量发展的作用机理",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "近年来，全球数字经济逆势发展，中国数字经济规模也迅速壮大，年度增长规模位居全球第一。①值得注意的是，我国在数字化领域内技术端与应用端的发展并不平衡。受益于完备的数字基础设施体系和广阔的数字经济市场空间，我国数字应用、数字平台和数字消费高速发展；然而，数字技术创新的进展仍然难以满足日新月异的应用需求，关键的底层技术基础仍然较薄弱，这也成为了制约我国数字经济发展的瓶颈。具体到企业层面，数字技术创新活动对企业的资金、技术、设备和人力资本方面有较高要求，并且这类研发项目投资回报周期较长、不确定性较大（Firk et al.，2021）。许多企业面对数字技术创新的高门槛、高成本和高风险，无法确定数字技术创新能否以及如何提高企业生产效率，因而在数字化转型战略选择中“不愿创新”“不敢创新”。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "党的二十大报告提出，“要坚持以推动高质量发展为主题”“着力提高全要素生产率”，强调在当前高质量发展阶段下提高全要素生产率这一重要着力点。学者们指出，提高全要素生产率不仅是经济高质量发展的实现途径（高培勇等，2020），也是检验高质量发展的核心指标（王一鸣，2022），因此，全要素生产率指标常被用于衡量企业高质量发展水平。根据上述背景，本文利用全要素生产率衡量企业高质量发展水平，试图揭示数字技术创新赋能企业高质量发展的作用机理，进而推动和引导市场资源投向数字技术端，为我国促进企业数字技术创新和推动实体经济发展提供有益启示，并且为企业合理选择数字化发展道路提供参考。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "根据熊彼特的创新与内生增长理论，通过研究、开发与创新活动形成的技术进步属于经济增长的内生因素（Aghion＆ Howitt，1992）。这些研发创新活动发挥的“创造性破坏”作用促进了技术进步，进而推动了经济内生增长（Aghion et al．，2009）。而数字技术创新被视为汇聚创新要素最多、发展应用前景最广的创新领域（庄荣文，2021），对当前各类社会经济活动具有深刻影响（曲永义，2022）。数字技术的渗透性使生产要素和生产关系逐渐向数字化发展，可以降低经济活动中的搜索成本、复制成本、传递成本、跟踪成本与验证成本，将会改变经济社会发展范式。具体到企业层面，数字技术创新可能通过如下渠道赋能企业高质量发展：其一，数字技术创新可以改善企业组织内部的沟通效率与协同效率，降低内部监督所需的成本，对企业进行“管理赋能”。其二，企业可以借助数字技术增强信息获取能力与分析能力，有助于提高企业投资决策质量，促成“投资赋能”。其三，数字技术创新有助于优化企业生产要素配置，提高资产营运效率，发挥“营运赋能”的功能。其四，数字技术创新将会促使企业匹配高技能的劳动力，从而优化劳动力资源结构，实现“劳动赋能”。接下来，本文依次从以上四个角度出发，分析数字技术创新影响全要素生产率以推动企业高质量发展的作用机理。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "首先，从管理赋能角度而言，数字技术创新有助于降低企业的内部管控成本，从而提升企业全要素生产率。其中，内部管控成本来源于两部分，一是企业内部对各分部活动进行统筹与协调所付出的管控成本，二是企业因代理问题导致的效率损失，以及为减轻代理问题而产生的监督控制成本（袁淳等，2021）。过往文献对数字技术创新与组织数字化转型展开了探讨，提出了数字组织创新的概念，强调了数字技术创新赋能企业组织管理、降低内部管控成本的作用（Bharadwaj et al.，2013）。一方面，在企业组织内部，数字技术往往作为辅助模块嵌入至业务层面的运营架构中（Yooet al．，2012），可以用于实时监测生产工具的利用情况以及生产单元的产出效率，这将有助于降低企业的边际内部管控成本。另一方面，针对内部运营存在的代理问题，数字技术创新推动企业实现生",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "①中国信息通信研究院《中国数字经济发展报告（2022年）》。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "100",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "黄 勃等：数字技术创新与中国企业高质量发展",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "作交由数字技术承担之后，其员工能够专注于价值更高的生产活动，促使企业现有员工开始承担高技能水平的工作。与此同时，企业为了帮助员工更好地满足数字技术创新相关工作的需求，可能通过内部培训、学历教育等方式开展人力资本投资。这一作用也将有助于改善企业的劳动力资源结构。已有研究表明，劳动力资源结构的变化是数字化战略影响企业生产效率的机制之一（赵宸宇等，2021）。因此，本文预期数字技术创新将会促使企业优化劳动力资源结构，进而推动全要素生产率提升。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "综合上述分析，本文提出核心研究假设：数字技术创新将会通过管理赋能、投资赋能、营运赋能与劳动赋能的机制，促进企业全要素生产率提升。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "三、实证研究设计",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "（一）样本数据",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "本文选取2008-2020年A股上市公司作为初始研究样本。样本公司数据来源分为三类：其一，有关企业基本信息、财务指标以及公司治理的相关数据来自CSMAR数据库；其二，公司研发支出数据来自CNRDS数据库；其三，上市公司专利文本信息来自WinGo财经文本数据平台，具体包括专利的所属公司名称、专利申请日期，以及申请文件的摘要、说明书和权利要求书等内容。此外，本文对初始样本进行了如下处理：（1）剔除ST类公司样本；（2）剔除金融行业公司；（3）剔除信息传输、软件和信息技术服务业公司；（4）剔除IPO未满一年的公司样本；（5）剔除总资产小于总负债的样本。经过整理，本文得到公司一年度样本观测值共计26433个。为了减轻极端值的影响，对连续型变量进行了1％的缩尾处理。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "（二）变量定义",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "1．数字技术创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "如何度量企业层面的数字技术创新水平是本研究的重点。通常而言，专利申请数量是刻画企业研发创新水平常用指标。已有文献利用专利文本信息识别企业层面的数字专利（digital patent），根据专利申请数量构建企业数字技术创新的度量指标（Liu et al．，2023）。也有研究采用相似的做法，围绕着数字技术中的人工智能技术，进行专利文本分析与指标构建（Yang，2022）。本文借鉴这一思路，对上市公司所有发明专利与实用新型专利的申请文件的摘要、说明书和权利要求书进行关键词文本分析，①确认各项专利是否属于数字专利。其中，数字技术关键词的选取依据是现有文献提出的数字技术特征词（吴非等，2021），包括“底层技术”以及“技术应用”两个层次的五类关键词，具体参考了《中小企业数字化赋能专项行动方案》《2020年数字化转型趋势报告》等官方文件和权威报告。作者团队也参考了《企业数字化转型白皮书（2021版）》，进一步补充了数字技术关键词（如“云平台”“智能工厂”）等。②在后文中，本文将根据数字专利的法律许可状态、专利行业分类以及技术构成差异做出进一步细分和相应的检验。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "基于上述情况，本文依据数字技术关键词对专利申请文件的内容进行了文本分析，从而计算得到上市公司各年度内的数字专利申请数量，加1取自然对数后用变量Digilnno 表示，作为企业数字技术创新指标。③根据样本数据，近十年以来，我国上市公司数字专利的申请数量、数字专利",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "① 专利文件的摘要主要介绍专利所属的技术领域、技术的主要内容以及专利的用途；说明书主要包含专利技术方案的详细内容；权利要求书记载了专利技术方案的构成以及专利保护范围。上述三类文本内容可以较为全面地介绍专利技术信息。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "②本文对专利申请文件进行了抽样分析，发现数字技术关键词与专利的数字技术创新特征紧密相关。若采用更宽泛的数字技术关键词，本文的研究结果并未出现实质性变化。限于篇幅，数字技术关键词词库留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "③ 通过将数字技术创新指标与基于年报文本构建的数字化转型指标进行回归分析（吴非等，2021），本文发现二者之间呈显著正相关，说明数字技术创新指标可以在一定程度上反映企业数字化水平。实证结果留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "102",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "2023年第3期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "续表6",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "变量 | TFP_LP | TFP_LP | TFP_LP | TFP_LP\n变量 | 高新技术企业 | 非高新技术企业 | 劳动密集型企业 | 非劳动密集型企业\n变量 | (5) | (9) | (7) | (8)\nDigilnno | 0.0442***\n(3.284) | 0.0164\n(1.452) | 0.0335***\n(2.964) | 0.00540\n(0.368)\n组间差异 | 0.0278*(p<0.05) | 0.0278*(p<0.05) | 0.0245*(p<0.05) | 0.0245*(p<0.05)\n控制变量 | 是 | 是 | 是 | 是\n固定效应 | 是 | 是 | 是 | 是\n观测值 | 7575 | 18858 | 12667 | 13766\nR2 | 0.945 | 0.922 | 0.934 | 0.924",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "2．数字基础设施",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "在数字创新研究领域，学者们强调了数字基础设施（digital infrastructure）的重要性，认为数字技术创新活动离不开主体所在生态系统的数字基础设施，企业需要当地的技术环境与基础设施提供必要的支持。借鉴已有文献（杨慧梅和江璐，2021），本文根据企业所在城市的互联网接入端口数量与居民人数之比的年度中位数，区分企业所在地区数字基础设施发展水平的高低，进行分组检验。由表6第（3）和第（4）列所示，在数字基础设施发展水平较高的地区，数字技术创新与企业全要素生产率之间的正相关关系更为显著。该结果表明，当数字基础设施较为完善时，数字技术创新可以更有效地提高企业全要素生产率，支持了本文的理论分析。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "（二）数字技术创新内部条件的影响",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "1．高新技术企业资质",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "高新技术企业资质可能影响数字技术创新与企业全要素生产率之间的关系。其一，高新技术企业通常在人力资本与技术积累等方面具有相应的优势，有利于数字技术创新成果转化与应用。其二，高新技术企业资质附带一系列的税收优惠与财政补贴政策，能够补偿数字技术研发创新活动产生的成本，使企业可以通过数字技术创新获得更高的经济回报，进而促进全要素生产率提升。为了检验上述推论，本文根据样本是否得到高新技术企业认定资质，对样本进行分组检验。表6第（5）和第（6）列结果表明，在高新技术企业中，数字技术创新促进企业全要素生产率提升的作用更为显著，与前述的理论推测相符。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "2．劳动密集程度",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "过往研究已表明，包括大数据、人工智能在内的新兴数字技术赋能了传统生产流程，推动企业劳动力的数字化转型，可以降低劳动力在传统生产经营流程中的参与程度（Acemoglu＆Restrepo，2018；Chen et al．，2022）。本文推测，对于劳动密集型企业而言，上述效应可能更为显著，并表现为数字技术创新在更大程度上提升企业生产效率。赵宸宇等（2021）的研究也为该推测提供了支持，认为数字化转型的效率提升作用在劳动密集型企业中尤为明显。为了检验上述推测，本文借鉴魏志华等（2022）的方法，用企业员工人数与总资产的比例刻画劳动密集程度，再将该比例与其行业年度中位数进行比较，从而确定企业劳动密集程度的高低，并据此进行分组检验。由表6第（7）和第（8）列结果可见，数字技术创新变量 Digilnno 对企业全要素生产率的回归系数在劳动密集型企业中更大。这表明，数字技术创新更有效地赋能了劳动密集型企业的高质量发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "（三）数字技术创新细分类别的影响",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "不同类型的数字技术创新成果可能对企业全要素生产率带来不同程度的影响。借鉴吴非等（2021）的研究，本文针对数字技术特征词的分类，细分了数字技术创新的类别，包括“底层技术层",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "111",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "黄 勃等：数字技术创新与中国企业高质量发展",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "面”的主流数字技术方向：人工智能、大数据、云计算以及区块链，以及“实践应用层面”的数字技术应用。据此，本文分别构建细分的数字技术创新指标，以检验细分类别的数字技术创新对企业全要素生产率的影响。限于篇幅，实证结果留存备索。根据实证结果，无论是特定数字化类别的底层技术创新，还是有关数字技术应用的创新，均有效促进了企业全要素生产率增长。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "六、结论与启示",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "数字技术牵引了新一轮的要素变革与结构变革，赋能了微观企业的提质增效与转型升级，但在研发阶段需要大量无形资本投入。目前，尽管学者们大多支持数字技术创新对推动社会经济发展的积极作用，也仍然存在对数字化时代“索洛悖论”的担忧（Brynjolfsson＆ Collis，2019）。结合数字创新领域的相关文献，本文分析认为，企业可以通过数字技术创新实现管理赋能、投资赋能、营运赋能与劳动赋能，促进以全要素生产率刻画的企业高质量发展。本文以2008-2020年A股上市公司为研究样本，通过文本分析方法识别数字专利以度量企业数字技术创新水平，探究了数字技术创新对企业全要素的影响，以及其中的作用机理与异质性影响因素。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "研究结果表明：首先，数字技术创新提升了企业全要素生产率，推动了中国企业高质量发展。在作用机制上，数字技术创新推动企业降低内部管控成本，提高资产营运效率与投资决策质量，以及改善劳动力资源结构，进而促进了企业全要素生产率提升。这一发现揭示了数字技术在企业中发挥的管理赋能、投资赋能、营运赋能与劳动赋能的功能。其次，数字技术创新的外部环境，如知识产权保护和数字基础设施，以及企业内部条件，如高新技术企业资质和劳动密集型特征，均有助于增大数字技术创新对企业全要素生产率的提升作用。此外，底层技术与实践应用层面的数字技术创新对全要素生产率均有提升作用。本研究基于专利文本信息构建了中国企业数字技术创新水平的度量指标，为探究数字技术创新的经济效应提供了丰富的经验证据，证明了数字技术创新已成为我国企业高质量发展的驱动因素。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "结合上述的研究结论，本文具有如下政策启示：",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "第一，加大对企业数字技术创新的支持力度，构筑中国企业数字经济竞争新优势。我国的“十四五”规划明确指出“加强关键数字技术创新应用。”根据本文研究可知，数字技术创新促进了企业全要素生产率提升，有助于推动企业高质量发展。我国具有发展数字经济的“超大规模性”优势（国务院发展研究中心课题组等，2020），数字经济体量在近年内迅速增长，越来越多企业开始推进数字化转型。然而，面对数字技术创新的诸多挑战，加之中国传统观念对稳定性的重视（曲永义等，2022），许多企业在数字化道路上尚未选择自主创新这一前进方式。因此，政府部门应当为数字技术创新发展制定科学有效的激励政策，从税收优惠、政府补助等方面提供必要的财政支持，合理引导国家资源与市场资源投向数字技术创新，激发企业研发创新的积极性，促进企业数字技术创新成果的逐步积累，以此赋能中国企业高质量发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "第二，着眼于企业的数字技术创新的应用场景与内部条件，有针对性地推动数字技术和实体经济深度融合。党的二十大报告强调，应当“加快发展数字经济，促进数字经济和实体经济深度融合，打造具有国际竞争力的数字产业集群”。本研究揭示了数字技术创新影响企业全要素生产率的具体机制，解答了企业如何从数字技术创新中获益的问题（Teece，2018），有助于总结数字技术赋能实体经济的有益经验，为推动数字技术与实体经济相融合提供理论指导。企业应当积极研判自身的数字化发展需求、技术创新优势以及产业的数字化发展趋势，选择合适的应用场景，更有针对性地实现数字技术创新赋能企业高质量发展的效果。此外，应当主动分析企业开展数字技术创新的内部条件。对于创新优势突出的高新技术企业，以及亟待数字技术赋能的劳动密集型企业，应当更加重视数字技术创新的价值，主动把握企业转型升级的发展机会。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "112",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "黄 勃等：数字技术创新与中国企业高质量发展",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "Acemoglu, D., and P. Restrepo, 2018, \"The Race between Man and Machine: Implications of Technology for Growth, Factor Shares, and Employment\",American Economic Reriew, 108(6),1488-1542.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "Acemoglu, D., and P. Restrepo, 2019, \"Automation and New Tasks: How Technology Displaces and Reinstates Labor\",Journal of Economic Perspectives,33(2),3-30.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "Aghion,P., and P. Howitt, 1992 \"A Model of Growth through Creative Destruction\", Econometrica,60(2),323-351.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "Aghion,P.,R. Blundell, R. Griffith, P. Howitt, andS. Prantl, 2009, \"The Effects of Entry on Incumbent Innovation and Productivity\", Retiew of Economics and Statistics, 91(1), 20-32.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "Balci, G., 2021, \"Digitalization in Container Shipping: Do Perception and Satisfaction Regarding Digital Products in a Non-technology Industry Affect Overall Customer Loyalty?\",Technological Forecasting and Social Change, 172, 121016.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "Bharadwaj,A.,O.A. Sawy,P.A. Pavlou, and N. Venkatraman, 2013, \"Digital Business Strategy: Toward a Next Generation of Insights\",MIS Quarterly,37(2),471-482.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "Brynjolfsson, E., and A. Collis, 2019, \"How Should We Measure the Digital Economy\",Hartard Business Review,97(6), 140-148.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "Brynjolfsson,E.,D. Rock, and C. Syverson, 2021,\"The Productivity J-eurve: How Intangibles Complement General Purpose Technologies\",American Economic Journal: Macroeconomics, 13(1), 333-372.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "Chen,N.,D. Sun,and J. Chen, 2022, \"Digital Transformation, Labour Share,and Industrial Heterogeneity\", Journal of Innovation and Knowledge,7(2),100173.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "Ciarli, T., M. Kenney, S. Massini, and L. Piscitello, 2021, \"Digital Tehnologies,Innovation,and Skills: Emerging Trajectories and Challenges\", Research Policy, 50(7) ,104289.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "Corvello, V., J. Belas, C. Giglio, G. Iazzolino, and C. Troisee, 2023, \"The Impact of Business Owners'Individual Characteristics on Patenting in the Context of Digital Innovation\", Journal of Business Research, 155, 113397.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "Firk,S.,Y.Gehrke,A. Hanelt, and M. Wolff, 2021, Top Management Team Characteristics and Digital Innovation:Exploring Digital Knowledge and TMT interfaces\",Long Range Planning, 55(3),102166.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "Hanelt, A., S. Firk, B. Hildebrandt, and L. M. Kolbe, 2021, \"Digital M&A, Digital Innovation, and Firm Performance: an Empirical Investigation\",European Journal of Information Systems,30(1),3-26.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "Kohli, R., and N. P. Melville, 2019, \"Digital Innovation: A Review and Synthesis\", Information Systems Journal,29(1), 200-223.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "Liu,Y., J. Dong, L. Mei, and R. Shen, 2023, \"Digital Innovation and Performance of Manufacturing Firms: An Affordance Perspective\", Technovation, 119,102458.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "Mendling, J., B. T. Pentland, and J. Recker, 2020, \"Building a Complementary Agenda for Business Process Management and Digital Innovation\",European Journal of Information Systems,29(3),208-219.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "Nambisan, S., K. Lyytinen, A. Majchrzak, and M. Song, 2017, \"Digital Innovation Management: Reinventing Innovation Management Research in a Digital World\", MIS Quarterly, 41(1),223-238.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "Park, H. J., and S. O. Choi, 2019, \"Digital Innovation Adoption and its Economic Impact Focused on Path Analysis at National Level\",Journal of Open Innoration: Technology, Market and Complexity,5(3),56.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "Svahn,F.,L. Mathiassen,and R. Lindgren, 2017, \"Embracing Digital Innovation in Incumbent Firms: How Volvo Cars Managed Competing Concerns\",MIS Quarterly,41(1),239-253.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "Teece, D. J.,2018, \"Profiting from Innovation in the Digital Economy: Enabling Technologies, Standards, and Licensing Models in the Wireless World\",Research Policy,47(8),1367-1387.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "Tumbas,S.,N.Berente, and J. Brocke, 2018, \"Digital Innovation and Institutional Entrepreneurship:Chief Digital Officer Perspectives of their Emerging Role\",Journal of Information Technology,33(3),188-202.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "Vial, G., 2019, Understanding Digital Transformation: A Review and a Research Agenda\",Journal of Strategic Information Systems, 28(2),118-144.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "Yang, C. H.,2022 \"How Artificial Intelligence Technology Affects Productivity and Employment: Firm-level Evidence from Taiwan\",Research Policy,51(6),104536.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "Yoo,Y.,R.J. Boland, K. Lyytinen, and A. Majchrzak, 2012,\"Organizing for Innovation in the Digitized World\",Organization Science,23(5),1398-1408.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "Zapadka,P.,A. Hanelt, and S. Firk, 2022, \"Digital at the Edgeantecedents and Performance Effects of Boundary Resource Deployment\",The Journal of Strategic Information Systems,31(1),101708.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "114",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    }
+  ]
+}

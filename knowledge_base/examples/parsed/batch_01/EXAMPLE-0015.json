@@ -1,0 +1,928 @@
+{
+  "paper_id": "EXAMPLE-0015",
+  "source_sha256": "7017d150ed45c6a322cdfe04a4661b919a7bfb704c08b89f767499cb7e4efc18",
+  "topic_hint": "ESG绿色溢出、供应链传导与企业绿色创新＊",
+  "paper_type": "empirical",
+  "method_tags": [
+    "DID",
+    "面板模型",
+    "调节效应",
+    "工具变量"
+  ],
+  "clean_units": 152,
+  "replacement_count": 1,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "ESG绿色溢出、供应链传导与企业绿色创新＊",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "严兵程敏王乃合",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "内容提要：将ESG（环境、社会和公司治理）纳入供应链评估体系是实施绿色供应链管理的基础，也是促进企业绿色创新的重要手段。本文基于2010-2021年中国上市公司供应链数据研究发现，下游客户的ESG优势可以激励中游企业进行绿色创新，这种影响主要通过强化企业绿色意识、加大商业信贷支持以及绿色技术溢出等渠道实现。通过区分企业-客户关系特征发现，当中游企业更依赖大客户以及企业-客户的股权性质一致时，更有助于中游企业推进绿色创新，且在高环境不确定性下，“机会导向效应”发挥主导作用，企业更倾向于绿色创新。进一步分析揭示了ESG绿色溢出的非对称传导效应和双重角色的抵消作用，说明了供需协调成本和供需关系平衡的重要性。本文也证实了下游客户ESG优势通过促进中游企业绿色创新能帮助企业实现碳减排和提升碳绩效。本文揭示了供应链ESG管理对于推动绿色供应链建设的重要作用，为大力发展绿色低碳经济、积极稳妥推进碳达峰碳中和提供了政策参考。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "关键词：ESG溢出效应 非对称传导 绿色创新 绿色供应链",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "确保供应链的可持续性对于企业实现长期稳定发展具有重要意义。随着ESG评价标准的普及，将这些标准融入供应链管理已成为企业增强竞争优势、稳固供应链基础的重要策略。从政策导向来看，受中国政府提出的碳达峰和碳中和“ ”政策框架的影响，目前中国企业在供应链管理方面的政策重点继续集中在绿色供应链管理上。具体到ESG议题，中国的监管政策更加注重企业供应链环境风险的预防和控制措施，尤其是在环境管理和资源循环利用方面。供应链是一个涵盖产品设计、制造、分销直至售后服务的复杂网络，其中每个环节都相互联系、相互依赖。这种结构意味着一旦某个环节出现问题，风险会迅速沿着供应链传播到其他环节，从而放大潜在的负面影响。因此，企业日益关注提升其供应链的ESG管理能力，采取主动管理上游产业链的策略。通过制定和持续改进绿色采购准则、组织供应商培训和交流会议，企业致力于减少供应链中的潜在ESG风险。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "尽管中国政府已经实施了一系列政策来指导和推动绿色供应链的建设，但这一领域的发展在当前仍然处于起步阶段。随着消费模式的升级和消费者对可持续产品需求的日益增长，供应链的下游环节开始对产品提出更高的绿色和环保标准。①这种市场需求的转变将促使上游企业采取行动，向更加环境友好的生产方式转型，进而在整个供应链中形成一种积极的反馈循环，推动整个行业向绿色可持续发展的方向发展。在可持续发展的背景下，学者们逐渐将研究重点从企业的经济绩效转向绿色转型（肖红军等，2022）。作为推动企业绿色转型的核心，绿色创新通常被认为是一种",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "＊严兵，南开大学跨国公司研究中心、南开大学经济行为与政策模拟实验室，邮政编码：300071，电子信箱：yanbing＠nankai．edu．cn；程敏、王乃合，南开大学经济学院，邮政编码：300071，电子信箱：XXXXXXXXXX＠mail．nankai．edu．cn，naihew＠nankai．edu．cn。本文研究得到国家社会科学基金重大项目（23ZDA057）的资助。作者感谢匿名审稿专家提供的建设性意见，文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "① 自促进绿色消费实施方案发布到2022年8月30日止，国务院共发布《“十四五”推进农业农村现代化规划》《乡村建设行动实施方案》等8项相关政策；国家发展和改革委员会、工业和信息化部在内的各部门相继出台政策共67项。各重点领域政策完整度评估表现均为良好。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "72",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "man，1984）。为了保护自身利益，利益相关者会对企业的政策和经营活动施加影响。以往的研究（Fineman ＆ Clarke，1996；Miao et al．，2012；Di ＆Kostovetsky，2014）确定了六类利益相关者（员工、股东、客户、竞争对手、合作伙伴和政府／非政府组织／监管机构）。与对企业资源配置和重要决策具有直接影响力的内部利益相关者不同，作为重要的外部利益相关者之一，下游客户通常对其供应商的行为或活动没有直接影响力。但同时有文献证明，客户可以表达他们的意见，并对一系列企业政策和经济结果产生间接影响（Gosman et al．，2004；Johnson et al．，2010；Kim ＆ Wemmerlöv，2015；Kro-likowski＆ Yuan，2017）。同时，利益相关者在鼓励企业采用更好的企业社会责任标准方面起着至关重要的作用（Yu＆Choi，2016）。下游客户ESG绩效的提升反映了其对环境保护、社会责任和良好治理结构的承诺与实践。这种承诺不仅影响客户企业内部的运营和管理，也通过供应链关系向中游企业传递了对高标准ESG实践的期望。中游企业为了满足客户的要求，保持业务关系并在市场中保持竞争力，往往会响应客户的期望，努力提升自身的ESG表现（Schiller，2018；Dai et al．，2021；Tang et al., 2023)。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "Spence（1974）的信号传递理论则指出，企业通过发送信号来传递其内部质量或价值观。下游客户提升ESG表现可以作为对绿色和社会责任的信号，中游企业接收到这些信号后，可能会采取相应的绿色创新行动。具体地，当客户企业的ESG表现提升后，会对中游企业提出更高的环境标准和要求。这种提升可能是由于客户企业内部政策的改进，或是对外部压力（如消费者期望、法规要求）的响应。客户企业会要求中游企业遵循更严格的环保法规，减少碳排放，使用可再生能源等，从而推动中游企业在生产和运营过程中进行绿色创新。而且，下游客户的绿色创新需求可以带动中游企业的研发投入和技术升级，以满足新的市场需求。客户企业在提升自身ESG表现的过程中，可能会推出更多绿色产品或服务，进而要求中游企业提供相应的绿色产品。这种需求的变化迫使中游企业必须加大研发投入，开发出符合客户需求的绿色产品。中游企业可能需要在研发过程中投入更多资源，进行技术创新和工艺改进，以提高产品的环保性能。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "下游客户的ESG优势不仅传递了绿色信号和绿色意识，还能够形成一种正向激励机制，促进中游企业主动进行绿色创新。一方面，客户企业可以通过长久合作和优惠条件，激励中游企业投资绿色技术和可持续项目。具体来说，客户企业可以通过签订长期合同、提供预付款或给予价格优惠等方式，减轻中游企业的财务压力，使其有更多资源和动力投入绿色创新中。这种经济上的激励可以显著降低中游企业进行绿色创新的风险和成本，提高其参与绿色转型的积极性。另一方面，下游客户的ESG优势在实践中可以转化为先进的绿色技术和可持续的生产方式（刘柏等，2022；胡洁等，2023）。这些技术和做法可以通过供应链关系被中游企业观察和学习，从而激发中游企业在绿色技术方面的创新。此外，ESG表现优秀的下游客户通过与中游企业建立更紧密的合作关系，包括共同研发、技术交流和知识共享等，可以进一步促进绿色技术的快速传播和应用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "基于上述分析，有理由认为下游客户的ESG优势能够通过供应链的有效联系，促进中游企业进行绿色创新，进而推动整个供应链的可持续发展。据此，本文提出以下基本假说：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "假说1：下游客户企业的ESG优势可以促进中游企业提高绿色创新活动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "（二）影响机制分析",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "当涉及客户企业ESG优势对中游企业绿色创新行为的影响机制时，已有研究提供了一些深入的洞察和关键发现：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "一是客户企业ESG优势与绿色意识传递。首先，客户企业在提升自身ESG表现的过程中，通常会向其供应链传递明确的环境和社会责任信号（Huang，2022）。这些信号不仅包括对供应商的环境绩效要求，还涉及对其社会责任和治理实践的期望。当下游客户重视并提升自身ESG表现时，供应商会感受到来自客户的压力和期望。这种来自利益相关者的诉求会倒逼供应商增强其自身的绿",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "74",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "中国知网 https：／／www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "色意识和环境关注，选择绿色创新战略（李青原和肖泽华，2020）。其次，当下游客户的ESG评级提升时，展示了高ESG标准带来的市场认可和竞争优势。这种成功案例可以激励中游企业效仿下游客户的做法（Cao et al．，2019），通过提升自身的ESG表现来获得类似的市场认可和竞争优势，从而主动进行绿色转型和绿色创新。再次，在供应链管理中，客户企业的ESG优势还有助于缓解供应链中的信息不对称问题。客户企业的ESG报告可以作为新的信息来源，通过定期披露环境、社会和治理方面的绩效和目标，增加信息透明度，向供应商传递其真实发展需求。这种透明度提升有助于减少供应商对客户需求和市场趋势的不确定性，使其更清晰地理解客户的绿色标准和长期可持续发展目标。通过缓解信息不对称和建立信任关系，客户企业的ESG优势减少了供应商对绿色创新投资风险的担忧，进而提高供应商的环境关注度和推动绿色化转型。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "二是客户ESG优势与商业信贷支持。其一，政策与市场驱动。高ESG评级的企业通常能获得更多政策支持和市场认可（Ghoul et al．，2017），这有助于其在供应链中发挥引领作用。政府和监管机构经常会为ESG表现优秀的企业提供各种激励措施，例如税收减免、补贴以及优先获得绿色融资（Xu et al．，2016）。这些政策支持增加了客户企业的资金储备和财务灵活性，使其能够向中游企业提供更多的商业信贷。这种政策与市场驱动因素确保了客户企业在支持中游企业绿色创新时拥有足够的资源和动力。其二，改善现金流管理。高ESG评级客户企业通常具备更出色的现金流管理能力和财务健康状况（Friede et al．，2015；肖红军，2020）。这些企业能够更灵活地调配资金，提供预付款或延长付款期限，缓解中游企业的资金压力。这种改进的现金流管理，不仅提升了中游企业的财务稳定性，还增强了其在绿色创新项目上的投资能力。通过改善供应链上下游企业的现金流状况，客户企业能够有效地推动整个供应链的可持续发展。其三，商业信贷激励。高ESG评级的下游客户常常利用合同条款或合作协议来激励中游企业达到更高的环保和社会责任标准。例如，这些客户企业可能会提供更有利的商业信贷条件，如更长的付款周期或更高的预付款比例，以换取中游企业在绿色创新和可持续发展方面的改进。通过这种商业信贷激励机制，客户企业能够有效推动中游企业改进其生产和运营模式，增加对环保技术和创新项目的投入，最终实现整个供应链的绿色创新和可持续发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "三是客户ESG优势与绿色技术溢出。Aghamolla ＆ Thakor（2022）及Cao et al．（2019）的研究证实，企业的经营决策、信息披露和财务策略等商业活动会产生连锁反应，导致溢出效应。类似地，“绿色技术溢出”效应是指企业在绿色技术和管理方面的知识和经验会通过合作、模仿和竞争等方式，扩散到供应链中的其他企业，从而提高整体的绿色技术水平和创新能力。首先，下游客户企业在提升自身ESG表现的过程中，会在绿色技术研发和应用上积累丰富的经验和知识（方先明和胡丁，2023）。这些客户企业通常会采用先进的环保技术、可再生能源和绿色管理模式，并且致力于减少碳排放和环境污染（Li＆Xu，2024）。这些绿色技术和管理实践不仅有助于客户企业自身的可持续发展，也为其供应商提供了重要的学习和借鉴机会。其次，客户企业在与供应商的合作中，可以通过技术转让、培训和共同研发等方式，将其在绿色技术和管理方面的成功经验和创新成果传递给供应商。例如，客户企业可以组织供应商参加绿色技术培训，分享绿色创新的最佳实践，或者通过合作研发项目，共同开发和推广绿色技术（Patatoukas，2012）。这些合作不仅能够提升供应商的技术水平，还能够增强其绿色创新能力。此外，为了维护其绿色声誉，客户企业在与供应商的合同和合作协议中，往往会明确提出环境和社会责任的要求，迫使供应商采用先进的绿色技术和管理方法。客户企业可以为符合绿色标准的供应商提供更多的商业机会和合作优惠，从而激励供应商进行绿色创新。通过这种方式，客户企业的绿色技术优势和管理经验可以有效地溢出到供应链的中游企业，促进其绿色技术的发展和应用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "综上，本文提出以下研究假说：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "75",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "中国知网 https：／／www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "严 兵等：ESG绿色溢出、供应链传导与企业绿色创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "假说2：下游客户的ESG优势可以通过增强绿色意识、强化商业信贷支持、提供绿色技术溢出来促进中游企业绿色创新。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "三、实证研究策略",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "（一）实证模型",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "本文旨在探索并填补现有研究中对下游客户ESG表现如何影响中游企业绿色创新行为的认识空缺，并为相关理论和实践提供有力的证据支撑。基于充分的理论基础和已有的研究框架，本文通过计量分析来提供实证证据，以揭示下游客户ESG绩效与中游企业绿色创新的潜在因果链。基准模型设定如下：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "(1)",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "在（1）式中， 分别代表中游企业、下游客户、所属行业及年份。被解释变量 分别为中游企业的绿色创新数量、质量以及效率，用于评估中游企业在绿色创新和可持续发展方面的表现。核心解释变量为中游企业对应的下游客户ESG评级分数 ，用于衡量客户企业在环境、社会和公司治理方面的绩效。在（1）式中，也包含了中游企业自身的ESG评级表现 esg_o,，用于分离其自身ESG的影响。考虑到企业的绿色创新行为并不是一蹴而就的，因此将核心解释变量均滞后一期，这在一定程度上也可以缓解逆向因果导致的内生性问题。此外，本文还引入了一系列中游企业和下游客户层面的控制变量CV，以排除其他潜在因素的干扰。同时，为尽可能避免行业层面的政策或供求冲击对于企业绿色创新活动的影响，本文也加入了中游企业所属行业的固定效应 和年份固定效应（φ，）。最后，实证分析中将标准误聚类到中游企业层面。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "（二）数据说明",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "1．数据来源",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "为了识别绿色专利，①国际上广泛采用的是世界知识产权组织（WIPO）发布的国际专利分类（IPC）绿色清单工具。本文利用这一工具，基于国家知识产权局的专利数据库，对绿色专利进行定位和分类。ESG测度数据来源于华证ESG评级数据库。②其余企业层面的财务数据则主要来自国泰安（CSMAR）数据库。考虑到2009年后中国上市公司披露客户信息的情况较为普遍，因此以2010-2021年披露了客户名称的上市公司为研究样本，供应链数据来源于中国研究数据服务平台（CNRDS）。上市公司披露的前五大供应商和客户信息属于自愿性披露范畴，因此删除了其中客户信息披露不明的样本，匹配ESG评级数据后，最终得到2215条“中游企业-客户一年度”观测值，与现有研究基本吻合。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "2．变量构建",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "被解释变量。首先将绿色专利数据与中游企业信息进行匹配，整合得到中游企业的绿色专利申请总量，加1取自然对数之后作为中游企业的绿色创新数量（greenp）。 将国际专利绿色分类清单分七类统计，分为发明专利和实用新型，分别将其申请量加1取自然对数之后得到绿色发明专利数量（greeninv）和实用新型数量（greenuti）。一般认为发明专利所包含的创新质量更高，故将greeninv作为绿色创新质量。此外，借鉴张琦等（2019）的做法，将年报在建工程明细表中与污染预防、生态环境治理、绿色生产等相关的投资支出项数据加总处理，④取得企业当年的绿色投资支出",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "①绿色专利是在环境保护和可持续发展领域中的技术创新成果，旨在减少对环境的损害和提升资源的使用效率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "② 因篇幅所限，关于华证ESG指标的优势说明详见本刊网站登载的附录1。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "③ 参考刘金科和肖翊阳（2022），专利授权数据较为滞后，且审批期限长短容易混淆其他因素的影响，故使用绿色专利申请数据。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "④ 如脱硫脱硝、污水处理、节能、除尘、废气废渣处理、环境治理、生态恢复、清洁化生产等项目。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "76",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "中游企业的绿色创新行为。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "2．更换估计方法",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "在绿色专利数据的处理过程中，由于存在大量的零值，可能会影响模型的估计结果和稳健性。本文采用多种估计方法进行检验：（1）采用泊松伪最大似然估计（PPML）方法进行估计；（2）采用Heckman样本选择模型，分别估计了广延边际（是否绿色创新）和集约边际的效应（绿色创新专利大于0时的效应）。结果表明，客户ESG优势不仅有助于提高中游企业的绿色创新水平，还可以提高企业绿色创新成功的概率；①（3）采用零膨胀泊松回归模型（ZIP）；（4）采用处理效应模型（treatmenteffects model）来缓解供应链信息披露的自选择问题。所得结论与基准回归结果一致。②",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "3．更多的证据",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "（1）更换评级体系。中国的ESG评级体系较为多样化，不同ESG评级机构对子维度的权重分配存在差异和分歧。为排除ESG评价指标体系的权重倾向干扰，在匹配本文样本跨度的基础上，本文选择中国研究数据服务平台（CNRDS）提供的中国企业ESG评分体系进行交叉检验。（2）从较为长期的角度来检验下游客户的ESG表现对于中游企业绿色创新的持续性作用，分别估计对t＋1期、期绿色创新的影响。（3）剔除中游企业-客户关系少于两年的观测值，只关注持续时间不少于两年的样本。以上估计结果均显示基准结果稳健。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "（三）内生性问题",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "1．工具变量回归③",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "虽然在基准模型中将下游客户的ESG评级滞后一期，在一定程度上可以缓解反向因果带来的内生性，但仍可能存在绿色创新能力较强的中游企业内生地选择与ESG评级表现良好的下游客户进行商业合作的可能，从而产生内生性问题。有鉴于此，本文构造客户企业ESG评级表现的工具变量来解决这一问题。借鉴谢红军和吕雪（2022）的做法，选取“泛ESG”基金的持股市值作为客户企业ESG评级的工具变量。一方面，以ESG为主题的公募基金作为企业的股东，有权力和责任对持有的企业进行监督和激励，要求其改善ESG表现。如果企业未能达到公募基金的ESG标准，公募基金可以通过投票权等方式施加压力，促使企业改善其ESG表现，因此该工具变量满足相关性。另一方面，ESG主题的公募基金通常是由专门的基金公司或投资团队管理运作，其投资决策独立于其他企业或市场因素，因此也满足外生性要求。并且，客户企业被“泛ESG”基金持股的市值不会与其供应商企业的绿色创新产生直接联系。当客户企业得到ESG公募基金的认可和投资时，其对供应链的要求和影响也会增加，进而激励其供应商积极采取绿色创新措施，以满足客户企业对ESG方面的要求，因此亦能满足排他性要求。综上，与基准回归滞后期一致，本文选取“泛ESG”基金的持股市值的滞后一期值（L．fundvalue）作为客户企业ESG评级表现的工具变量。基于工具变量的2SLS估计结果表明：与预期一致，“泛ESG”基金的持股市值对客户企业的ESG表现产生了显著的正向影响，且相关统计量表明可以拒绝工具变量为弱工具变量的原假设。在克服内生性的影响之后，客户企业ESG优势依旧可以显著促进中游企业的绿色创新数量、质量和效率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "2．因果关系的进一步识别",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "北京商道融绿咨询有限公司（简称“商道融绿”）自2015年起，推出了国内针对上市公司的ESG评级系统，并建立了中国上市公司ESG数据库。商道融绿的ESG评级在国际上获得了广泛认可，其评级",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "①估计结果参见本刊网站登载的附录3中的附表5。",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "②上市公司披露前五大客户和供应商信息属于自愿性披露范畴，且客户同时包含了上市公司和非上市公司，由于本文不包含无法获得ESG评级数据的非上市客户数据，可能导致存在因自选择偏差导致的估计偏误。本文使用处理效应模型来缓解这一问题，估计结果参见本刊网站登载的附录3中的附表7。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "③因篇幅所限，有关工具变量的2SLS估计结果请见本刊网站登载的附录4。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "78",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "中国知网 https：／／www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "严 兵等：ESG绿色溢出、供应链传导与企业绿色创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "（二）客户ESG分项与企业绿色创新①",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "为了更精确地识别哪些ESG子领域对促进中游企业的绿色创新最为关键，从而为供应链的可持续发展策略提供针对性的见解，本文将ESG评价指标细分为环境（E）、社会（S）和公司治理（G）三个独立维度。结果发现，环境和社会评级优势对于推动中游企业绿色创新发挥了显著作用，而公司治理因素的影响却并不显著。可能的解释是：首先，环境和社会评级直接关联到下游客户对中游企业的压力与激励。环境评级（E）高的客户企业通常伴随着严格的环保标准和要求，这直接影响中游企业的生产过程，迫使其进行绿色创新以减少环境影响和碳足迹。社会评级（S）高的客户企业注重供应链中的劳动权益、工作条件和社区影响，迫使中游企业在社会责任方面进行改进，推动其采用更为可持续和负责任的创新技术。此外，环境和社会方面的高评级提升了客户企业的市场声誉和品牌价值，中游企业为了维持与这些高声誉客户的合作关系，必须在绿色创新上投入更多。这种市场和声誉驱动效应在环境和社会领域尤为明显，因为其直接关系到企业的公共形象和消费者信任。相比之下，公司治理（G）因素的影响较为间接，主要涉及客户企业内部管理和股东权益等方面，与中游企业的日常生产和创新活动没有直接的联系。治理因素的改进主要影响客户企业的内部决策流程和管理效率，而不是直接推动供应链中的绿色创新。虽然良好的治理结构能够促进客户企业整体健康发展，但其对中游企业的具体要求和压力不如环境和社会评级直接和明确。因此，治理因素对中游企业绿色创新的驱动作用较为间接，表现不显著。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "（三）客户ESG表现与企业碳减排和碳绩效②",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "虽然绿色创新旨在提升企业的环境可持续性，但通过具体的碳减排和碳绩效指标才能更全面评估其实际效果。研究碳指标可以确定绿色创新是否达到了预期的环境保护目标，从而验证客户企业ESG优势的实际影响力。全球应对气候变化的要求日益严格，企业需要明确展示其在碳减排方面的成就，以满足监管要求和市场期望。而碳减排和碳绩效是衡量企业环境影响的重要指标，通过研究绿色创新对这些指标的影响，可以帮助中游企业更好地将绿色创新成果在实际应用中落地。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "具体地，企业的碳排放量包括四部分：（1）燃烧和能源燃料排放，包括化石、生物质燃料、原料开采、石油和天然气系统、电力调入调出等；（2）生产过程排放；（3）固体废弃物焚烧排放、污水处理导致的排放；（4）土地利用方式转变的排放。③为了验证绿色创新是否真正转化为了环境效益，而不仅仅是创新本身，本文在基准回归中纳入客户ESG表现与中游企业绿色创新的交互项，并分别对企业的碳排放总量以及上述四项分类所产生的碳排放量进行估计。结果证实，客户企业的ESG优势通过影响中游企业的绿色创新活动，最终减少了温室气体的排放。最后，本文除了关注碳排放的绝对量，还关注碳排放强度，即碳绩效（单位产出或单位能源消耗的碳排放量）。参考Clarkson et al.（2011）的研究，本文以每单位碳排放量所对应的营业收入（碳绩效＝In（企业营业收入／企业碳排放量））作为企业碳绩效的代理变量。回归结果表明，客户ESG优势通过激励中游企业绿色创新，最终提升了企业的碳绩效。这可以确保中游企业的绿色创新不仅仅是形式上的改进，更可以形成实质性的环境保护措施。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "① 因篇幅所限，相关内容详见本刊网站登载的附录8。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "② 因篇幅所限，相关内容详见本刊网站登载的附录9。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "③本文使用的碳排放量、化石能源消耗量以及用电用热量是从企业每年披露的社会责任报告、可持续发展报告、环境报告中手工收集的，并进一步依照国家发展和改革委员会（以下简称发改委）发布的方法，通过计算得到部分碳排放数据。根据发改委发布的针对不同行业的《企业温室气体排放核算方法与报告指南》分别计算了其范围一排放和范围二排放，如果对于一家企业能够同时得到范围一和范围二排放，则相加得到总碳排放。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "86",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "七、结论与政策建议",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "本文将ESG实践与供应链管理相结合，提供了一个帮助理解企业如何通过提升自身的ESG表现来推动供应链绿色创新的分析框架。其一，通过深入考察ESG在供应链中的传导效应，本研究有助于下游客户企业认识到可以通过与中游企业的密切合作和共享ESG价值观来有效传导绿色创新的动力。其二，本文揭示了中游企业对客户企业ESG表现的响应和调整机制，有助于理解供应链中的互动关系和协同效应。研究结论主要如下：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "下游客户企业通过提升自身的ESG表现，可以激励中游企业在绿色创新方面进行更多的投入和努力。这一发现为企业和供应链管理者提供了重要启示，即通过改善自身的ESG表现，下游企业可以引领供应链的可持续发展和绿色转型。机制分析表明，下游客户的ESG表现提升可以有效增强中游企业的环境关注度和绿色化转型，给予中游企业更多的商业信贷支持，减少其资金流动性压力，并产生了显著的绿色技术溢出效应，从而激励中游企业追随其步伐，通过绿色创新来适应市场需求。区分企业一客户关系特征发现：当中游企业更依赖大客户以及企业一客户的股权性质一致时，更有助于双方在ESG和绿色目标上达成一致，进而推进绿色创新项目。区分行业清洁程度和环境不确定性发现：不论企业-客户是否同属于重污染行业，下游客户ESG绩效提升都能激励中游企业绿色创新；并且在高环境不确定性下，“机会导向效应”发挥主导作用，中游企业会更积极地推进绿色创新。特别地，本文还发现ESG绿色溢出效应的非对称性和双重角色的抵消作用。供应链中的客户企业若同时也充当了供应商的角色，“供需协调成本”和“供需关系平衡”可能会对其通过ESG优势促进中游企业绿色创新过程产生阻碍作用，这对于理解和管理ESG的传导效应具有重要意义。本文的研究证实，下游客户的ESG表现提升通过促进中游企业的绿色创新，有助于企业实现碳减排和碳绩效的提升，进而可以较为全面地评估绿色创新的实际效果，完成了本文关于绿色创新的分析闭环。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "本文的研究结论对企业实践和政策制定具有重要启示。为了充分利用供应链中的绿色传导效应，本文提出以下政策建议：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "第一，培育供应链ESG生态系统，以绿色发展赋能新质生产力。绿色发展要求企业在生产过程中减少资源消耗和环境污染。完善供应链ESG生态系统可以激励企业加大绿色技术研发投入，通过技术创新推动新质生产力的形成。在此框架下，要全面推动ESG理念践行，逐步完善中国ESG生态系统建设。在ESG理念中，环境要素着重于减轻企业活动对环境的负担，并促进经济的持续发展。绿色发展构成了高质量发展的基础，而新质生产力本质上是绿色生产力，这一观点揭示了新质生产力与绿色发展的紧密联系。绿色发展是一种追求效率、和谐与可持续性并重的经济增长与社会进步模式。认识到这一点，企业可以更加明确地将绿色发展战略融入其核心业务之中，不仅要促进新质生产力的孕育，还要推动供应链向更加可持续的发展方向转型。具体措施包括：（1）将ESG目标纳入公司年度规划和供应链绩效考核体系中，明确ESG实践的目标和战略。本文研究发现，下游客户的ESG表现提升显著激励了中游企业采取绿色创新措施。因此，企业可以对现有供应链进行评估，筛选符合企业ESG标准的合作伙伴，制定明确的ESG措施与战略目标，并将ESG目标与公司的整体战略对齐，确保业务活动与这些原则保持一致。（2）建立完善的ESG评估和报告机制。本文研究揭示了在供应关系更密切且双方股权性质一致时，更容易在ESG和绿色目标上达成共识，从而更有效地推动绿色创新。据此，企业应定期监测和评估供应链的ESG绩效，编制并发布年度ESG报告，将结果公开透明地呈现给所有利益相关者。设立专门的沟通渠道，与员工、供应商、客户、投资者和社区等利益相关者沟通和合作，确保其需求和期望得到充分考虑。（3）与供应商建立长期的战略合作关系，共同投资于ESG项目，实现共同的可持续发展目标。本文研究发现，即使在高环境",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "87",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "中国知网 https：／／www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "不确定性下，中游企业也会积极地推进绿色创新，采取“机会导向”的战略。因此，通过与中游企业签订长期合作协议，供应链各节点可以分担风险，共同致力于ESG目标的实现。同时，可设立联合研发基金，支持绿色技术和创新项目；开展供应链绿色管理培训，提高整个供应链的环境保护意识和能力。通过这些措施，企业可以构建一个高效、透明、负责任的供应链ESG生态系统，利用绿色发展的理念和实践，为发展新质生产力增添强劲动能。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "第二，优化利益相关方管理，以供应链协作支撑新质生产力。本文研究揭示，企业对大客户的依赖程度以及与客户在股权性质上的一致性，有助于双方在ESG和绿色发展目标上达成共识，从而推动绿色创新项目的发展。然而，当下游客户也扮演着上游供应商的角色时，可能会因为供需协调成本和关系平衡的挑战，妨碍其利用ESG优势来促进中游企业的绿色创新。这一点对于理解和有效管理ESG在供应链中的传导效应至关重要。政策制定者可以采取以下措施：首先，通过制定激励政策来促进供应链各环节企业间的合作，共享绿色技术和创新成果。这包括提供研发补贴和税收优惠，支持企业在环保技术方面的投入，并加速这些技术的推广应用。特别是，鉴于大型客户在推动ESG和绿色目标一致性方面的显著影响力，政策制定者应鼓励这些企业与中小企业建立紧密的合作伙伴关系。在股权性质一致的情况下，可以通过税收减免或财政补贴等激励措施，促进大型企业与中小企业之间的合作，加强双方在ESG目标上的一致性。此外，可建立供应链信息共享平台，促进上下游企业间的沟通和协作。在社会责任的背景下，从负责任的角度识别和管理供应链中的环境和社会风险，并通过科技创新手段确保供应链的稳定性和安全性，提高供应链的透明度和协同效率。同时，政策制定者应鼓励企业投资于员工的培训和发展，尤其是在绿色技术和ESG相关领域的专业技能培训，以提升员工的专业能力和创新能力。政策制定者还应打破行业壁垒，促进不同领域之间的合作，共同解决供应链中的ESG问题。通过这些综合措施，可以优化利益相关方管理，促进供应链协作，催生符合新发展理念的先进生产力质态。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "第三，构建中国特色ESG治理范式，健全发展新质生产力的市场机制。（1）解决国有企业和民营企业之间的绿色传导问题。本文研究发现，当下游客户和中游企业的股权性质不一致时，下游客户的ESG优势很难充分转化为中游企业绿色创新的动力。因此，为了促进国有企业的资源支持能够有效传递到民营企业供应商，应鼓励国有企业与民营企业建立紧密合作伙伴关系，共享绿色技术和创新资源。要提供针对民营企业的专项资金支持和技术培训，提升其在绿色创新方面的动力和能力。鼓励民营企业利用其灵活性和市场应对能力，积极参与绿色项目和ESG实践。（2）疏通上游供应商的ESG优势传导堵点。本文还发现ESG溢出效应的非对称性，即上游供应商未能有效传导其ESG优势。为此，政府和大型企业可以提供技术援助和培训，帮助中小企业提升其ESG管理能力和技术水平，减少由于资源和技术不足导致的ESG溢出效应不对称问题。由政府、企业和社会组织共同成立绿色供应链联盟，推动供应链各环节企业在ESG方面的合作与共赢。通过联盟平台，开展联合绿色创新项目，共同投资和研发绿色技术，提升整个供应链的绿色创新能力。（3）学习借鉴国际先进经验，展示中国特色ESG实践。具体措施包括：积极参与国际ESG治理论坛和合作项目，学习和引进先进的治理经验和技术；通过国际平台展示中国在ESG治理方面的创新和成功案例，提升中国企业在全球市场的ESG形象和竞争力。基于这些步骤，企业和政策制定者可以更好地理解和管理ESG在供应链中的传导效应，逐步建立起适合中国国情的ESG治理体系，并促进新质生产力市场机制的形成，助力供应链的可持续发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "第四，以金融科技提升ESG数据价值，以耐心资本支持绿色创新。学术研究与实际应用在ESG领域的准确性很大程度上依赖于可靠且具有代表性的数据。目前，将非财务性的能效数据转化为量化、可比较的财务数据存在较大挑战。ESG数据不仅体量庞大、来源分散、结构复杂，",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "88",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "而且包含大量非结构化数据。为解决这些问题，企业应利用金融科技，如自然语言处理、知识图谱、遥感影像分析等技术，构建全面的ESG数据生态系统，实现数据的全方位采集、多角度分析和智能化处理。此外，通过第三方评级机构的专业评估，这些数据可以转化为具有公信力的评级，为投资者和金融机构提供重要的决策参考。这不仅遵循了从数据到信息，再到决策的逻辑，而且为耐心资本的引入提供了坚实的数据支持。本文研究发现，下游客户对中游企业的商业信贷支持能够有效促进中游企业的绿色创新，充分体现了资金支持对于企业创新的必要性。耐心资本作为国家层面的设计，对于企业绿色创新的稳定资金支持至关重要。为了壮大耐心资本，企业在募资端可以拓宽长期资金来源渠道，吸引养老基金、保险公司等长期投资者；在退出端，拓展多元化的退出渠道，如公开上市、并购等，为耐心资本提供灵活的退出选项。基于此，企业可以吸引并保持稳定的长期投资流入，这些“长钱”不仅是供应链绿色创新和新兴产业发展的坚实基础，也是培育和发展新质生产力的“源头活水”。上述举措为实现供应链的可持续发展和新质生产力的提升提供了重要参考，也将为整个经济体系的绿色转型提供良好的政策环境与内生动力。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "方先明、胡丁，2023：《企业ESG表现与创新--来自A股上市公司的证据》，《经济研究》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "胡洁、于宪荣、韩一鸣，2023：《ESG评级能否促进企业绿色转型？--基于多时点双重差分法的验证》，数量经济技术经济研究》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "李青原、肖泽华，2020：《异质性环境规制工具与企业绿色创新激励-来自上市企业绿色专利的证据》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "刘柏、卢家锐、琚涛，2022：《形式主义还是实质主义：ESG评级软监管下的绿色创新研究》，《南开管理评论》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "刘金科、肖翊阳，2022：《中国环境保护税与绿色创新：杠杆效应还是挤出效应？》，《经济研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "申慧慧、于鹏、吴联生，2012：《国有股权、环境不确定性与投资效率》，《经济研究》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "肖红军、阳镇、凌鸿程，2022：《企业社会责任具有绿色创新效应吗》，《经济学动态第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "肖红军，2020：《共享价值式企业社会责任范式的反思与超越》，《管理世界》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "谢红军、吕雪，2022：《负责任的国际投资：ESG与中国OFDI》，《经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "解学梅、朱琪玮，2021：《企业绿色创新实践如何破解“和谐共生”难题？》，《管理世界》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "杨志强、唐松、李增泉，2020，《资本市场信息披露、关系型合约与供需长鞭效应--基于供应链信息外溢的经验证据》，《管理世界》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "张琦、郑瑶、孔东民，2019：《地区环境治理压力、高管经历与企业环保投资--一项基于（环境空气质量标准（2012）》的准自然实验》，《经济研究》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "郑新业、吴施美、郭伯威，2023：《碳减排成本代际均等化：理论与证据》，《经济研究》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "Aghamolla,C.,and R.T.Thakor,2022,\"IPO Peer Effects\",Journal of Financial Economies,144(1),206-226.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "Almeida,H.,and M. Campello,2007,\"Financial Constraints,Asset Tangibility,and Corporate Investment\",Review of Financial Studies,20(5),1429-1460.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "Cao,J.,I.Liang,and X.Zhan,2019,\"Peer Effects of Corporate Social Responsibility\",Management Science,65(12),5487-5503. Clarkson,P.M.,Y.Li,G.D.Richardson,and F.P. Vasvari,2011,“Does It Really Pay to Be Green? Determinants and Conse-quences of Proactive Environmental Strategies\", Journal of Accounting and Public Policy,30(2),122144.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "Dai,R., H. Liang,and L. Ng, 2021, \"Socially Responsible Corporate Customers\",Journal of Financial Economics,142(2), 598-626.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "Di Giuli,A.,and L. Kostovetsky,2014,\"Are Red or Blue Companies More Likely to Go Green? Politics and Corporate Social Re-sponsibility\",Journal of Financial Economics,111(1),158-180.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "Fan,R.,Y.Wang,F.Chen,K.Du,and Y.Wang,2022,\"How Do Government Policies Affect the Diffusion of Green Innovation among Peer Enterprises?-An Evolutionary Game Model in Complex Networks\",Journal of Cleaner Production,364,132711.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "Fineman,S.,and K.Clarke, 1996,\"Green Stakeholders:Industry Interpretations and Response\",Journal of Management Studies, 33(6),715-730.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "Freeman, R.E., 1984, Strategic Management:A Stakeholder Approach,Pitman Press,Boston.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "89",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "中国知网 https：／／www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "严 兵等：ESG绿色溢出、供应链传导与企业绿色创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "Friede, G.,T. Busch, and A. Basen, 2015,\"ESG and Financial Performance: Aggregated Evidence from More than 2000 Empirical Studies\",Journal of Sustainable Finance & Intestment,5(4),210-233.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "Ghoul,S.,O.Guedhami,and Y. Kim,2017,“Country-level Institutions,Firm Value,and the Role of Corporate Social Responsibil-ity Initiatives\", Journal of International Business Studies,483, 360-385.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "Gosman,M.,T. Kelly, P. Olsson,and T. Warfield, 2004,\"The Profitability and Pricing ofMajor Customers\",Retiew of Accounting Studies,9(1),117-139.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "Gong,L.,Z.Liu,Y.Rong,and L.Fu, 2021,\"Inclusive Leadership,Ambidextrous Innovation and Organizational Performance: The Moderating Role of Environment Uncertainty\", Leadership & Organization Detelopment Joural,42(5),783-801.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "Guan,J.,H.Xu,and D. Huo,2021,\"Economic Policy Uncertainty and Corporate Innovation:Evidence from China\",Pacific-Basin Finance Journal,67,101542.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "Hao,J.,and F.He,2022,\"Corporate Social Responsibility(CSR)Performance and Green Innovation: Evidence from China\", Fi-nance Research Letters,48,102889.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "Huang,D.Z.-X.,2022,\"Environmental,Social and Governance Factors and Assessing Firm Value:Valuation,Signalling and Stakeholder Perspectives\", Account Finance, 62,1983-2010.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "Johnson,W.C.,J.K.Kang,and S.Yi,2010.\"The Certification Role of Large Customers in the New Issues Market\",Financial Man-agement,39(4),1425-1474.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "Kim,Y.H.,and U.Wemmerlöv,2015,\"Does a Supplier's Operational Competence Translate into Financial Performance?An Em-pirical Analysis of Supplier-Customer Relationships\",Decision Sciences,46(1),101-134.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "Krolikowski,M., and X. Yuan, 2017,\"Friend or Foe:Customer-supplier Relationships and Innovation\",Journal of Business Re-search,78,53-68.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "Lai,X.,and F.Zhang,2022,\"Can ESG Certification Help Company Get Out of Over-indebtedness? Evidence from China\",Pacific-Basin Finance Journal,76,101878.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "Li,C.,S.Ba,K.Ma,Y.Xu,W.Huang,and N.Huang,2023,\"ESG Rating Events,Financial Investment Behavior and Corporate Innovation\",Economic Analysis and Policy,77,372-387.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "Li,J.,and X.Xu,2024,\"Can ESG Rating ReduceCorporate Carbon Emissions?-An Empirical Study from Chinese Listed Com-panies\",Journal of Cleaner Production,434,140226.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "Lian,G.,A.Xu,and Y.Zhu,2022,\"Substantive Green Innovation or Symbolic Green Innovation?The Impact of ER on Enterprise Green Innovation Based on the Dual Moderating Effects\",Journal of Innotation & Knowledge,7(3),100203.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "Loughran,T.,and B.MeDonald,2011,\"When Is a Liability Not a Liability? Textual Analysis,Dictionaries,and 10-Ks\",Journal of Finance,66(1),35-65.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "Miao,Z.,S.Cai,and D. Xu,2012,\"Exploring the Antecedents of Logistics Social Responsibility:A Focus on Chinese Firms,In-ternational Journal of Production Economics,140(1),18-27.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 126,
+      "text": "Patatoukas, P.N., 2012, \"Customer-Base Concentration:Implications for Firm Performance and Capital Markets\",Accounting Re-view,87(2),363-392.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 127,
+      "text": "Schiller,C.,2018,“Global Supply-chain Networks and Corporate Social Responsibility\",SSRN Working Paper,3089311.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 128,
+      "text": "Spence,M., 1974,Market Signaling:Informational Transfer in Hiring and Related Sereening Processes,Harvard University Press.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 129,
+      "text": "Tan,Y.,and Z. Zhu,2022,\"The Effect of ESG Rating Events on Corporate Green Innovation in China:The Mediating Role of Fi-nancial Constraints and Managers'Environmental Awareness\",Technology in Society, 68, 101906.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 130,
+      "text": "Tang,J.,X.Wang,and Q.Liu, 2023,\"The Spillover Effect of Customers' ESG to Suppliers\",Pacific-Basin Finance Journal,78, 101947.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 131,
+      "text": "Wang,C., I.Qureshi, and F. Guo, 2022,\"Corporate Social Responsibility and Disruptive Innovation:The Moderating Effects of En-vironmental Turbulence\",Journal of Business Research,139,1435-1450.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 132,
+      "text": "Xu,X.D.,S.X.Zeng,H.L.Zou,and J.J.Shi, 2016,\"The Impact of Corporate Environmental Violation on Shareholders'Wealth: A Perspective Taken from Media Coverage\",Busines Strategy and the Enrironment,25(2),73-91.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 133,
+      "text": "Yu,Y.,and Y. Choi,2016,\"Stakeholder Pressure and CSR Adoption: The Mediating Role of Organizational Culture for Chinese Companies\",Social Science Journal,53(2),226-235.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 134,
+      "text": "Yuan,D.,D.Shang,Y.Ma,and D.Li,2022,\"The Spillover Effects of Peer Annual Report Tone for Firm Innovation Investment: Evidence from China\",Technological Forecasting and Social Change,177,121518.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 135,
+      "text": "90",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 136,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 137,
+      "text": "ESG Green Spillover, Supply Chain Transmission and Corporate Green",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 138,
+      "text": "Innovation",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 139,
+      "text": "YAN Bing2,CHENG Min and WANG Naihe",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 140,
+      "text": "(a:Center for Transnationals'Studies,Nankai University;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 141,
+      "text": "b:The Laboratory for Economic Behaviors and Policy Simulation,Nankai University;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 142,
+      "text": "c:School of Economics,Nankai University)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 143,
+      "text": "Summary:Globally,issues such as climate change,social inequality,and governance failures are increasingly threaten-ing economic stability and sustainable development.As the fundamental units of economic activity,companies play a cru-cial role in addressing theseglobal challenges through sustainable supply chain management.ESG elements (Environmen-tal,Social and Governance) have become key indicators for assessing corporate social responsibility and long-term devel-opment potential. With a growing understanding of ESG, companies increasingly integrate these standards into their sup-ply chain management to enhance competitive advantages, stabilize their supply chain foundations, and improve supply chain robustness and resilience.Particularly in China, the government's carbon peak and carbon neutrality goals have heightened the urgency for companies to adopt green actions in supply chain management,prompting them to focus more on environmental risk prevention and control.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 144,
+      "text": "Despite the numerous policies implemented by the Chinese government to promote the construction of green supply chains,this field is still in its early stages of development. With the upgrading of consumption and the growing demand for sustainable products,the market is compelling downstream segments of the supply chain to raise standards for envi-ronmentally friendly and green products. This shift in demand is driving upstream enterprises to transition to environmen-tally friendly production methods,creating a positive feedback loop that propels the entire industry toward green and sus-tainable development.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 145,
+      "text": "This paper, based on 2010-2021 enterrise-customer matching data from China's A-share listed companies, delves into the transmission effects of ESG standards within the supply chain and their impact on corporate green innovation.We find that improvements in downstream enterprises' ESG performance significantly incentivize midstream enterprises to adopt green innovation measures. This incentive effect is primarily realized through strengthening the midstream enter-prises'green awareness, inceasing the supply of commercial credit,and sharing green production knowledge.This paper also reveals that under specific conditions, such as when companies rely more on major customers and have consistent eq-uity characteristics, consensus on ESG and green goals is more easily achieved,thereby more effectively promoting green innovation. Additionally, in high environmental uncertainty situations, companies are more inclined to adopt \"opportunity-oriented\" strategies to accelerate green innovation. However,this paper also identifies the asymmetry in green spillover efects,particularly when downstream customers also serve as upstream suppliers.Issues like “supply-demand coordination costs\" and \"supply-demand relationship balance\" may hinder theprocess of leveraging ESG advan-tages to promote midstream enterprises' green innovation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 146,
+      "text": "This paper offers several key contributions to the existing body of knowledge in supply chain management.First,we expand the scope of ESG research from a supply chainperspective,identifying the green transmission effect of ESG within the supply chain,and thus enriching the research on supply chain spillover effects.Second,we uncover the asym-metry of spillover effects and the counterbalancing role of dual identities, providing new perspectives and guidance for understanding and managing the green transmission effects of ESG within the supply chain. Finally,this paper innova-tively demonstrates the positive consequences of customer ESG advantages in driving green innovation,deepening the re-search on ESG enabling supply chain sustainability.This paper confirms that downstream enterprises'ESG advantages can positively impact carbon reduction and carbon performance by promoting midstream enterprises'green innovation ac-tivities,offering a new perspective for evaluating the actual effects of green innovation.With the rising trend of carbon emission prices in China,downstream enterprises,through their outstanding ESG performance, can incentivize more mid-stream enterprises and supply chain partners to engage in green innovation, contributing to the fight against climate change and the achievement of sustainable development goals.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 147,
+      "text": "Keywords:ESG Spillover Effect;Asymmetric Transmission; Green Innovation;Green Supply Chain",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 148,
+      "text": "JEL Classification:G23,G34,M14",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 149,
+      "text": "（责任编辑：刘洪愧）（校对：曹帅）",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 150,
+      "text": "91",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 151,
+      "text": "中国知网 https：／／www.cnki.net",
+      "heading_level": null
+    }
+  ]
+}

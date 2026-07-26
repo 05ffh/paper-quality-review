@@ -1,0 +1,980 @@
+{
+  "paper_id": "EXAMPLE-0020",
+  "source_sha256": "f989ac374b05840a95c03b9d0058d101c9c460543bbbc651f2ba5130753c45ba",
+  "topic_hint": "ESG的就业效应研究：来自中国上市公司的证据＊",
+  "paper_type": "empirical",
+  "method_tags": [
+    "面板模型",
+    "中介效应"
+  ],
+  "clean_units": 161,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "ESG的就业效应研究：来自中国上市公司的证据＊",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "毛其淋 王玥清",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "内容提要：就业是最大的民生，企业在促进经济可持续发展，积极履行社会责任中所展现出的ESG（环境、社会和公司治理）优势，能够成为提高就业水平、实现稳就业目标的新动力。本文从微观层面考察了ESG优势对就业的影响，发现ESG优势显著提高了企业的就业水平，其中ESG优势的就业提升效应对于中西部地区企业、劳动密集型企业和非重污染企业更为明显。本文从劳动力需求维度和劳动力供给维度进行了机制检验，发现生产规模扩张效应、融资约束缓解效应、劳动力吸引效应是ESG优势促进企业就业的重要渠道。从就业动态变化角度看，ESG优势通过提高就业创造和降低就业破坏的方式促进了企业就业净增长。本文还考察了ESG优势对企业就业技能结构的影响，发现ESG优势在更大程度上增加了企业对中高技能以及与企业ESG活动密切相关的劳动力的雇佣，促进了劳动力资源的有效配置。最后，本文进一步研究了ESG分项对就业的影响，发现ESG中的社会责任因素对企业就业水平的提升效应最大。本文揭示了ESG优势对于提高企业就业水平和优化就业技能结构的积极作用，不仅证实了可持续发展的企业在促进稳就业、助力中国民生建设中的重要地位，而且对于企业积极履行社会责任，推动中国经济高质量发展，以及助力国家实现“双碳”目标也具有重要的政策意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "关键词：ESG 企业就业 就业净增长 就业技能结构",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "近年来，随着新冠疫情、气候变化以及收入不平等问题的频繁出现，可持续性成为当今世界发展的重要问题。环境污染和新冠疫情等问题对人类健康、社会和经济发展造成了严重威胁，为社会各界敲响了警钟。企业作为重要的经济活动主体，有责任促进社会向符合可持续性目标的方向发展，这意味着企业在追求利润最大化的同时，要构建兼顾经济效率和可持续性发展的经营模式，积极践行ESG理念。ESG（environmental，social，governance）是指将环境、社会与公司治理因素纳入投资决策与企业经营的理念，是企业用来监督和规范自身表现的依据，也是投资者衡量和评价企业可持续发展能力和履行社会责任情况等方面的重要标准。ESG的核心内涵一方面强调企业不光要追求利润等财务绩效，同时要注重环境保护、履行社会责任以及提高公司治理水平，另一方面旨在帮助投资者评估企业未来的可持续性进而做好投资决策。当前，ESG理念在全球金融、企业和监管领域迅猛发展。据全球可持续投资联盟（GSIA）估计，2016年全球ESG资产为22.839万亿美元，而2020年高达35.3万亿美元，相比2016年增长54.56％ 此外，联合国负责任投资原则（PRI）的签署机构数量和管理资产的规模也在持续增长。截至2021年，签署PRI的机构数量达到3826家，管理资产总规模为121.3万亿美元，而在2011年签署PRI的机构数量只有890家，管理的",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "＊毛其淋，南开大学跨国公司研究中心、南开大学经济行为与政策模拟实验室，邮政编码：300071，电子信箱：maoqilin＠nankai．edu．cn；王玥清（通讯作者），南开大学经济学院，邮政编码：300071，电子信箱：wangyq＿nku＠163．com。本文研究得到国家自然科学基金项目（72073074,72203110）、国家社会科学基金重点项目（22AZD054）、霍英东教育基金会高等院校青年教师基金项目（171075）的资助。作者感谢匿名审稿专家的宝贵意见，文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "①数据来源于全球可持续投资联盟（GSIA）发布的Global Sustainable Investment Retiew 2020。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "86",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "2023年第7期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "资产规模仅为24万亿美元。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "自提出“碳达峰、碳中和”目标以来，中国对ESG的重视程度与日俱增，社会各界更加关注企业的ESG表现。在政策层面，2018年，中国证监会修订《上市公司治理准则》，规定了上市公司应当披露有关环境保护、社会责任和公司治理方面的内容。2022年4月，证监会发布《上市公司投资者关系管理工作指引》，将ESG信息作为投资者关系管理中上市公司与投资者沟通的内容之一。在信息披露层面，根据中国上市公司协会统计数据显示，逾1700家公司单独编制并发布2022年ESG相关报告，占比34％，较去年大幅增加。随着中国越来越多的企业加强对ESG的重视，ESG所带来的经济效益和社会效应将进一步凸显，这有利于提升企业的可持续竞争力和国际化形象。此外，ESG高度契合中国“双碳”战略和高质量发展目标，是助力中国经济可持续发展，早日实现“碳达峰”和“碳中和”的重要力量。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "就业是最大的民生，是经济发展的重要支撑。《“十四五”就业促进规划》提出，“十四五”时期，实现更加充分更高质量就业，是推动高质量发展、全面建设社会主义现代化国家的内在要求，是践行以人民为中心发展思想、扎实推进共同富裕的重要基础。党的二十大报告提出，要实施就业优先战略，强化就业优先政策，健全就业促进机制，促进高质量充分就业。2022年《政府工作报告》强调要强化就业优先政策，大力拓宽就业渠道，各地都要千方百计稳定和扩大就业。受新冠疫情冲击等国内外多重因素影响，目前中国就业形势复杂严峻，城镇就业压力较大，“就业难”与“招工难”并存的结构性就业矛盾日益突出。另外，2023届全国普通高校毕业生规模预计达1158万人，同比增加82万人。无论是从总量还是从结构来看，“稳就业”都面临着很大压力。因此，在中国追求实现“稳就业”目标与可持续发展目标的背景下，探究企业ESG优势在促进可持续发展的同时，是否有助于企业提高就业水平、促进“稳就业”目标的实现进而解决就业这一民生问题，显得十分迫切和重要。本文将结合理论分析和实证研究，试图对这一重要问题进行探索性研究。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "ESG在全球迅速发展，目前已受到国内外学者的广泛关注。ESG表现会对企业价值和企业绩效产生显著的影响（Friede et al．，2015），会减少企业的融资成本（El Ghoul et al．，2011；Ng＆Rezaee，2015；邱牧远和殷红，2019），降低企业的风险（Albuquerque et al．，2019；Yuan et al．，2022），促进对外直接投资（谢红军和吕雪，2022）。目前鲜有学者关注ESG优势是否以及如何影响企业就业。对于就业方面的研究，目前已有不少文献考察了就业和劳动力市场的决定因素，其中与本文研究主题ESG中环境因素相关的文献大多是考察绿色发展对就业的影响。现有文献主要聚焦于探究环境规制对企业就业的影响，例如考察二氧化硫排放权交易制度（Ren et al．，2020）、大气污染防治重点城市政策（Liu et al．，2021）、清洁生产政策（张慧玲和盛丹，2019）、排污费修订政策（王勇等，2019）、政府环保处罚（崔广慧和姜英兵，2021）、低碳城市试点政策（王锋和葛星，2022）对就业的影响，但这些文献并未得出一致的结论，即环境规制对就业的影响是不确定的。本研究旨在从ESG优势这一独特视角，利用2011-2021年中国沪深两市A股上市公司数据，从微观层面系统深入地考察ESG优势对就业的影响及作用机制，有助于更加全面评估ESG优势的经济效应，同时弥补了就业的决定因素领域研究的不足。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "与既有的研究相比，本文可能在以下几方面做出了边际贡献：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "第一，本文较早考察ESG了优势如何影响就业、探究可持续发展对劳动力市场的影响效应的文章。现有研究ESG的文献主要关注ESG对企业价值、企业绩效、融资成本、风险以及对外直接投资等方面的影响（El Ghoul et al．，2011；Friede et al．，2015；Xie et al．，2019；Albuquerque et al．，2019；李",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "① 数据来源于联合国责任投资原则组织（UN PRI）在其官网上发布的其统计的签署PRI的机构数量和管理的资产规模的资料。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "87",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "毛其淋、王玥清：ESG的就业效应研究：来自中国上市公司的证据",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "井林等，2021；王波和杨茂佳，2022；谢红军和吕雪，2022），鲜有文献关注ESG优势是否以及如何影响就业。本文从微观企业就业视角丰富和拓展了ESG经济效应的相关研究。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "第二，本文深化和拓展了就业和劳动力市场层面的相关研究。与本文研究主题较为相关的是可持续发展对就业的影响，但是目前鲜有文献直接研究可持续发展如何影响就业，而大多是从宏观层面的环境规制政策角度间接考察绿色发展对就业的影响（Ren et al．，2020；Liu et al．，2021；张慧玲和盛丹，2019；王勇等，2019；崔广慧和姜英兵，2021；王锋和葛星，2022）。与上述文献不同，本文从微观层面考察企业具有的ESG优势对就业的直接影响。更为重要的是，上述文献的研究视角仅与ESG中的环境因素（E）相关，而本文的核心指标（ESG优势）综合反映了企业在环境保护、社会责任和公司治理方面的表现，能够更加系统全面地刻画企业可持续发展能力，因此从ESG优势这一独特视角考察其对企业就业的影响，无疑是对就业和劳动力市场领域研究的重要补充。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "第三，在影响机制方面，现有大多数研究就业问题的文献大多从劳动力需求层面探究影响机理，本文则从劳动力需求和劳动力供给的综合视角系统深入地揭示了ESG优势对企业就业水平的传导路径。本文发现，在劳动力需求维度，ESG优势通过生产规模扩张效应和融资约束缓解效应提高了企业的就业水平，在劳动力供给维度，ESG优势通过劳动力吸引效应提高了企业的就业水平，多维度的机制探究有助于更加深入地理解ESG优势与就业的内在联系。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "第四，除了考察ESG优势对企业就业水平的影响外，本文还进一步研究了ESG优势对企业就业变动和就业技能结构的影响，更为细致全面地提供了ESG优势的就业效应的经验证据，在一定程度上丰富了有关就业动态变化和更高质量就业的驱动因素的研究。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "最后，在政策含义方面，面对中国实施碳达峰碳中和战略与就业优先战略的双重背景，探究ESG优势的就业效应对中国当今发展具有重要的现实意义。本文证实了ESG 优势对就业水平和就业质量的积极影响，揭示了ESG优势在促进企业实现可持续发展目标的同时，对于促进稳就业、增强就业吸引力、解决就业这一民生问题具有重要的推动作用，而且对于中国同步实现“双碳”目标和“稳就业”目标、推动经济高质量发展也具有重要的政策意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "二、理论分析与研究假说",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "理论上，ESG优势对就业水平的影响机制既包括企业的劳动力需求层面，也包括劳动力供给层面。在劳动力需求层面，ESG优势通过生产规模扩张效应和融资约束缓解效应提高了企业的就业水平；在劳动力供给层面，ESG优势通过劳动力吸引效应提高了企业的就业水平。接下来，我们基于这三个效应分析ESG优势影响企业就业水平的理论机制。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "（一）生产规模扩张效应",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "首先，根据信号传递理论，具有良好ESG表现的企业会向公众传递积极履行社会责任的信息，能够帮助企业树立可靠和诚信的企业声誉以及负责任的企业形象（MeWilliams ＆Siegel，2000；谢红军和吕雪，2022），消费者往往假定可靠和诚信的企业生产的产品是高质量的（McWilliams＆Siegel，2000），因而会增加对该企业商品或服务的需求。消费者需求增加会直接促使企业进一步扩大生产经营规模，从而增加劳动力需求（王永钦和董雯，2020）。其次，ESG优势对创新绩效有积极影响。根据利益相关者理论，企业应当承担社会责任，并与员工、客户、供应商、债权人等利益相关者之间保持可持续的关系（Yuan et al．，2022）。Lin et al．（2021）指出，Freeman于1984年提出的利益相关者价值最大化观点表明，ESG对创新绩效有积极影响，增加ESG活动可以改善企业与其各种利益相关者的关系，例如政府、当地社区、客户，甚至竞争对手。与外部利益相关者的良好关系有利于企业获得各种外部知识和信息（Choi＆ Wang，2009），能够鼓励企业增加创新活动、提高创新能",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "88",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "2023年第7期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "力（Costa et al．，2015）。企业创新能力的提高有利于企业提高生产效率，降低生产经营成本。企业生产成本的降低，一方面使得企业有动力自主扩大生产经营规模，从而增加对劳动力的需求；另一方面有利于企业产品和服务价格下降，这会通过“收入效应”带动产品或服务需求的增加，从而促使企业进一步扩大生产规模，增加企业对各环节劳动力的需求（王永钦和董雯，2020；李磊等，2021）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "（二）融资约束缓解效应",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "融资约束是影响企业雇佣劳动力的重要原因。良好的ESG表现有助于降低企业的融资成本，缓解企业的融资约束（El Ghoul et al．，2011； Rezaee，2015；谢红军和吕雪，2022）。原因在于，融资约束的根源是信息不对称，由于投资者偏好和信息不对称，企业社会责任较低的企业往往拥有较小的投资者基础（El Ghoul et al．，2011）。与披露传统的财务信息不同，具有ESG优势的企业会从环境保护、社会责任和公司治理三个方面披露企业非财务信息，投资者能够更加全面综合地考察企业的财务信息和非财务信息，有助于降低投资者的感知风险（王波和杨茂佳，2022）。首先，根据信号传递理论，ESG表现良好的企业会更加积极主动地披露企业在环境、社会责任和公司治理等方面的优势，向外界传递企业保护环境、履行社会责任、具有可持续发展能力的积极信号，树立负责任的企业形象，降低与投资者之间的信息不对称。相关研究也表明，ESG披露有助于提高信息透明度、缓解信息不对称（Yuan et al．，2022），进而能够降低企业的融资成本、缓解融资约束（谢红军和吕雪，2022）。其次，根据资源依赖理论和利益相关者理论，企业承担社会责任有利于获得利益相关者的关键性战略资源，能够打开资金来源的渠道，进而缓解了融资约束（顾雷雷等，2020）。此外，在中国鼓励绿色可持续发展的背景下，ESG表现良好的企业会得到更多的政策支持，这将进一步缓解融资约束（黄珺等，2023）。融资约束是影响企业雇佣劳动力的关键因素，融资约束的缓解会直接降低企业的劳动力雇佣成本，扩大企业的就业规模。这是因为，雇佣劳动力是企业的一项特殊投资，面临融资约束的企业，往往难以获得流动资金，可能会减少劳动力雇佣（余明桂和王空，2022）。铁瑛和刘啟仁（2021）的研究也表明，融资约束高的企业往往会受到现金流限制，会直接影响企业的资金和投资行为，外部融资困难的企业就可能减少人力资本投资。因此，融资约束的缓解可能会促进企业增加对劳动力的需求，扩大企业的就业规模。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "（三）劳动力吸引效应",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "通过上述理论分析，在劳动力需求角度，ESG优势能够通过生产规模扩张效应和融资约束缓解效应促进企业就业水平的提升。另外，在劳动力供给角度，具有ESG优势的企业能够通过劳动力吸引效应，吸引更多员工加入企业，这也会导致企业雇佣人数增加。原因在于，一方面，具有ESG优势的企业会通过积极披露履行社会责任的信息，建立良好的声誉，树立负责任的企业形象（谢红军和吕雪，2022），这会吸引更多的员工加入企业。Bhattacharya et al．（2008）指出越来越多的证据表明，企业开展社会责任活动是吸引和留住优秀员工越来越重要的方式，当员工认为一家企业具有社会责任时，他们就会认同这家企业。ESG中的S是指从企业履行社会责任的维度考察企业的可持续发展能力，包括企业对员工等一系列利益相关者权益的保护，对员工的福利与健康、员工的培训与发展以及员工关系等方面的重视。企业ESG披露通过反映企业在改善工作环境、维护客户忠诚度以及加强与利益相关者联系方面的表现，能够吸引更多有准备的员工（Gjergji et al．，2021）。另一方面，具有ESG优势的企业会通过提高员工的薪酬吸引更多的员工。具体而言，企业社会责任显著缓解了企业战略对采用创新导向战略的企业内部薪酬差距的影响，主要是通过增加员工薪酬来实现（Kong et al．，2022）。此外，善待员工通常是ESG评级中社会责任方面的主要因素，包括平等对待员工、增加员工职业安全投资、为员工提供在职培训等方面，这有利于提高员工的人力资本，从而改善员工的收入状况（聂辉华等，2022）。员工薪酬水平的提高会吸引更多应聘者，进而导致企业就业水平的提高。因此，具有ESG优势的企业可能通过提高员工的薪酬吸引更多的员工。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "89",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "中国知网 https：／／www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "毛其淋、王玥清：ESG的就业效应研究：来自中国上市公司的证据",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "综上，具有ESG优势的企业会通过劳动力吸引效应吸引更多的员工，提高企业就业水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "综上，本文提出如下三个研究假说：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "假说1：ESG优势有助于提高企业的就业水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "假说2：在劳动力需求层面，ESG优势主要通过生产规模扩张效应和融资约束缓解效应促进企业就业水平的提升。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "假说3：在劳动力供给层面，ESG优势主要通过劳动力吸引效应促进企业就业水平的提升。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "三、研究设计",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "（一）模型设定与变量选取",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "本文旨在考察ESG优势对企业就业的影响，设定以下基本回归模型：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "(1)",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "其中，被解释变量Inemploy，表示企业就业，用上市公司i在t年的员工人数的对数表示。为了尽可能缓解内生性问题，本文将核心解释变量和控制变量均使用滞后一期项。核心解释变量表示上市公司i在t-1年的ESG评级，采用华证ESG评级数据来衡量。①本文参考Lin etal．（2021）的做法，将上市公司的ESG评级从低到高依次赋值为1到9，数值越高代表上市公司的ESG优势越大。系数β衡量上市公司ESG优势对就业的影响，如果β大于0，则表明ESG优势越大，企业的就业水平越高，即ESG优势有助于提高企业的就业水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "表示控制变量，参照既有研究，本文在模型中加入以下变量的滞后一期项：企业规模size，采用企业资产总额的自然对数衡量；企业年龄age，采用当年年份与企业成立年份的差来衡量；企业工资水平wage，采用企业应付职工薪酬与员工人数的比值取对数衡量；企业成长能力tobinQ，采用企业市值与资产的比值衡量；总资产净利率ROA，采用企业净利润与总资产的比值衡量；资产负债率lev，采用企业负债总计与资产总计的比值衡量；企业所有制soe，如果企业属于国有企业，则soe取值为1，否则取值为 此外，本文还控制了企业固定效应 和年份固定效应 为随机误差项，在企业层面进行聚类。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "（二）数据来源",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "本文以中国沪深两市A股上市公司为研究样本，数据来源于CSMAR数据库和Wind数据库。③由于ESG数据和就业技能结构数据的时间限制，本文选择2011-2021年为研究区间。为了避免异常样本的影响，参考已有研究的做法，本文对原始数据进行了以下处理：（1）由于金融行业的资产负债结构以及监管政策等均具有特殊性，剔除了金融行业数据；（2）剔除上市状态为“ST＂““ST”“暂停上市”“终止上市”“退市整理期”的上市公司；（3）剔除关键变量严重缺失的样本；（4）剔除明显不符合会计准则的异常值样本。④",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "四、实证结果与分析",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "（一）基准回归结果",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "表1报告了ESG优势对企业就业水平影响的基准回归结果。其中，第（1）列在控制企业固定效应和年份固定效应时，只加入了核心解释变量。结果表明，ESG优势的系数在1％的水平上显著",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "①因篇幅所限，华证ESG指标的构建说明的相关内容详见本刊网站登载的附录1。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "②因篇幅所限，控制变量定义和选取依据的相关内容详见本刊网站登载的附录2。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "③ 因篇幅所限，选择上市公司数据进行研究的说明的相关内容详见本刊网站登载的附录3。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "④ 因篇幅所限，主要变量的描述性统计的相关内容详见本刊网站登载的附录4。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "90",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "2023年第7期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "（4）更换聚类方式，将标准误分别在地区层面聚类和行业层面聚类；（5）进一步控制企业发展效益指标，在回归中进一步控制企业固定资产规模gdzc、研发投入 yftr、前十大股东持股比例topten和企业利润率 profit；（6）借鉴Oster（2019）的方法进行遗漏变量偏误检验。以上检验结果均表明，本文的估计结果具有较好的稳健性。①",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "五、影响机制检验与异质性分析",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "（一）影响机制检验",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "1．生产规模扩张效应",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "与孙伟增和郭冬梅（2021）以及王锋和葛星（2022）的做法相似，本文采用营业收入来衡量企业生产规模，并对营业收入取对数处理 表3第（1）列为ESG优势对企业生产规模的估计结果。ESG优势的估计系数显著为正，即ESG优势显著提高了企业的生产规模。对此可能的解释为，根据信号传递理论，具有ESG优势的企业会向外界传递积极履行社会责任的信号，有助于提升企业的声誉价值（McWilliams ＆Siege1,2000；谢红军和吕雪，2022），企业声誉的提高会增加消费者对企业商品和服务的需求。消费者需求增加会直接促使企业扩大生产规模。此外，根据利益相关者理论，增加ESG活动有利于维护与利益相关者的良好关系，进而促使企业获得各种外部知识和信息（Choi＆Wang，2009），鼓励企业提高创新能力（Costa et al．，2015），企业创新能力的提高有利于企业提高生产效率，降低生产经营成本，进而促进生产规模扩张。同时，根据前文的理论分析，生产规模扩张会增加企业对劳动力的需求（孙伟增和郭冬梅，2021；李磊等，2021）。因此，ESG优势能够通过生产规模扩张效应提高企业的就业水平，验证了假说2。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "2．融资约束缓解效应",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "本文采用KZ指数和WW指数度量企业的融资约束程度。表3第（2）列和第（3）列分别为ESG优势对KZ指数和WW指数进行回归的结果。结果显示，ESG优势的估计系数均显著为负，这表明ESG优势能够缓解企业的融资约束。对此其实并不难理解，根据信号传递理论，ESG表现良好的企业会更加积极向外界传递企业保护环境、履行社会责任、具有可持续发展能力的积极信号，树立负责任的企业形象，降低与投资者之间的信息不对称。相关研究也表明，ESG披露有助于缓解信息不对称（Yuan et al．，2022），进而能够降低企业的融资成本、缓解融资约束（谢红军和吕雪，2022）。另外，根据资源依赖理论和利益相关者理论，企业承担社会责任有利于获得利益相关者的关键性战略资源，能够打开资金来源的渠道，进而缓解了融资约束（顾雷雷等，2020）。而融资约束的缓解可能直接降低企业的劳动力雇佣成本，增加企业的人力资本投资，扩大企业的就业规模（余明桂和王空，2022；铁瑛和刘啟仁，2021）。因此，ESG优势能够通过融资约束缓解效应提高企业的就业水平，验证了假说2。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "为了进一步验证融资约束缓解是否是ESG优势影响企业就业的重要渠道，接下来考察ESG优势对不同外部融资依赖度行业中企业就业水平的差异性影响。高外部融资依赖度的企业对外部资金的需求更大，更容易受到融资约束的限制。根据前文分析，ESG优势通过传递积极信号、缓解信息不对称以及获得利益相关者的资金资源等多个方面缓解了企业面临的融资约束。据此进一步推测，ESG优势对高外部融资依赖度行业中企业就业水平的提升效应更大。为此，首先借鉴Hsuet al．（2014）的做法并利用上市公司数据来构建行业外部融资依赖度指标dependence。从表3第（4）列可以看出，交叉项L．ESGxdependence的估计系数在1％水平上显著为正，表明ESG优势对企业就业水平的提升作用随着行业外部融资依赖度的提高而增强，即从侧面进一步验证了融资约",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "① 因篇幅所限，稳健性检验的相关内容详见本刊网站登载的附录6。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "93",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "毛其淋、王玥清：ESG的就业效应研究：来自中国上市公司的证据",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "续表4",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "变量 | (1) | (2) | (3)\n变量 | 国有企业 | 非国有企业 | Inemploy\n控制变量 | Yes | Yes | Yes\n企业、年份固定效应 | Yes | Yes | Yes\n观测值 | 9615 | 16662 | 26277\nR | 0.948 | 0.922 | 0.935",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "（三）异质性分析",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "1．企业所在地区",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "本文根据企业所在地区的不同，将样本划分为东部地区企业和中西部地区企业两类，表5第（1）列和第（2）列报告了对这两类子样本分别进行估计的结果。结果显示，ESG优势的估计系数均显著为正，表明ESG优势对东部地区企业和中西部地区企业就业水平均有显著的促进作用。不过，中西部企业子样本中ESG估计系数大于东部企业子样本，且费舍尔组间系数差异检验的P值为0.0430，即两组系数间的差异性在5％的水平上显著，这表明与东部地区企业相比，ESG优势在更大程度上促进了中西部企业就业水平的提高。对此可能的解释为，中西部地区受限于经济发展程度和金融市场化程度的影响，相对于东部地区企业，中西部地区企业可能面临更大的融资约束。前文的研究表明，企业的ESG优势可以缓解企业的融资约束，中西部地区企业对于融资约束的缓解可能更加敏感，因此ESG优势对中西部地区企业就业水平的提高作用更大。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "2．企业要素密集度",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "相对于资本密集型企业，劳动密集型企业对于生产设备和技术的依赖度较小，而对于劳动力的依赖程度较大，而且劳动密集型企业的劳动力面临的失业风险概率更高（刘贯春等，2021），据此，ESG优势对就业水平的提升作用可能在劳动密集型企业更加明显。为了对此进行检验，本文借鉴刘贯春等（2021）的做法，使用固定资产净值与就业人数的比值取对数来衡量企业的要素密集度，并将要素密集度大于其中位数的样本划分为资本密集型企业，其余的划分为劳动密集型企业。表5第（3）列和第（4）列分别展示了ESG优势对劳动密集型企业和资本密集型企业就业水平影响的估计结果，ESG优势的估计系数均显著为正，但劳动密集型企业的估计系数和显著性相对更大（费舍尔组间系数差异检验的P值为0.00200），这一结果表明ESG优势均显著提高了资本密集型企业和劳动密集型企业的就业，但对劳动密集型企业的就业促进效应更大。对此并不难理解，如前所述，劳动密集型企业相对于资本密集型企业更多地依赖劳动力，其员工通常面临更高的失业风险，因此当ESG优势促进企业生产规模扩张时，劳动密集型企业相对于资本密集型企业会雇佣更多的劳动力以满足企业生产规模需要，在更大程度上降低员工的失业风险。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "3．重污染企业与非重污染企业",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "近年来，随着“双碳”目标的提出以及社会各界对可持续发展的关注，重污染企业面临更为严格的环境规制，受到社会各界更多的关注和监督。我们比较感兴趣的一个问题是，ESG优势的就业提升效应是否与其所处行业的污染程度有关？为回答这一问题，本文根据环保部2008年发布的《上市公司环境保护核查行业分类管理名录》中规定的14个重污染行业，与证监会2012年发布的《上市公司行业分类指引》中的行业进行匹配，得到属于重污染行业的上市公司。表5第（5）列和第（6）列分别展示了ESG优势对重污染企业和非重污染企业就业水平影响的估计结果。本文发现，重污染企业子样本中ESG优势的估计系数不显著，非重污染企业ESG优势的估计系96",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "2023年第7期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "中的社会责任因素对企业就业水平提升的作用最大。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "本文的研究结论具有重要的政策启示。新冠疫情、气候变化以及环境污染问题的频繁出现，使得国内外各界对ESG的重视程度日益增加，ESG成为推动企业践行新发展理念、实现可持续发展的重要力量。党的二十大报告提出，要加快发展方式绿色转型，推动经济社会发展绿色化、低碳化是实现高质量发展的关键环节，还要深入推进环境污染防治，积极稳妥推进碳达峰碳中和。目前，中国现已进入高质量发展阶段，建立和完善符合中国国情的ESG体系有助于实现“双碳”目标和可持续发展。另外，ESG的国际化进程加速，现已成为国际市场合作的重要内容，因此加快推进ESG政策体系建设不仅有助于中国推动全球可持续发展、构建人类命运共同体，还有利于中国对外贸易和对外投资的发展。本文的研究揭示了ESG优势对于提高企业就业水平、促进就业净增长以及优化就业技能结构的积极作用，证实了可持续发展的企业在促进稳就业、保民生、增强就业吸引力中的重要地位。这不仅对于进一步缓解就业难问题、实现更加充分更高质量就业目标具有重要的政策启示，而且对于企业积极履行社会责任，推动中国高质量发展，助力国家实现“双碳”目标具有重要的政策意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "首先，在政策层面，中国应当加快健全ESG信息披露标准、完善ESG指标评价体系以及鼓励企业践行ESG理念。在ESG信息披露方面，相关部门应当加快制定相关政策，从环境、社会以及治理三个维度，健全企业ESG报告披露的统一标准，提高ESG信息披露的质量，强化ESG的监管。在ESG指标评价体系方面，应当提高ESG评级的科学性和可靠性，学习借鉴国外先进的ESG指标评价方法，结合中国独特的发展模式，健全具有中国特色的ESG指标评价体系。在鼓励企业践行ESG理念方面，相关部门应当建立相关机制，鼓励企业保护环境，降低碳排放量，努力实现绿色低碳转型，并推动企业积极履行社会责任，提高公司治理水平。其次，在企业层面，无论是国际市场的驱动，还是中国提出的“双碳”目标，ESG正在成为企业的主流共识。一方面，ESG能够提高企业价值，有利于企业实现自身的可持续发展，本文的影响机制检验也证实了ESG优势能够促进企业生产规模扩张、缓解融资约束以及吸引劳动力。另一方面，企业积极履行社会责任，助力社会民生建设，促进就业稳定还有利于提升企业的品牌形象，有助于企业长久发展。因此，企业应当加大对ESG的重视程度，将ESG融入企业的各个业务环节，强化企业的ESG理念，积极准确地披露企业的ESG信息，这对于进一步促进中国实现就业稳定、助力国家实现“双碳”目标以及推动经济高质量发展具有重要的意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "崔广慧、姜英兵，2021：《政府环保处罚影响企业劳动力需求吗？-基于制造业上市公司的经验证据》，《中国人口·资源与环境》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "顾雷雷、郭建鸾、王鸿宇，2020：《企业社会责任、融资约束与企业金融化》，《金融研究》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "黄珺、汪玉荷、韩菲菲、李云，2023：《ESG信息披露：内涵辨析、评价方法与作用机制》，《外国经济与管理》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "李井林、阳镇、陈劲、崔文清，2021：《ESG促进企业绩效的机制研究-基于企业创新的视角》，《科学学与科学技术管理》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "李磊、王小霞、包群，2021：《机器人的就业效应：机制与中国经验》，《管理世界》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "刘贯春、叶永卫、张军，2021：《社会保险缴费、企业流动性约束与稳就业-基于（社会保险法》实施的准自然实验》，《中国工业经济》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "聂辉华、林佳妮、崔梦莹，2022：《ESG：企业促进共同富裕的可行之道》，《学习与探索》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "邱牧远、殷红，2019：《生态文明建设背景下企业ESG表现与融资成本》，《数量经济技术经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "孙伟增、郭冬梅，2021：《信息基础设施建设对企业劳动力需求的影响：需求规模、结构变化及影响路径》，《中国工业经济》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "铁瑛、刘啟仁，2021：《银行管制放松、融资约束与人力资本升级》，《财贸经济》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "101",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "毛其淋、王玥清：1ESG的就业效应研究：来自中国上市公司的证据",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "王波、杨茂佳，2022：《ESG表现对企业价值的影响机制研究-来自我国A股上市公司的经验证据》，《软科学》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "王锋、葛星，2022：《低碳转型冲击就业吗-来自低碳城市试点的经验证据》，《中国工业经济》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "王永钦、董雯，2020：《机器人的兴起如何影响中国劳动力市场？-来自制造业上市公司的证据》，《经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "王勇、谢婷婷、郝翠红，2019：《环境成本上升如何影响企业就业增长？-基于排污费修订政策的实证研究》，《南开经济研究第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "谢红军、吕雪，2022：《负责任的国际投资：ESG与中国OFDI》，《经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "余明桂、王空，2022：《地方政府债务融资、挤出效应与企业劳动雇佣》，《经济研究第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "张慧玲、盛丹，2019：《前端污染治理与我国企业的就业吸纳-基于拟断点回归方法的考察》，财经研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "Albuquerque,R.,Koskinen,Y.,and Zhang,C.,2019,\"Corporate Social Responsibility and Firm Risk:Theory and Empirical Evidence\",Management Science,65(10),4451-4469.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "Bhattacharya,C.B.,Sen,S.,and Korschun, D., 2008,\"Using Corporate Social Responsibility to Win the War for Talent\",Mit Sloan Management Retiew,49(2).",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "Choi,J,and Wang,H.,2009,\"Stakeholder Relations and the Persistence of Corporate Financial Performance\",Strategic Management Journal,30(8),895-907.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "Costa, C., Lages, L. F., and Hortinha, P., 2015,\"The Bright and Dark Side of CSR in Export Markets: Its Impact on Innovation and Performance\",International Business Retiew,24(5),749-757.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "Dyck,A.,Lins,K. V.,Roth,L,and Wagner, H. F., 2019,\"Do Institutional Investors Drive Corporate Social Responsibility? International Evidence\",Journal of Financial Economics,131(3),693-714.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "El Ghoul,S., Guedhami, O., Kwok, C. C. Y.,and Mishra, D. R.,2011,\"Does Corporate Social Responsibility Affect the Cost of Capital?\",Journal of Banking & Finance,35(9),2388-2406.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "Friede,G.,Busch,T., and Bassen,A., 2015,“ESG and Financial Performance: Aggregated Evidence from More than 2000 Empirical Studies\",Journal of Sustainabe Finance & Innestment,5(4),210-233.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "Gjergji,R.,Vena,L,Sciascia,S., and Cortesi,A.,2021,\"The Effects of Environmental,Social and Governance Disclosure on the Cost of Capital in Small and Medium Enterprises:The Role of Family Business Status\",Business Strategy and the Entironment,30(1), 683-693.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "Groizard,J.L.,Ranjan,P.,and Rodriguez-Lopez, A.,2015,\"Trade Costs and Job Flows:Evidence from Establishment-level Data\", Economic Inquiry,53(1),173-204.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "Hsu,P.,Tian,X.,and Xu,Y.,2014,\"Financial Development and Innovation:Cross-Country Evidence\",Jounal of Financial Economics,112(1),116-135.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "Kong,X.,Jiang,F.,and Zhu,L,2022,“Business Strategy,Corporate Social Responsibility,and within-Firm Pay Gap\",Economic Modelling,106,105703.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "Fu,X.,and FFu,X.,2021,“Varieties in State Capitalism and Corporate Innovation:Evidence From an Emerging Economy\", Journal of Corporate Finance,67,101919.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "Liu,M.,Tan,R.,and Zhang,B.,2021,\"The Costs of *Blue Sky':Environmental Regulation,Technology Upgrading,and Labor Demand in China\",Journal of Development Economics, 150,102610.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "Me Williams, A.,and Siegel, D., 2000,\"Corporate Social Responsibility and Financial Performance:Correlation Or Misspecification?\", Strategic Management Journal,21(5),603-609.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "Ng,A. C., and Rezaee, Z., 2015,\"Business Sustainability Performance and Cost of Equity Capital\",Journal of Corporate Finance, 34,128-149.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "Oster,E., 2019,\"Unobservable Selection and Coefficient Stability:Theory and Evidence\",Journa of Business & Economic Statistics, 37(2),187-204.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 126,
+      "text": "Ren,S.,Liu,D.,Li,B.,Wang,Y.,and Chen,X.,2020,\"Does Emissions Trading Affect Labor Demand? Evidence From the Mining and Manufacturing Industries in China\", Journal of Entironmental Management, 254,109789.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 127,
+      "text": "Xie,J.,Nozawa,W., Yagi,M.,Fujii,H.,and Managi,S.,2019,\"Do Environmental,Social,and Governance Activities Improve Corporate Financial Performance?\",Business Strategy and the Entironment,28(2),286-300.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 128,
+      "text": "Yuan,X.,Li,Z.,Xu,J.,and Shang,L,2022,\"ESG Disclosure and Corporate Financial Irregularities-Evidence from Chinese Listed Firms\",Journal of Cleaner Production,332, 129992.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 129,
+      "text": "102",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 130,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 131,
+      "text": "2023年第7期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 132,
+      "text": "Employment Effects of ESG: Evidence from",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 133,
+      "text": "Chinese Listed Companies",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 134,
+      "text": "MAO Qilinb and WANG Yueqing",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 135,
+      "text": "(a:Center for Transnationals'Studies,Nankai University;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 136,
+      "text": "b:Economic Behavior and Policy Simulation laboratory,Nan Kai University;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 137,
+      "text": "c:School of Economics,Nankai University)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 138,
+      "text": "Summary:In recent years,with the emergence of issues such as COVID-19 and climate change,sustainability has become an important issue in today's world development, and ESG (Environmental,Social and Governance) has received significant attention from all sectors of society.Since China put forward the goal of \"carbon peaking and carbon neutrality”, China has attached increasing importance to ESG. As an important subject of economic activities, enterprises have the responsibility to actively implement the ESG concept and promote the sustainable development of society. At present, China's employment situation is complicated and severe,the urban employment pressure is greater, and the structural employment contradiction that \"employment difficulty\" and\"recruitment difficulty\"coexist is increasingly prominent.In the context of China's pursuit of \"stable employment\" and sustainable development goals,it is of great practical significance to explore whether ESG advantages of enterprises,while promoting sustainable development,can help enterprises improve employment levels,achieve the goals of “stable employment\",and then solve the livelihood issue of employment. This paper combines theoretical analysis and empirical research to try to study whether and how ESG advantages affect employment.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 139,
+      "text": "Based on the data of A-share listed companies in Shanghai and Shenzhen from 2011 to 2021,this paper investigates the impact of ESG advantages on employment and its mechanism from the micro level. This paper shows that ESG advantages significantly improve the employment level of enterprises.This paper conducts the mechanism test from the dimensions of labor demand and supply and finds that the production scale expansion effect,financing constraint easing effect,and labor force attraction effect are important channels for ESG advantages to promote enterprise employment.The heterogeneity test shows that the employment promotion effect of ESG advantages is more obvious for enterprises in central and western regions,labor-intensive enterprises,and non-heavy polluting enterprises.From the perspective of employment dynamics,ESG advantages promote net employment growth of enterprises by improving job creation and reducing job destruction.This paper also investigates the impact of ESG advantages on the employment skill structureof enterprises and finds that ESG advantages increase the employment of middle-and high-skilled labor and labor closely related to ESG activities,and promote the effective allocation of labor resources. In addition,this paper further investigates the impact of ESG components on employment and demonstrates that the social responsibility factor in ESG has a greater impact on improving the employment level of enterprises.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 140,
+      "text": "This paper makes the following contributions to the field.First,this paper may be the first to examine how ESG",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 141,
+      "text": "advantages affect employment and explore the impact of sustainable development on the labor market,enriching and",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 142,
+      "text": "expanding relevant studies on the economic effects of ESG from the perspective of micro-enterprise employment.Second,",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 143,
+      "text": "this paper deepens and expands the relevant research on employment and the labor market.Examining the impact of ESG on",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 144,
+      "text": "enterprise employment from the unique perspective of ESG advantages is an important supplement to the research on",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 145,
+      "text": "employment and the labor market.Third, in terms of the impact mechanism,most of the existing literature on employment",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 146,
+      "text": "explores it from the level of labor demand,while this paper systematically and deeply reveals the transmission path of ESG",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 147,
+      "text": "advantages to the employment level of enterprise from the comprehensive perspective of labor demand and supply.Finally,",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 148,
+      "text": "in terms of policy implications, facing the dual background of China's implementation of the “carbon peaking and carbon",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 149,
+      "text": "neutrality\" strategy and employment priority strategy,exploring the employment effect of ESG advantages has important",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 150,
+      "text": "practical significance for China's current development. This paper confirms the positive impact of ESG advantages on the",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 151,
+      "text": "level and quality of employment,which reveals that ESG advantages play an important role in promoting stable employment,",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 152,
+      "text": "enhancing the attractiveness of employment,and solving the livelihood issue of employment while promoting enterprises to",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 153,
+      "text": "achieve sustainable development goals.Moreover,it also has important policy significance for China to realize the “double",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 154,
+      "text": "carbon\" goal and the goal of stable employment and to promote high-quality economic development.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 155,
+      "text": "Keywords:ESG;Employment in Enterprises;Net Employment Growth;Employment Skill Structure",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 156,
+      "text": "JEL Classification:G34,J21,J24",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 157,
+      "text": "（责任编辑：昱 池）（校对：王红梅）",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 158,
+      "text": "103",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 159,
+      "text": "中国知网 https://www.cnki.net",
+      "heading_level": null
+    }
+  ]
+}

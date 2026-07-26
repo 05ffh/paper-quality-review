@@ -31,7 +31,7 @@ M1 · KB 检索路由（v1）· 供 skill 主流程调用
   results = kbq.search("文献综述怎么写", topk=3)
 """
 from __future__ import annotations
-import json, os, sys, argparse, warnings
+import json, os, re, sys, argparse, warnings
 from pathlib import Path
 from datetime import datetime, timezone
 warnings.filterwarnings("ignore")
@@ -42,10 +42,121 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 VDB_ROOT = ROOT / "knowledge_base/vector_db/active"
-NORMS_ROOT = ROOT / "knowledge_base/norms"  # KB-A 规范层（未来）
+NORMS_ROOT = ROOT / "knowledge_base/norms"
+PARSED_ROOT = ROOT / "knowledge_base/examples/parsed"
 
-# 复用 kb_ingest 的 EmbeddingProvider 和 config
-from scripts.kb_ingest import EmbeddingProvider, EMBEDDING_CONFIG, get_chroma
+# ---- 轻量搜索（零依赖，读 JSON 做关键词匹配） ----
+
+class LightweightKBSearch:
+    """不依赖 chromadb / sentence-transformers 的 KB-B 轻量搜索。
+    直接读 parsed JSON 文件，做关键词+主题匹配，即开即用。"""
+
+    def __init__(self):
+        self._papers: list[dict] = []
+        self._loaded = False
+
+    def _load(self):
+        if self._loaded:
+            return
+        for batch_dir in sorted(PARSED_ROOT.glob("batch_*")):
+            for jf in sorted(batch_dir.glob("EXAMPLE-*.json")):
+                try:
+                    d = json.loads(jf.read_text(encoding="utf-8"))
+                    self._papers.append(d)
+                except Exception:
+                    continue
+        self._loaded = True
+
+    def search(self, query: str, topk: int = 3,
+               topic: str = None, method: str = None,
+               paper_type: str = None) -> dict:
+        self._load()
+        if not self._papers:
+            return {"route": "B-lightweight", "items": [], "notice": "未找到 KB-B 论文 JSON"}
+
+        qlower = query.lower()
+        scored = []
+        for p in self._papers:
+            score = 0.0
+            hint = p.get("topic_hint", "")
+            pid = p.get("paper_id", "")
+
+            # 主题过滤
+            if topic and topic.lower() not in hint.lower():
+                continue
+            if method:
+                tags = [t.lower() for t in p.get("method_tags", [])]
+                if method.lower() not in tags:
+                    continue
+            if paper_type and p.get("paper_type", "") != paper_type:
+                continue
+
+            # 得分规则
+            title_unit = next((u for u in p.get("units", [])
+                              if u.get("kind") == "paragraph" and len(u.get("text", "").strip()) > 5), None)
+            title_text = title_unit.get("text", "") if title_unit else ""
+            # 题名精确匹配 +3
+            if qlower in title_text.lower():
+                score += 3.0
+            # 主题命中 +2
+            if qlower in hint.lower():
+                score += 2.0
+            # 关键词拆分命中 +1 per token
+            tokens = re.findall(r"[一-鿿\w]+", qlower)
+            for tok in tokens:
+                if len(tok) >= 2 and tok.lower() in hint.lower():
+                    score += 1.0
+            # 摘要区命中 +1
+            abstract_units = [u for u in p.get("units", [])
+                             if u.get("kind") == "paragraph" and "摘要" in u.get("text", "")]
+            for au in abstract_units[:2]:
+                if qlower in au.get("text", "").lower():
+                    score += 1.0
+                    break
+            # 正文命中 +0.5
+            body_matches = sum(1 for u in p.get("units", [])
+                              if qlower in u.get("text", "").lower())
+            score += min(body_matches * 0.5, 3.0)
+
+            if score > 0:
+                scored.append((score, p))
+
+        scored.sort(key=lambda x: x[0], reverse=True)
+        items = []
+        for sc, p in scored[:topk]:
+            title_unit = next((u for u in p.get("units", [])
+                              if u.get("kind") == "paragraph" and len(u.get("text", "").strip()) > 5), None)
+            chunks = sum(1 for u in p.get("units", []) if qlower in u.get("text", "").lower())
+            items.append({
+                "paper_id": p.get("paper_id", ""),
+                "topic_hint": p.get("topic_hint", ""),
+                "paper_type": p.get("paper_type", ""),
+                "method_tags": p.get("method_tags", []),
+                "score": round(sc, 1),
+                "matched_chunks": chunks,
+                "source": "lightweight_text_match",
+            })
+
+        notice = (None if items
+                  else f"轻量搜索未命中「{query}」；可安装 chromadb+sentence-transformers 启用语义搜索")
+        return {"route": "B-lightweight", "items": items, "notice": notice}
+
+
+_lightweight = None
+
+def _get_lightweight():
+    global _lightweight
+    if _lightweight is None:
+        _lightweight = LightweightKBSearch()
+    return _lightweight
+
+# ---- ChromaDB 语义搜索（可选，需 chromadb + sentence-transformers）----
+
+try:
+    from scripts.kb_ingest import EmbeddingProvider, EMBEDDING_CONFIG, get_chroma  # noqa: F401
+    _chromadb_available = True
+except Exception:
+    _chromadb_available = False
 
 # ===================== 常量 =====================
 
@@ -385,11 +496,64 @@ class KBQuery:
 
 _default_kbq = None
 
-def _get_default() -> KBQuery:
+
+def _get_default():
     global _default_kbq
     if _default_kbq is None:
-        _default_kbq = KBQuery()
+        if _chromadb_available:
+            try:
+                _default_kbq = KBQuery()
+                # 真实验证是否能加载（尝试 embed 一个词）
+                _default_kbq.provider.embed_query("test")
+                return _default_kbq
+            except Exception:
+                pass
+        _default_kbq = _LightweightKBQuery()
     return _default_kbq
+
+
+class _LightweightKBQuery:
+    """当 ChromaDB 不可用时的轻量查询代理。
+    KB-A 仍走 YAML 规范层；KB-B 走 JSON 文本匹配。"""
+
+    def __init__(self):
+        self._light = _get_lightweight()
+
+    def query_norms(self, query: str, topk: int = 5) -> list[dict]:
+        # KB-A 规范层：直接读 YAML，不依赖模型
+        norms_root = ROOT / "knowledge_base" / "norms"
+        results = []
+        for yf in sorted(norms_root.rglob("*.yaml")):
+            try:
+                data = yaml.safe_load(yf.read_text(encoding="utf-8"))
+                for n in data.get("norms", []) or []:
+                    clause = n.get("clause", n.get("title", ""))
+                    if query.lower() in clause.lower():
+                        results.append(n)
+                    elif any(qt.lower() in clause.lower()
+                            for qt in re.findall(r"[一-鿿\w]+", query) if len(qt) >= 2):
+                        results.append(n)
+            except Exception:
+                continue
+        return results[:topk]
+
+    def query_examples(self, query: str, topk: int = 3, **kwargs) -> dict:
+        kwargs.pop("prefer", None)
+        return self._light.search(query, topk, **kwargs)
+
+    def search(self, query: str, topk: int = 3, **kwargs) -> dict:
+        norms = self.query_norms(query, topk=3)
+        examples = self.query_examples(query, topk=topk, **kwargs)
+        prefer = kwargs.get("prefer", "auto")
+        return {
+            "query": query,
+            "route": "lightweight",
+            "prefer": prefer,
+            "kb_a_norms": {"hits": len(norms), "items": norms},
+            "kb_b_examples": examples,
+            "notice": "当前使用轻量文本匹配（零依赖）。安装 chromadb+sentence-transformers 可启用语义搜索。",
+        }
+
 
 def search(query: str, **kwargs) -> dict:
     """供 skill 主流程调用的模块函数"""

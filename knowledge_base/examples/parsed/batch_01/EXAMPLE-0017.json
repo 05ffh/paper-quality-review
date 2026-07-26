@@ -1,0 +1,668 @@
+{
+  "paper_id": "EXAMPLE-0017",
+  "source_sha256": "425d7a892581a8ae59410eeb3789f92031e398e5c98044f42927d1e96c9a58f6",
+  "topic_hint": "共同机构持股与企业ESG表现＊",
+  "paper_type": "empirical",
+  "method_tags": [
+    "面板模型",
+    "工具变量"
+  ],
+  "clean_units": 109,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "共同机构持股与企业ESG表现＊",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "雷雷张大永姬强",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "内容提要：企业的环境、社会与公司治理（ESG）表现正在成为全球主流投资策略，然而其背后的投资机理尚未形成共识。本文将企业ESG投入引入生产决策模型，从共同机构持股的微观视角提出可能存在企业协同治理和合谋舞弊两种对立的机制，利用2007-2019年中国A股2371家上市企业的数据对上述机制进行了验证。结果表明，共同机构持股会显著降低企业的ESG表现，从而支持合谋舞弊的观点，其背后的原因是共同机构持股会提升企业市场垄断地位，减弱企业ESG投入的内生动力和压力。研究还发现，共同机构持股对企业ESG的负向影响主要由主动型机构投资者中的基金驱动，而长期机构投资者对企业ESG表现无显著影响。最后，共同机构持股对ESG表现的负面效应主要通过环境、公司治理以及产品三个维度呈现。本文不仅为ESG投资提供了一个理论框架，也同时在反垄断与资本市场如何助力企业可持续发展方面具有重要的政策参考意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "关键词：共同机构持股ESG企业社会责任协同治理反垄断",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "气候变化及环境问题对全球经济、社会的影响日益显著，受到各国政府的广泛关注。中国政府在2020年9月的联合国大会上提出了力争在2030年前实现碳达峰，在2060年前实现碳中和的“双碳”目标，这是我国为推动经济结构转型、实现可持续发展的重大战略决策。2021年9月，《中共中央、国务院关于完整准确全面贯彻新发展理念做好碳达峰碳中和工作的意见》提出，要积极发展绿色金融、有序推进绿色低碳金融产品和服务开发、建立健全绿色金融标准体系，从而确定了绿色金融是推进双碳目标的关键环节。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "作为绿色金融的行为主体之一，企业是市场上的融资需求方，也是我国发展绿色经济的微观基础，因此全面提升企业在绿色转型中的作用至关重要。近年来全球范围内兴起的ESG体系为企业的绿色转型提供了基本框架。ESG是环境（environmental）、社会（social）和治理（governance）的缩写，是关注企业投资理念的新的评价标准，代表企业在绿色与可持续发展方面的综合理念。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "ESG信息披露的制度建设与我国“双碳”战略息息相关，近年来逐步被纳入金融机构的业务管理流程和风险管理体系，得到了监管机构的密切关注。过去的一段时间里，我国监管机构密集出台有关ESG信息披露的政策：2007年原国家环境保护总局提出《环境信息公开办法（试行）》，鼓励企业自愿进行环境信息的公开；2016年8月，央行、证监会等七部委联合印发《关于构建绿色金融体系的指导意见》，多次强调资本市场应当在企业绿色低碳转型与可持续发展中扮演重要的支撑作用；2018年9月，证监会修订《上市公司治理准则》，增加利益相关者、环境保护与社会责任章节，规定上市公司应当依照法律法规和有关部门要求，披露环境信息以及履行扶贫等社会责任相关情况；",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "雷雷，西南财经大学会计学院，邮政编码：611130，电子信箱：lei＿lei＠swufe．edu．cn；张大永，西南财经大学经济与管理研究院，邮政编码：611130，电子信箱：dzhang＠swufe．edu．cn；姬强（通讯作者），中国科学院科技战略咨询研究院，邮政编码：100190，电子信箱：jqwxnjq＠163．com。本文研究得到国家自然科学基金专项项目（72348003）、国家自然科学优秀青年基金项目（72022020）、国家自然科学基金面上项目（71974159、71974181）的资助。作者感谢匿名审稿专家提供的建设性建议。当然，文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "2022年1月，央行、证监会等四部委联合印发《金融标准化“十四五”发展规划》，再次强调资本市场应当完善金融产品和服务创新，为企业可持续发展提供大力支持；2022年2月8日起《企业环境信息依法披露管理办法》及《企业环境信息依法披露格式准则》正式施行，规定重点排污单位、实施强制性清洁生产审核的企业、符合规定情形的上市公司和发债企业等，应该依法披露环境信息；2022年4月，证监会发布《上市公司投资者关系管理工作指引》，将公司的环境、社会和治理信息作为上市公司与投资者沟通的内容之一；同年5月国有资产监督管理委员会发布《提高央企控股上市公司质量工作方案》，明确要求央企披露更多有关ESG的信息，力争在2023年实现央企全覆盖。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "ESG信息披露体系提供了一个衡量企业环境表现的客观指标和低碳转型的标准，相关的制度建设也仅仅是整个体系的基础。若要发挥其在我国低碳转型中的积极作用，客观上需要发挥市场机制、激发企业的内驱力，进一步使企业自发提高ESG表现。因此，需要从理论上和深层次理解企业ESG决策背后的机理，从而为完善ESG评价体系建设、提升制度的有效性提供合理的支撑。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "大量研究表明，以机构投资者为代表的资本市场势力会在促进企业ESG表现方面发挥重要的作用。一方面，良好的ESG表现有助于企业在市场竞争中从融资、合作等多方面取得优势（徐莉萍等，2011；李姝等，2013）；机构投资者也逐渐将企业ESG表现纳入其投资策略，并积极对企业ESG表现施加影响（Dyck et al．，2019；Chen et al．，2020；黎文靖和路晓燕，2015）。另一方面，机构投资者面临日益严峻的绿色金融监管压力，迫使其对上市企业ESG表现提出更高要求。如我国在中央层面建立金融机构绿色金融业绩评价，将评价结果纳入考核指标和央行评级；中国银保监会要求银行和保险机构将ESG要求纳入管理流程和全面风险管理体系等（何德旭和程贵，2022）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "从理论上来讲，现有关于机构投资者与企业ESG表现的政策与研究大多基于一个隐含的假设，即投资者资产组合内企业间的行为相互独立、互不干扰，因此各企业ESG决策也不受同资产组合内其他企业行为的影响。由于ESG表现有助于提升企业市场竞争能力与长期价值（Cheng et al.，2022），因此在现实中机构投资者的存在可能会通过共同持股影响企业相关行为。基于此，本文在理论分析框架中放宽投资者资产组合内企业间行为相互独立、互不干扰这一假设，明确讨论机构投资者共同持股现象对企业ESG表现的影响。具体来说，本文在现有共同机构持股理论的基础上（Azar ＆ Vives，2021），引入ESG投入要素，构建了一个基础的理论模型，提出共同机构持股可能会存在协同治理和合谋舞弊两种对立的机制，从而分析两种机制对企业ESG决策的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "选择共同机构持股这一视角进行研究的原因有如下几个方面：首先，随着市场经济的不断发展和市场化程度的不断加深，资本也在此过程中不断完成积累，形成规模日益庞大的利益集团，同时持有多家企业股份的机构投资者日益增多，共同机构持股现象日趋常见（Backus et al．，2021；潘越等，2020）。其次，由于共同机构投资者同时在多家企业中占有举足轻重的股份，能够为企业间信息交流与沟通搭建重要的桥梁，为企业合作与交换资源提供便利，这虽然有助于共同机构投资者发挥监督治理的职能，但是也引起了业界和学界对于行业垄断的担忧（Gilo et al．，2006；He et al．，2019；Azar＆ Vives，2021）。目前，国外学界对共同机构持股究竟扮演何种角色展开了激烈的讨论，但无论在理论上还是实证方面，都仍充满争议难以达成共识（Schmalz，2021）。最后，2022年3月，《中共中央、国务院关于加快建设全国统一大市场的意见》明确指出建设全国统一大市场是构建新发展格局的基础支撑和内在要求，强调进一步规范不当市场竞争和市场干预行为，着力强化反垄断，强化垄断风险识别、预警和防范。由于垄断对于正常的市场经济秩序会造成严重的干扰，影响市场价格信号的正常发挥，严重干扰经济运行效率和科技进步，并造成消费者乃至社会福利的损失，避免其所带来的副作用也是共同机构持股相关研究的重点。特别是随着共同机构投资者日益成长为无法忽视的群体，我们有必要充分讨论其在企业ESG决策中的作用，从而明确是否应当对共同机构持股做出相应的鼓励或是限制。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "综上所述，本文对相关文献的贡献：首先，是构建了一个基础的理论模型以明确ESG与共同机构持股之间深层次的关系，从而为相关实证研究提供一个一般性的逻辑框架。其次，从实证研究的角度，文章做出了以下两点重要扩展：第一，丰富了有关中国企业ESG表现影响因素的文献，在考虑我国资本市场客观规律的基础上扩展了共同机构投资者如何影响企业决策的研究。虽然国内外已有文献对共同机构投资者究竟扮演积极还是消极的角色存在不少争议，但是我们发现尽管共同机构投资者理论上可以扮演更为积极有效的监督治理角色，然而在目前市场条件下，共同机构投资者出于资产组合价值最大化的考虑，会促使企业合谋形成更强市场势力，赚取超额利润，最终导致市场扭曲。第二，丰富了有关中国市场共同机构投资者的研究。研究发现作为资本市场重要参与者之一的共同机构投资者，对企业ESG表现具有明显的消极影响，同时也显著降低了企业后续ESG投入，从而支持了垄断所蕴含的合谋舞弊假说。进一步的机制分析表明，共同机构持股会显著提升企业市场势力，从而扭曲市场运行机制，降低企业间竞争，使得企业安于现状，改善ESG表现意愿降低，最终导致ESG表现变差。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "考虑到监管层面对于ESG表现的关注，本研究也同样具有以下几点重要的政策意义：首先，为政策制定者是否应当对共同机构持股加以限制提供参考，同时政策制定者在如何加快建设全国统一大市场方面也需要考虑到相关的监管措施。由于共同机构持股可能导致的垄断问题，使得市场效率缺失，从而影响我国企业的绿色低碳转型，监管机构有必要对共同机构持股做出明确的规范和限制，避免资本盲目扩张。其次，为如何激励资本市场参与绿色可持续发展提供支持。本研究以共同机构持股为载体，探究了作为资本市场重要参与者之一的机构投资者在支持企业绿色可持续发展过程中所承担的角色。结果表明，机构投资者虽然在我国资本市场发展中起到重要作用，但是却在支持与鼓励企业可持续发展方面存在问题。因此，政策制定者需要考虑如何引导机构投资者更加积极主动地支持企业可持续发展与绿色转型。长期以来，中国资本市场存在“一股独大”、政府干预等诸多问题，这导致机构投资者参与公司治理的兴致不高、意愿不强。监管者需要思考如何充分调动机构投资者参与公司治理的积极性，帮助企业实现长期高质量发展。2022年4月，证监会召开机构投资者座谈会，围绕推进资本市场高质量发展、引导更多中长期资金入市向部分机构投资者听取意见和建议，本研究则为此举措提供了理论支撑。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "本文余下内容结构如下：第二部分为文献综述与理论探讨；第三部分为数据与变量说明；第四部分为实证分析；第五部分为结论与启示。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "二、文献综述与理论探讨",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "（一）文献梳理",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "1．共同机构持股研究",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "共同机构投资者相较于其他机构投资者主要有两点差异：首先是投资目标上的差异，共同机构投资者的目标不再局限于最大化其持有的某个企业的价值，而是关注其投资组合价值的最大化；其次是监督治理效率上的差异，共同机构投资者比其他投资者能获取更多企业与行业层面的信息和资源，充当企业间交流的桥梁，从而在完善公司治理与促进企业协同合作上发挥重要作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "在此基础上，现有文献对共同机构投资者如何影响企业行为仍存在较大争议。一方面，共同机构持股可能令企业内部化竞争对手施加的负外部性，减少彼此间竞争，最终导致市场垄断，扭曲市场价格机制。理论上，出于资产组合价值最大化的考量，共同机构投资者有意愿促使企业形成合谋，反对企业采取两败俱伤的激进竞争策略（例如，打价格战、广告战等），从而获得超额利润（Giloet al．，2006；Azar＆ Vives，2021）。与理论预期一致，许多研究从企业产品价格、市场份额以及盈利能力等视角发现相应实证证据（Azar et al．，2018；He＆Huang，2017）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "另一方面，部分研究认为共同机构持股并未引起严重的市场垄断问题。Lewellen＆Lowry（2021）的证据表明，共同机构持股并未显著影响企业的市场竞争行为。相反，共同机构投资者对于优化企业治理结构、促进企业信息共享与合作等均有显著的积极影响。首先，共同机构投资者作为联结各个企业的重要桥梁，使得企业间信息流通更为顺畅，信息不对称显著降低（Park et al.，2019）。其次，共同机构持股降低了投资者信息搜寻与处理成本，因此可以提升投资者对企业的监督效率（He et al．，2019）。中国资本市场具有其独特性，而针对中国市场共同机构投资者作用的讨论还比较有限，且尚未达成共识（潘越等，2020；杜勇等，2021；于左等，2021）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "2．ESG相关研究",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "近年来随着人们对绿色转型的广泛关注，文献对企业的ESG表现相关研究已经有了非常丰富的讨论。首先，有研究表明，提升ESG表现有助于企业提升市场竞争能力，因此也被视为企业一个有效的竞争策略。具体来说，提升ESG表现有助于企业实施产品差异化战略（高勇强等，2012）、建立政治关系（戴亦一等，2014）、降低融资成本（邱牧远和殷红，2019）、减少融资约束（何贤杰等，2012），以及巩固与利益相关方关系（黄伟和陈钊，2015）等。总而言之，企业积极提升ESG表现能够帮助企业从多个方面获得市场竞争优势。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "其次，提升ESG表现有助于提升企业价值。一方面，提高ESG表现能够加强市场竞争力，从而获得更高现金流，提升市场价值（Borghesi et al．，2014）。潘健平等（2021）的研究发现，企业提升ESG表现不仅提高了自身经营业绩，而且增加了股东财富水平。另一方面，尽管提升ESG表现短期内可能需要付出成本，但其能够改善公司治理结构，减少委托代理问题，从而提升企业长期价值（Ferrell et al．，2016）。李正（2006）研究表明，提升ESG表现虽然短期内导致企业价值降低，但从长期看，企业将从中获益。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "3．共同机构持股与企业ESG表现",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "通过梳理已有文献可以发现，提高ESG表现不仅有助于国家总体的绿色转型战略，也可以帮助企业获得竞争优势，但是共同机构投资者的存在可能会改变市场竞争态势、扭曲市场配置效率从而直接或者间接地影响到企业ESG行为。于左等（2021）考虑一个存在两家企业的市场环境，从理论上证明共同股东的存在使竞争企业易产生合谋，亦会使合谋更加稳定。潘越等（2020）则通过研究共同机构持股与企业投资策略的关系，从实证的角度进一步对共同机构持股促使企业合谋的机制进行深入探讨，识别出共同股东市场势力等重要因素。于ESG表现而言，合谋意味着企业依赖ESG表现提升竞争力的动机减弱。Cheng et al．（2022）以美国市场为背景发现相应的实证证据，即共同机构持股显著降低企业社会责任表现并对投资者异质性影响进行了详细梳理。但是，杜勇等（2021）基于企业盈余管理的实证研究表明，共同机构持股能够起到优化公司治理结构的积极作用，而治理结构的优化有助于企业长期价值与ESG表现的提升（Ferrell et al．，2016）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "综上所述，已有文献虽然注意到了共同机构持股可能对企业行为产生的影响，并对相关机制进行了一些讨论。但是，作为中国资本市场中的重要组成部分，机构投资者或者说共同机构持股是否会影响到企业ESG表现，其背后的机制如何仍缺乏明确的理论探讨和实证研究。因此，与现有文献相比，本文的可能贡献在于：首先，拓展了当前有关共同机构持股和企业ESG表现影响因素的理论。本文从企业ESG表现的角度探讨了共同机构持股的影响，并对相应的机制进行了理论分析。其次，本文为围绕共同机构持股影响的广泛争论提供了实证证据。本文研究表明，共同机构持股促使企业展开合谋，企业ESG表现变差。最后，本文为规范共同机构投资者以及促进企业绿色转型提供了建议。共同机构投资者促使企业市场合谋，严重阻碍企业提升ESG表现意愿，不利于企业绿色转型与可持续发展，本文提出的建议有利于完善相关的监管与制定相应的激励。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "总之，中国处于经济发展转向绿色和可持续的重要阶段，企业ESG表现无疑是决定整个过程",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "（二）变量定义",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "1．被解释变量",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "为了获取企业ESG表现情况，本文从CNRDS数据库收集有关信息。相较于国内其他ESG评价体系，CNRDS ESG数据库主要有如下特点：首先，CNRDS ESG数据库设计科学全面。CNRDSESG数据库的构造参考了国际知名ESG数据库 MSCI ESG Stats Database（又称 MSCI KLDDatabase）。同时，CNRDS ESG数据库又结合了中国企业的实际情况，从六个方面用58个细分指标对上市企业ESG情况进行衡量。其次，CNRDS ESG数据库非常直观。通过设置相应的哑变量，该数据库非常直观地表达了企业社会责任不同维度的特征，使研究者能够自主性地构建与自己研究方向相契合的反映企业全面或者某一方面社会责任的指数。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "因此，本文参考已有文献构造指标反映企业ESG表现（Lins et al．，2017）。具体来说，对于每家公司，本文先将各子类中优势（关注）判定项得分加总得到各子类优势（关注）表现得分；再将各子类优势表现得分减去相应子类关注得分即可得到该子类净优势得分；最后将各子类净优势得分加总可得企业ESG净优势得分（esg＿net＿str），该指标被用以体现企业总体ESG表现水平，即本文的被解释变量。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "2．解释变量",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "参照已有文献（He＆Huang，2017；潘越等，2020；杜勇等，2021），本文从三个方面构造共同机构持股指标，用于反映企业共同机构持股情况。第一个指标是企业是否具有共同机构投资者持股的虚拟变量（crsdum）：若企业当年任一季度存在共同机构投资者持股，则值为1，否则为0。其中，共同机构投资者是指至少在某一行业内两家企业中同时持有不低于5％股份的机构投资者。②本文对行业的定义参照证监会2012年的分类标准。第二个指标是企业自身存在的共同机构投资者数量（numcrs）：首先在季度层面计算企业存在的共同机构投资者数量，再在年度层面取均值，最后再加1并取自然对数。第三个指标是企业股份中由共同机构投资者所持有的比例（tcrsown）：在季度层面计算持股比例再在年度层面取均值。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "3．控制变量",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "参考已有关于公司治理与企业社会责任的文献，本文在实证回归分析中对以下变量加以控制：资产负债率（lev），固定资产比率（ppe），现金比率（cash），资产回报率（roa），公司规模（size），公司第一大股东持股比率（shrholderl），机构投资者持股比率（ ，公司董事会成员数（drcnum）和公司董事会独董占比（indrcrat）等控制变量。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "（三）描述性统计",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "表1报告了本文主要变量的描述性统计情况。企业ESG表现均值约为3.375，标准差为6.778，最小值为0，最大值为35，这反映出当前我国上市企业整体ESG表现偏低，且企业间ESG表现差距较大。从共同机构持股的状况来看，在样本期内约3.3％的样本存在共同机构投资者。③此外，numcrs最大值为1.179，表明一家企业最多存在约2.25个共同机构投资者；tcrsown 最大值为0.192，表明一家企业的股份中最多有19.2％的股份被共同机构投资者持有。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "① 数据库特点来自CNRDS官网相关介绍以及笔者邮件联系官方所获得的回复。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "② 已有文献表明，持有较多公司份额（不低于5％）的机构投资者能够有效地通过多种途径影响公司决策（Edmans＆ Manso，2011；Park et al．，2019），例如在关键事项上发声或是威胁退出持股等。因此，本文将共同机构投资者定义为至少在两家同行业公司中持有不低于5％股份的机构投资者。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "③本文计算所得共同机构投资者占比相较于潘越等（2020）的数据偏低，主要原因在于数据的统计口径差异。CSMAR数据库囊括更多类型的机构投资者，使得使用CSMAR数据库获得的共同机构股东数量要高于使用CNRDS数据库获得的数据。本文使用CSMAR数据构造指标时，能够获得与潘越等（2020）的研究极为接近的结果。但经过比对，本文发现CNRDS数据库对机构投资者的分类更加符合国际惯例（Binay，2005）以及本文的研究主题，因此本文最终选择以CNRDS数据库作为构造共同机构持股指标的基础。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "果将存在遗漏变量导致的内生性问题。因此，本文参考Crane et al．（2016）、潘越等（2020）和杜勇等（2021）的研究，以企业是否属于沪深300或中证500指数以及企业是否被中证500指数向下剔除至非沪深300指数成份股作为本文采用的两个工具变量。一方面，参考潘越等（2020）的研究，是否入选成份股指数以及成份股的增减变动与共同机构持股指标相关，因此工具变量相关性的要求满足。另一方面，是否入选成份股与企业ESG的表现无关，因为证券交易所成份股的选择依据并非是企业ESG表现，因此工具变量的外生性要求同样满足。具体来说，本文设置两个虚拟变量，e3001500和out500，若企业上期属于沪深300或中证500指数，则e3001500取值为1，否则为0；若企业当期被中证500指数向下剔除至非沪深300指数成分股，则out500取值为1，否则为0。表4报告工具变量回归结果。从一阶段结果来看，e3001500显著为负，out500显著为正，这与预期一致。进一步地，所有情形下工具有效性统计检验的F值均大于10，拒绝弱工具变量假设（杜勇等，2021,2022；梁日新和李英，2022）。同时，其他统计检验结果表明，本文工具变量结果也不存在识别不足或过度识别问题。从二阶段结果来看，共同机构持股对企业ESG表现的影响估计系数仍显著为负，这表明在一定程度上控制潜在遗漏变量导致的内生性问题后，本文基准回归结果仍然稳健。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "表4",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "工具变量回归",
+      "heading_level": 1
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "变量 | (1) | (2) | (3) | (4) | (5) | (6)\nPanel A：一阶段回归，被解释变量：共同机构持股指标 | Panel A：一阶段回归，被解释变量：共同机构持股指标 | Panel A：一阶段回归，被解释变量：共同机构持股指标 | Panel A：一阶段回归，被解释变量：共同机构持股指标 | Panel A：一阶段回归，被解释变量：共同机构持股指标 | Panel A：一阶段回归，被解释变量：共同机构持股指标 | Panel A：一阶段回归，被解释变量：共同机构持股指标\ne3001500 | -0.0353***\n(0.00679) | -0.0341***\n(0.00661) | -0.0254***\n(0.00494) | -0.0244***\n(0.00481) | -0.00252***\n(0.000513) | -0.00245**\n(0.000503)\nout500 | 0.0189**\n(0.00771) | 0.0189**\n(0.00770) | 0.0127**\n(0.00532) | 0.0125**\n(0.00532) | 0.00112**\n(0.000542) | 0.00113**\n(0.000545)\nPanel B：二阶段回归，被解释变量：esg＿net＿str（对数值） | Panel B：二阶段回归，被解释变量：esg＿net＿str（对数值） | Panel B：二阶段回归，被解释变量：esg＿net＿str（对数值） | Panel B：二阶段回归，被解释变量：esg＿net＿str（对数值） | Panel B：二阶段回归，被解释变量：esg＿net＿str（对数值） | Panel B：二阶段回归，被解释变量：esg＿net＿str（对数值） | Panel B：二阶段回归，被解释变量：esg＿net＿str（对数值）\ncrsdum | -3.881***\n(1.196) | -4.122***\n(1.276) |  |  |  | \nnumcrs |  |  | -5.360***\n(1.666) | -5.717***\n(1.790) |  | \ntcrsown |  |  |  |  | -53.237***\n(16.915) | -56.252 부부\n(17.961)\nControls | Yes | Yes | Yes | Yes | Yes | Yes\nFirm FE | Yes | Yes | Yes | Yes | Yes | Yes\nYear FE | Yes |  | Yes |  | Yes | \nIndustry xYear FE |  | Yes |  | Yes |  | Yes\nUnderidentification test: HO: underidentified | Underidentification test: HO: underidentified | Underidentification test: HO: underidentified | Underidentification test: HO: underidentified | Underidentification test: HO: underidentified | Underidentification test: HO: underidentified | Underidentification test: HO: underidentified\nP值 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000\nWeak identification test: HO: weakly identified | Weak identification test: HO: weakly identified | Weak identification test: HO: weakly identified | Weak identification test: HO: weakly identified | Weak identification test: HO: weakly identified | Weak identification test: HO: weakly identified | Weak identification test: HO: weakly identified\nF值 | 13.487 | 13.266 | 13.211 | 12.861 | 12.434 | 12.193\nOveridentification test: HO: instruments are valid instruments | Overidentification test: HO: instruments are valid instruments | Overidentification test: HO: instruments are valid instruments | Overidentification test: HO: instruments are valid instruments | Overidentification test: HO: instruments are valid instruments | Overidentification test: HO: instruments are valid instruments | Overidentification test: HO: instruments are valid instruments\nP值 | 0.254 | 0.326 | 0.189 | 0.245 | 0.125 | 0.168\n观测值 | 14340 | 14337 | 14340 | 14337 | 14340 | 14337",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "（四）稳健性检验",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "在上述内生性检验之外，本文还针对基准回归结果进行下述稳健性检验。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "1．剔除2018年及以后样本",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "沪深交易所先后在2017年下半年加入联合国可持续证券交易所倡议（UN sustainable stockexchange initiative）。加入该协议意味着沪深交易所将大力推动沪深上市企业在可持续发展方面的建设，从而可能使得企业在2018年ESG表现出现显著提升。因此，这种趋势可能导致本文基准回归结果仅仅是对2018年变化而非整个样本期情况的反映。基于此，为验证基准结果的稳健性，本文将2018年及之后年份样本剔除，并重新进行基准回归和内生性检验。结果表明，在剔除该影响后，共同机构持股对企业ESG表现影响的估计系数依然显著，本文基准回归结果稳健。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "2．替换ESG表现衡量指标",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "本文采用和讯网企业社会责任（CSR）总评分与华证ESG评级数据这两个同样被学界广泛认可和使用的ESG指标（Wang et al．，2021；谢红军和吕雪，2022），替换本文主回归中使用的衡量指标进行了稳健性检验。结果表明，共同机构持股对企业ESG表现的影响系数估计仍显著为负。因此，本文基准结果在不同评价体系下依然稳健。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "3．考虑行业特征",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "不同行业拥有各自的特点，而这些特点也可能导致不同行业企业之间ESG表现存在固有的差异，同时机构投资者对不同行业也可能会有不同的资产配置偏好，因此，行业固有特征也可能导致本文基准回归结果的偏误。为了控制这些不随时间变化的行业固有特征，本文在基准OLS回归模型基础上进一步控制行业＋年份固定效应，结果表明共同机构持股对企业ESG表现影响的估计系数仍显著为负，本文基准回归结果稳健。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "（五）机制分析",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "在本文理论分析部分，对合谋舞弊效应的边界以及影响因素进行了理论分析，并发现共同机构投资者市场势力和共同机构投资者偏好这两个重要的因素。接下来，本文在实证中将从这两个维度进行探讨，验证合谋舞弊效应的合理性。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "1．共同机构投资者市场势力",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "当通过共同机构投资者联结的同行企业数量越多，那么这些企业通过合谋能形成更大的市场势力产生更大的收益，竞争强度将会越弱，此时，企业通过提升ESG表现提升竞争力的意愿就会越弱，因此其ESG表现将会越差。本文从两个维度构造指标来衡量共同机构投资者的市场势力。第一个指标是企业通过其所有共同机构投资者所联结的同行业企业数量（numcon）；第二个指标是企业平均通过一个共同机构投资者所联结的同行业企业数量（avgnum）。②本文将这两个指标代入本文基准模型中，回归结果如表5 Panel A所示。结果表明，共同机构投资者市场势力与企业ESG表现呈现显著的负相关关系。这意味着，通过共同机构投资者联结的企业数量越多，形成的市场势力越大，合谋的收益越高，企业提升ESG表现以增进市场竞争力的意愿就越低，最终导致企业ESG表现更差。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "2．共同机构投资者类型",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "当共同机构投资者更加关注短期资产组合价值最大化时，其更有意愿促进所持有的同行业企业减少长期投入，从而增加短期收益，这将导致企业ESG表现更差。为验证共同机构投资者风格",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "① 因篇幅所限，结果未予汇报，感兴趣的读者可向作者索取。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "② 同样地，本文对这两个指标原始数据加1并取对数。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "雷 雷等：共同机构持股与企业ESG表现",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 1,
+      "text": "表5 机制分析结果 | 表5 机制分析结果 | 表5 机制分析结果 | 表5 机制分析结果 | 表5 机制分析结果\nPanel A：共同机构投资者市场势力 | Panel A：共同机构投资者市场势力 | Panel A：共同机构投资者市场势力 | Panel A：共同机构投资者市场势力 | Panel A：共同机构投资者市场势力\n | (1) | (2) | (3) | (4)\nnumcon | -0.631**\n(0.290) | -0.552\n(0.289) |  | \navgnum |  |  | -0.556\n(0.288) | -0.476°\n(0.286)\nControls | Yes | Yes | Yes | Yes\nFirm FE | Yes | Yes | Yes | Yes\nYear FE | Yes |  | Yes | \nIndustry xYear FE |  | Yes |  | Yes\nR | 0.751 | 0.759 | 0.751 | 0.759\n观测值 | 19295 | 19295 | 19295 | 19295\nPanel B：分类别共同机构持股影响 | Panel B：分类别共同机构持股影响 | Panel B：分类别共同机构持股影响 | Panel B：分类别共同机构持股影响 | Panel B：分类别共同机构持股影响\n | 财务公司 | 基金 | 券商 | 信托\n | (1) | (2) | (3) | (4)\ncrsdum | 0.219\n(0.443) | -0.566**\n(0.265) | 1.780\n(1.127) | 0.872\n(0.702)\nR | 0.758 | 0.759 | 0.759 | 0.758\n观测值 | 19295 | 19295 | 19295 | 19295\n | QFII | 保险 | 社保基金 | \n | (5) | (6) | (7) | \ncrsdum | 1.580\n(1.414) | -0.590\n(0.927) | -0.390\n(0.797) | \nR2 | 0.758 | 0.758 | 0.758 | \n观测值 | 19295 | 19295 | 19295 | \nControls | Yes | Yes | Yes | Yes\nFirm & Industry xYear FE | Yes | Yes | Yes | Yes",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "偏好对企业ESG表现的影响，本文将共同机构投资者细分为七类，并估计各类型共同机构持股对企业ESG表现的影响。结果如表5 Panel B所示，共同机构持股对企业ESG的负向影响，主要由机构投资者中的基金驱动；相反，以保险和社保基金为代表的长期机构投资者对企业ESG表现无显著影响。①究其原因，这可能与基金机构投资者面临严重的短期业绩压力和资金流量压力有关（冯旭南和李心愉，2013；李祥文和吴文锋，2018），这导致基金机构将其所面临的压力传导至其持有的企业，迫使企业更加关注短期利润最大化。这意味着，共同机构投资者最大化短期资产组合价值",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "① numcrs与tcrsown指标下回归结果与crsdum指标下一致，限于篇幅不再报告，感兴趣的读者可向作者索取。146",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "潘健平、翁若宇、潘越，2021《企业履行社会责任的共赢效应-基于精准扶贫的视角》，《金融研究》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "潘越、汤旭东、宁博、杨玲玲，2020《连锁股东与企业投资效率：治理协同还是竞争合谋）》，《中国工业经济》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "邱牧远、殷红，2019《生态文明建设背景下企业ESG表现与融资成本》，《数量经济技术经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "谢红军、吕雪，2022《负责任的国际投资：ESG与中国OFDD，《经济研究第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "徐莉萍、辛宇、祝继高，201t《媒体关注与上市公司社会责任之履行-基于汶川地震捐款的实证研究》，《管理世界》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "杨菁菁、胡锦，2022《ESG表现对企业绿色创新的影响》，《环境经济研究》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "于左、张容嘉、付红艳，202t《交叉持股、共同股东与竞争企业合谋》，《经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "Allman,E.,and J. Won,2021, \"The Effect of ESG Disclosure on Corporate Investment Efficiency\",SSRN Electronic Journal.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "Aroul,R. R.,S. Sabherwal,and S. V. Villupuram, 2022, \"ESG, Operational Efficiency and Operational Performance:Evidence from Real Estate Investment Trusts\",Managerial Finance, 48(8), 1206-1220.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "Azar,J.,M.C.Schmalz,and I. Tecu, 2018, \"Anticompetitive Effects of Common Ownership: Anticompetitive Effects of Common Ownership\",Journal of Finance, 73(4), 1513-1565.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "Azar, J., and X. Vives, 2021, \"General Equilibrium Oligopoly and Ownership Structure\", Econometrica, 89(3),999-1048.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "Backus,M.,C. Conlon, and M. Sinkinson, 2021, \"Common Ownership in America: 1980-2017\",American Economic Journal: Microeconomics,13(3),273-308.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "Binay, M.,2005, \"Performance Attribution of US Institutional Investors\", Financial Management,34,127-152.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "Borghesi, R., J. F. Houston,and A. Naranjo, 2014, \"Corporate Socially Responsible Investments: CEO Altruism, Reputation,and Shareholder Interests\",Journal ofCorporate Finance, 26, 164-181.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "Chen,T.,H. Dong,and C. Lin, 2020, \"Institutional Shareholders and Corporate Social Responsibility\", Journal of Financial Economics, 135(2),483-504.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "Cheng,X.,H. Wang,and X. Wang, 2022, \"Common Institutional Ownership and Corporate Social Responsibility\",Journal of Banking & Finance,136,106218.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "Crane,A. D., S. Michenaud, and J. P. Weston, 2016, \"The Effect of Institutional Ownership on Payout Policy:Evidence from Index Thresholds\",Reriew of Financal Studies, 29(6),1377-1408.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "Dyck,A.,K.V.Lins,L Roth, and H. F. Wagner, 2019, \"Do Institutional Investos Drive Corporate Social Responsibility? International Evidence\",Journal of Financial Economics, 131(3), 693-714.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "Edmans, A., and G. Manso, 2011, \"Goverance Through Trading and Intervention: A Theory of Multiple Blockholders\",Review of Financial Studies, 24(7),2395-2428.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "Ferrell, A., H. Liang, and L. Renneboog, 2016, \"Socially Responsible Firms\", Journal of Financial Economics,122(3), 585-606.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "Gilo,D.,Y.Moshe, and Y. Spiegel, 2006, \"Partial Cross Ownership and Tacit Collusion\",RAND Journal of Economics,37(1), 81-99.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "He,J.,and J. Huang,2017, \"Product Market Competition in a World of Cross-ownership:Evidence from Institutional Blockholdings\",Reriene of Financial Studies,30(8),2674-2718.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "He,J.,J.Huang,and S. Zhao,2019,\"Internalizing Governance Externalities: The Role of Institutional Cross-Ownership\", Journal of Financial Economics, 134(2),400-418.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "Lewellen,K.,and M. Lowry, 2021, \"Does Common Ownership Really Increase Firm Coordination?\",Journal of Financial Economics,141(1),322-344.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "Lins,K. V.,H. Servaes,and A. Tamayo, 2017, \"Social Capital,Trust, and Firm Performance: The Value of Corporate Social Responsibility during the Financial Crisis: Social Capital,Trust, and Firm Performance\",Journal of Finance,72(4),1785-1824.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "Park,J.,J. Sani, N. Shroff,and H. White, 2019, \"Disclosure Incentives When Competing Firms Have Common Ownership\", Journal of Accounting and Economics, 67(2-3),387-415.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "Schmalz, M. C.,2021, \"Recent Studies on Common Ownership, Firm Behavior,and Market Outcomes\", Antitrust Bulletin,66(1), 12-38.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "Wang,L.,Y. Da, and D. Kong,2021, \"Air Pollution and Employee Treatment\",Journal of Corporate Finance, 70, 102067.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "2023年第4期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "Common Institutional Ownership and Corporate ESG Performance",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "LEI Lei,ZHANG Dayong'and JI Qiang",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "(a:School of Accounting,Southwestern University of Finance and Economics;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "b:Research Institute of Economics and Management, Southwestern University of Finance and Economics;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "c:Institutes of Science and Development,Chinese Academy of Sciences)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "Summary: Corporate Environmental, Social, and Governance (ESG) investment nowadays has become increasingly mainstream in investment strategy worldwide. Improving ESG performance has also become an important measure to encourage low-carbon transition and cope with climate crisis. Although ESG information disclosure has become a popular direction of development in many capital markets,how to incentivize corporate engage in improving ESG performance remains unclear.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "A large number of studies have shown that capital market forces,represented by institutional investors,play an important role in affecting corporate ESG performance. However,there is still no consensus on the direction or underlying mechanism of this influence.Most of these studies are based on the implicit assumption that the behavior of firms in an investor's portfolio is independent and does not interfere with each other.Therefore,the ESG decisions of each firm are not affected by the behavior of other firms in the same portfolio. However, this assumption overlooks the possibilty that the existence of institutional investors may affect the behavior of firms through common ownership. Given that common ownership has become increasingly normal in recent years and has significant impacts on firm behavior, it is of great theroatical importance to understand how common ownership affects corporate ESG performance. The phenomena of common institutional ownership is especially relevance for the Chinese capital market. Examining its role on corporate ESG performance and uncovering the mechanism have also great practical significance. Evidence found here can help form and improve policies to promote low-carbon and high quality development in China.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "There are heated debates in the literature about the effect of common ownership on corporate behavior.On one hand, the “collusive fraud”hypothesis suggests that common ownership may reduce competition among portfolio firms,leading to market monopolies and distorting market price mechanisms.As the consequence,firms may have less incentive to engage in ESG activities, and thus lowerig ESG performance.On the other hand, the “collaborative governance”hypothesis states that common institutional investors have a positive impact on improving corporate governance structures and promoting corporate information sharing and cooperation.By reducing information asymmetry,introducing better governance, allowing long-term coorperations between corporations,common institutional ownership can enhance corporate ESG performance.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "This paper first introduces a simple theoretical model integrating corporate ESG investment into the production decision-making process,and then proposes two opposing mechanisms on how common istitutional ownership may affect corporate ESG performance. Furthermore, it empirically verifies these mechanisms using data from 2371 Chinese A-share listed companies from 2007 to 2019. The results suggest that common ownership has a significant negative effect on corporate ESG performance, supporting the hypothesis of collusive fraud.The underlying reason for this is that common ownership enhances corporate market monopoly position, weakening the endogenous motivation for corporate ESG investment,leading to a significant reduction in corporate long-term ESG investment.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "Overall,this paper makes important contributions to the literature. It first proposes a theroratical model, which provides a general framework potentially applicable to other ESG relevant studies. Second,this paper examines the impact of common institutional investors on corporate decision-making,contributing to the literature on the determinants of ESG performance of Chinese firms.In addition,the fndings in this study provide insights into the role of common ownership in shaping corporate behavior towards ESG practices,which has significant implications for the sustainable development of the Chinese economy.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "The paper also has important policy implications, including whether to restrict common ownership, and the need for relevant regulatory measures to accelerate the construction of a nationwide unified market. It also provides theoretical and empirical supports for incentivizing capital markets to participate in green and sustainable development.Realizing the increasingly important role of institutional investors in the Chinese capital markets,policymakers need to pay more attention in guiding institutional investors to be more proactive in supporting corporate sustainable deveopment and green transformation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "Keywords:Common Institutional Ownership; ESG;Corporate Social Responsibility;Collaborative Governance;Anti-monopoly JEL Classification:D21, G32, G34",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "（责任编辑：昱 池）（校对：王红梅）",
+      "heading_level": null
+    }
+  ]
+}

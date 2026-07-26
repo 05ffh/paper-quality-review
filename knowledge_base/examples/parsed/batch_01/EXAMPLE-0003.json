@@ -1,0 +1,795 @@
+{
+  "paper_id": "EXAMPLE-0003",
+  "source_sha256": "dfe46634c6bb8da0412c1536ecc7afc8dd6d5d93deb59fa9e55f4fadd95c2c83",
+  "topic_hint": "碳排放规制、企业减排激励与全要素生产率",
+  "paper_type": "empirical",
+  "method_tags": [
+    "DID",
+    "面板模型",
+    "调节效应"
+  ],
+  "clean_units": 130,
+  "replacement_count": 1,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "碳排放规制、企业减排激励与全要素生产率",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "-基于中国碳排放权交易机制的自然实验",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "胡珺方祺龙文滨",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "内容提要：碳排放权交易机制作为中国绿色发展战略的重要抓手，能否切实对企业形成减排激励备受关注，也是理论研究亟须探究的重要命题。本文通过手工整理中国各试点碳市场的控排企业名录，从企业生产效率视角对上述命题进行了解析。研究发现：碳排放权交易机制显著提升了控排企业的全要素生产率，但该市场机制还未产生积极溢出效应，试点地区和同行业非控排企业的全要素生产率都未发生显著变化。进一步研究发现：当碳市场的初始配额实施部分竞价拍卖、采用基准法核算、非履约主体交易更为活跃，以及产品市场竞争程度更高、企业市场定价能力相对更低时，碳排放权交易机制对企业全要素生产率的积极作用会更为明显。此外，碳排放权交易机制还显著降低了控排企业的资源错配程度，提升了绿色生产投入和技术创新产出。本文从企业生产效率视角揭示了中国碳市场建设的微观经济效应，研究结论对于国家统一碳市场建设和绿色发展战略的深化都具有重要参考意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "关键词：碳排放权交易 碳市场机制设计 企业减排激励 全要素生产率",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "探索经济增长的可持续源泉，一直都是经济学研究经久不衰的重点课题。在中国改革开放四十多年的发展历程中，劳动要素在二元经济结构中的再配置效应，以及劳动剩余形成的“人口红利”，为中国经济增长贡献了不可忽视的动力（蔡昉，2013a）。但随着劳动要素短缺、价格上涨等“刘易斯拐点”特征在中国逐渐显现，以及人口抚养比率持续上升导致的“人口红利”逐渐消失，二元经济结构对经济增长的边际贡献持续降低，依靠劳动要素再分配以推动经济增长的模式在中国难以再保持可持续性。在此背景下，中国亟须突破“中等收入陷阱”的发展障碍，从二元经济向新古典增长模型转变，实现全要素生产率支撑型的可持续增长（蔡昉，2013b）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "伴随着二元经济结构带来的经济高速增长，劳动密集型生产模式也催生了较为严重的环境污染问题，尤其是碳排放导致的气候环境污染。中国目前是全球最大的发展中国家，但同时也是碳排放总量最高的国家之一。为转换经济发展动能，缓解环境污染问题，习近平总书记在党的十八届五中全会提出“创新、协调、绿色、开放、共享”的发展理念，将“绿色”发展上升为经济社会发展的基本理念。为深化绿色发展战略，习近平总书记在2020年第七十五届联合国大会一般性辩论上提出：“中国将提高国家自主贡献力度，采取更加有力的政策和措施，二氧化碳排放力争于2030年前达到峰值，努力争取2060年前实现碳中和。”从中国深化绿色低碳发展战略的实践路径来看，碳排放权",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "＊胡珺、方祺，海南大学管理学院，邮政编码：570228，电子信箱：jnuhujun＠163．com，fq138XXXXXXXX＠163．com；龙文滨（通讯作者），广东外语外贸大学会计学院，邮政编码：510006，电子信箱：songri2000＠126．com。本研究得到国家自然科学基金青年项目（71902050）、国家自然科学基金面上项目（72072045）、国家自然科学基金地区科学基金项目（72062012）及海南省自然科学基金高层次人才项目（722RC640）资助。作者感谢匿名审稿专家提供的建设性意见。当然，文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "交易机制是重要抓手。2011年10月，中国宣布启动碳市场试点建设，从2013年开始，深圳、上海、北京、广东、湖北、天津、重庆和福建八个地区先后建立了碳市场，开展碳排放权交易。2017年底，国家发展和改革委员会印发《全国碳排放权交易市场建设方案（发电行业）》，启动全国统一碳市场建设，经过近四年筹划，全国碳市场于2021年7月16日正式上线交易，首个履约期内纳入了2162家发电行业的重点排放单位，覆盖碳排放量超过40亿吨，中国由此建立起了全球覆盖碳排放规模最大的交易市场。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "碳排放权交易机制的不断深化体现了中国经济发展向绿色低碳转型的强烈意愿，但碳市场是否能够兼顾低碳和发展，实现环境与经济的同生共赢，尚还未有确切答案。理论上而言，“波特效应”假说认为，恰当的环境规制不仅可以解决污染问题，且有助于推动企业技术创新，创新先动优势可以部分甚至全部抵消环境规制成本，实现环境和经济的双赢（Porter ＆ Linde，1995）。新凯恩斯主义学者也提出，环境管制有助于降低管理者的租金占用和现期偏好等问题，激励管理者进行创新投资，提升企业生产效率（Ambec＆Barla，2006）。从中国碳市场的实践效果分析，若单纯聚焦低碳排放，统计数据和经验研究都表明，该碳排放规制的推行取得了较好的减排效果（沈洪涛等，2017；Zhang et al．，2017；刘传明等，2019；Zhou et al．，2019；吴茵茵等，2021）；但对于低碳发展，相关的经验研究还未形成一致结论，如胡珺等（2020）、Chen et al．（2021）发现，尽管受到企业成本转嫁和市场流动性的约束，总体而言碳市场对控排企业的技术创新产生了积极影响；但沈洪涛等（2017）却发现，虽然中国碳市场建设取得了很好的减排效果，但潜在机制主要是企业降低了生产规模，而非效率提升。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "绿色低碳发展不是简单以牺牲经济增长速度、国民财富积累和生活水平提高为必然代价，而是要通过转变经济发展动能，实现以全要素生产率支撑型的经济可持续增长。陈诗一（2010）认为，通过恰当的环境政策推动工业全要素生产效率提升，是实现中国绿色低碳和经济发展双向协同的必然选择；蔡昉（2013b）也指出，从体制机制改善中提升资源配置效率，是中国经济增长从二元结构向全要素生产率支撑型转变的关键路径。中国碳市场建设经过“十二五”试点先行、“十三五”筹备完善到“十四五”全国推广，在实际运行中的作用效果备受政府和公众期待。但正如前文指出，虽然已有文献围绕我国碳市场的环境后果进行了较多探讨，且大都提供了有助于节能减排的积极证据，但是该市场导向型环境规制是否有助于引导中国企业绿色低碳转型，实现全要素生产率支撑型的经济可持续增长，尚未形成一致答案。因此，本文尝试在已有研究基础上，聚焦企业全要素生产率，对此重要且备受关切的问题展开系统探讨。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "2013年以来，北京、上海等八个地区试点先行的碳市场具有类自然实验的性质，这为本文回答上述问题提供了一个难得的研究情境。因此，本文通过手工收集八个碳市场的控排企业名录，采用双重差分方法（DID）考察碳市场实施如何影响企业全要素生产率。研究发现：碳排放权交易市场的实施显著提升了企业全要素生产率，但上述影响目前还仅存在于控排企业中，尚未形成地区和行业的溢出效应。进一步研究发现，碳排放权交易机制对控排企业形成的减排激励约束，是推动全要素生产率提升的重要原因，表现为当碳市场控排企业排放配额需支付对价、采用基准法核算、非履约主体市场交易更为活跃时，以及当产品市场竞争程度更高、企业市场定价能力更低时，碳排放权交易机制对企业全要素生产率的影响会更为明显。此外，本文还发现，纳入碳市场的控排企业资源错配程度更低，但绿色生产投入和技术创新产出都相对更高，说明资源配置优化是该市场导向型环境规制有助于提升企业生产效率的重要传导机制。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "本文的研究贡献主要体现在三个方面：第一，回答了市场导向型环境规制在中国能否推动环境与经济同生共赢这一重大现实关切命题。学术界关于市场导向型环境规制在中国能否实现波特效应的讨论由来已久，但经验观点一直存在争论。本文聚焦中国逐步试点实施的碳排放权交易机制，",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "排有更强的激励作用（Lopomo et al．，2011；Tombe ＆ Winter，2015）；最后是初始碳配额的分配方式不同，欧盟自2013年起主要是以有偿分配为主，企业通过完全拍卖法获得初始配额，但我国目前更多为免费发放，广东、深圳、北京和天津等市场虽然实施了有偿拍卖，但相对于配额总量的比率还非常低。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "三、理论分析与研究假设",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "（一）碳市场的经济学分析与文献综述",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "碳市场是运用科斯产权路径解决环境污染问题的典型实践。碳市场内化碳排放外部性成本的逻辑主要在于总量控制与交易制度（cap and trade system），即通过初始碳配额的核算对企业二氧化碳排放提出总量控制，但在控制过程中遵循市场交易的需求供给规律，不采取强制方式约束企业的碳排放行为。在碳市场的总量约束下，高排放企业可以从碳市场购买相应的配额，视为对企业超额碳排放的成本和代价，而低排放企业则可以将剩余配额在碳市场出售，视为对企业节能减排的补偿和收益。因此，碳市场就通过碳排放总量控制和市场交易的方式，实现了碳排放外部性成本和减排外部性收益的内化。对于纳入碳市场的控排企业而言，无论是碳排放的成本还是减排的收益增加，都有助于形成企业减排激励，进而实现碳排放总量和排放强度的降低。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "从碳市场减排逻辑来看，由于兼顾了碳排放成本和减排收益，且企业在达成减排目标过程中具有较高的自由裁断权，可以根据自身的减排边际成本和收益自主权衡选择不同策略，碳市场通常被视为是解决碳排放问题的一条最优路径，这也是该机制在世界各国被广泛实践应用的一个重要缘由。但是，虽然碳市场建设得到了理论和实务界的积极支持与认同，该市场机制能否切实缓解碳排放问题也存在一定的局限或约束：首先是交易成本问题。科斯的产权思想存在完全市场竞争的假设，即碳市场交易成本为零。但是，即便是在比较成熟的欧盟碳市场，这一假定也难以成立，如存在企业交易搜寻成本和政府市场监督成本等（Matisoff，2010）；其次是产权界定问题。这包括采用哪种方法界定企业的碳排放额度，以及如何分配企业初始配额，不同的界定和分配方法都将对企业减排激励产生重要影响（傅京燕等，2017；宋德勇等，2021）；最后是社会福利均衡问题。二氧化碳为社会公共资源，通过排放权界定使其在企业间私有化，政府部门如何二次分配该私有化收益尤为重要，否则很容易导致社会福利失衡的问题。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "尽管运用碳市场约束企业碳排放在理论上可能存在一定束缚条件，但从国内外实践来看，该减排机制整体而言都取得了较好的减排效果。学者们分别基于欧盟（Ibikunle et al．，2016；Seguraet al．，2018）、美国（Lopomo et al．，2011）、加拿大（Tombe＆ Winter，2015）、澳大利亚（Meng et al．， 2018）和韩国（Kim ＆ Yu，2018）等国家或地区的证据均发现，碳市场所在国家和覆盖控排企业的二氧化碳排放量都得到了明显的降低。中国碳市场建设相对较晚，虽然有一些学者指出中国还有待进一步完善的法制体系与市场机制，可能一定程度上约束碳排放权交易市场的有效运转（Liu et al．，2015；Zhao et al．，2016），但从经验证据来看，这并没有妨碍碳市场建设的积极效应，大量相关研究均表明，碳市场在试点地区或控排企业中都取得了比较好的减排效果（沈洪涛等，2017；Zhang et al．，2017；刘传明等，2019；Zhou et al．，2019；Zhang et al．，2019；董直庆和王辉，2021；吴茵茵等，2021）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "虽然碳市场实施取得了积极的减排效果，但从企业减排路径来看，即便在同一个国家或区域内，不同企业的选择方式可能也不尽相同。因此，围绕碳市场约束下的企业减排路径及其对企业绩效的影响，国内外学者也进行了相应的探索。从相关文献来看，受“波特效应”假说影响，考察碳市场的实施是否有助于推动企业创新，进而影响企业绩效，得到了国内外学者最为广泛的讨论，但相",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "关研究结论还不一致。Rogge et al．（2011）发现，欧盟碳市场对企业技术创新没能产生实质性影响，在某些行业甚至影响为负；但Borghesi et al．（2015）、Branger＆ Quirion（2015）却都表明，欧盟碳市场对企业创新产生了显著的积极影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "从中国碳市场约束下的企业减排路径和绩效影响来看，研究结论也存在一定分歧。比如，沈洪涛等（2017）发现，碳市场下的减排效应主要源于企业的减产行为；Zhang et al．（2019）发现试点地区的碳强度并未显著降低，减排效果主要是通过牺牲经济生产而实现，并非是由于企业生产效率提升获得；吴茵茵等（2021）还指出，碳市场虽然取得了积极减排成效，但主要还是依赖于政府的行政干预，以碳配额交易量为代表的市场机制作用有限。但刘晔和张训常（2017）、胡珺等（2020）、宋德勇等（2021）和Chen et al．（2021）等都发现，碳市场总体而言对企业创新产生了积极影响。从绩效影响来看，与减排路径的研究相对应，虽然一些学者发现碳市场的实施提升了企业生产绩效，且技术创新是重要的传导机制（任胜钢等，2019；范丹等，2022）。但也有一些不同结论，胡玉凤和丁友强（2020）发现，碳市场降低了企业全要素生产率，原因主要在于企业经营成本的增加。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "从中国碳市场的具体实践和相关研究来看，现有文献中处理组对象的选择差异可能是导致结论莫衷一是的重要原因。Zhang et al．（2019）、吴茵茵等（2021）与范丹等（2022）都是以碳市场试点地区作为处理组，采用双重差分方法研究该市场机制的减排和生产率效应；刘晔和张训常（2017）等，则将高排放行业作为处理组展开相关分析与检验；沈洪涛等（2017）、胡珺等（2020）则具体到每个试点碳交易市场的控排企业名录，考察了排放权交易机制的减排和创新推动效应。从中国碳市场的具体运行情况来看，碳市场交易主体包括两类：一类是有履约义务的纳入企业，其在碳市场启动后自动成为交易主体，即控排企业；另一类是非履约交易主体，主要为以投资为目的的机构和个人。目前中国八个地区碳市场均已允许机构投资者参与交易，个人投资者除了上海碳市场外也均允许参与交易。由于八个碳市场都有规定具体的控排企业名录，并非地区或特定行业内的所有企业都需参与，若以地区或行业为处理对象展开分析，很可能放大或低估碳市场的经济效应，从而得到有偏的结论。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "综上，由于现有碳市场相关研究的结论存在较多分歧，且碳市场处理对象的选择也存在一定不足，本文通过手工整理各个碳市场试点地区的具体控排企业名录，并尝试以之为实验对象，进一步探讨中国碳排放权市场交易机制对企业生产效率的影响，以论证该市场导向型环境规制的实施是否有助于引导企业积极转换生产动能，实现绿色低碳发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "（二）研究假设的提出",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "如前文所述，碳排放权交易机制通过总量控制与市场交易对企业形成减排激励与约束：总量控制主要体现在，控排企业可以获得一定额度的碳排放权力，但政府在确定初始排放配额时，会根据基准线法或历史法核算企业碳排放情况，按低于企业实际生产所需总量进行初始分配，从而对于企业形成减排压力；市场交易主要体现在，虽然企业碳排放存在总量控制，但如何达成总量控制要求企业存在自主裁断权：通过资源配置或技术改造等降低碳排放总量，或在碳市场买入碳排放配额以满足总量控制要求。如果企业碳排放低于排放限额总量，企业还可以在碳市场上交易出售，收获减排的额外收益。碳排放权交易机制通过上述产权界定逻辑，把企业碳排放存在的外部性进行了内化，缓解了企业减排成本和收益的不匹配问题（胡珺等，2020）。遵循上述逻辑，本文认为排放权交易机制可能从如下两个方面影响企业行为，从而作用于生产效率提升：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "一方面，碳排放总量控制下的成本压力会推动企业优化资源配置或升级技术工艺，从而实现生产效率的提升。与其他环境规制类似，通过内化企业环境污染的外部性成本以推动企业污染治理，",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "也是碳排放权交易机制形成减排效应的基础。在该市场导向型环境规制实施后，二氧化碳排放不再是免费的公共资源，而被碳市场赋予了相应的价格，若企业未在给定范围内排放污染，需从碳市场购买相应的排放额度，否则将受到严厉处罚。碳排放权交易机制通过上述过程把企业碳排放的外部性成本内化，从而对企业形成减排压力。在碳市场内化的污染成本压力下，企业通常存在三种行为选择：一是维持原有生产且在碳市场购买超排额度；二是降低原有产出以达到排放总量控制要求；三是优化资源配置改进生产工艺，通过提高生产效率以降低单位产量的碳强度，从而实现减排目标（沈洪涛等，2017；胡珺等，2020）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "传统经济学家主要基于前两种企业行为逻辑，认为环境成本增加会对企业生产效率和竞争优势产生负面影响（Jorgenson ＆ Wilcoxen，1990）。但正如波特假说所阐述，这只有在企业完全处于被动和静态的条件下才会发生。作为趋利性组织，在环境规制压力下企业不会采取完全被动接受的方式，而是会更多遵循采用第三种行为方式，即通过优化资源配置、改善生产工艺和技术创新等，提高生产效率以降低单位碳强度，在提升产品市场竞争力的同时达成排放权交易机制下的排放总量控制要求。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "另一方面，碳排放权交易机制下的减排收益也会激励企业优化资源配置或升级工艺，从而实现生产效率的提升。与其他控制命令型环境规制相比，碳排放权交易机制以市场交易为导向，潜在优势主要在于：企业积极的减排行为不仅有助于达到碳市场排放总量控制的要求，降低碳排放成本，企业剩余的碳排放配额还可以在碳市场交易出售，获得额外的减排收益（Clarkson et al．，2015）。潜在收益增加有助于降低企业积极减排行为的正外部性，从而使得企业减排的成本与收益更为匹配（Matisoff，2010）。从企业资源配置的角度来讲，在一般条件下，通常认为管理层基于企业价值最大化目标已对现有资源进行有效配置，但正如上所述，排放权交易机制的实施将对企业现有生产效应函数形成冲击。在此情境下，企业通过提升生产效率以降低单位生产的碳排放水平，不仅能够获得一般条件生产率提升的所有益处，还有机会在碳排放权交易市场获得剩余碳排放配额出售的额外利润。因此，在碳排放权交易机制的影响下，企业管理层更有激励优化资源配置或升级生产工艺，以提升企业生产效率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "值得指出的是，企业在碳排放权交易机制下获得减排收益，依赖于碳市场的流动性。如涂正革和谌仁俊（2015）研究就指出，中国2002年试点实施的排污权交易机制，由于当时的市场交易机制不完善、地方保护主义严重等原因，排污权市场流动性非常不活跃，这也导致了该市场导向型环境规制在我国未能实现波特效应。与排污权交易推而不广的情形相比，我国中央和地方政府对试点地区的碳市场建设都十分重视，并于2021年在发电行业启动了全国统一性碳市场。试点地区和全国碳市场自开市交易以来，尽管机制建设仍在不断完善，持续增长的交易规模和市场流动性都表明，碳市场正积极彰显价值发现功能，为企业获得减排获益提供了现实基础。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "综合以上两个方面的分析，本文认为碳排放权交易机制对企业形成的减排激励与约束，能够对企业生产效率提升产生积极作用。基于此，本文提出如下假设：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "H1：碳排放权交易机制的实施有助于提升企业生产效率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "四、研究设计",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "（一）样本与数据",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "从2013年开始，中国深圳、上海、北京、广东、湖北、天津、重庆和福建八个地区先后启动了碳市场交易，2021年发电行业的全国统一碳市场也上线交易。由于2021年及之后的数据还未更新，且实验窗口还相对较短，故本文主要围绕八个地区碳市场展开研究。本文以沪深A股所有上市公司",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "前的年份及其他未进入控排名录的企业赋值为0。① CTS＿Post是本文主要关注的变量，其系数反映了碳排放权交易机制对企业生产效率的影响，如果CTS＿Post的系数显著大于0，则说明在碳排放权交易机制实施前、后两个期间内，控排企业生产效率的提升程度要显著高于其他企业，即支持了本文的研究假设。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "Controls 表示控制变量，参考已有文献（覃家琦和邵新建，2015；Giannetti et al．，2015； Shive ＆Forster，2020）做法，本文在模型（1）中控制了如下变量：公司规模（Size）、财务杠杆（Lev）、资产收益率（ROA）、产权性质（SOE）、大股东持股比率（First）、机构投资者持股比率（10）、上市时间（Age）、经营活动产生的净现金流（OCF）、董事长是否兼任总经理（Dual）、产品市场竞争（HHI）、固定资产投资（Fixed）、公司研发支出（R＆D）、分析师关注（Analyst）和融资约束（SA）等。此外，为了避免经济周期、行业和地区的时变和非时变差异对企业生产效率的影响，模型中还分别控制了年度、行业和地区以及年度与行业和地区分别交互的固定效应。最后，为控制企业不随时间变化因素的影响，模型中还加入了公司固定效应。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "五、结果与分析",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "（一）基准回归结果",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "碳排放权交易机制对企业生产效率的基准回归结果如表1所示。在第（1）列中，模型中没有加入任何控制变量，以简单比较碳市场实施前后，控排企业与其他企业的生产率变化，可以发现CTS的系数为-0.0294，CTS＿Post的系数为0.0370，都至少在1％水平上显著，说明碳市场的实施推动了企业生产效率提升，支持了本文的假设预期；在第（2）列中，回归模型控制了前文提到的控制变量，同时还加入了年度、行业、地区以及年度分别与行业、地区交互的固定效应，此时CTS＿Post的系数为0.0457，在1％的水平上显著，说明考虑不同企业所处行业和地区的时变和非时变差异后，本文的假设预期仍然成立。在第（3）列中，模型中进一步控制了公司固定效应，结果显示CTS＿Post的估计系数与前两列基本保持一致，仍在1％水平上显著为正，说明基准回归结果并非由于忽略公司层面非时变因素的影响所形成。②",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "（二）地区与行业的溢出效应",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "在探究中国碳市场的微观环境或经济影响时，许多研究都是以碳市场所在地区的全部企业或特定行业作为处理组进行分析（刘晔和张训常，2017；Zhang et al．，2019；吴茵茵等，2021；范丹等，2022）。本文仅以控排企业作为处理组，这种实验设计是否会低估碳市场的影响呢？反而言之，已有相关文献以碳市场所在地区或特定行业为处理组展开分析，是否放大了碳市场的经济效应呢？因此，本文进一步对碳排放权交易机制是否存在地区或行业溢出效应展开分析。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "首先，考察碳市场对企业生产效率的影响是否存在地区的溢出效应。具体而言，根据研究样本所有对照组企业的地理分布，设置一个新的变量 Pro＿Spillover：位于试点地区的对照组企业，在试点地区启动碳市场交易后的年份对 Pro＿Spillover赋值为1，之前年份和其他企业都赋值为0。然后，将Pro＿Spillover 加入基准模型进行检验，回归结果如表1的第（4）列所示。可以发现，CTS＿Post的系数为0.0370，仍在1％的水平上显著，与前文基准回归结果基本保持一致，但 Pro＿Spillover的系数仅为0.00849，且不存在统计显著性，这说明在碳市场实施前后，所在地区非控排企业与其他地区企业的生产效率差异没有发生明显差异。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "① 各地区碳市场的控排企业每年都有新进和退出情况，但更多为新进，有8家上市公司纳入控排企业名录一到两年后退出，故在数据预处理过程中，本文删除了这8家企业。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "② 由于CTS也是非时变变量，故在模型中控制公司固定效应后，其系数会由于共线性而被删掉。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "2．其他稳健性检验①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "除了上述检验外，本文还对基准回归结果进行了多种稳健性测试，包括：（1）随机抽样构建一虚假的处理组，对基准结果进行安慰剂检验；（2）采用事件研究法和两阶段差分的方法，对基准估计结果进行修正；（3）采用倾向得分匹配和熵平衡匹配方法，构建与碳市场控排企业具有相似特征的对照组样本；（4）参考Petersen（2009），对标准误在个体和时间上进行双重聚类以缓解自相关和异方差问题对统计推断的影响；（5）分别采用制造业企业和碳市场所在地区企业为样本进行回归；（6）采用OP法和LP法估算企业全要素生产率，检验回归结果对变量衡量方式的敏感性。上述稳健性检验结果均与本文的基准回归结果保持了高度一致。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "六、进一步分析",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "前文验证了碳排放权交易机制对企业生产效率的影响，并通过平衡趋势、安慰剂和PSM及EBM样本等方法，对基准回归是否稳健可靠进行了检验。为了进一步解析碳排放权交易机制影响企业生产效率的因果逻辑，揭开两者间因果关系的内在传导机制，接下来我们承接前文理论分析部分的逻辑，围绕碳市场机制设计、产品市场竞争和企业资源配置等角度，对碳排放权交易机制与企业生产效率的关系进行分析与检验。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "（一）碳市场机制设计与企业生产效率",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "与其他国家或地区的统一性碳交易市场不同，中国碳排放权交易市场实施“先试点，后推广”的政策，各试点地区可根据实际情况设计具体交易机制，以总结碳市场建设经验到全国统一交易市场推广。从碳市场机制设计来讲，碳排放配额分配方式、核算方法及非履约主体的市场参与程度等，不仅关乎控排企业的减排积极性，还会直接作用于碳市场的流动性，对碳排放权交易机制的实施效果至关重要。因此，本文结合中国八个碳市场在上述机制设计中的差异，进一步检验碳排放权交易机制对企业生产效率的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "从碳市场初始排放配额的分配方式来讲，根据控排企业是否需要支付费用，碳市场可以区分为无偿和有偿分配两种方式。目前我国各碳市场更多以无偿分配为主，有偿分配为辅。其中，上海、重庆、湖北和福建碳市场完全采用了无偿分配的方式，但广东、深圳、北京和天津则在无偿分配的基础上，辅以了一些有偿分配设计，如深圳碳市场要求采取拍卖方式出售的配额数量不得低于年度配额总量的3％。碳市场对初始碳排放配额的机制设计差异，可能会潜在影响控排企业的减排激励约束。相对于初始配额的免费获得，通过有偿的方式获得碳排放配额能够对控排企业形成更大的碳排放成本约束，通过提升生产效率以获得减排收益的激励也会更强。因此，本文预期，相较于碳市场下初始碳排放配额无偿获得方式，当控排企业需要为初始配额支付一定的费用时，碳排放权交易机制对企业生产效率的提升作用会更为明显。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "为检验上述预期，本文根据中国八个碳市场机制设计，将上海、重庆、湖北和福建碳市场的控排企业定义为配额免费组，剩下四个碳市场的控排企业定义为配额付费组，其他所有非控排企业则为比照对象，表3的前两列报告了相应的分组回归结果。第（1）列是以配额免费组和非控排企业为样本的回归结果，可以发现CTS＿Post的系数为0.0206，在10％的水平上显著；第（2）列则以配额付费组和非控排企业作为回归样本，结果显示CTS＿Post的系数为0.0506，且在1％的水平上显著。对两列回归系数的差异检验显示，当控排企业需要为初始配额支付对价时，CTS＿Post的系数显著更大，说明当碳市场对初始排放配额采用了部分有偿分配的机制设计时，更能够提升控排企业的生产效率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "① 为节约文章篇幅，其他稳健性检验结果均未在正文中报告，有兴趣的读者可来信索取。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "七、结论与启示",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "碳排放权交易机制是中国深化绿色发展战略的重要抓手，在新时代背景下，该市场导向型环境规制能否引导中国经济发展动能转换，实现环境保护与经济发展的双赢，备受中国政府与社会各界关注。基于此，本文通过手工整理中国八个地区碳市场的具体控排企业名录，采用准自然实验的研究方法，考察了碳排放权市场交易机制与企业生产效率的影响，以期回答中国碳市场建设推动企业绿色低碳转型，实现全要素生产率支撑型的可持续增长。本文研究发现：（1）碳排放权交易机制能够对控排企业形成有效激励约束，推动全要素生产率增长，但该机制还尚未在试点地区和高排放企业中产生积极溢出效应；（2）碳市场机制设计会影响控排企业的激励约束，当碳市场采用有偿或基准法分配初始碳排放配额，以及市场非履约主体参与更为活跃时，碳排放权交易机制对企业全要素生产率的推动作用更为明显；（3）当产品市场竞争更为激烈、企业市场定价能力更低时，碳排放权交易机制更能够有效提升企业全要素生产率；（4）在碳排放权市场交易机制的激励约束下，控排企业进行了更多的绿色升级投入和技术创新行为，资源配置优化是该市场导向型环境规制推动企业生产效率提升的重要传导机制。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "本文的研究结论表明，碳排放权交易机制对控排企业形成的减排激励约束，有助于引导企业积极转换发展动能，实现全要素生产率支撑型的可持续增长，有如下几方面的政策启示：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "第一，趋紧碳市场控排企业的纳入标准。在生态环境日益恶化的大背景下，探究有助于转换企业发展动能，助力环境与经济协同发展的政策工具，是世界各国面临的现实挑战与任务。本文的研究表明，碳排放权交易机制在引导企业低碳环保转型中具有重要而积极的效应，但还未形成地区或行业溢出效应。从本文整理的各地区碳市场控排企业名录来看，目前上市公司占比还仅约11.27％，说明碳市场的积极效应还存在较大的挖掘空间。因此，碳市场相关管理部门可以适当降低碳市场控排企业的纳入标准，增加市场控排企业数量，形成对更多企业的减排激励约束，从而深化该市场导向型环境规制在推动企业高质量发展中的重要作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "第二，持续优化碳市场的机制设计。中国目前并存八个地区碳市场以及覆盖电力行业的全国统一碳市场，各碳市场在初始配额分配方式、核算方式等机制设计方面，都存在较大的差异。根据本文的研究结论，对控排企业初始碳配额采用有偿分配和基准法核算时，能够对控排企业形成更好的激励约束，提升碳市场的生产率效应。因此，地区碳市场和电力行业的全国统一碳市场在机制设计优化过程中，可以重点关注这两个维度，比如电力行业的全国统一碳市场虽然已全部采用基准法核算控排企业初始排放额度，但目前初始配额分配仍采用了完全免费的方式，故在后续的建设过程中，可以适当拿出部分比率的配额竞价排放，以深化碳市场的积极影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "第三，降低碳市场非履约主体的参与门槛。碳市场交易主要分为两类：一是具有履约义务的控排企业，另一则是以投资为目的的机构与个人。中国现存各大碳市场虽然陆续放开了非履约机构和个人的交易许可权，但仍然存在着较高的门槛，一定程度上限制了机构投资者和个人的市场参与机会。但机构和个人等非履约主体参与对市场良性运转非常重要，是提升碳市场流动性的关键力量，比如广东碳市场机构投资者交易量在2021年已超过总交易量的1／2，这也是其流动性更高的一个重要原因。本文的研究也表明，当碳市场非履约主体交易参与度更高时，碳市场能够对企业生产效率产生更为显著的影响。因此，碳市场管理部门可以适当降低机构和个人等非履约主体的市场准入门槛，以进一步盘活碳市场的激励约束功能。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "第四，碳市场建设效果不能忽视产品市场的影响。本文研究发现，当产品市场竞争程度更",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "低、企业定价能力更高时，碳市场对企业生产效率的积极作用会相对降低，这主要是由于在此情境下企业能够部分甚至完全转嫁碳市场内化的碳排放成本。企业成本转嫁行为会使得产品市场消费者最终承担了碳市场内化的企业污染成本，这会扭曲碳排放权交易机制的环境或经济效应，甚至导致社会福利失衡。因此，政府部门在深化这一市场导向型环境规制过程中，应适当关注产品市场可能产生的重要调节作用，如重污染行业的市场准入程度，采用更为严格的措施治理垄断企业滥用市场支配地位定价等，以充分发挥碳市场在推动企业低碳转型中的积极作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "蔡昉，2013a《理解中国经济发展的过去、现在和将来-基于一个贯通的增长理论框架》，《经济研究》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "蔡昉，2013b《中国经济增长如何转向全要素生产率驱动型》，《中国社会科学》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "陈诗一，2010《节能减排与中国工业的双赢发展：2009-2049》，《经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "陈志斌、王诗雨，2015《产品市场竞争对企业现金流风险影响研究-基于行业竞争程度和企业竞争地位的双重考量》，《中国工业经济》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "董直庆、王辉，2021《市场型环境规制政策有效性检验-来自碳排放权交易政策视角的经验证据》，《统计研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "范丹、付嘉为、王维国，2022碳排放权交易如何影响企业全要素生产率》，《系统工程理论与实践第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "傅京燕、章扬帆、谢子雄，2017《制度设计影响了碳市场流动性吗-基于中国试点地区的研究》，《财贸经济》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "胡珺、黄楠、沈洪涛，2020《市场激励型环境规制可以推动企业技术创新吗？-基于中国碳排放权交易机制的自然实验》，《金融研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "胡珺、宋献中、王红建，2017《非正式制度、家乡认同与企业环境治理》，《管理世界》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "胡玉凤、丁友强，2020《碳排放权交易机制能否兼顾企业效益与绿色效率》，《中国人口·资源与环境》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "黎文靖、胡玉明，2012《国企内部薪酬差距激励了谁》，《经济研究》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "刘传明、孙喆、张瑾，2019《中国碳排放权交易试点的碳减排政策效应研究》，《中国·人口资源与环境》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "刘莉亚、余晶晶、杨金强、朱小能，2017《竞争之于银行信贷结构调整是双刃剑吗？-中国利率市场化进程的微观证据》，《经济研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "刘晔、张训常，2017《碳排放交易制度与企业研发创新-基于三重差分模型的实证研究》，《经济科学》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "鲁晓东、连玉君，2012《中国工业企业全要素生产率估计：1999-2007》，《经济学（季刊）》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "任胜钢、郑晶晶、刘东华、陈晓红，2019《排污权交易机制是否提高了企业全要素生产率-来自中国上市公司的证据》，《中国工业经济》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "沈洪涛、黄楠，2019《碳排放权交易机制能提高企业价值吗》，《财贸经济》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "沈洪涛、黄楠、刘浪，2017《碳排放权交易的微观效果及机制研究》，《厦门大学学报（哲学社会科学版）》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "宋德勇、朱文博、王班班，202t《中国碳交易试点覆盖企业的微观实证：碳排放权交易，配额分配方法与企业绿色创新》，《中国人口·资源与环境第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "覃家琦、邵新建，2015《交叉上市、政府干预与资本配置效率》，《经济研究》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "涂正革、谌仁俊，2015《排污权交易机制在中国能否实现波特效应》，《经济研究》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "王竹泉、段丙蕾、王苑琢、陈冠霖，2017《资本错配、资产专用性与公司价值-基于营业活动重新分类的视角》，《中国工业经济》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "吴茵茵、齐杰、鲜琴、陈建东，2021《中国碳市场的碳减排效应研究-基于市场机制与行政干预的协同作用视角》，《中国工业经济》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "祝振铎、李新春、赵勇，2021《父子共治与创新决策-中国家族企业代际传承中的父爱主义与深谋远虑效应》，《管理世界》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "Ambec, S., and P. Barla, 2006, \"Can Environmental Regulations be Good for Business:An Assessment of the Porter Hypothesis\", Energy Studies Retiew,14(2),33-51.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "Borghesi,S., G. Cainelli,and M. Mazzanti, 2015, \"Linking Emission Trading to Environmental Innovation: Evidence from the Italian Manufacturing Industry\", Research Policy,44(3),669-683.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "Branger,F.,and P. Quirion, 2015, \"Reaping the Carbon Rent: Abatement and Overalocation Profits in the European Cement 92",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "2023年第4期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "Industry,Insights from an LMDI Decomposition Analysis\", Energy Economics, 47,189-205.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "Chen,Z.,X.Zhang,nd F. Chen, 2021, \"Do Carbon Emission Trading Schemes Stimulate Gren Innovation in Enterprises? Evidence from China\",Technological Forecasting & Social Change, (3),168-183.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "Clarkson,P.M.,Y. Li, and M. Pinnuck,2015,\"The Valuation Relevance of Greenhouse Gas Emissions under the European Union Carbon Emissions Trading Scheme\",European Accounting Reriew, 24(3),551-580.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "Fabra, N., and M. Reguant, 2014, \"Pass-Through of Emissions Costs in Electricity Markets\",American Economic Retiew,104(9), 2872-2899.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "Giannetti, M.,G. Liao, and X. Yu,2015,\"The Brain Gain of Corporate Boards:Evidence from China\",Journal of Finance,70 (4),1629-1682.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "Ibikunle,G.,A.Gregoriou,A. G. F. Hoepner, and M. Rhodes,2016,\"Liquidity and Market Efficiency in the World's Largest Carbon Market\",British Accounting Retiew, 48(4),431-447.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "Jorgenson, D.W., and P. J. Wilcoxen, 1990, \"Environmental Regulation and US Economic Growth”,Rand Journal of Economics, 2,314-340.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "Kim,W.,and J.Yu,2018, \"The Effect of the Penalty System on Market Prices in the KoreaETS\",Carbon Management,9(2), 145-154.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "Liu,L., C. Chen, Y. Zhao, and E. Zhao, 2015, \"China's Carbon Emissions Trading:Overview,Challenges and Future\", Renewable and Sustainable Energy Retieus, 49(3),254-266.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "Lopomo,G.,L. M. Marx,D. Mcadams, and B. Murray,2011, \"Carbon Allowance Auction Design: An Assessment of Options for the United States\", Retieue of Enrironmental Economics and Policy, 2,10-14.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "Matisoff, D. C., 2010, \"Making Cap -and-Trade Work:Lessons from the European Union Experience\", Entironment: Science and Policy for Sustainable Development,51(1),10-19.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "Meng,S., M. Siriwardana, J. Meneill, and T. Nelson, 2018, \"The Impact of an ETS on the Australian Energy Sector: An Integrated CGE and Electricity Modelling Approach\", Energy Economics,69,213-224.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "Peress,J., 2010, \"Product Market Competition,Insider Trading, and Stock Market Efficiency\",Journal of Finance,65(1),1-43.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "Petersen, M. A., 2009, \"Estimating Standard Errors in Finance Panel Data Sets: Comparing Approaches\", Review of Financial Studies,22(1),435-480.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "Porter, M.,and C. Linde,1995, \"Toward a New Conception of the Environment Competitiveness Relationship\",Journal of Economic Perspectives,9(4),97-118.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "Rogge, K. S., M. Schneider, and V. H. Hoffmann, 2011, \"The Innovation Impact of the EU Emission Trading System-Findings of Company Case Studies in the German Power Sector\",Ecological Economics,70(3),513-523.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "Segura,E.,R.Morales, and J. A. Somolinos, 2018, \"A Strategic Analysis of Tidal Current Energy Conversion Systems in the European Union\",Applied Energy,212,527-551.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "Shive,S. A., and M. M. Forster, 2020, \"Corporate Governance and Pollution Extermalities of Public and Private Firms\",Retiew of Financial Studies, 33(3),1296-1330.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "Sijm,J.,K.Neuhoff,and Y. Chen,2006,\"CO2 Cost Pass-Through and Windfall Profits in the Power Sectr\",Climate Policy,6 (1),49-72.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "Tombe,T.,and J. Winter, 2015, Environmental Policy and Misallocation:The Productiviy Effect of Intensity Standards\",Journal of Enironmental Economics and Management, 72(6),137-163.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "Zhang,H.,M.Duan,and Z. Deng, 2019,\"Have China's Pilot Emissions Trading Schemes Promoted Carbon Emission Reductions? The Evidence from Industrial Sub-sectors at the Provincial Level\", Journal of Cleaner Production, 234(8),912-924.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "Zhang,Y.,Y.Peng,C.Ma,and B. Shen, 2017, \"Can Environmental Innovation Facilitate Carbon Emissions Reduction? Evidence from China\",Energy Policy,100(11),18-28.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "Zhao,X.,G.Jiang,D.Nie,and H.Chen, 2016,\"How to Improve the Market Efficiency of Carbon Trading:A Perspective of China\",Renewable and Sustainable Energy Rerieis, 59, 1229-1245.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "Zhou,B., C.Zhang, H. Song, and Q. Wang, 2019,\"How Does Emission Trading Reduce China's Carbon Intensity? An Exploration Using a Decomposition and Difference-in-Differences Approach\", Science of the Total Entironment, 676 (9),514-523.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "Carbon Emission Regulation, Corporate Emission Reduction Incentive",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "and Total Factor Productivity: A Natural Experiment Based on China's",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "Carbon Emission Trading System",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "HU Jun\", FANG Qi\" and LONG Wenbinb",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "(a:School of Management, Hainan University; b: School of Accounting,Guangdong University of Foreign Studies) Summary:Exploring sustainable sources of economic growth has long been an important research topic in economics.Over the past 40 years of China's development, the resource reallocation effect of the labor factor in the dual economic structure and the “demographic dividend” formed by the surplus of labor factors have made great contributions to China's economic growth.However,with the gradual fading of the “demographic dividend” and the prominent problem of environmental pollution,the endogenous driving force of China's economic development needs to change from labor-intensive to total factor productivity (TFP) support. In order to achieve green, low-carbon,and sustainable development,China announced the launch of the pilot construction of Carbon Emission Trading System(CETS) at the end of October 2011. Since 2013, eight pilot carbon markets have been established in three provinces and five cties,including Shenzhen,Shanghai,Beijing, Guangdong, Hubei,Tianjin,Chongqing and Fujian,to carry out carbon emission rights trading.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "Whether the carbon market has formed incentives and constraints for enterprises to reduce emissions has attracted much attention.Existing literature has discussed the environmental and economic consequences of carbon market construction in China,most of which provide positive evidence that carbon market construction contributes to energy conservation and emission reduction.However,empirical evidence has not yet reached a consistent conclusion on the internal mechanism of market-based environmental regulation to promote enterprises' low-carbon emission reduction. As a result,whether the constructio of carbon market can take into account low-carbon and development,and realize the coexistence and win-win situation of environment and economy,an important proposition, has yet to be definitively answered. Therefore, this paper attempts to further explore the economic consequences of carbon market construction in China by focusing on corporate TFP on the basis of existing research.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "By using a large sample of Chinese A-share listed companies from 2010 to 2020,this study manually collects all emission-regulated enterprises from eight pilot carbon markets and constructs a quasi-natural experiment to test the impact of CETS on corporate TFP. The results show that the CETS has significantly improved the TFP of emission-regulated enterprises,but this market mechanism has not produced a positive spillover effect. It indicates that th TFP of non-regulated enterprises in the pilot areas and in the same industry as emission-regulated firms has not improved significantly. Moreover,the positive effect of CETS on corporate TFP is more significant when the initial quota allocation requires payment of consideration,the benchmark method is adopted forquota accounting, investors other than the emission-regulated enterprises in the carbon market are more active in trading,the degre of product market competition is more intense,and the pricing power of the enterprise is lower.In addition,the CETS also significantly reduces the degree of resource misallocationof emission-regulated enterprises, and improves their green production input and technological innovation output.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "This paper contributes to research in three ways.First,from the perspective of carbon market construction,this study answers the important scientific proposition of whether market-based environmental regulation in China can promote the low-carbon and high-quality development of enterprises.Whether market-based environmental regulation can achieve the Porter effect in China has been discussed for a long time in academia. Based on the quasi-natural experiment of China's gradual pilot carbon market, this paper expands the research on the policy effect of market-based environmental regulation in China's context,and provides evidence for whether the construction of carbon market in China can achieve the expectation of Porter hypothesis.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "Second,based on manually collected data, this study more accurately reveals the economic consequences of carbon market construction.Most existing research on the environmental or economc effects of China's carbon market is carried out in the pilot areas or in the same industries as the emission-regulated enterprises. However,the CETS does not target all enterprises in the pilot areas or specific industries. Our results show that the impact of CETS on corporate TFP only appears in the emission-reguated firms,and there is no regional or industrial spillover effect.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 126,
+      "text": "Third,this study provides in-depth evidence on how the mechanism design of carbon market affects the TFP of emission-regulated enterprises,which has important implications for the internal construction and external enironment optimization of China's carbon emission trading market.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 127,
+      "text": "Keywords:Carbon Emission Trading; Carbon Market Mechanism Design; Corporate Emission Reduction Incentive;Total Factor Productivity.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 128,
+      "text": "JEL Classification:D22, D24,G38",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 129,
+      "text": "（责任编辑：昱 池）（校对：曹帅）",
+      "heading_level": null
+    }
+  ]
+}

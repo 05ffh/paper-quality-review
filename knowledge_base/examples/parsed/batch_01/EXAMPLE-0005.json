@@ -1,0 +1,819 @@
+{
+  "paper_id": "EXAMPLE-0005",
+  "source_sha256": "dbafca462fb234b1a53d95115d71c391cf369dd5cd92dcecbb549305a3a71d16",
+  "topic_hint": "企业社会责任与公司价值＊",
+  "paper_type": "empirical",
+  "method_tags": [
+    "面板模型",
+    "中介效应",
+    "问卷调查"
+  ],
+  "clean_units": 134,
+  "replacement_count": 1,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "企业社会责任与公司价值＊",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "-基于ESG风险溢价的视角",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "史永东王淏淼",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "内容提要：企业履行社会责任已成为自身可持续健康发展的核心竞争力之一，同时也是提升公司价值的重要手段，因此，投资者对ESG表现优异的公司要求更低的收益率，即ESG风险溢价现象。目前已有基于成熟资本市场的经验研究却发现了与该理论相悖的ESG正溢价现象。本文采用中证ESG指数数据，运用偏最小二乘法构建了新的ESG指标，从ESG风险溢价视角探究企业社会责任对中国上市公司价值的影响及其形成机制。研究发现，与成熟资本市场不同，中国市场存在独特的ESG风险溢价现象，即ESG组合与股票未来收益率之间存在明显的负向关系。在控制多个定价因子、横截面预测指标、替换ESG指标以及使用多种稳健性检验后上述结果仍然稳健。异质性分析表明，在套利成本、流动性约束、信息不确定性以及错误定价相对较低的股票中，ESG风险溢价更显著。经济机制分析显示，投资者对风险的预期尤其是对承受ESG风险所要求的风险补偿是ESG风险溢价存在的重要原因。本文还发现，ESG组合收益率溢价在国有企业股票中呈现出“同质偏低”的特征，这意味着国有企业具有更高的企业价值，也更有助于投资者抵御风险。本文将“中国元素”和“资本市场一般规律”有机融合，验证了ESG风险溢价理论，为探索建立具有中国特色的估值体系，尤其是把握国有企业估值逻辑，挖掘国有企业内在价值提供了新的思路。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "关键词：社会责任 公司价值 ESG 偏最小二乘法 风险补偿 国有企业",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "建设中国特色现代资本市场是中国式现代化的应有之义，其中构建中国特色的估值体系，着力提升资本市场定价的科学性与有效性，促进市场资源配置功能更好发挥是关键一环。然而，由于投资者结构中机构投资者占比较低，叠加中国资本市场新兴加转轨的特征，同时估值过度依赖财务信息，致使市场呈现结构性估值不均衡，而国有企业普遍表现为估值偏低，制约了资本市场资源配置功能的有效发挥。针对定价失效引起的资本市场功能不完善，党的二十大报告指出“健全资本市场功能，提高直接融资比重”。在此背景下，通过非财务视角揭示公司内在价值，促使企业尤其是国有企业估值回归合理水平就显得尤为重要。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "影响企业的非财务因素主要来源于其承担的社会责任。随着国家可持续发展战略的不断深入，传统意义上企业经营活动的外部性问题正逐步转化为内部性问题，企业通过环境、社会和治理（environmental，social，governance，ESG）管理，履行企业社会责任，能够降低环境、社会责任以及公司治理方面的风险，并通过风险传导机制影响企业价值。基于此，本文从ESG风险溢价视角，考察",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "＊史永东、王淏淼，东北财经大学金融科技学院、应用金融研究中心和金融学院，邮政编码：116025，电子信箱：ydshi＠263．net，XXXXXXXXXX＠qq．com。本文研究得到国家自然科学基金项目（71971046,72172029）和国家社会科学基金重大项目（19ZDA094）的资助。作者感谢甄红线教授、张博辉教授、赵永刚和宋明勇的宝贵建议，感谢中证指数有限公司给予数据支持，感谢匿名审稿专家的建设性意见。当然，文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "史永东、王淏淼：企业社会责任与公司价值",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "了以ESG为代表的社会责任如何影响公司价值，并讨论了ESG对资本市场的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "ESG风险溢价是指企业ESG表现能够为股票带来风险溢价（Pastor et al．，2022a）。理论上，ESG能够通过社会责任信号和对冲风险，缓解环境污染、气候变化、转型风险等新兴风险（ESG风险），在提升公司价值的同时，降低市场对企业股票要求的风险溢价。因此，投资者理应对ESG表现优异的公司要求更低的收益率溢价（Pastor et al．，2022a；Albuquerque et al．，2019）。然而，ESG信息的有效性也可能受限于信息不对称。在投资者行为偏误影响下，市场错估ESG信号，通过推动股价持续上涨形成风险收益不对称的ESG正溢价现象（Avramov et al．，2022；Briere ＆ Ramelli，2021；Chen et al．，2019；Pastor et al．，2022b；张学勇和刘茜，2022）。实证上，已有研究对ESG风险溢价的讨论主要集中于美国资本市场，很多实证研究发现公司ESG方面的优秀表现为其带来了更高的收益率溢价，而ESG表现糟糕的企业股票收益率溢价明显更低，给我们的直观印象是企业对ESG的重视似乎并没有为其带来额外的企业价值。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "自2020年9月习近平总书记提出“双碳”目标后，中国ESG已经步入发展快车道，ESG投资规模高速扩张并伴随着一系列ESG金融政策的实施（陈国进等，2021；谢红军和吕雪，2022）。不同于发达经济体以自发运动为主，政府与政策引导在推动我国ESG体系的建设中发挥了关键作用。由于政府对环境保护以及ESG的重视能够释放积极的政策信号，缓解市场环境中的信息不对称，强化投资者对企业相关风险和价值的认识（Briere＆ Ramelli，2021；Bolton ＆ Kacperczyk，2022；Hsu et al．，2022；李晓溪等，2019），因此，ESG表现越好的企业，其企业价值可能越高并伴随着更低的收益率溢价。有鉴于此，本文尝试通过研究中国资本市场究竟表现为ESG风险溢价还是如美国市场的ESG正溢价，以分析企业ESG是否会影响中国A股上市公司的企业价值，进而深层次分析企业估值逻辑。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "检验上述问题的关键在于ESG指标的信度和效度。现实中，ESG评价机构繁多且机构背景、出发点迥然不同，国际机构对中国市场和中国国情往往不够了解，对于中国公司的评分会呈现系统性偏低的现象，所以ESG评价结果通常差异较大且有一定的偏误，制约了研究结果的准确性。而且，已有ESG指标数据多为评级数据，表现为集中于同一区间差异性较小，这直接限制了相关研究的开展。①因此，有必要借助一种连续的ESG评分数据以及一种有效的方法来剔除ESG指数中的噪音部分，最大程度上克服ESG评价结果的偏误以及ESG评级数据的缺陷，从而揭示出ESG指标与股票未来收益率的“净”关系。为此，本文基于中证ESG评分数据，运用偏最小二乘法剔除ESG指数的噪音部分，提炼出纯粹的新ESG指标，发现了ESG风险溢价在中国A股市场的存在证据，从更大的范畴而言，探索了社会责任价值对企业价值的影响，并基于处置效应和投资者风险预期对其作用机制进行分析，同时结合政策因素、国有企业等中国元素做了更加细致的探讨。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "本文的主要贡献如下：首先，基于中国A股市场数据，本文首次发现ESG风险溢价现象，从资产定价视角提供了企业履行社会责任对企业价值具有提升作用的经验证据。理论研究中存在两种可能的现象：ESG风险溢价和ESG正溢价，已有的经验研究主要关注美国资本市场，发现了ESG正溢价现象，即ESG指数与资产收益率在横截面上（Berg et al．，2021；Pastor et al．，2022b；Pedersenet al．，2021）或时间序列上（Chang et al．，2022）正相关。有别于已有研究，本文通过构建新ESG指标，检验中国A股市场ESG指标与股票未来收益率的关系，给出了中国资本市场存在ESG风险溢价现象的经验证据，既为理论假说提供了实证依据，也深化了对ESG在资产定价中所起作用的认识。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "① 例如华证ESG评级数据样本大多集中在中等评级水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "其次，本文基于风险预期假说与行为金融学理论，运用处置效应揭示了ESG风险溢价现象的内在逻辑，探索了企业履行社会责任对企业价值的影响机制。已有研究仅通过行为金融学解释ESG与资产价格的关系，基于美国资本市场，讨论投资者行为偏差如过度关注、反应不足以及反应过度等如何影响投资者投资决策进而造成ESG正溢价现象（Pastor et al．，2022b；Briere ＆ Ramelli，2021；Chen et al．，2019）。不同于已有研究，本文将风险预期假说与行为金融学理论有机融合，在理性风险预期框架下，借鉴Grinblatt＆ Han（2005）的资本利得指标（CGO），探讨ESG风险溢价的生成机制。不仅进一步验证了处置效应能够影响风险溢价的理论假设与实证发现（Wang et al.，2017），而且给出了ESG风险溢价现象由风险驱动的经验证据，为ESG风险溢价现象驱动因素的理论猜想提供实证支撑。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "最后，本文将“中国元素”与“资本市场一般规律”有机融合。通过分析具有中国特色的市场体制机制，探索成熟资本市场估值理论在中国的适用场景，把握不同类型上市公司，尤其是国有企业的估值逻辑。国有企业作为中国国民经济的重要支柱，普遍承担了较多的非经济职能和社会责任，传统估值体系中单纯运用财务信息指标通常无法准确估算其价值，使得国有企业估值系统性偏低。基于ESG风险溢价视角，本文发现国有企业普遍具有较高的社会责任价值。因此，如何将ESG等非财务信息融入企业估值模型，是把握中国上市公司特别是国有上市公司估值逻辑的关键，本研究对于完善中国特色现代资本市场，从而更好服务国家战略具有重要的现实意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "本文剩余部分结构安排如下：第二部分是理论分析与研究假设；第三部分描述了数据来源与研究方法；第四部分给出了本文的主要实证结果；第五部分探究ESG风险溢价的经济机制，进一步分析了“双碳”目标确立对ESG风险溢价的影响，以及ESG风险溢价在国有企业中的表现；第六部分是结论和启示。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "二、理论分析与研究假设",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "（一）ESG风险溢价",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "ESG的兴起源于市场对可持续发展投资的认可与需求（Goldstein et al．，2022）。相较传统的风险收益分析框架，ESG投资理念更注重企业在环境、社会责任以及公司治理方面的表现，以实现企业社会效益最大化和经济效益最大化的平衡（Pastor et al．，2022a）。这使得ESG不仅能够促使微观企业注重自身的社会责任与担当，也有助于经济社会的长期发展。正因如此，近些年来ESG投资规模不断攀升。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "与此同时，近十几年来全球气候、环境等问题日益严峻，加剧了市场投资环境的不确定性，企业和投资者不断面临传统风险以外的新兴风险（ESG风险）冲击。ESG风险具有全局性、外溢性以及系统性的特点，能够抑制投资者的投资和消费（Engle et al．，2020），理论上，我们可以将其视为一种跨期资产定价模型（intertemporal CAPM）中的系统性风险。为避免ESG风险带来的潜在损失，投资者需要持有可靠避险资产，减轻ESG风险带来的冲击（Pastor et al．，2022a）。由于ESG理念不仅能促进企业承担社会责任，其释放的积极负责任信号也能为企业赢得社会认同并获得市场支持，减少企业经营生产中的社会阻力以及运营成本，从而为企业发展提供激励。社会责任信号产生的激励机制有助于降低企业生产活动受ESG风险的影响，客观上稳定了企业经营现金流，进而提升企业价值，使ESG表现优异的企业股票成为绝佳的避险资产（Pastor et al．，2022a）。此外，从宏观层面来看，为实现经济可持续发展，政府可能会出台更为严格的环保法律法规等政策，以约束企业的污染排放等不负责行为。由于环保政策具有一定不确定性，市场无法预知环保政策具体何时颁布及其力度，这无形中加剧了ESG表现较差企业经营现金流的不确定性，导致其公司价值恶化。相反，由于ESG表现优异企业更注重环保，其经营现金流更加稳健，能够避免投资者受到环保政策不确",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "史永东、王淏淼：企业社会责任与公司价值",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "定性的干扰，因而容易受到市场积极反馈并带动企业价值提升。据此可以推断，无论是社会责任信号渠道还是风险对冲渠道，ESG都能够通过降低企业经营现金流的不确定性，减少其所面临的风险，提升企业价值并带动投资者降低预期收益率。这会导致高ESG企业的股票收益率低于低ESG企业的股票收益率，形成ESG风险溢价现象（ESG risk premium，Pastor et al．，2022a），即企业的ESG得分与其股票未来收益率之间存在负向相关关系。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "具体到中国市场，生态保护和绿色发展等可持续发展主题在国家战略布局中占据着重要位置，因此，市场对企业环保、社会责任问题以及ESG风险可能已有相应的感知和认识，由此对ESG相关企业价值产生认识并给出合理价格反馈。基于此，本文提出如下假设：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "H1a：股票的ESG指数越高，未来收益率越低（ESG风险溢价）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "（二）ESG正溢价",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "现实中，由于缺乏有效的信息获取手段，投资者尤其是个人投资者通常需要借助评级机构发布的ESG评分作为公司的ESG信号，以便进行投资决策。但是，目前并不存在统一的ESG评价体系，而不同评级机构的ESG评估标准存在很大偏差，ESG数据有效性饱受质疑（Berg et al．，2021）。因此，尽管评级机构具备一定信息优势，但投资者想要通过评级机构ESG评分，掌握企业真实的ESG表现也绝非易事（Christensen et al．，2022），因此，投资者与公司之间的信息不对称并没有得到有效缓解。此外，投资者行为偏误可能会放大这种信息不对称。比如，投机性较强的散户个人投资者的投资决策就容易受到过度关注、过度自信、盲目跟风等行为偏误的影响（Barber＆ Odean，2008），加之近些年媒体对气候、环境问题的不断报道可能会放大投资者对ESG风险的担忧。在缺乏信息监督纠正机制的情况下，上述因素可能会诱使投资者误判ESG信号，并过高估计某些公司的价值，进而高估其未来业绩（Avramov et al．，2022；Briere ＆ Ramelli，2021；Pastor et al．，2022b； 张学勇和刘茜，2022；Pedersen et al．，2021）。具体到中国资本市场，在散户投资者占市场主导的情况下（史永东和王谨乐，2014；Liu et al．，2019），散户投资者持续追捧高ESG股票，导致高ESG股票股价被拉高并在未来持续上涨。基于此，本文提出如下对立假设：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "H1b：股票的ESG指数越高，未来收益率越高（ESG正溢价）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "理论上ESG正溢价体现了股价对公司基本面的偏离，是错误定价的直接体现。考虑到套利成本限制等市场摩擦的存在（Shleifer＆Vishny，1997），套利者无法通过诸如卖空等套利工具交易快速修正错误定价，致使ESG正溢价无法被消除。因而，在套利成本越高的股票中ESG正溢价应当更加明显。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "（三）政策因素",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "不同于发达国家以自发运动为主，政策在推动中国ESG体系的建设中发挥了关键作用。“双碳”目标提出后，一系列与ESG相关的环保与金融政策落地实施（陈国进等，2021；谢红军和吕雪，2022）。现阶段中国ESG相关政策主要通过激励机制以及信息披露等手段，来推动企业和金融机构践行可持续发展理念。所谓激励机制是指政府运用如财政激励、金融工具等手段引导金融资源流向绿色低碳等领域，通过资源配置鼓励企业履行社会责任，实现可持续发展。信息披露则是指上市公司需要根据环境保护部门的要求进行信息披露，同时相关主管部门凭借信息优势会根据公司披露环境信息的真实性、准确性予以包括罚款、优先纳入上证公司治理板块在内的奖惩行为。①如公司积极履行企业社会责任提高ESG表现，则必然会受到上述政策的正面激励，同时上述奖惩措施在一定程度上也能够向外界传递企业真实ESG表现。因此，ESG相关政策所释放出的信息修正作用，能够传递信号以缓解投资者与公司之间的信息不对称，并且有助于强化市场对企业相关风险",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "①具体可见2022年的《中国ESG实践白皮书》。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "和价值的认识并减少市场对ESG信号的误判（Briere ＆ Ramelli，2021；Bolton ＆ Kacperczyk，2022；Hsu et al．，2022；李晓溪等，2019），从而会使投资者对企业价值产生理性预期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "鉴于政策因素在ESG风险溢价现象中发挥的重要作用，政策力度的加强应当会提升投资者对ESG风险的认知，使得ESG表现优异的企业更容易获得市场积极反馈，并通过减少其所面临的风险带动企业价值进一步提升。相反，ESG表现糟糕的企业则可能会面临更高的环保政策管制风险，这会进一步引发市场的担忧并予以负面反馈。因此，在经济机制检验部分，本文以“双碳”目标确立作为事件冲击考察政策因素对ESG风险溢价的影响，以揭示社会责任价值影响企业价值的深层次成因。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "三、数据来源与研究方法",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "（一）ESG数据",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "本文的ESG数据来自中证指数有限公司。与其他机构的ESG评级数据不同，①中证ESG指数主要是从联合国可持续发展目标等具有国际共识的框架出发，立足中国实际和企业特点，选取更适应本土市场的指标。比如“共同富裕”、国有企业股权集中度、党组织参与公司治理决策等具有中国特色的议题和指标，更为客观、公正地反映中国企业ESG的真实水平。更重要的是，已有ESG指数数据多为评级数据，评级结果多集中于中等评级水平，无法区分不同公司间的ESG水平差异，进而导致我们无法通过分组检验等方式检验ESG对股票收益率的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "作为对比，本文使用的中证ESG数据是评分数据，因此本文的ESG数据不仅在数据信度和效度上具有一定优势性，而且能够有效比较不同公司间的ESG水平的差异。鉴于此，本文研究主要依托中证ESG数据开展。中证ESG数据覆盖主体为沪深300以及中证500在内的所有标的股票，数据样本区间为2017年6月至2021年12月，更新频率为半年。中证ESG评价指标体系主要包括四种，分别是环境指数（E）、社会指数（S）、公司治理指数（G）以及综合指数（ESG）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "（二）偏最小二乘回归方法",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "本文使用偏最小二乘回归方法（partial leasted square，PLS）对ESG数据降噪处理。PLS偏最小二乘回归（Wold，1966）的核心思想是，排除各个ESG指数的噪音部分，并提取出不同ESG指数中纯粹却难以被直接观测到的ESG信息。由于ESG指数通常由代理机构发布，而机构对公司真实ESG状况的认识通常会存有一定的偏差（Berg et al．，2021）。因此，我们可以认为四种ESG指数都包含有真实ESG成分以及噪音成分，如果能够提取出真实ESG成分，那么就可以通过检验真实ESG指数与股票未来收益率的关系，进而检验中国A股市场是否存在ESG风险溢价。②",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "尽管真实的ESG数据无法直接观测，但理论上，真实ESG成分与股票收益率间应当存在线性关系（Pastor et al．，2022a）。当然，这种线性关系的方向同样不可直接观测，既有可能存在ESG风险溢价也有可能存在ESG正溢价。为此，需要借助股票收益率作为“锚定点”，测量每种ESG指数受“锚定点”影响的敏感程度，识别出每种ESG指标的真实部分。这里借鉴Jiang et al．（2022）的思",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "① 中国目前现有的ESG评级数据大约有50多种，其中主要的ESG评级数据为：富时罗素、嘉实、华证指数、社会价值投资联盟、商道融绿和OWL。主要的问题有：ESG评级数据大多集中在中等评级水平，区分度不够。部分指数如华证指数等主要采用财务数据构建ESG评级，涵盖信息不够全面。国际机构对中国实际情况不了解，评价体系不能做到入乡随俗，比如精准扶贫、乡村振兴等社会议题，党建、反腐败等治理议题，都是国内外ESG评价体系在评估中国企业尤其是国有企业时应当扩展的考查范围。总之，由于不同机构对企业ESG评价的角度、标准、聚合规则不同，而且评价机构的背景、出发点不同，所以ESG评价结果差异较大且存在一定的偏误。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "② 笔者对比过原始ESG指标与降噪处理后的ESG指标，并发现由于前者信噪比较低导致其并不具备预测力。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "史永东、王淏淼：企业社会责任与公司价值",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "2．投资者行为偏差与ESG风险溢价",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "投资者的行为偏差是导致错误定价产生的根本原因（Baker＆Wurgler，2006）。因此，本部分基于投资者行为偏差视角，从过度关注和错误预期两个方面，进一步对ESG风险溢价是否反映了错误定价进行讨论。参考Jiang et al．（2022），本文基于东方财富网股吧数据，构造投资者过度关注指数ATT，ATT为个股过去一个月发帖量比上过去12个月发帖量。个股过度关注指数越高，代表面临的错误定价越严重。参考Sloan（1996），本文将应计定义为错误预期指数。应计越高，投资者越高估公司未来盈利，致使错误定价越严重。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "与前文类似，每个d日，首先将股票按照投资者过度关注指数（应计）划分成三组，在每个组中分别按照ESGPLS进一步划分为5组，这样一共得到15个投资组合。然后，通过买入组合1并卖出组合5，构造三个多空头组合（1-5，LMH），并计算出每个组合的市值加权超额收益率。表3PanelC和D分别展示了投资者过度关注和应计对ESG风险溢价的影响。本文发现，不论在Panel C还是D，ESG风险溢价都随着投资者过度关注指数和应计的上升呈现单调下降的趋势，在错误定价严重的股票中（过度关注高和应计高的股票），ESG风险溢价均不再显著，再一次证明ESG风险溢价并没有反映错误定价。综合本节发现，本文从多个角度剖析了ESG风险溢价与错误定价的联系，排除假设H1b可能。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "（二）经济机制分析",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "通过上文分析，可以得到一个基本结论，即ESG风险溢价存在且并没有反映错误定价。本部分通过分析处置效应以及ESG与风险的关系，进一步检验ESG风险溢价是否由风险驱动，并实证证明高ESG股票具有更低的风险和更高的企业价值。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "1．处置效应",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "行为金融学认为投资者的风险偏好会随持有股票获利或者亏损程度发生变化，即处置效应。具体而言，投资者会对获利股票表现出风险厌恶，而对亏损股票表现出风险偏好。因此，如果ESG风险溢价是由风险补偿机制所驱动，则应当在获利股票中表现更强，而在损失股票中更弱。为提供ESG风险溢价由风险驱动的初步证据，本文参考Grinblatt＆ Han（2005）和 Wang et al．（2017）构建出CGO（capital gains overhang，资本利得）指标用于刻画股票获利（亏损）程度，具体构造步骤如下：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "(4)",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "其中， 是t周的投资者参考价格，V，是t周的换手率，T等于260，k为常数项，其取值使得过去价格 的权重为1。在计算 时，要求每只股票在过去260周中至少有100个周的观测数。基于 ，构造CGO，",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "(5)",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "其中， 为t周的个股实际价格。为避免市场微观结构影响，将实际价格滞后两周，并以每月最后一周的CGO，构建月频率的CGO。每个d日，本文首先将股票按照CGO划分成三组，在每个组中分别按照ESGPLS进一步划分为5组，这样一共得到15个投资组合。然后，通过买入组合1并卖出组合5，构造三个多空头组合（1-5，LMH），并计算出每个组合的市值加权超额收益率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "表4 Panel A展示了ESG风险溢价在不同CGO股票中的表现。可以看出，ESG风险溢价仅在高CGO股票，即盈利股票中显著存在，每月能取得的超额收益率为0.833％（t值为2.169）。作为对比在亏损股票中，多空头组合LMH每月无法取得显著的超额收益率。同样，经过CH3模型风险调整后，上述结果仍然不变。以上结果证明，ESG风险溢价在盈利股票中更为明显，而在亏损股票",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "史永东、王淏淼：企业社会责任与公司价值",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "续表6",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "国有企业 | 国有企业 | 国有企业 | 国有企业 | 国有企业 | 国有企业 | 国有企业\n组合 | 原始 | 原始 | 原始 | CH3 | CH3 | CH3\n组合 | 非国企 | 国企 | 非国企-国企 | 非国企 | 国企 | 非国企-国企\n4 | 1.371\n(1.915) | 2.035\n(2.703) | -0.663\n(-1.887) | 0.637\n(2.596) | 1.104\n(4.933) | -0.467\n(-1.405)\n5 | 1.533\n(2.235) | 1.293\n(1.825) | 0.240\n(0.753) | 0.958\n(3.398) | 0.440\n(1.926) | 0.518\n(1.766)\nLMH | 1.265***\n(2.796) | -0.00670\n(-0.0179) | 1.271\n(2.474) | 1.466\n(3.724) | 0.0850\n(0.256) | 1.381\n(2.985)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "六、结论与启示",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "中国资本市场具有新兴加转轨的特征，传统估值体系忽视了企业社会责任等非财务因素，导致市场呈现结构性估值不均衡，国有企业普遍估值过低，抑制了资本市场资源配置功能。因此，准确把握企业估值逻辑，促进市场资源配置功能更好发挥是未来资本市场的主要任务。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "本文旨在通过讨论中国资本市场独有的ESG风险溢价现象，为社会责任对企业价值的提升作用提供初步证据。本文借助中证ESG指数，并运用偏最小二乘回归方法，通过剔除已有ESG指标中的噪音成分，剥离出纯净的新ESG指标。基于该ESG指标，本文检验了ESG风险溢价的存在性及其形成机制。研究发现：与美国资本市场的ESG正溢价现象不同，中国A股市场存在独特的ESG风险溢价现象，即ESG指数与股票未来收益率之间存在明显的负向关系。在控制多个定价因子、横截面预测指标、替换ESG指标、使用双变量分组分析、考虑基本面因素和融资约束的影响、采用面板回归并引入行业以及时间固定效应、使用月度数据检验和个股收益率构建 指标等多种稳健性检验后上述结果仍然稳健。通过异质性分析，本文发现在套利成本较低、流动性约束较低、信息不确定性较低以及错误定价程度较低的股票中，ESG风险溢价现象更明显，证明ESG风险溢价现象并没有反映错误定价。基于风险预期补偿理论，本文对ESG风险溢价的成因进行解释并发现投资者对风险的预期，尤其是对承受ESG风险所要求的风险补偿是ESG风险溢价存在的重要原因。此外，本文还发现“双碳”目标的确立，深化了投资者对ESG风险的认识，增强了ESG风险溢价，从而进一步提升了ESG表现优异公司的企业价值。最后，ESG组合收益率溢价在国有企业股票中呈现“同质偏低”特征，这意味着国有企业更有助于投资者抵御风险，并因此具备较高的企业价值。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "基于本文的发现，有几点启示：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "第一，将ESG等非财务信息融入企业估值模型。本文的研究结论证明，借助ESG信息，对企业精准估值，有利于揭示企业估值逻辑。一种可行的思路是将中证ESG指标与传统的基本面信息指标降维融合，形成有效的公司价值估算指标。在此基础之上，通过广泛纳入更多有效的ESG信息，建立科学全面的估值体系，引导资源向ESG表现优秀的公司倾斜，促使企业尤其是国有企业估值尽早回归合理水平，提升资本市场资源配置功能，服务中国式现代化建设。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "第二，加强上市公司环境、社会、公司治理（ESG）相关信息披露的准确性至关重要。从本文研究结论可以看出中国资本市场投资者对ESG风险具有一定的识别能力，能够运用多维度信息分析评估资本市场的ESG风险水平，并予以合理的价格反馈。随着全球气候变化、环境污染以及生态",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "破坏等可持续发展问题的日益严峻，深化践行ESG理念日益成为企业的内在需要以及中国式现代化建设过程中的外在需求。因此，相关监管部门在加速推动ESG在中国A股市场落地的过程中，不仅应当审时度势，采取精准有效的政策手段，鼓励企业履行社会责任，更要推动上市公司进行环境、社会、公司治理相关信息披露和评价，提高企业社会责任信息的披露质量和频率，以便投资者了解企业真实情况，维持市场合理的风险溢价。与此同时，监管部门也要充分意识到投资者对气候、环境问题的过度担忧等非理性因素的存在，并通过提高相关信息透明度等方式引导投资者对新兴风险产生理性认识，减少市场波动，打造一个规范、透明、开放、有活力、有韧性的资本市场。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "第三，进一步完善ESG指数评价体系。现阶段评级机构发布的ESG指标种类繁多，各机构对公司的ESG表现认定标准无法达成一致，导致ESG评分差异明显，同时国际机构对中国市场和中国国情的认识不够全面，无法公正客观地反映中国企业ESG的真实水平。这既在一定程度上阻碍了ESG在中国资本市场的落地，又不利于市场准确认识履行社会责任为公司带来的企业价值。因此，在推动上市公司进行ESG相关信息披露和评价的同时，相关评级机构应当凭借数据以及信息技术优势建立公正权威的ESG指数评价体系，不仅需要对标国际要求，更重要的是要立足中国实际，更好地体现如“共同富裕”“精准扶贫”“乡村振兴”等中国特色元素，走好自己的路。在此基础之上，随着ESG指数评价体系建设逐渐完善，建议将ESG评分信息逐步扩大至全部上市公司股票，提高ESG指数公布频率，切实缓解公司与投资者之间的信息不对称，提高中国上市公司估值水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "陈国进、丁赛杰、赵向琴、蒋晓宇，2021：《中国绿色金融政策、融资成本与企业绿色转型-基于央行担保品政策视角》，《金融研究》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "陈荣达、林博、何诚颖、金骋路，2019：《互联网金融特征、投资者情绪与互联网理财产品回报》，《经济研究》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "冯丽艳、肖翔、程小可，2016：《社会责任对企业风险的影响效应-基于我国经济环境的分析》，《南开管理评论》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "姜富伟、宁炜、薛浩，2022：《机构投资与金融稳定-基于A股ETF套利交易的视角》，《管理世界》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "李晓溪、杨国超、饶品贵，2019：《交易所问询函有监管作用吗？-基于并购重组报告书的文本分析》，《经济研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "刘瑞明，2013：《中国的国有企业效率：一个文献综述》，《世界经济》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "陆蓉、何婧、崔晓蕾，2017：《资本市场错误定价与产业结构调整》，《经济研究》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "屈源育、沈涛、吴卫星，2018：《壳溢价：错误定价还是管制风险？》，《金融研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "史永东、王谨乐，2014：《中国机构投资者真的稳定市场了吗？》，《经济研究》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "谢红军、吕雪，2022：《负责任的国际投资：ESG与中国OFDI》，《经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "张学勇、刘茜，2022：《碳风险对金融市场影响研究进展》，《经济学动态》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "Albuquerque,R.,Y. Koskinen,and C. Zhang,2019,“Corporate Social Responsibility and Firm Risk:Theory and Empirical Evidence\",Management Science,65(10),4451-4469.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "Amihud, Y., 2002,\"Illiquidity and Stock Returns:Cross-section and Time-series Effects\",Journal of Financial Markets,5,31-56.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "Ang,A.,J.Chen,and Y.Xing,2006b,\"Downside Risk\",Retiew of Financial Studies,19(4),1191-1239.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "Ang,A.,R.J. Hodrick,Y. Xing, and X. Zhang,2006a,“The Cross-section of Volatility and Expected Returns\",Journal of Finance,61(1),259-299.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "Avramov, D., S. Cheng, A. Lioui,and A. Tarelli,2022,\"Sustainable Investing with ESG Rating Uncertainty\",Journal of Financial Economics,145(2),642-664.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "Baker,M.,and J. Wurgler,2006,\"Investor Sentiment and the Cross-section of Stock Retumns\",Journal of Finance,61(4),1645-1680.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "Barber, B.M., and T. Odean, 2008,\"All That Glitters:The Effeet of Attention and News on the Buying Behavior of Individual and Institutional Investors\",Retieu of Financial Studies,21(2),785-818.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "Berg,F.,J.F. Kölbel,A. Pavlova,and R. Rigobon,2021,\"ESG Confusion and Stock Retumns:Tackling the Problem of Noise”, Available at SSRN 3941514.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "Boehmer,E.,C.M.Jones,and X. Zhang,2008,“Which Shorts are Informed?\",Journal of Finance,63(2),491-527.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "史永东、王淏淼：企业社会责任与公司价值",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "Bolton,P.,and M. Kacperczyk,2022,\"Global Pricing of Carbon-transition Risk\",Forthcoming in Journal of Finance.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "Briere,M.,and S. Ramelli,2021,“Green sentiment,Stock Returns,and Corporate Behavior\",Available at SSRN 3850923.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "Chang,R.,L.Chu,T.U. Jun,B. Zhang,and G. Zhou, 2022,\"ESG and the Market Retumn\",Working Paper.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "Chen,T.,Z.Gao,J.He,W.Jiang,and W. Xiong,2019,\"Daily Price Limits and Destructive Market Behavior\",Journal of Econometrics,208(1),249-264.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "Chen,Y.,A.Kumar,and C.Zhang,2019,\"Soial Sentiment and Asset Prices\",SSRN Electronic Journal.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "Christensen, D.M., G. Serafeim, and A. Sikochi,2022,“Why is Corporate Virtue in the Eye of the Beholder? The Case of ESG ratings\", Accounting Reriew, 97(1),147-175.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "Engelberg,J.,R.D. MeLean,and J. Pontiff, 2018,\"Anomalies and News\",Journal of Finance,73(5),1971-2001.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "Engle, R.F., S. Giglio, B. Kelly, H. Lee,and J. Stroebel, 2020,\"Hedging Climate Change News\",Retiew of Financial Studies, 33(3),1184-1216.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "Fama,E.F.,and K.R. French, 1993, \"Common Risk Factors in the Returns on Stocks and Bonds\", Journal of Financial Economics, 33(1),3-56.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "Fama,E.F.,and J.D. MacBeth, 1973,\"Risk,Retumn,and Equilibrium:Empirical Tests\",Journal of Political Economy,81(3), 607-636.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "Friedman,M., 1970,“A Friedman Doctrine:Th Social Responsibility of Business is to Increase Its Profits\",New York Ties Magazine,13,32-33.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "Goldstein,I.,A. Kopytov,L. Shen,and H.Xiang,2022,“On ESG Investing:Heterogeneous Preferences,Information,and Asset Prices\",National Bureau of Economic Research.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "Grinblatt,M.,and B. Han,2005,\"Prospect Theory,Mental Accounting,and Momentum\",Journal of Financial Economics,78(2), 311-339.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "Gu, M., W. Kang,and B. Xu,2018,\"Limits of Arbitrage and Idiosyneratic Volatility:Evidence from China Stock Market\",Journal of Banking & Finance,86,240-258.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "Hong,H.,G.A.Karolyi,andJ.A. Scheinkman, 2020,\"Climate Finance\", Retieu of Financial Studies, 33(3),1011-1023.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "Hsu,P.H.,K.Li,and C.Y.Tsou,2022,“The Pollution Premium\",Journal of Finance.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "Jiang,J.,B.T.Kelly,and D.Xiu,2022,\"(Re-)Imag(in)ing Price Trends\",Forthcoming in Journal of Finance.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "Jiang,L,J.Liu,L.Peng,and B. Wang,2022,“Investor Attention and Asset Pricing Anomalies\",Retiew of Finance,26(3), 563-593.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "Jiang,L,Q.Wen,G. Zhou, and Y. Zhu, 2021,\"Lottery Preference and Anomalies\", Available at SSRN 3595419.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "Liu,J.,R.F. Stambaugh,and Y.Yuan,2019,\"Size and Value in China\",Journal o Financial Economics,134(1),48-69.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "Lundblad,CT.,D.Shi,X.Zhang,and Z. Zhang,2022,\"Are Foreign Investors Informed? Trading Experiences of Foreign Investors in China\",Available at SSRN.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "Newey,W.K., and K. D. West, 1987,\"A Siple,Positive,Semi-definite,Heteroskedasticity and Autocorrelation Consistent Covaiance Matrix\",Econometrica,55,703-708.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "Pastor, L., R.F. Stambaugh, and L.A. Taylor, 2022a, \"Sustainable Investing in Equilibrium\",Journal of Financial Economics, 142(2),550-571.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "Pastor,L.,R.F. Stambaugh, and L.A. Taylor,2022b,\"Dissecting Green Returns\",Journal of Financial Economics,146(2), 403-424.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "Pedersen,L.H.,S. Fitzgibbons, and L. Pomorski, 2021,\"Responsible Investing:The ESG-efficient Frontier\",Journal of Financial Economics,142(2),572-597.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "Shleifer,A.,and R.W. Vishny, 1997,\"The Limits of Arbitrage\",Journal of Finance,52(1),35-55.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "Sloan,R.G., 1996,\"Do Stock Prices Fully Reflect Information in Accruals and Cash Flows About Future Earnings?\",Accounting Review,289-315.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "Wang,H.,J. Yan,and J. Yu,2017,“Reference-dependent Preferences and the Risk-retum Trade-off\",Journal of Financial Economics,",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "Wold,H.,1966,\"Estimation of Principal Components and Related Models by Iterative Least Squares\",Multivariate Analysis,391-420.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "Corporate Social Responsibility and Company Value:",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "An ESG Risk Premium Perspective",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "SHI Yongdongh and WANG Haomiaoh",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "(a:School of Fintech,Dongbei University of Finance and Economics;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 126,
+      "text": "b:School of Finance,Dongbei University of Finance and Economics)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 127,
+      "text": "Summary:Constructing a valuation system with Chinese characteristics,focusing on improving the scientific and effective pricing of the capital market,and making market resource allocation function better are crucial to building a modern capital market with Chinese characteristics.However,the market exhibits structural valuation imbalance due to the rlatively low proportion of institutional investors in the investor structure, coupled with the characteristics of China's emerging and transitioning capital market,and over-reliance on financial information in valuation, with state-owned enterprises being generally undervalued,which constrains the effective functioning of the capital market resource allocation. Against this background,revealing the intrinsic value of companies from a non-financial perspective is particularly important in promoting the reasonable valuation of enterprises,especially state-owned enterprises.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 128,
+      "text": "Non-financial factors that affect companies mainly come from social responsibilities,which can be managed through environmental,social,and govemance(ESG)practices.By fulfilling their social responsibilities,companies can reduce ESG risks,which,in turn,can affect company value through risk transmission mechanisms. This paper examines how social responsibility,represented by ESG,affects company value from the perspective of ESG risk premium and discusses the impact of ESG on the capital market.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 129,
+      "text": "ESG can mitigate emerging risks such as environmental pollution,climate change,and transition risk by providing signals of social responsibility and hedging risks. This,in turn, can reduce the risk premium demanded by the market for corporate stocks,thereby increasing the company value.Therefore,investors should demand lower return premiums for companies with outstanding ESG performance (Merton,1973; Bolton and Kacperczyk,2021;Pastor et al.,2022a; Albuquerque et al.,2019). However,the effectiveness of ESG information may also be limited by information asymmetry, leading to a risk-return asymmetric ESG positive premium phenomenon through continuous rises in stock prices, influenced by investor behavioral biases (Avramov et al., 2022;Briere and Ramelli,2021;Chen et al.,2019;Pastor et al.,2022b; Zhang and Liu, 2022).Empirically, previous studies have mainly focused on ESG risk premiums in the U. S. capital market,where outstanding ESG performance has brought higher return premiums and poor one has resulted in lower return premiums.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 130,
+      "text": "This paper uses the CSI ESG Index and employs partial least squares to construct a new ESG index to explore the impact of corporate social responsibility on the value of Chinese listed companies and its formation mechanism from the perspective of ESG risk premiums.The study finds that unlike mature capital markets,the Chinese market exhibits a unique ESG risk premium phenomenon, namely a clear negative correlation between ESG portfolios and future stock returns. The above results remain robust after controlling for multiple pricing factors and cross-sectional predictive indicators,substituting the ESG index, and using various robustness tests. Heterogeneity analysis shows that ESG risk premiums are more significant in stocks with lower arbitrage costs, liquidity constraints, information uncertainty,and mispricing.Economic mechanism analysis shows that investors' expectations of risk, particularly the risk compensation required to bear ESG risks, are an important reason for the existence of ESG risk premiums. Finally,the paper also finds that ESG portfolio return premiums exhibit a “homogeneous and low\" characteristic instate-owned enterprises' stocks, which means that state-owned enterprises have higher enterprise values and are more helpful for investors to resist risks.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 131,
+      "text": "The contributions of this paper are as follows.First,based on the data from China's A-share market,this study first discovers the phenomenon of ESG risk premiums,providing empirical evidence from theperspective of asset pricing that fulfilling social responsibility has a positive effect on improving company value.Second,this study integrates the hypothesis of expected risk and the theory of behavioral finance,not only further verifying the theoretical hypothesis and empirical findings that the disposition effect can affect risk premiums, but also providing empirical support for the theoretical conjecture of ESG risk premiums being driven by risks.Finally,this study analyzes the market system with Chinese characteristics and explores the applicable scenarios of mature capital market valuation theories in China,grasping the valuation logic of different types of listed companies,especially state-owned enterprises. Based on the perspective of ESG risk premium,this study finds that state-owned enterprises generally have higher social responsibility values.Therefore, how to incorporate non-financial information such as ESG into theenterprise valuation model is the key to grasping the valuation logic of Chinese listed companies,especially state-owned listed companies. This study has important practical significance for improving China's modern capital market with Chinese characteristics to better serve national strategies. Keywords:Social Responsibility; Company Value;ESG; Partial Least Squares;Risk Compensation;State-owned Enterprises JEL Classification:G12,G14",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 132,
+      "text": "（责任编辑：昱 池）（校对：王红梅）",
+      "heading_level": null
+    }
+  ]
+}

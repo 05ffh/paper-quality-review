@@ -1,0 +1,795 @@
+{
+  "paper_id": "EXAMPLE-0009",
+  "source_sha256": "d64d2ca7aee5996d6b6db1dea2fd1c80f309d5ef94ae048a21cdf2e0002d3a6f",
+  "topic_hint": "企业ESG表现与创新",
+  "paper_type": "empirical",
+  "method_tags": [
+    "中介效应",
+    "调节效应",
+    "问卷调查"
+  ],
+  "clean_units": 130,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "企业ESG表现与创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "-来自A股上市公司的证据",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "方先明胡丁",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "内容提要：近年来，随着可持续发展意识的增强，企业的ESG表现逐渐受到了投资者的广泛关注，并对企业长期经营产生持续影响。在新发展阶段，ESG表现能否促进企业创新值得深入研究。论文基于利益相关者理论分析了ESG表现对企业创新可能的影响及机制，利用2009-2020年A股上市公司的专利数据，实证检验了企业ESG表现的创新效应。研究表明：ESG表现可以显著提高企业创新产出，这一促进作用在大型企业和国有企业中更为显著；机制分析发现，ESG表现主要通过缓解融资约束、提高员工创新效率和风险承担水平等机制促进企业创新。进一步研究发现：ESG表现不仅提高企业创新产出数量，还有助于提升创新质量；但随着ESG评级不确定性程度提高，ESG表现对企业创新水平的促进作用相对减弱。为此，应进一步鼓励企业加强ESG建设，加快构建ESG信息标准化和强制披露制度，提高企业ESG信息披露质量，推动企业创新，助力企业高质量发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "关键词：ESG表现 企业创新 融资约束 创新效率",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "近年来，诸如气候变化、贫富差距、公共卫生事件等涉及可持续发展的社会性问题已日益成为全人类共同面临的生存、发展危机，吸引了各国社会的广泛关注，可持续发展所引致的社会责任需求也在进一步重塑各国的发展理念。2020年9月，国家主席习近平在第七十五届联合国大会上宣布“二氧化碳排放力争于2030年前达到峰值，努力争取2060年前实现碳中和”的发展目标。党的二十大报告进一步指出，大自然是人类赖以生存发展的基本条件。尊重自然、顺应自然、保护自然，是全面建设社会主义现代化国家的内在要求。必须牢固树立和践行绿水青山就是金山银山的理念，站在人与自然和谐共生的高度谋划发展。为实现这一发展理念，将环境（Environment，E）、社会（Social，S）和治理（Governance，G）因素纳入投资决策中，既是从微观层面解决全球性社会问题的必要，也是实现我国经济转型、促进经济高质量发展的有效手段。截至2021年10月底，中国共有19家公募基金签署负责任投资原则，可统计的泛ESG公募基金数量达344只，规模达5492亿元，绿色债券发行总量约16500亿元。①基于此，国家也不断强化上市公司ESG信息披露制度，鼓励上市公司披露有关环境与社会责任信息。2017年12月，证监会要求，属于环境保护部门公布的重点排污单位或其重要子公司应当根据相关法律法规披露其主要环境信息。2021年5月，生态环境部在其《关于印发“环境信息依法披露制度改革方案”的通知》明确提出到2025年环境信息强制披露制度基本形成的工作目标。2021年6月，证监会在修订的上市公司年报与半年报格式与内容准则中要求增设“环境与社会责任”一节。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "愈受重视的ESG因素也对企业经营产生了重要影响。尽管新古典理论认为ESG表现并不促进企",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "＊方先明、胡丁（通讯作者），南京大学商学院，邮政编码：210093，电子信箱：huding＠smail．nju．ed．cn。本研究得到江苏高校哲学社会科学研究重大项目（2020SJZDA049）的资助。作者感谢匿名审稿专家提出的宝贵意见，文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "① 数据来源于《中国责任投资年度报告2021》。",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "91",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "方先明、胡 丁：企业ESG表现与创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "业的经营绩效，反而因为其较强的外部性影响企业价值最大化目标的实现（Benabou＆ Tirole，2010）。然而近年来的研究发现，在信息不对称环境下，企业ESG表现有助于企业赢得金融机构、供应商、客户等利益关联者的信任，从而降低企业经营成本，提高企业经营效率（Houston＆Shan，2022）。也有学者认为随着各国对环境和其他社会问题的重视程度提高，ESG优势可以让企业更好地克服在企业投资中的安全审查或环境保护等隐形壁垒（谢红军和吕雪，2022）。这些研究多探讨ESG表现与企业日常经营的关系，对于ESG是否影响企业创新尚无清晰的回答。通常认为，可持续性发展需求所引致的环境规制压力迫使企业不得不参与到创新当中来，以改变传统的高污染高能耗的生产方式。在这一过程中，政府也多以财政补贴或税收减免等政策支持企业的绿色创新；同时，ESG自身的外部性影响也可能导致创新投资的无效率。ESG与企业创新的关系究竟如何？这种关系是否随企业特质体现异质性？其影响机制是什么？进一步地，当企业ESG表现存在不确定性时，ESG对企业创新的影响是否存在变化？厘清这些问题，有助于提高企业的长期价值，推动企业经济价值与社会价值相协调，促进经济高质量发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "基于利益相关者理论与信号传递理论，本文重点分析了企业ESG表现对其创新的影响和理论机制。在此基础上，选择A股上市公司专利数据与华证ESG评级数据分析企业ESG表现与其创新产出的关系。进一步地，本文还从融资约束、员工创新效率和企业风险承担三个角度检验了潜在的影响机制。实证检验发现，ESG可以促进企业创新产出数量的增加，尤其是在大型企业和国有企业中这一关系尤为突出。其背后的机制在于，ESG建设可以降低企业融资约束，提高员工创新效率和企业风险承担水平。进一步的研究还发现，ESG表现有助于提高创新质量，但随着ESG不确定性增加，其创新效应有所减弱。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "本文研究的边际贡献在于：第一，基于利益相关者理论探讨了企业ESG优势对企业创新的影响，这不仅从理论上拓展了企业创新动力的影响因素，也是对ESG与企业经营相关文献的补充。既有研究发现利益相关者可能影响企业的创新资源约束和风险承担（蔡庆丰等，2020；陈德球等，2021），也有文献探讨了ESG对企业融资约束、企业投资、市场价值等的影响（Houston＆ Shan，2022；谢红军和吕雪，2022；王双进等，2022），但有关ESG创新效应的研究尚待深入。基于A股上市公司的专利数据与华证ESG评级对这一问题展开讨论，拓展了利益相关者对企业创新影响及ESG经济后果的相关研究。第二，本文从融资约束、员工创新效率和企业风险承担三个角度深入揭示了ESG对企业创新产出的影响机制。一般认为，由于创新项目的高风险性，创新投资较物质资本投资更容易受到融资约束的限制，已有文献初步探讨了ESG对企业融资约束的影响（Christensen et al．，2022），但尚未有研究涉及ESG通过影响员工创新效率、企业风险承担行为促进企业创新的相关分析，本文从全新角度分析了ESG促进企业创新的作用机制，拓展了相关文献的研究视角。第三，由于ESG信息披露的自由裁量权和相关监管的缺乏，企业的ESG表现存在一定的不确定性，表现为不同评估机构对同一企业的ESG评级存在较大差异，ESG不确定性是否引发外界对企业社会责任形象的重估，进而促进或阻碍企业创新？尽管已有研究表明ESG不确定性可能影响投资者对股票的投资偏好（Avramov et al．，2022），但尚未有文献讨论ESG不确定性是否影响企业创新。基于华证、Bloomberg、商道融绿、MSCI、Wind五个ESG评级数据库，对ESG评级、ESG不确定性和企业创新的关系展开探讨，有助于拓展相关研究。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "本文后续内容安排如下：第二部分为理论分析与研究假说；第三部分为实证策略与样本描述性统计；第四部分为基准检验结果及稳健性分析；第五部分为异质性分析；第六部分为机制检验；第七部分为拓展分析；第八部分为结论与政策建议。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "二、理论分析与研究假说",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "优势与企业创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "92",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "2023年第2期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "在传统经济学观点中，企业的唯一经营目标为企业价值最大化。其中，创新是延长企业生命周期，获得超额经济利润的主要手段之一。然而在两权分离的现代管理机制下，由于信息不对称等原因，所有者与管理者之间存在不同程度的委托代理问题。例如，创新项目通常具有周期长、成本及不确定性高等特点，管理者出于自身声誉或以短期利润为核心的绩效考核等考虑，往往更倾向于风险规避的常规投资，而对于有助于企业长期发展，但风险较大的创新项目缺乏足够激励（郑志刚等，2021）。类似地，在不对称信息条件下，投资者和金融机构无法形成对大股东或管理层的有效监督，对企业的风险容忍度也较为缺乏，从而更倾向于投资周期短、风险低的常规项目（Amore et al．，2013）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "ESG理念为突破这一困境提供了新的思路。随着近年来社会问题的频发，公众逐渐开始注重企业经济价值与社会价值的平衡，以ESG为代表的可持续性发展理念日益受到重视。2020年9月，国家主席习近平在第七十五届联合国大会一般性辩论上宣布，中国将力争于2030年前二氧化碳排放达到峰值，努力争取2060年前实现碳中和。同时，可持续性发展需求也日益体现在一般公众的投资、消费决策中。政府及公众的环境规制压力迫使企业淘汰现有高能耗、高污染的生产技术和落后产能，创新是实现这一目标的重要手段。在此过程中，具有ESG优势的企业也可以得到包括税收优惠、财政补贴等政策在内的制度倾斜，降低企业创新成本，提高创新水平（马文杰和胡玥，2022)。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "此外，ESG建设本身存在一定成本和外部性，ESG投资是否与企业经济利益冲突？区别于新古典学派“ESG阻碍企业价值最大化”的观点，利益相关者理论认为，ESG建设将企业目标由企业价值最大化逐渐转移到兼顾经济价值和社会价值，可以较好地实现所有者、管理者、员工、供应商、消费者和一般社会公众的利益平衡，实质上是对企业关系网络和发展资源的重新整合，有助于提高创新水平（Donaldson＆Preston，1995）。其根源在于：第一，ESG发展理念将企业价值最大化目标转为兼顾经济、社会价值，有助于在不确定性环境下凝聚信任。一方面，Zuo et al．（2021）提出企业的社会责任形象有助于满足员工的自我价值实现需求，这不仅吸引了有创造力的员工加入，还有助于提高企业内部的信任度和分工协作效率，形成内外部资源的良性循环，进一步促进企业创新。另一方面，ESG传递的社会责任理念也为企业积累社会资本和建立商业合作网络提供了便利，从而减少企业面临的商业风险，缓解企业创新过程中的资源约束（Zhang＆ Lucey，2022）。第二，ESG优势可以缓解企业的委托代理问题，提高利益相关者对企业风险承担的容忍度。如前所述，受限于创新项目的高风险性和以短期利润为核心的绩效考核，管理者投资创新项目的激励不足。ESG通过良好的公司治理制度，促进管理者和股东的利益相协调，提升管理者的风险承担意愿。同时由于企业ESG优势传递的社会责任信号，外部利益人更可能将创新或其他企业经营的失败归因于不可控因素，而非内部人对企业的掏空行为，更高的信任和风险容忍有助于激励企业的风险承担，促进企业创新。因此，本文提出以下假说：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "假说1：ESG优势可以有效提高企业创新产出。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "（二）企业ESG优势、融资约束与企业创新",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "融资约束是企业创新的主要阻碍因素之一。相较于常规投资，创新投资风险高、回收周期长、沉没成本高，对资金投入的稳定性具有更高要求。同时，企业与资金供给者之间存在有关创新项目的信息不对称问题，降低了金融机构的借贷意愿。Kim et al．（2016）的研究也表明，创新投资更适合采用以股权融资为代表的直接融资形式。然而在中国目前资本市场发展不够健全的现实情况下，股权融资难以满足诸多企业，尤其是作为创新主体的中小企业的融资需求。如何缓解企业的融资约束问题，是促进企业创新所必须面对的主要问题。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "企业的ESG优势为解决这一问题提供了新的可行方案。既有研究发现ESG有助于提高企业信息透明度，降低企业与外部投资者、金融机构间的信息不对称问题。一个可能的解释是：信号传",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "93",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "方先明、胡 丁：企业ESG表现与创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "递理论认为企业传递不同类型的信号具有一致性时，其信号可信度更高。如企业尝试采用ESG建设构建负责任的企业形象和声誉，则必然提高其财务信息的披露质量。同时，由于ESG建设本身具有一定的外部性和代价，在进行ESG建设的同时披露更高质量的财务信息，也向外界传递了企业经营状况良好的积极信号（Huang，2022）。Rezaee ＆ Tuo（2019）认为ESG信息披露可以有效降低管理层的盈余管理和财务披露中的机会主义行为。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "如前所述，随着可持续发展理念的日渐深入，具有ESG优势的企业更容易借助其负责任的社会形象赢得关联利益方的信任，并获得诸如投资者、债权人提供的融资便利或来自供应商的商业信用支持，缓解创新中的融资约束。相反，ESG表现不佳的企业则可能面临消费者抵制和更强的政府规制风险，这些风险将进一步引发企业财务危机。因此，即便金融机构或投资者更关注企业的财务绩效而非社会形象，企业的ESG表现也必然影响金融机构和投资者的投资意愿，具有ESG优势的企业更容易通过这一考察。因此，本文提出以下假说：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "假说2：ESG优势可以通过缓解融资约束促进企业创新。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "（三）企业ESG优势、员工创新效率与企业创新",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "作为企业知识的主要载体，人力资本在企业创新能力积累和创意开发当中具有核心地位。企业创新成功与否，很大程度上依赖于核心员工的知识水平和创新能力。然而，随着企业规模增长，其内部沟通成本提高，灵活性下降，冗余的雇员结构造成员工平均素质和创新效率低下，其中尤以国有企业为典型。一方面，国有企业员工具有“经济人”和“政治人”的双重属性，往往机械地完成上级任务，创新积极性不高；另一方面，国有企业面临较严重的多重代理问题。尽管以研发人员为主的员工承担了企业创新的关键任务，但无法分享创新带来的超额利润，还可能承担创新失败带来的额外的政治风险，这也一定程度上弱化了员工的创新意识。如何激励员工的创新积极性，提高员工创新效率，是提高企业创新水平的关键问题。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "首先，ESG理念将传统观点中企业对股东的忠诚义务延伸至各方关联利益者，可以在发展面临瓶颈时增进信任、获得支持，有助于企业长期发展目标的实现（Huang，2022）。具体到本文的研究问题上，将社会责任标准纳入企业建设可以向公众传递履行社会责任的积极信号，有助于提高关联利益方的风险容忍度，为企业创新营造一个更宽容的环境。较为宽容的创新环境和负责任的社会形象有利于满足员工的自我价值实现需求，激励员工突破现有思维框架并取得突破性成果。高水平的企业认同也有助于提高企业内部的分工协作效率，提升企业人力资本水平（Tsang et al.，2021）。其次，ESG为缓解企业间的委托代理问题提供了新思路。建立更加公平的薪酬制度，提升员工福利和满意度是ESG建设的关键一环。具有ESG优势的企业多借助各种员工持股计划或其他激励手段，使员工得以分享创新带来的超额收益，也推动了员工与企业的利益趋向一致，可以提升员工创新积极性（Chang et al．，2015；孟庆斌等，2019）。尽管有研究认为，非激励员工因薪酬不公可能产生消极怠工的态度（郝项超和梁琪，2022），但总体而言，具有ESG优势的企业更可能提高员工的创新意愿和创新效率。因此，本文提出以下假说：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "假说3：ESG优势可以通过提高员工创新效率促进企业创新。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "（四）企业ESG优势、风险承担与企业创新",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "企业的风险承担意愿也是决定创新投资水平的关键因素。风险承担不足根源于企业的委托代理问题。由于企业所有者多借助股权激励或其他以短期利润为核心的激励手段弥合所有者与管理者之间的利益差异，出于维护自身声誉和绩效等私人目的，管理者更倾向于现金流稳定、短期风险较低的常规投资，而对有利于企业长期增长的风险项目投资意愿不足。即便初创企业出于开拓市场或生存问题具有较高的风险承担意愿，然而随着市场份额和现金流趋于稳定，其风险承担意愿也随之下降。此外，由于外部人对企业运营缺乏有效监管，外部人也更倾向于督促企业投资于现金流",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "94",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "方先明、胡 丁：企业ESG表现与创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "一个可能的解释是，受上市条件的限制，满足A股上市条件的公司本身至少具有一定规模，且具有较好的盈利能力和现金流。相较于一般中小型企业，此类上市公司具备综合利用多种融资渠道的条件，受融资约束的可能性较小。而相应地，ESG建设则可以缓解大型企业的委托代理问题，通过ESG激发员工的组织认同感和满意度，可以让员工更加积极地投入到企业创新中。借助ESG建立的负责任的社会形象，上市公司也得以吸引一批有责任意识的高素质人才，改善人力资本结构，提升企业创新效率。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "（二）关于产权属性的异质性",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "企业产权属性也可能对ESG与企业创新的关系产生影响。基于政治视角，国有企业普遍受到严格的政府管控，并承担相当的社会责任，具有经济与政治双重属性。随着可持续发展需求日益受到重视，国有企业也成为政府推动高质量发展的重要工具。因此，较民营企业，国有企业可能受到更严格的环境规制压力和市场监督，本文进一步探讨产权属性对ESG和企业创新关系的影响。不同于民营企业，得益于政府的隐性担保，国有企业在企业创新中较少遇到融资约束等问题，ESG对国有企业财务状况的影响有限。然而，国有企业普遍存在更严重的委托代理问题，创新项目具有较高的沉没成本和研发失败的可能性，出于自身晋升压力和政治因素等考虑，管理层承担创新风险的意愿不强。ESG可以改善国有企业治理结构，提高管理层的风险承担意愿。同时，作为对公众绿色发展需求的回应，近年来，对政府官员的政治考核也由经济发展这一单一目标逐渐转变为经济社会发展的综合考量。国有企业的ESG表现提高，一定程度上有助于冲抵创新失败带来的经济影响，为国有企业营造一个更宽容的创新环境。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "按照实际控制人的产权属性，将样本企业划分为国有企业和民营企业，并重新估计基准模型。结果显示当被解释变量为三种专利申请数量之和时，国有企业的ESG系数显著高于民营企业（0.196 vs．0.172），且在将被解释变量替换为发明专利申请数量和最终被授予的发明专利申请数量后，这一差异仍然显著。因此认为，ESG对国有企业的创新水平具有更显著的促进作用。可能的解释是，面对激烈的市场竞争，为维持竞争优势，民营企业本身具有较高的创新意愿（Lin et al.，2021）。而区别于一般中小民营企业，A股上市公司也可以综合利用股权和债券融资等方式获得必要的资金支持，ESG对民营上市公司创新水平的影响有限。相对地，ESG可以改善国有企业的委托代理问题。尤其是近年来，对政府官员的考核由经济发展这一单一标准逐渐转为综合考虑经济社会发展。国有企业的ESG表现提高，可以为国有企业营造一个宽容的创新环境，促进国有企业创新。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "六、机制检验",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "（一）融资约束机制",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "融资约束是企业创新的关键阻碍因素之一。ESG建设本质上是将企业经营目标由经济利润最大化转移到兼顾经济与社会价值，有助于上市公司赢得金融机构等的信任，获得企业创新必须的金融资源。参考Hadlock＆Pierce（2010）、鞠晓生等（2013），采用SA指数作为融资约束的代理指标（SA）。此外，融资成本直接反映了企业是否面临融资难、融资贵等问题，同时采用企业财务费用／总负债（Interest）作为融资约束程度的替代变量，分析ESG对企业融资约束的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "已有大量文献验证了融资约束对于企业创新的影响（Brown ＆ Floros，2012；Amore et al．，2013），因此本文仅报告ESG对融资约束的影响。结果如表4所示，当被解释变量为SA指数时，ESG系数在1％水平上显著为负；将SA指数前置一期，结果不变。将被解释变量替换为融资成本后，这一结论仍未改变，假说2得到验证。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "①受篇幅限制，全部异质性检验结果未予显示，读者可向作者索取。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "100",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "2023年第2期",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "表7 拓展分析 | 表7 拓展分析 | 表7 拓展分析 | 表7 拓展分析\nPanel A：ESG与创新质量 | Panel A：ESG与创新质量 | Panel A：ESG与创新质量 | Panel A：ESG与创新质量\n变量 | Citation1 | Citation2 | Width\nESG | 24.059***\n(7.497) | 0.148***\n(0.0233) | 0.00255\n(0.00150)\n | Panel B:ESG 不确 | 定性与企业创新 | \n变量 | Patent | Invention1* | Invention2\nESGxESG_Std | -0.395**\n(0.0720) | -0.276**\n(19) | 0.00124\n(0.0650)\nESG | 0.305***\n(15.056)* | 0.06\n(13.558) | 0.0994 ***\n(5.430)\nESG_Std | 1.870**\n(5.831) | 1.260*\n(4.668) | -0.0901\n(-0.311)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "（二）ESG不确定性与企业创新",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "近年来，越来越多的上市公司开始披露ESG信息。然而由于缺少标准化、强制性ESG披露制度，ESG信息披露内容和口径尚未有统一标准，相关市场监管的缺位导致部分企业有可能夸大自身的ESG表现。部分评级机构也可能不同程度地被误导，从而给出有差异的评级，导致上市公司ESG评级存在不确定性。Avramov et al．（2022）指出，ESG评级不确定性将导致投资者对绿色证券的投资需求和风险容忍度降低，风险溢价上升，并对公司的日常经营产生影响。ESG对上市公司创新水平的促进作用是否受其不确定性影响？本文对这一问题展开进一步分析。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "研究过程中尝试用华证、Bloomberg、商道融绿、MSCI和Wind五个ESG评级数据构建ESG不确定性指标。由于不同评级数据存在量纲和覆盖范围的差异，为在保证样本量的同时保持不同评级间的可比性，参考 Avramov et al．（2022）的方法完成指标构建：第一，选择两组评级数据，并筛选出共同覆盖的上市公司，按照不同年份排序，同时计算其在当年样本中的分位数；第二，计算同一公司在不同评级下的分位数标准差；第三，重复步骤一和步骤二，依次计算五组评级数据共10个组合的标准差，求平均数后得到ESG不确定性指标（ 。由此建立计量模型如下：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "Innovation",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "(4)",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "表7 Panel B显示，当被解释变量为上述三种专利申请数量之和时，ESG与 交乘项的系数为-0.395，且在1％的水平上显著，表明ESG不确定性将削弱ESG对上市公司创新水平的促进作用，且在被解释变量替换为发明专利申请、授权数量时仍保持不变。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "八、结论与政策建议",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "近年来，随着可持续发展需求日益受到重视，公司的ESG表现也吸引了包括政府、公众和其他关联利益方的广泛关注，并对企业的日常经营产生了不可忽略的影响。企业ESG表现是否影响企业创新水平？这种影响是否随企业特征不同而体现出异质性？基于2009-2020年A股上市公司专利数据，本文探讨了企业ESG表现与创新产出的关系及相应影响机制。研究发现：第一，ESG可以有效提高上市公司创新产出水平，这一促进作用在大型企业和国有企业中更加显著；第二，ESG建设主要通过缓解上市公司融资约束、提升员工创新效率和企业风险承担三种机制影响企业创新水平，其原因在于ESG建设向利益相关者传递了负责任的社会形象信息，有助于增进信任，化解关联利益网络中的委托代理冲突，获得支持企业创新的关键资源；第三，ESG不仅可以推动上市公司创新产出数量的增加，还有效提高了创新质量，即对上市公司创新起到“增量提质”的双重作用；第",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "103",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "方先明、胡 丁：企业ESG表现与创新",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "四，ESG不确定性会削弱ESG对上市公司创新的促进作用。基于这些结论，特提出以下建议：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "第一，鼓励企业承担社会责任，积极引导上市公司ESG投资。近年来，随着可持续发展需求日益受到重视，企业ESG投资行为也成为投资者关注的焦点问题。研究表明，ESG建设有助于构建负责任的社会形象，在困境中凝聚信任，推动企业创新。加强企业社会责任承担和信息披露，既是企业整合内外部资源，助力企业高质量发展的需要，也是对于公众日益增长的可持续发展需求的回应。为实现这一目标，监管部门应将ESG纳入推动企业履行社会责任投资的重点工作，将ESG原则纳入国有企业考核标准，构建多元化的评价标准，允许甚至鼓励企业，尤其是国有企业在承担社会责任的同时进行适当的风险承担，进一步释放ESG的创新效能，形成以国有企业为引领、民营资本广泛参与的发展动能，助力经济高质量、可持续发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "第二，鼓励对具有ESG优势的企业进行适当政策倾斜，化解企业融资、人才等资源约束，引导企业转社会责任优势为创新优势，推动企业创新“增量提质”。由于创新项目投资周期长、沉没成本和风险高等特点，利益相关者对企业的风险容忍度有限，创新企业通常面临较严重的融资约束和风险承担不足问题。同时，企业创新高度依赖于核心员工的专业知识水平和创新能力，由于信息不对称和不完美合同等问题的存在，如何激励员工创新积极性是企业创新成功与否的关键因素。为缓解企业融资、人才资源约束，可以推动金融机构对具有ESG优势的企业进行适当倾斜，鼓励开发绿色债券、可持续债券等支持绿色企业和项目融资，构建资本市场发展新生态，为企业风险承担解决资源约束。进一步优化绿色企业创新导向减税政策，降低绿色企业人工成本，加速人力资本积累，转绿色优势为人才优势。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "第三，加快构建ESG信息披露的标准化和强制披露制度，加强行业监管，提高上市公司ESG披露信息质量。目前对上市公司的ESG信息披露要求多以自愿为主，且在披露内容、口径等方面缺乏统一标准，ESG报告真实性和时效性也无法保障。尽管越来越多的上市公司开始披露ESG信息，然而上市公司有动机夸大自身的ESG表现，或虚假陈述，企业ESG表现存在较大不确定性，表现在不同评级机构对上市公司ESG评级无法达成统一意见。研究发现评级不确定性将削弱ESG对企业创新的促进作用。一方面，加快构建ESG信息强制披露制度，加强市场监管，引入公正权威的评级机构，是对于投资者绿色偏好的回应。另一方面，完善的披露制度和行业监管也可以为企业的ESG信息披露质量背书，进一步释放ESG红利，是改善资本市场信息环境，提高资本市场资源配置效率，促进上市公司高质量发展的必要手段。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "陈德球、孙颖、王丹，2021《关系网络嵌入、联合创业投资与企业创新效率》，《经济研究》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "蔡庆丰、陈熠辉、林焜，2020《信贷资源可得性与企业创新：激励还是抑制？-基于银行网点数据和金融地理结构的微观证据》，《经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "方先明、那晋领，2020《创业板上市公司绿色创新溢酬研究》，《经济研究第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "郝项超、梁琪，2022《非高管股权激励与企业创新：公平理论视角》，《金融研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "黄远浙、钟昌标、叶劲松、胡大猛，2021《跨国投资与创新绩效-基于对外投资广度和深度视角的分析》，《经济研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "鞠晓生、卢荻、虞义华，2013《融资约束、营运资本管理与企业创新可持续性》，《经济研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "孟庆斌、李昕宇、张鹏，2019《员工持股计划能够促进企业创新吗？-基于企业员工视角的经验证据），《管理世界》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "马文杰、胡玥，2022《地区碳达峰压力与企业绿色技术创新-基于碳排放增速的研究》，《会计与经济研究》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "沈昊旻、程小可、宛晴，202t《对华反倾销抑制了企业创新行为吗》，《财贸经济》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "宋科、徐蕾、李振、王芳，2022《ESG投资能够促进银行创造流动性吗？-兼论经济政策不确定性的调节效应》，《金融研究》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "王双进、田原、党莉莉，2022《工业企业ESG责任履行、竞争战略与财务绩效），《会计研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "谢红军、吕雪，2022《负责任的国际投资：ESG与中国OFDD，《经济研究第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "虞义华、赵奇锋、鞠晓生，2018《发明家高管与企业创新》，《中国工业经济》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "朱焱、王广，2017．《技术型高管权力与非技术型高管权力对企业绩效的影响-来自中国A股上市高新技术企业的实证检验》，《会计研究》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "104",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "2023年第2期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "郑志刚、李邈、金天、黄继承，2022《有限合伙协议构架与上市公司治理》，《管理世界》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "郑志刚、朱光顺、李倩、黄继承，2021《双重股权结构、日落条款与企业创新-来自美国中概股企业的证据），《经济研究》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "Avramov,D.,S. Cheng,A. Lioui,and A. Tarelli,2022,\"Sustainable Investing with ESG Rating Uncertainty\",Journal of Financial Economics, 145 (2) , 642-667.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "Amore,M.D.,C. Schneider, and A. Zaldokas, 2013,\"Credit Supply and Corporate Innovation\", Journal of Financial Economics, 109(3),835-855.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "Akcigit, U., S. Baslandze, and S. Stantcheva, 2016, \"Taxation and the International Mobility of Inventors\",American Economic Retiew,106(10),2930-2981.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "Brown, J. R., and I. V. Floros, 2012, \"Access to Private Equity and Real Firm Activity: Evidence from PIPEs\",Journal of Corporate Finance,18(1),151-165.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "Benabou, R., and J. Tirole, 2010, \"Individual and Corporate Social Responsibility\",Economica, 77(305),1-19.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "Banker,R.D.,S.-Y.Lee,G. Potter, and D. Srinivasan, 2000, \"An Empirical Analysis of Continuing Improvements following the Implementation of a Performance-based Compensation Plan\",Journal of Account and Economics, 30 (3),315-350.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "Breuer, W., T. Maller, D. Rosenbach, and A. Salzmann, 2018, \"Corporate Social Responsibility,Investor Protection,and Cost of Equity:A Cross-country Comparison\", Journal of Banking & Finance,96,34-55.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "Christensen, D.M., G. Serafeim, and A. Sikochi,2022,\"Why is Corporate Virtue in the Eye of the Beholder?The Case of ESG Ratings\",Accounting Reriewe,97(1),147-175.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "Chang,X.,K.K.Fu,A.Low,and W. R. Zhang, 2015, \"Non-executive Employee Stock Options and Corporate Innovation”, Journal of Financial Economics, 115(1),168-188.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "Donaldson,T.,and L. Preston, 1995, \"The Stakeholder Theory of Corporation: Concepts, Evidence,and Implications\",Academy of Management Retiew,20,65-91.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "Flammer,C., 2018, \"Competing for Government Procurement Contracts: The Role of Corporate Social Responsibility\", Strategic Management Journal, 39(5),1299-1324.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "Guo,C.,W.H.Su,X. B Song, and X. X. Hu, 2022, \"Heterogeneous Debt Financingand Environmental Research & Development: Evidence from China\", International Retiewof Economics & Finance, 82, 65-81.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "Gormley,T. A., and D. A. Matas, 2014, \"Common Errors: How to (and Not to) Control for Unobserved Heterogeneity\",Reviet of Financial Studies,27(2),617-661.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "Hadlock, C. J., and J. R. Pierce, 2010, \"New Evidence on Measuring Financial Constraints:Moving Beyond the KZ Index\",Review of Financial Studies, 23 (5) , 1909-1940.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "Huang, D. Z. X., 2022, \"Environmental,Social and Governance Factors and Assessing Firm Value: Valuation, Signaling and Stakeholder Perspectives\",Accounting and Finance,62, 1983-2010.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "Houston, J. F.,and H. Y. Shan, 2022, \"Corporate ESG Profiles and Banking Relationships\",Retiew of Finance,35(7),3373-3417.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "He,J., J. K. Huang,and S. Zhao,2019,\"Internalizing Governance Externalities: The Role of Institutional Cross-ownership\", Journal of Financial Economics, 134 (2) , 400-418.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "Kim, S., H. Lee, and J. Kim, 2016, \"Divergent Efects of External Financing on Technology Innovation Activity:Korean Evidence\", Technological Forecasting and Social Change, 106,22-30.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "Lin,Y.J.,X. Q. Fu, and X. L. Fu, 2021, \"Varieties in State Capitalism and Corporate Innovation:Evidence from an Emerging Economy\",Journal of Corporate Finance,67,101919.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "Mao,C.X.,and C.Zhang,2018, \"Managerial Risk-Taking Incentive and Firm Innovation: Evidence from FAS 123R\",Journal of Financial and Quantitative Analysis, 53 (2), 867-898.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "Rezaee, Z., and L. Tuo, 2019, \"Are the Quantity and Quality of Sustainability Disclosures Associated with the Innate and Discretionary Earnings Quality?\", Journal of Business Ethics,155(3),763-786.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "Tsang,A.,K.T. Wang, S. M. Liu, and L. Yu, 2021, \"Integrating Corporate Social Responsibility Criteria into Executive Compensation and Firm Innovation: International Evidence\",Journal of Corporate Finance,70,102070.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "Zhang,D.Y., and B. M. Lucey, 2022, \"Sustainable Behaviors and Firm Performance: The Role of Financial Constraints' Alleviation\",Economic Analysis and Policy, 74, 220-233.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "Zuo,Y., S. Y. Jiang, and J. Wei, 2022, \"Can Corporate Social Responibility Mitigate the Liability of Newness? Evidence from China\", Small Business Economics,59,573-592.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "105",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "Corporate ESG Performance and Innovation:",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "Empirical Evidence from A-share Listed Companies",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "FANG Xianming and HU Ding",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "(Business School,Nanjing University)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "Summary:In recent years,the corporate environmental,social,and governance(ESG)performance of listed companies has attracted growing attention from investors as the public awareness of sutainable development increases. Does ESG performance play a role in corporate innovation? Through which mechanism does the ESG performance affect corporate innovation? Extant literature has intensively investigated how ESG rating influences corporate operation,including financial condition,investment policy,and management efficiency. However,given the role of innovation in corporate growth,it remains largely unknown regarding the effect of ESG rating on corporate innovation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "This paper theoretically analyzes the impact of ESG performance on corporate innovation and the corresponding influence mechanisms based on the stakeholder theory.Using the patent data from A-share listed companies over the period 2009-2020,we empirically test how ESG performance influences corporate innovation output.Our research indicates that ESG performance can promote the corporate innovation. The heterogeneous analyses show that the positive effect of ESG performance on corporate innovation is more conspicuous for large firms and state-owned firms.Mechanism analyses show that,the innovative effect of corporate ESG performance is achieved by alleviating financial constraints, improving the innovation efficiency of the employees and promoting corporate risk-taking behaviors. Additional analyses find that ESG performance not only improves the quantity of the innovation output but also enhances the innovation quality.However,with the increase in the uncertainty regarding corporate ESG rating,the positive effect of ESGperformance on innovation output is weakened.Therefore,a number of implications that merit discussion can be drawn. The listed companies should be encouraged to take social responsibility and disclose more ESG information.Meanwhile,with the purpose of improvingthe disclosure quality of ESG information and ultimately promoting corporate innovation and high-quality corporate development, it is of great importance to establish the standardand mandatory disclosure system and to strengthen the market regulation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "Our research relates and contributes to the extant research in several ways.First,we extend the literature on the driving factors of corporate innovation. There is a body of theoretical and empirical literature on the determinants of corporate innovation.However,little is known about whether ESG has an effect on corporate innovation.We complement this stream of literature by providing empirical evidence on the innovative effect of ESG performance. Second,we identify the potential mechanisms through which ESG performance promote corporate innovation.It has been long recognized that ESG contribute to the alleviation of financial constraints, and thereby influence corporate innovation output.The effect of ESG investment on innovation efficiency and corporate risk-taking behavior is understudied. We contribute to this stream of literature by providing evidence on the positive effect of ESG rating on innovation efficiency and corporate risk taking. The third contribution of this paper is that we estimate the mediating effect of ESG uncertainty. Given the potential benefit from disclosing ESG information, firms have the incentives to misreport their ESG information, eading to the differentiated rating across different rating agencies. Building on the studies on ESG uncertainty,we reveal that the innovative effect of ESG will be less significant with higher uncertainties in the ESG rating.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "Keywords: ESG Performance; Corporate Innovation;Financial Constraints;Innovation Efficiency",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "JEL Classification: G34, M14, 031",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 126,
+      "text": "（责任编辑：昱 池）（校对：王红梅）",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 127,
+      "text": "106",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 128,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    }
+  ]
+}

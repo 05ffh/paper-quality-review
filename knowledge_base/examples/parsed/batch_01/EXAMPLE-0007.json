@@ -1,0 +1,982 @@
+{
+  "paper_id": "EXAMPLE-0007",
+  "source_sha256": "11a567ab6bda77be26882a6a416399366c6f3d0fc9caee5ecdc8d55d73e9efc4",
+  "topic_hint": "胡增玺、马述忠：市场一体化对企业数字创新的影响",
+  "paper_type": "empirical",
+  "method_tags": [
+    "面板模型",
+    "中介效应",
+    "调节效应",
+    "工具变量"
+  ],
+  "clean_units": 161,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "胡增玺、马述忠：市场一体化对企业数字创新的影响",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "远景目标纲要》第五章指出要“强化企业创新主体地位”。供给端的企业可以通过增强数字技术创新能力并将其运用到生产流程上，数字赋能传统产业转型升级，为经济高质量发展提供重要推动力。①因此，在当前中美博弈尤其是美国对中国科技封锁的背景下，以企业为切入点探究数字创新，对化解“卡脖子”难题极具现实意义。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "科技创新最大的激励来自于制度健全的市场环境，这能够为其提供足够的市场预期与发展动力。随着中美博弈日趋复杂，加之新冠肺炎疫情冲击，全球市场动荡、需求萎靡。中国作为拥有巨大内需市场的大国，全国统一大市场的建设可能成为提升自主创新能力的关键抓手。国务院《“十四五”数字经济发展规划》指出要“发挥中国超大规模市场优势，提高数字技术基础研发能力”。超大市场具有规模巨大的技术需求，推动技术创新，形成创新的比较优势（欧阳峣和汤凌霄，2017）。《中共中央国务院关于加快建设全国统一大市场的意见》的发展目标也指出，要“发挥超大规模市场具有丰富应用场景和放大创新收益的优势，通过市场需求引导创新资源有效配置，促进创新要素有序流动和合理配置”。但中国超大规模市场对技术创新的激励效应还不充分。受限于区域壁垒，中国市场需求与创新之间存在错配，无法实现需求引致创新，要素流动受阻，企业创新行为受到抑制（张杰和周晓艳，2011；卿陶和黄先海，2021）。建设全国统一大市场可以充分促进创新要素流动，发挥市场在资源配置中的作用，有利于促进竞争、优化分工，增强企业创新能力。②这意味着只有形成破除分割、打通堵点的全国统一大市场才能充分发挥其对创新的引领作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "相比于传统创新，数字创新具有更强的非竞争性，能够产生更大的规模经济效应，准入门槛更低从而具有更高的“创造性破坏”概率（Guellec＆ Paunov，2017）。在需求端，全国统一大市场会放大规模经济效应，激励企业数字创新；在供给端，全国统一大市场会放大“创造性破坏”效应，促进技术更迭。这意味着全国统一大市场可能成为驱动企业数字创新的核心因素，甚至成为打破关键领域“卡脖子”困境的突破口。《中共中央国务院关于加快建设全国统一大市场的意见》提出了建设全国统一大市场的整体要求，即“加快建立全国统一的市场制度规则，打破地方保护和市场分割，打通制约经济循环的关键堵点，促进商品要素资源在更大范围内畅通流动”。从经济学视角看，这意味着各地区之间的一体化程度不断加深，市场一体化是建设全国统一大市场的关键。③本文在合理识别和衡量数字创新后，主要以中国产品市场一体化为切入点，从理论层面探究影响效应和渠道，并进行实证分析。相较以往文献，本文可能的边际贡献如下：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "第一，为数字创新的测度提供创新性和有针对性的方法。对于传统创新，现有文献往往使用R＆D投入、专利或者全要素生产率来衡量创新水平（张杰等，2015；寇宗来和刘学悦，2020；安同良和姜妍，2021）。而对于数字创新这一新生事物，目前的研究大都仅仅停留在理论层面，对数字创新做出定性表述（Yoo et al．，2010）。数字创新不像数字经济可以用计量工具测度并衡量（蔡跃洲和牛新星，2021）。从全要素生产率视角看，数字创新的贡献很难分解；从R＆D投入视角看，总研发投入中用于数字创新的比重难以准确衡量；而从专利视角看，任何一个专利发明是否属于数字创新可以根据其特征和性质做出判断。本文创新性引入预训练语言模型的机器学习方法，为量化数字创新这一新生事物奠定基础，同时探究了数字创新基础的特征事实，为后续数字创新的研究奠定了重要基础。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "第二，本文结合数字创新的全新特征，将其纳入市场一体化的分析框架，弥补了新古典经济学",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "①陶长琪、袁琦璟，2021：《“数字＋”创新赋能经济高质量发展》，《中国社会科学报》。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "②《国家统计局新闻发言人就2022年一季度国民经济运行情况答记者问》，http：／／www．stats．gov．cn／xxgk／jd／sjjd2020／202204/120220418_1829758.html。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "③ 市场一体化主要包括产品、要素、服务等一体化，需要说明的是本文关注的是产品市场一体化，关于市场一体化的论述详见第三部分理论分析。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "中市场与创新研究的不足，赋予了传统理论数字经济时代的内涵。创新理论最先由熊彼特提出，而后逐渐形成创造性破坏的内生增长模型（Aghion＆ Howitt，1992）。随着异质性企业理论的提出，创新理论逐渐过渡到企业层面（Klette ＆ Kortum，2004）。创新理论的另一大研究领域是创新的影响因素。税收（Akcigit et al．，2022）、补贴（张杰等，2015）、制度（张杰等，2021）等政策因素以及国际贸易（Atkeson＆Burstein，2010）都是创新的影响因素。但从创新活动的本质来看，市场才是其关键影响因素（张杰和周晓艳，2011）。从买卖双方两大参与主体看：需求端市场规模的扩大会促进企业创新（Acemoglu＆ Linn，2004）；供给端市场竞争对创新的影响尚未有定论，现有文献的结论主要有抑制（Dorn et al．，2020）、促进（Correa＆ Ornaghi，2014）和倒U型关系（Aghion et al．，2005）。而数字创新相比传统创新具有数字非竞争性、更低的进入门槛（成本）等特点（Yoo et al．，2010；Guellec＆Paunov，2017）。这些差异可能会突破传统创新的范式，为市场与创新理论增添全新内涵。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "第三，基于数量和质量双重视角考察市场一体化对数字创新的影响。以往利用专利进行创新研究的文献大多侧重于创新的某一方面，如专利数量（寇宗来和刘学悦，2020）。对于专利质量，目前的衡量方法有专利被引法、专利和知识宽度法（Akcigit et al．，2016；张杰和郑文平，2018）。一些文献尝试从数量和质量双重视角探究企业创新水平的提升（诸竹君等，2020）。本文立足全国统一大市场，探究市场一体化对数字创新数量和质量的影响，丰富了企业创新“提质增量”的相关研究。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "本文其余部分安排如下：第二部分介绍了数字创新概念、识别方法、合理性验证和特征事实；第三部分进行理论分析并提出假说；第四部分延续理论分析中市场一体化与数字创新的关系并实证探究影响机理；最后是结论和政策建议。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "二、数字创新的概念、衡量方法及特征事实",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "（一）数字创新的概念",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "数字创新的概念衍生于信息系统领域对数字技术的研究，普遍认为是数字技术加持下传统创新的数字化变革（Yoo et al．，2010；Nambisan et al．，2017）。当前对于数字创新的研究呈现多学科交叉的特点，但大多仅停留在理论层面，对数字创新做出定性表述。Yoo et al．（2010）将数字创新定义为数字部件和物理部件进行新的组合，以生产新的产品，其关注点为产品创新。Nambisan et al.（2017）认为数字创新是利用数字技术改善现有产品、流程和商业模式或开发新产品。Guellec＆Paunov（2017）认为数字创新是IT行业内外基于软件代码和数据的新产品和新流程，属于无形资产。从企业层面看，Autio ＆ Thomas（2020）指出制造业企业的数字创新是将新兴数字技术嵌入现有的传统非数字化产品和服务中，赋予这些传统产品和服务新的数字技术特性。从表现形式来看，Fichman et al．（2014）认为数字创新为新产品、新工艺或新商业模式的出现。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "对于任何新生事物的界定，最本质的出发点是其展现的特征事实：数字和物理部件进行新的组合如工业机器人等属于数字创新，数字部件本身的迭代或开创性突破如通讯方法也属于数字创新；无形的软件和技术的创新属于数字创新，有形的智能设备的创新也属于数字创新；数字产品如半导体部件的创新属于数字创新，数字生产和服务流程应用的如工控系统也属于数字创新。尽管事实例证中的数字创新多种多样，但是可以确定的是数字化的思维贯穿始终。当前，数字技术的嵌入使得不同形态的边界不断交互、越发模糊（Nambisan et al．，2019），从以上特征事实也可看出事物之间本身就存在不同程度的交叠。因此，再简单地从数字技术在传统领域的渗透或从产品、服务等角度对数字创新进行界定已经不合时宜，也意味着现有数字创新的定义存在一定局限性。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "数字创新作为数字经济时代独有的概念，与数字经济的发展紧密相连。随着数字经济的发展，新一代数字技术改变了产品与服务形态、企业组织形式以及产业结构（余江等，2017）。不断推陈出新的数字组件以及其与产品、服务、流程等的融合打破了对原有创新过程和新生事物的认知，突",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "胡增玺、马述忠：市场一体化对企业数字创新的影响",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "破了传统创新的范式。尽管数字创新突破了传统认知，但归根结底，其本质是创新，与传统创新的不同则源于数字经济这一全新纪元。立足于数字经济时代，基于创新的概念，本文从一般的角度给出了数字创新的内涵：①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "数字创新是以数字化思维和想法为导向，利用现有的以数字化为主的知识和物理部件，通过改进或创造新的事物，进而取得创新成果的行为。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "从组成来看，数字创新既包括数字组件自身开创性的创新，也包括数字组件和传统组件进行重组并由数字组件驱动形成的创新；从物理特征看，数字创新既包含无形的软件等数字技术和想法的创新，也包含有形的数字和物理部件结合的创新；从结果来看，数字创新包括产品、服务、商业模式等方面；数字创新的主体包括企业、研究机构、个人等；其目的是在数字产品、技术、服务、基础设施以及解决方案等方面为数字经济发展提供动力。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "与传统创新相比，数字创新具有一些全新特征：第一，数字非竞争性。数字非竞争性的存在，使得数字创新形成的产品具有比传统创新更低的生产和传播成本，从而产生更大的规模经济效应。随着数字技术的发展，无形成分如软件在数字创新产生的新事物中占据更高的比重。更高无形化的组成使得数字创新形成的产品的边际生产成本不断降低，甚至对于完全无形化产品（例如，游戏软件），生产和传播成本无限接近于零（Corrado et al．，2009；Yoo et al．，2010）。这就产生了巨大的规模回报，只要该成果被应用的次数越多，平均生产成本就越低。第二，更低的进入门槛。以软件、编程为代表的数字技术是数字创新的核心，其资本投入要求远远低于传统创新，意味着更多潜在创新主体会不断涌入数字创新领域。而数字技术的开放共享特点意味着企业可以低成本地将数字技术应用于创新过程，“创造性破坏”概率大大提升（Guellec＆Paunov，2017）。同时，在“创造性破坏”概率更高和市场进入机会更多的地方，风险也更高。传统创新成果的生产和应用可能会减少相关领域其他产品的市场份额，而数字创新可能会导致赢者通吃的结局，在位者可能面临失去整个市场的风险（例如，自媒体平台与传统媒体平台）。此外，数字创新还具有自生长性、无边界性等特点。自生长性指数字创新具有动态迭代性和可再塑造性（Yoo et al．，2010），数字创新的非竞争性意味着数字技术的开放和共享，加之数字技术可重复编程的特征，使得数字创新可以自我进化。无边界性指数字创新打破了组织边界和产业边界，不再局限于组织内部，组织外的个体也可以参与到数字创新过程中，主体更加多元化。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "（二）数字创新的识别策略",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "从准确性和全面性来看，衡量创新水平最好的方法是创新的实际经济价值。目前仅有极少数研究基于部分企业的调研数据采用这一方法分析企业的创新行为（崔静波等，2021）。对于更全面的企业面板数据（如工业企业），则很难识别创新的经济效应。专利是创新行为最终形成的具体事物，体现了创新的成果，是衡量创新的重要方面。根据上文数字创新的界定，任何一个专利发明是否属于数字创新可以根据其特征和性质做出判断。因此，只需要找到一个尽可能全面包含数字创新形成的具体事物的范本，并与专利一一对应，即可实现对数字创新的识别。本文发现国家统计局公布的《数字经济及其核心产业统计分类（2021）》定义的数字经济核心产业的描述涵盖的事物可以非常全面地囊括数字创新的成果。因此，本文以数字经济核心产业描述为基础，搭建了其与专利描述之间的桥梁，进行数字创新的识别。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "1．数据介绍",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "（1）中国专利数据库",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "本文在进行数字创新识别时主要使用来源于中国国家知识产权局的专利数据库，涵盖了自",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "①熊彼特（Schumpeter）对创新的定义是：“创新是引入新的产品、服务或改进提供的产品、服务的想法的现实实现。”",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "1985年《专利法》实施以来至2017年在国家知识产权局申请并公开的所有专利，数据总量超过2400万条。该数据包含专利的基本信息如申请日、专利类型、分类号、公开公告日、申请人、主权项和摘要等。为了后续工作的顺利开展，本文对专利数据进行了一些预处理：第一，删除授权专利重复公开信息；第二，依据专利的地址信息进行城市信息识别；第三，删除不具备数字创新的内涵且摘要缺失严重的外观专利。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "（2）数字经济核心产业分类文本",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "《数字经济及其核心产业统计分类（2021）》借鉴国内外相关数字经济分类方法建立了相关数字经济行业分类标准。该分类不仅给予数字经济严格的定义，更将其分为五类：数字产品制造业、数字产品服务业、数字技术应用业、数字要素驱动业和数字化效率提升业，前四类被定义为数字经济核心产业。数字经济核心产业不仅代表着数字经济发展基础的数字产业化，也是为产业数字化提供数字技术、产品、服务、基础设施和解决方案的经济活动。综合考虑类别涵盖范畴和分类数量，本文选择数字经济核心产业中类。为了得到语义清晰、表述通顺的行业中类上下文描述及所涵盖的对象，本文将每个行业中类的行业小类描述合并，并删除“指”等相关连接词、“制造”等动词和存在语义冲突的表述。本文还去掉了没有实际描述性意义的“0205其他数字产品服务”。最终得到了22个类别及其描述性文本（下文统一使用行业代码指代相关类别）。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "2．识别方法",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "本文的基础性贡献是提供一套数字创新识别方法，为后续分析提供高质量的保障。具体的识别思想是：专利摘要描述了专利的名称、主要技术特征及用途等，通常不超过300字。数字经济核心产业分类详细记录了涵盖的数字技术、产品、服务和基础设施等具体事物及其描述。这些描述全面且具体地介绍了该类别的核心特征以及哪些具体事物属于该类别，并囊括了很多举例，几乎涵盖了所有数字经济的事物对象。如果可以通过专利的描述和数字经济核心产业类别之间的语义关系将专利归类到某一／多个类别对应的对象上，那么数字创新识别的第一步就迎刃而解。如何同时对多达1600余万的专利数据进行识别？本文使用机器学习方法范畴的预训练语言模型SBERT，利用Python 进行专利摘要文本和每个类别描述之间的文本相似度计算。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "（1）文本相似度的计算",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "文本相似度的计算属于自然语言处理（natural language processing，NLP）范畴。随着大规模语料库的出现，基于语料库的统计机器学习方法进入自然语言处理的视野。2018年底BERT的面世，NLP进入了预训练模型的时代。BERT是谷歌AI研究院提出的建立在transformer基础上的一种预训练语言模型，拥有强大的语言表征能力和特征提取能力，打破了11项NLP基准测试任务，成为NLP发展史上的里程碑式的成就。BERT提出了一种全新的框架结构，在预训练后，对输出层进行一个额外的微调，各种下游任务就可以取得优异的表现。Reimers＆Gurevych（2019）基于BERT做了修改，提出了Sentence-BERT（SBERT）网络结构，该网络结构利用孪生（siamese）和三级（triplet）网络结构生成具有语义意义的定长句子embedding向量，语义相近句子的embedding向量距离比较近，从而可以用来进行相似度计算。该方法提供了训练超十亿次，包含中文的多语言预训练语言模型，本文基于SBERT进行文本余弦相似度的计算。②",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "① 具体类别为：0101计算机、0102通讯及雷达设备、0103数字媒体设备、0104智能设备、0105电子元器件及设备、0106其他数字产品、0201数字产品批发、0202数字产品零售、0203数字产品租赁、0204数字产品维修、0301软件开发、0302电信、广播电视和卫星传输服务、0303互联网相关服务、0304信息技术服务、0305其他数字技术、0401互联网平台、0402互联网批发零售、0403互联网金融、0404数字内容与媒体、0405信息基础设施、0406数据资源与产权交易和0407其他数字要素。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "②具体来说，我们使用了SBERT提供的 paraphrase-multilingual-MiniL．M-L12-v2 模型进行相似度计算，具体方法等详见https://www.sbert.net/index.html。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "的相关系数，大部分的相关系数都在0.9以上且在1％水平上显著。在城市层面，借鉴赵涛等（2020）的数字经济发展水平的指数体系，构建了地级市数字经济发展指数，并分别对比了2011-2017年各地级市数字创新总量和数字经济发展指数之间的相关系数，大部分的相关系数都在0.7以上且在1％水平上显著。这充分印证了本文数字创新识别的合理性。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "（四）数字创新特征事实②",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "本文也在地区和企业异质性等方面探究了数字创新的特征事实，以期为实证分析提供启发：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "特征事实一：与传统创新一致，中国数字创新发展呈现区域不平衡性，东部地区贡献了大部分的数字创新；与传统创新不同的是，数字创新呈现更多的集聚效应，在环渤海、长三角和珠三角地区，随着数字经济的发展，北京、上海和深圳都呈现了创新的溢出效应。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "中国企业的传统创新呈现区域不平衡特征（寇宗来和刘学悦，2020）。本文根据国家统计局的地区划分，探究各区域数字创新发展的趋势后发现：2000年以来东部地区数字创新不论是规模还是增速上都远远领先于其他地区。更进一步，本文参考寇宗来和刘学悦（2020）将数字创新分别汇总到省份和城市层面，计算数字创新基尼系数。在省份层面，创新基尼系数在0.6左右徘徊；在城市层面，基尼系数大多数年份高于0.8。数字创新呈现出了区域不平衡性。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "本文分别计算了以北京、上海和深圳为核心的环渤海地区、长三角地区和珠三角地区的数字创新占比。三大创新区的数字创新总量占比超过了60％，呈现出集聚效应。本文还计算了北京、上海和深圳在各自创新区中的占比来反映“中心一外围”理论中的“虹吸”和“辐射”效应。与传统创新不同的是，北京、上海和深圳在各自区域内都呈现了数字创新的“辐射”效应。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "特征事实二：与传统创新一致，民营企业贡献了大部分的数字创新。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "不失一般性，本文按照所有制将企业划分为国有、民营、外资与港澳台企业三种类型。相比于其他企业，无论是增速还是规模，民营企业的数字创新专利申请一骑绝尘。这意味着民营企业是中国数字创新的主体，是数字创新发展的动力源泉。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "特征事实三：相比传统创新，数字创新的不平衡性在企业规模上明显降低。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "本文以注册资本衡量企业规模，在规模维度计算并绘制了创新基尼系数以及注册资本前10％和20％企业的数字创新占比。令人意外的是，数字创新在企业规模维度上没有表现出非常明显的不平衡性，2017年的基尼系数在0.3左右。这可能与数字创新本身对于资本需求远远低于传统创新活动有关（Guellec＆Paunov，2017）。在过去的十几年中，借助新一代信息技术的发展，中国不断涌现数字技术尤其是互联网企业。不断有初创企业凭借自身独特的技术创新成为细分行业的领头羊。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "综上，数字创新是传统创新在数字经济时代的延伸。一方面，数字创新展现出的集聚效应和民营企业主体现象与传统创新一致；另一方面，数字创新表现出异于传统创新的特征，比如数字创新溢出效应更强，数字创新在企业规模维度不存在较大的不平衡性等。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "三、理论框架与研究假说",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "产品市场一体化是指产品在不同地点之间的自由流动程度（Donaldson，2015），其本质是限制性贸易壁垒的下降。理论上这一壁垒通常指“冰山成本”，不论是自然、技术乃至制度因素导致的市场分割都反映在该成本上。这也是为什么采用价格法来衡量市场分割是现实和有效的，因为价格反映了由限制性壁垒导致的成本加成（吕冰洋和贺颖，2020）。在市场一体化的分析框架中，尽管国际贸易和区域贸易可能在消费者偏好及要素禀赋的设定上存在不同，但标准分析工具都是引",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "① 限于篇幅，省份和城市层面的对比结果未在正文报告，留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "②限于篇幅，数字创新特征事实未在正文报告，留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "争夺技术领先地位的逐步创新内生增长框架。这意味着市场竞争对企业数字创新的影响可能是倒U型的（Aghion et al．，2005）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "综上所述，市场规模扩大和市场竞争加剧是市场一体化影响企业数字创新的两大渠道。有研究指出，需求端拉动了60％-80％的创新（Utterback，1974），意味着不论市场竞争的影响如何，都无法掩盖市场规模对数字创新的拉动作用。同时本文发现市场一体化与数字创新之间存在明显的正相关关系。①这说明市场一体化对企业数字创新的总体影响可能是正向的。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "基于以上理论分析，本文提出如下三个研究假说：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "假说1：市场一体化程度的提高对企业数字创新水平的影响是正向的。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "假说2：市场一体化程度的提高会扩大企业面临的市场规模，从而促进企业数字创新。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "假说3：市场一体化程度的提高会加剧企业面临的市场竞争，且如果数字创新符合逐步创新模型的设定，市场竞争对其的影响是非线性的倒U型。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "四、实证分析",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "（一）数据说明与实证设计",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "1．企业数据匹配",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "本文需要为识别到的数字创新进行企业层面的匹配。考虑到工业企业数据库样本时间存在限制，以及上市公司数据缺乏小微企业。为了使匹配的企业数据更全面，本文借助于天眼查平台。天眼查企业基本信息数据库涵盖了中国几乎所有企业，每个企业的变量包括公司名称、统一社会信用代码、参保人数、注册资本、实缴资本、成立日期、营业期限、所属省市区、公司类型、所属行业等。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "本文通过清理专利申请人与企业基本信息进行全面匹配。在去掉个人申请人后的972001个样本观测值中，共匹配上798790条数据，匹配成功率高达82％；其中有192572家企业，匹配上164100家，匹配成功率高达85％。根据每个企业成立时间和退出时间识别企业存续区间，从而构建面板数据。综合考虑市场一体和数字创新专利数据的时间维度，面板数据的时间跨度为2001-2017年。此外，本文还借助数据中的经营状态变量去除了迁入迁出的企业，从而保证样本中不存在企业所在地的变动。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "2．变量说明②",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "（1）企业数字创新",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "对于企业数字创新的数量，本文使用企业每年被识别为数字创新的专利数加1取对数来刻画。对于数字创新质量，采用专利被引刻画。具体而言，借鉴Akcigit et al．（2016）的方法，采用每个企业数字创新专利平均被引次数以及最大被引次数，并加1取对数衡量企业数字创新的质量。考虑到存在右侧“断尾”问题，本文仅采用授权后5年作为窗口期计算被引。由于中国国家知识产权局数据库无法准确提供专利被引用信息，本文基于申请号对Google Patent进行了爬取。考虑到5年窗口期，企业数字创新质量指标截至2016年而非2017年。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "（2）市场一体化",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "本文借鉴吕冰洋和贺颖（2020）采用价格法计算城市与其所有相邻城市的产品市场分割指数。价格数据是2001-2017年的居民消费价格指数，考虑到2016年该指数类别发生了细微调整，将2016年后的类别与之前的对应，最终得到八类产品部门的价格指数。数据主要来源于各省的统计年鉴、各个城市的统计年鉴和统计公报。为了更细致地考察交通基础设施的作用，本文使用高德地图，用城市对之间驾车距离的倒数作为权重进行加权，得到一个城市与其相邻城市之间的市场分割",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "① 限于篇幅，未在正文报告，留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "② 限于篇幅，变量的描述性统计未在文中报告，留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "胡增玺、马述忠：市场一体化对企业数字创新的影响",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "表5 技术累积效应的回归结果 | 表5 技术累积效应的回归结果 | 表5 技术累积效应的回归结果 | 表5 技术累积效应的回归结果\n变量 | (1) | (2) | (3)\n变量 | Quantity | Are_cite | Max_cite\nMarketlnt | 0.0758\n(0.0155) | 0.0392\n(0.0149) | 0.0481*\n(0.0175)\nDigitallnovationPast | 0.0948***\n(0.0183) | 0.0341\n(0.00772) | 0.0686**\n(0.0144)\n_cons | 0.0509***\n(0.00713) | 0.0581*\n(0.00667) | 0.0730**\n(0.00782)\nN | 1087497 | 968456 | 968456\nCapitalxYear | ^ | ^ | ^\nEmpxYear | ^ | ^ | ^\nInd-Year Fixed Effect | ^ |  | ^\nFirm Fixed Effect | ^ | ^ | ^\nadj_R2 | 0.19 | 0.12 | 0.16",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "注：Digitallnovation＿Past为企业过去累积的数字创新数量（对数形式）。回归控制了行业年份固定效应和企业固定效应。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "表6第（1）列是基于工具变量考察市场一体化对市场竞争的影响，控制了城市行业和行业时间固定效应，结果表明市场一体化会提高市场竞争程度。表6第（2）-（4）列是控制了企业、行业时间和城市时间固定效应下市场竞争对数字创新数量和质量的回归结果，市场竞争的系数为负，且仅在对数字创新数量的回归中显著（5％水平上）。然而，上文已验证数字创新遵循经典内生增长模型的逐步创新假定，这可能意味着线性结果掩盖了非线性的事实。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "因此，本文加入市场竞争的二次项考察市场竞争与数字创新是否存在非线性关系，表6第（5）-（7）列报告了回归结果。结果显示，市场竞争对数字创新（数量和质量）的影响是倒U型的，即市场竞争对数字创新的促进作用随着市场竞争的提高先扩大再减小。为了验证这种倒U型关系是否真的存在，本文首先考察了市场竞争的分布和倒U型中点位置之间的联系：市场竞争（竞争企业数的对数形式）的最小值为4.2，最大值为16.8，均值为12.9，而倒U型中点约为12；可以发现市场竞争的取值范围涵盖了倒U型最高点位置，且该位置较靠近分布的中心。其次，本文对倒U型关系进行了二次回归。①具体做法是：首先确定倒U型关系的最高点，然后在该断点处对之前和之后的市场竞争分别生成新变量进行断点回归，如果在该点之前的市场竞争的系数显著为正，且在该点之后的市场竞争系数显著为负，则可以证明倒U型关系。②市场竞争与企业数字创新的倒U型关系意味着市场竞争对数字创新的促进作用存在最优水平，只有适度且合理的竞争才可以最大程度促进企业数字创新“提质增量”。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "此外，本文还分别考察了市场竞争对数字产品创新和数字生产／服务流程创新的影响。③结果发现市场竞争对数字产品创新（数量和质量）的影响也符合倒U型关系，经过二次回归的检验，倒U型关系仍然稳健；对于数字生产／服务流程的影响总体来看是正向的。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "① 参见Simonsohn ＆ Nelson提出的对于U型的挑战及检验，详见http：／／datacolada．org／27＃footnote＿3＿720。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "②例如，市场一体化对企业数字创新数量的结果，最高点前市场竞争的系数为0.0116（1％水平上显著），最高点后的市场竞争系数为-0.00580（5％水平上显著），证实了倒U型关系的存在。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "③ 限于篇幅未在文中报告，留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 1,
+      "text": "表6 市场竞争机制 | 表6 市场竞争机制 | 表6 市场竞争机制 | 表6 市场竞争机制 | 表6 市场竞争机制 | 表6 市场竞争机制 | 表6 市场竞争机制 | 表6 市场竞争机制\n变量 | (1) | (2) | (3) | (4) | (5) | (6) | (7)\n变量 | MarketCom | Quantity | Ave_cite | Max_cite | Quantity | Are_cite | Max_cite\nMarketlnt | 0.00947***\n(0.00257) |  |  |  |  |  | \nMarketCom |  | -0.00961\n(0.00473) | -0.00662\n(0.00456) | -0.00866\n(0.00552) | 0.135\n(0.0160) | 0.0766**\n(0.0150) | 0.115\n(0.0184)\nMarketCo㎡ |  |  |  |  | -0.00566*\n(0.000590) | -0.00327\n(0.000559) | -0.00486***\n(0.000684)\n_cons |  | 0.221\n(0.0612) | 0.170\n(0.0587) | 0.218\n(0.0711) | -0.685\n(0.115) | -0.351\n(0.108) | -0.558**\n(0.132)\nN | 111820 | 1423562 | 1273200 | 1273200 | 1423562 | 1273200 | 1273200\n其他控制变量 |  | V | V | ^ | ^ | ^ | V\nWald F | 37828.354 |  |  |  |  |  | \nHansen J | 8.569 |  |  |  |  |  | \nadj_R2 |  | 0.20 | 0.12 | 0.16 | 0.20 | 0.12 | 0.16",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "注：第（1）列控制了行业城市、行业时间固定效应，第（2）-（7）列控制了企业、行业时间、城市时间固定效应。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "五、结论与政策建议",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "本文创新性使用自然语言处理与机器学习交叉范畴的预训练语言模型进行数字创新识别工作。在验证了识别方法的稳健性后，本文在地区、企业异质性方面探究了数字创新的特征事实，为实证检验提供了启发和思路。本文还从市场与创新的关系出发，立足于全国统一大市场，从理论上分析了市场一体化对企业数字创新的影响及其机制。在理论分析的启发下，本文实证探究了市场一体化对企业数字创新的影响及其渠道。结果发现：市场一体化水平可以显著促进企业数字创新数量和质量的提升，对细分的发明和实用新型专利、数字产品和数字生产／服务流程创新也有显著作用，且该影响效应在地区、企业性质、企业规模等方面存在异质性。此外，本文还拓展分析了市场一体化对企业数字创新的影响渠道：市场一体化带来的市场规模扩大和市场竞争加剧是影响企业数字创新的重要渠道；市场规模的扩大促进数字创新数量和质量两方面的提升；而市场竞争对企业数字创新的影响是非线性的倒U型。本文对数字创新的识别和测度提供科学合理的方法，为后续数字创新的研究奠定了重要基础。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "当前中美博弈日趋复杂，美国对华科技封锁日益激烈，本文为如何建设全国统一大市场，完善技术创新市场导向机制，从而突破数字创新“卡脖子”困境提供了重要的理论和实证依据，政策启示非常丰富：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "（1）坚持技术创新市场导向机制，加快国内大循环和全国统一大市场的建设，发挥超大规模市场优势，强化市场竞争的基础地位，以市场为导向提高企业数字创新基础研发能力，从而实现数字创新的“提质增量”，实现经济高质量发展。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "（2）在推动全国统一大市场建设过程中，不仅要把重点放在需求端的市场规模，更要把重点放在供给端的市场竞争。本文的研究指出了把重点放在市场需求端的不足：市场规模仅仅能促进数",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "胡增玺、马述忠：市场一体化对企业数字创新的影响",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "字产品创新，而对数字生产或服务流程创新并不具备影响效应。中国当前市场需求不振，作用也有限。经过新冠疫情的打击，短期内居民收入提升困难。因此，不仅要把目光放在需求端，也要寻求供给端的替代措施。本文指出，不仅要健全公平竞争的制度框架，更要引导合理有序的市场竞争结构，将中国集中力量办大事的制度优势和市场机制有机结合，建立公平有序且合理的竞争政策与产业政策联动机制，杜绝恶性竞争，不能依赖于价格战去占领市场，最大化市场竞争对数字创新的推动作用。当前中国制造业低价竞争和过度竞争已经是不可忽视的现象，企业利润率低下，无法实现长远发展。因此，促进竞争不足行业的充分竞争，引导竞争过度行业的合理竞争不失为当前需求不振时促进数字创新发展的发力点，例如，可以利用数字技术释放的个性化需求细分市场，引导企业差异化竞争。只有合理的竞争环境才能最大程度上避免技术创新的重复投入，实现优势科技资源的有效整合，提升基础研究、核心技术、原始创新、协同创新的能力。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "（3）需要关注数字创新的地区不平等及其原因。推动城市群一体化建设尤其是成渝、长江中游等中西部城市群，构建创新共享平台，提高中心城市的数字创新溢出效应。同时也要推动各地区尤其是东部和其他地区的科技资源共享，鼓励不同区域之间科技信息交流互动。例如，在“东数西算”工程中，不仅要实现西部的算力资源更充分地支撑东部数据的运算，更需要东部与西部建立科技资源的共享机制，实现东西共创的创新互助机制。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "（4）大力推动中小企业数字创新。在全国统一大市场的建设中，加强对创新型中小企业知识产权的保护。中小企业是中国数字创新的主力军，适当给予保护，防止被大企业恶意兼并挤压非常重要。此外，也要发挥大企业和平台作用，引导大企业就基础性数字创新与小企业形成互补联系，完善企业数字创新服务体系。推进高校、科研机构和平台在基础性数字技术方面对企业进行开放，形成良性的知识溢出，为企业尤其是中小企业的数字创新技术积累提供帮助。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "（5）助力民营企业数字创新。在统一大市场建设中为民营企业营造良好的营商环境，助力民营企业数字创新。此外，国有企业在全国统一大市场的建设中应该发挥表率作用，深耕数字创新领域，为国家整体的数字创新能力保驾护航。",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "安同良、姜妍，2021：《中国特色创新经济学的基本理论问题研究》，《经济学动态》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "卞元超、白俊红，2021：《市场分割与中国企业的生存困境》，财贸经济》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "蔡跃洲、牛新星，2021：《中国数字经济增加值规模测算及结构分析》，《中国社会科学》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "崔静波、张学立、庄子银、程郁，2021：《企业出口与创新驱动-来自中关村企业自主创新数据的证据》，《管理世界》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "韩兆安、赵景峰、吴海珍，2021：《中国省际数字经济规模测算、非均衡性与地区差异研究》，《数量经济技术经济研究》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "何帆、刘红霞，2019：《数字经济视角下实体企业数字化变革的业绩提升效应评估》，《改革》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "江艇，2022：《因果推断经验研究中的中介效应与调节效应》，《中国工业经济》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "寇宗来、刘学悦，2020：《中国企业的专利行为：特征事实以及来自创新政策的影响》，《经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "吕冰洋、贺颖，2020：《迈向统一市场：基于城市数据对中国商品市场分割的测算与分析》，《经济理论与经济管理》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "吕越、盛斌、吕云龙，2018：《中国的市场分割会导致企业出口国内附加值率下降吗》，《中国工业经济》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "欧阳峣、汤凌霄，2017：《大国创新道路的经济学解析》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "卿陶、黄先海，2021：《国内市场分割、双重市场激励与企业创新》，《中国工业经济》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "盛斌、毛其淋，2011：《贸易开放、国内市场一体化与中国省际经济增长：1985-2008年》，《世界经济》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "余江、孟庆时、张越、张兮、陈凤，2017：《数字创新：创新研究新视角的探索及启示》，《科学学研究》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "张杰、毕钰、金岳，2021：《中国高新区“以升促建”政策对企业创新的激励效应》，《管理世界》第7期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "张杰、陈志远、杨连星、新夫，2015：《中国创新补贴政策的绩效评估：理论与证据》，《经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "张杰、郑文平，2018：《创新追赶战略抑制了中国专利质量么？》，《经济研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "张杰、周晓艳，2011：《中国本土企业为何不创新-基于市场分割视角的一个解读》，《山西财经大学学报》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "赵涛、张智、梁上坤，2020：《数字经济、创业活跃度与高质量发展-来自中国城市的经验证据》，《管理世界》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "诸竹君、黄先海、王毅，2020：《外资进入与中国式创新双低困境破解》，《经济研究第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "Acemoglu,D.,and J. Linn,2004,“Market Size in Innovation:Theory and Evidence from the Pharmaceutical Industry\",Quarterly Journal of Economics,119(3),1049-1090.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "Aghion,P.,and P. Howitt,1992,“A Model of Growth through Creative Destruction\",Econometrica,60(2),323-351.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "Aghion,P.,A. Bergeaud, M.Lequien, and M. J. Melitz,2022,\"The Heterogeneous Impact of Market Size on Innovation:Evidence from French Firm-Level Exports\",Retiew of Economics and Statistics,1-56.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "Aghion,P.,N.Bloom, R. Blundell,R. Griffith,and P. Howitt,2005,\"Competition and Innovation:An Inverted-U Relationship”, Quarterly Journal of Economics,120(2),701-728.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "Akcigit,U.,S. Baslandze,and S. Stantcheva, 2016,“Taxation and the International Mobility of Inventors\",American Economic Review,106(10),2930-2981.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "Akcigit, U., J. Grigsby, T. Nicholas, and S. Stantcheva, 2022,\"Taxation and Innovation in the Twentieth Century\",Quarterly Journal of Economics,137(1),329-385.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "Aikeson, A.,and A. T. Burstein,2010,\"Innovation,Firm Dynamics,and International Trade\",Journal of Political Economy,118 (3),433-484.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "Autio,E.,S.Nambisan,L. D.Thomas,and M. Wright,2018,\"Digital Affordances,Spatial Affordances,and the Genesis of Entrepreneurial Ecosystems\",Strategic Entrepreneurship Journal,12(1),72-95.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "Autio,E.,and L. D. Thomas,2020,\"Value Co-creation in Ecosystems:Insights and Research Promise from Three Disciplinary Perspectives\",Handbook of Digital Innovation (pp. 107-132),Edward Elgar Publishing.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "Corrado, C., C. Hulten, and D. Sichel, 2009,\"Intangible Capital and US Economic Growth\",Retiew of Income and Wealth,55 (3),661-685.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 126,
+      "text": "Correa,J.A.,and C. Omaghi, 2014,“Competition & Innovation: Evidence from U.S. Patent and Productivity Data\",Journal of Industrial Economics,62(2),258-285.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 127,
+      "text": "Donaldson, D., 2015,\"The Gains from Market Integration\",Annual Retiei of Economics,7(1),619-647.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 128,
+      "text": "Dom,D.,G. H. Hanson,G. Pisano,and P. Shu, 2020,\"Foreign Competition and Domestic Innoation:Evidence from US Patents\",American Economic Retiew:Insights,2(3),357-74.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 129,
+      "text": "Eaton,J.,and S. Kortum, 2002, \"Technology, Geography, and Trade\", Econometrica,70(5),1741-1779.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 130,
+      "text": "Fichman,R.G.,B. L.D. Santos, and Z. Zheng, 2014,\"Digital Innovation as A Fundamental and Powerful Concept in the Information Systems Curriculum\",MIS Quarterly,38(2),329-354.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 131,
+      "text": "Fitzgerald, M., N. Kruschwitz, D. Bonnet, and M. Welch,2014,\"Embracing Digital Technology:A New Strategic Imperative\", MIT Sloan Management Reziew,55(2),1.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 132,
+      "text": "Guellec,D., and C. Paunov,2017,\"Digital Innovation and the Distribution of Income\",NBER Working Paper,23987.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 133,
+      "text": "Hall,B. H., and D. Harhoff,2012,\"Recent Research on the Economics of Patents\",Annual Retiew of Economics,4(1),541-565. Klette,T. J, and S. Kortum 2004, \"Innovating Firms and Aggregate Innovation\",Journal of Political Economy, 112(5),986-1018.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 134,
+      "text": "Melitz,M.J.,2003,\"The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity\",Econometrica,71 (6),1695-1725.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 135,
+      "text": "Melitz,M.J.,and G. I. Ottaviano,2008,\"Market Size,Trade,and Productivity\",Reriew of Economic Studies,75(1),295-316. Nambisan, S., K. Lyytinen, A. Majchrzak, and M. Song,2017,\"Digital Innovation Management:Reinventing Innovation Management Research in A Digital World\",MIS Quarterly,41(1),223-238.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 136,
+      "text": "Nambisan,S.,M. Wright,and M. Feldman,2019,\"The Digital Transformation of Innovation and Entrepreneurship:Progress, Challenges and Key Themes\",Research Policy,48(8),103773.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 137,
+      "text": "Reimers,N.,and I. Gurevych, 2019,\"Sentence-BERT:Sentence Embeddings using Siamese BERT-Networks\",arXiv preprint arXiv:1908.10084.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 138,
+      "text": "Utterback, J. M.,1974,“Innovation in Industry and the Diffusion of Technology\",Science,183(4125),620-626.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 139,
+      "text": "Yoo,Y.,O.Henfridsson, and K. Lyytinen, 2010,\"Research Commentary:The New Organizing Logie of Digital Innovation:An Agenda for Information Systems Research\",Information Systems Research,21(4),724-735.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 140,
+      "text": "胡增玺、马述忠：市场一体化对企业数字创新的影响",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 141,
+      "text": "The Impact of Market Integration on Firm Digital Innovation:",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 142,
+      "text": "An Analysis on Digital Innovation Measurement Methods",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 143,
+      "text": "HU Zengxi and MA Shuzhong",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 144,
+      "text": "(China Academy of Digital Trade,Zhejiang University)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 145,
+      "text": "Summary:The 21st century has witnessed a thriving digital economy,where continuous digital innovation serves as the primary engine for high-quality development.However,during the erucial transition from consumer Internet to industrial Internet in China,the complexity of China-US competition has been escalating.The technology sanctions on China led by Western countries have resulted in significant challenges such as the cut-off of chip supply due to China's insufficient capacity for digital innovation in key fields. The greatest incentive for technological innovation comes from a well-established market environment. Due to market segmentation,there exists a mismatch between market demand and innovation in China,hindering \"demand-induced innovation\" and suppressing a firm's innovative behavior.Compared to traditionalinnovation,digital innovation exhibits more substantial economies of scale and a higher probability of“creative destruction.”On the demand side,the larger market scale brought by market integration can amplify the economies of scale,encouraging businesses to pursuedigital innovation.On the supply side,the increased number of competitive entities due to market integration can enhance the“creative destruction\" effect,promoting technological advancement.This implies that a unified national market might become a critical factor driving a firm's digital innovation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 146,
+      "text": "The purpose of this paper is to provide a quantitative research method for digital innovation and explore the impact of market integration on a firm's digital innovation both theoretically and empirically. In terms of quantifying digital innovation,this paper innovatively employs a pretrained language model.Based on the China Patent Full-text Database from 1985 to 2017 and the textual descriptions of core digital economy industries, the semantic similarities between each patent's abstract text and each digital economy industry description are calculated.Digital innovation is then identified by setting thresholds through strict manual identification methods.This paper investigates the basic characteristics of digital innovation and analyzes the mechanisms of market integration based on a gravity model framework, pointing out that market scale and competition are important influencing channels.In the empirical analysis,digital innovation firms' panel data are obtained by matching the applicants of digital patents with all firms registered in the indutrial and commercial register in China,and a quality indicator is constructed using patent citation data for further analysis.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 147,
+      "text": "This paper's findings are as follows: the agglomeration effect and the dominance of private firms in digital innovation are consistent with traditional innovation; digital innovation exhibits unique features compared to traditional innovation, such as stronger spillover effects and less imbalance along the dimension of firm size. The empirical results show that the improvement of market integration level can significantly promote both the quantity and quality of a firm's digital innovation, and this effect varies across regions,the nature of firm,and firm size.The extended analysis of the mechanism reveals that the expansion of market scale and the intensification of market competition brought about by market integration are important channels influencing a firm's digital innovation.The expansion of market scale promotes both the quantity and quality of digital innovation,while the effect of market competition on digital innovation follows an inverse U-shaped curve.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 148,
+      "text": "The contributions of this paper are threefold. First,it provides an innovative and targeted method for measuring digital",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 149,
+      "text": "innovation,which has mainly been qualitatively analyzed in existing research. This paper innovatively introduces a machine",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 150,
+      "text": "learning method using a pre-trained language model,laying the foundation for interpreting and quantifying digital innovation",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 151,
+      "text": "and providing an essential basis for future research. Second,this paper focuses on product market integration,incorporating",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 152,
+      "text": "the novel features of digital innovation into the analysis framework of market integration, thereby addressing the gaps in",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 153,
+      "text": "neoclassical economics research on the relationship between the market and innovation.This gives the traditional theory a",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 154,
+      "text": "new connotation in the digital economy era. Third, this paper examines the impact of market integration on firm digital",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 155,
+      "text": "innovation from both quantity and quality perspectives,enriching related research on firm innovation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 156,
+      "text": "Keywords:Digital Innovation;Natural Language Processing; Market Integration;Market Scale;Market Competition",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 157,
+      "text": "JEL Classification:012,031,R12",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 158,
+      "text": "（责任编辑：王利娜）（校对：王红梅）",
+      "heading_level": null
+    }
+  ]
+}

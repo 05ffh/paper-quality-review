@@ -16,7 +16,7 @@ __pycache__/
 knowledge_base/vector_db/active/
 knowledge_base/vector_db/snapshots/
 knowledge_base/logs/
-knowledge_base/examples/parsed/
+# knowledge_base/examples/parsed/ — v1.7 解除排除：20篇为公开论文，可进仓库
 knowledge_base/.private/
 
 # M3 视觉模块（Phase 1+）

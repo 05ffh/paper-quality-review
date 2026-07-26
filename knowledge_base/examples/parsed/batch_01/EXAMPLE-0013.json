@@ -1,0 +1,668 @@
+{
+  "paper_id": "EXAMPLE-0013",
+  "source_sha256": "292fe12826334758c4e5f3f0b4fa413ad0d818615ca258edb7cb3f280825afeb",
+  "topic_hint": "数据要素与企业创新：基于研发竞争的视角",
+  "paper_type": "empirical",
+  "method_tags": [
+    "中介效应",
+    "调节效应"
+  ],
+  "clean_units": 109,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "数据要素与企业创新：基于研发竞争的视角",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "徐翔赵墨非李涛李帅臻",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "内容提要：进入数字经济时代，数据成为关键生产要素。本文区分两类研发创新活动：突破性创新与迭代式创新，通过构建研发创新竞争模型探讨数据要素如何影响企业创新活动选择与市场份额。理论研究发现，相比于传统经济环境，数字经济中的大企业更倾向于依赖生产过程中伴生的数据要素进行迭代式创新，突破性创新动力不足；中小企业的突破性创新亦遇困局，社会整体创新水平下降，数据要素“陷阱”逐渐形成。在引入企业退出等机制后，数据要素陷阱问题更加严重；在引入网络效应、多元竞争、二手产品市场等机制之后，数据要素陷阱问题得到一定化解。本文指出，通过有针对性地增强数据隐私保护，建立健全数据交易市场，搭建“数据一创新”联合协作平台，完善优化二手产品市场，促使企业将研发重心转回突破性创新，显著提升社会整体创新水平，助推数字经济高质量发展。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "关键词：数据要素 突破性创新 迭代式创新市场份额",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "伴随着数字技术和数字经济的迅速发展，数据已经成为当今社会最重要的战略性资源之一。2021年12月12日国务院发布的《“十四五”数字经济发展规划》中明确提出，数据要素是数字经济深化发展的核心引擎。数据对提高生产效率的乘数作用不断凸显，成为最具时代特征的生产要素。2022年12月9日公布的《中共中央国务院关于构建数据基础制度更好发挥数据要素作用的意见》中强调，数据作为新型生产要素，是数字化、网络化、智能化的基础，已快速融入生产、分配、流通、消费和社会服务管理等各环节，深刻改变着生产方式、生活方式和社会治理方式。对于数据要素的充分使用，能够帮助企业提高决策效率和预测精度，提升企业的生产效率与盈利能力（Muller et al.，2018；Farboodi et al．，2019；谢康等，2020；徐翔和赵墨非，2020），对于企业的研发创新活动也在发挥越来越重要的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "根据其对于企业技术水平和市场份额的影响，可以将企业的研发创新活动分为突破性创新与迭代式创新两类（高洁和盛昭瀚，2004；Christensen，2013；胡山和余泳泽，2022）。突破性创新是企业对现有生产技术与工序流程的根本性变革，表现为企业对于新知识、新技术的探索与开发，花费大量时间和金钱并承担巨大的技术风险。迭代式创新是企业对产品与生产流程的渐进性改良，表现为企业从产品外观、次要功能和用户体验等细节入手，提升其产品和服务对用户的吸引力。通过突破性创新，企业将建立持续性的技术优势，在一段时间内占据市场竞争的有利地位；通过迭代式创新，企业也能获得一些技术改进与产品改良，然而此类技术进步很容易被模仿或超越，导致企业",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "＊徐翔，中央财经大学经济学院、中国互联网经济研究院，邮政编码：100081，电子信箱：seanxuxiang＠126．com；赵墨非（通讯作者），北京航空航天大学经济管理学院，邮政编码：100191，电子信箱：zhaomf．06＠gmail．com；李涛、李帅臻，中央财经大学经济学院，邮政编码：100081，电子信箱：litao＠cufe．edu．cn，lisz6778＠163．com。本文受国家社会科学基金重大项目（22＆ZD070）、北京高等学校卓越青年科学家计划（BJJWZYJH01201910034034）与国家自然科学基金青年项目（72103016）资助。作者感谢匿名审稿专家的宝贵建议。当然，文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "39",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "徐 翔等：数据要素与企业创新：基于研发竞争的视角",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "无法建立持续的技术优势，仅能在短期内影响企业的市场份额。在传统经济环境中，企业迭代式创新的成功概率仅取决于自身研发能力和投入；在数字经济环境中，迭代式创新不仅由研发投入产生，还能得到来自用户数据的协助与支持。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "数字技术的发展促使数字经济环境中的企业在生产、运营和销售过程中伴生了大量用户数据（徐翔等，2021）。一方面，企业自然地利用数据分析技术对这些数据进行处理、研究，以期准确把握消费者的偏好和需求，对于产品与服务进行渐进式的迭代改进。上述过程将大大增强数字经济中企业进行迭代式创新的效率。另一方面，无论是对于传统经济还是数字经济，企业的突破性创新均依赖具有划世代革新性的核心技术突破，需要企业原创性地、从无到有地进行研发，而收集和分析本世代产品的用户使用数据对该类研发提供的帮助则相当有限。由于数字经济环境和数据要素大幅影响了迭代式创新的机制，而对突破性创新的影响相对较小，企业在进行创新决策时，对两种创新间的权衡取舍将会产生变化，进而影响企业在均衡中的创新策略乃至市场路径的演化（Akcigit& Liu,2016)。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "Agrawal et al．（2018）指出，大数据分析技术的进步提升了企业预测有用知识组合的精度，提升了企业的创新效率。Aghion et al．（2019）提出，信息技术与大数据分析的运用使得流程效率更高的企业能够更迅速地通过创新性的流程优化降低成本、扩张生产、抢占市场。无论是提升参数预测精度，还是流程优化、成本降低等，均针对现有市场和产品，属于迭代式创新。在Jones＆Tonetti（2020）的数据经济模型中，研发创新过程被定义为产生一个全新的产品种类，仅包含传统意义上的突破性创新。该模型中数据要素专指伴随现有产品种类的销售过程生成的用户数据，不参与突破性创新过程。李全升和苏秦（2019）、许芳等（2020）与李树文等（2021）等国内文献也深入探讨了大数据对于企业各类创新活动的潜在影响。上述文献从技术视角尝试建立数据要素与企业创新尤其是迭代式创新之间的关系，却均未考虑企业对创新活动的内生决策，难以充分刻画数据要素对企业的两类研发创新活动的动态影响。这是现有文献的一大不足，也是现阶段政策制定者及学术界亟需研究的现实问题。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "本文构建了一个包含数据要素的研发创新竞争模型，发现在数字经济环境中，企业的研发创新活动将可能面临数据要素“陷阱”：行业数字化水平越高，对于数据要素的使用越充分，数据要素充足的大型企业越倾向于进行改良性的迭代式创新，进行突破性创新的激励不足。这将使得资源较少，能力较弱的小企业成为突破性创新的主体，创新活动呈现“逆向选择”特征。其根本原因在于数字经济企业的生产、销售过程伴生了大量用户数据，这些数据提升了企业迭代式创新成功的泊松流密度，鼓励了企业通过迭代式创新增加短期的用户数量，再利用这些用户提供的数据要素增加自身迭代式创新的能力，从而滚雪球式地扩大市场份额、压倒对手。由于大企业①的用户数量一般较多，能够使用的数据要素规模更大、内容更丰富，上述激励对大企业的影响更甚于小企业，导致大企业比小企业更偏向于迭代式创新。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "传统文献通过阿罗替代效应（Arrow，1962a；Rosen，1991）揭示了在“干中学”效应较强的行业中，大企业突破性创新激励相对较弱的问题。Aghion et al．（2019）、Eeckhout ＆ Veldkamp（2021）等文献指出，在数字经济时代，数据要素令阿罗替代效应及其趋势更为突出，更容易导致市场垄断现象出现。本文在上述文献基础上进一步将企业策略性创新引入市场份额内生的动态随机模型中，刻画了数据要素导致大企业在均衡路径上惰于突破性创新，企业创新活动在均衡路径上“完全极化”，市场份额趋于垄断的内在机制。因为大企业只在比小企业更极端的条件下才会进",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "①在本文中，大企业代表市场竞争中的大型企业与优势企业，小企业代指在市场竞争中处于弱势地位的中小企业与新兴企业，下同。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "40",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "2023年第2期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "家企业之间自由流通、完全共享，企业获得的数据生产要素与其销量不再相关，企业的创新决策反而更接近于传统企业时的情形。由此可见，通过鼓励数据共享，突破数据壁垒，可以从根本上改变均衡的形式，从“小企业偏好突破性创新”转换到“大企业偏好突破性创新”，扭转市场份额不断极化、大企业趋于垄断的均衡路径，最终减轻乃至化解数据要素陷阱问题。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "五、拓展分析",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "本节针对产业组织文献中几种常见的设定，对基础模型展开拓展论述，以更好地反映现实企业创新与市场竞争。讨论的重点包括通过迭代式创新积累促成突破性创新，存在多企业竞争及二手产品市场这三种情况。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "（一）通过累积迭代式创新达成突破性创新",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "在基础模型中，迭代式创新和突破性创新处于对立关系，彼此不能转化。然而在现实中，企业也可能经过创新的数次迭代，最终实现突破性创新。在本文模型中，如果可以通过多次迭代式创新实现突破性创新，则当双方已完成的迭代式创新次数差距逐渐增大时，处于弱势的企业预计自己能够抢先通过积累多次迭代式创新达成突破性创新的可能性逐渐减小，其进行迭代式创新的激励逐渐减弱，而此时，直接进行突破性创新则类似“弯道超车”，其激励则保持不变。因此，相对于基础模型，大企业偏好迭代式创新，小企业偏好突破性创新的模式将被进一步强化。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "（二）多企业竞争",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "本文的基准模型假设仅存在两家互相竞争的企业。若市场中有 家企业互相竞争，因为其市场份额总和仍为1，则在均衡路径上，n家企业的市场会以更大的概率更早地出现某家企业的市场份额跌破临界值并转向突破性创新的情形。因此，一般地说，n家企业竞争的市场比双头竞争市场总体上更倾向于产生突破性创新的尝试。从这个角度来说，采取有效手段为中小企业和新兴企业创造条件，鼓励其挑战市场地位占据者，打破部分数字经济行业中的寡头竞争格局，将能够有效化解数据要素陷阱问题，促进企业从迭代式创新转向突破性创新，鼓励技术突破与良性竞争。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "（三）存在二手产品市场",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "二手产品市场上的产品和一手市场上的产品互为不完全替代品，因此对一手市场上的产品形成竞争压力。其中，迭代式创新的新品和二手市场产品的互相替代程度较强，受到二手产品的竞争较强，又因为迭代式创新的效率与用户数据（与销量正相关）直接挂钩，当一手市场的销售份额受到挤压时，迭代式创新的期望收益也随之缩小；而突破性创新的新品和二手市场产品存在巨大代差，因此几乎不受二手产品的竞争，其期望收益不受影响。因此，随着二手市场的营商环境改善、货源流动性更为充足、信息不对称情况减轻，迭代式创新开发的改进程度不高的新品将受到来自二手产品和同世代竞品的双重竞争，给企业带来的期望收益将下降，这将在一定程度上“倒逼”企业进行突破性创新。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "六、现实证据",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "本节基于对2006-2020年沪深A股上市公司样本的数据分析，提供数字经济环境中的突破性创新面临数据要素陷阱的经验证据，进一步梳理企业在进入数字经济时代后创新活动的演变与数",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "① 定理3的证明过程主要为构造一个从 到w的唯一映射和一个从w到企业转向迭代式创新的规模的上界的唯一映射，二者联合构成一个从 的定义域到其自身的连续映射，再根据Brouwer不动点定理证明满足条件的 和 1ma的存在性。限于篇幅，具体证明过程请联系作者索取。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "49",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "徐 翔等：数据要素与企业创新：基于研发竞争的视角",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "负外部性。因此，尽快建立一个全国范围内的、完善且通畅的数据要素市场，允许中小企业在成本可接受的前提下获得数据，促进数据要素的国内大循环，为数据要素的国内国际双循环奠定制度基础，是一种调和折中的可行方案。具体来说，应基于中国数据交易实践大力推广“数据经纪人”制度，将数据经纪人与数据交易中心连接起来，形成完善的数据中介制度。同时，应鼓励数据要素与数据资产定价领域学者进一步深入研究与成果转化，逐渐形成现实可用、可供推广乃至在国际上广泛采用的数据要素定价与市场交易机制，推动中国成为全球数据经济领导者。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "第三，对于可通过累积迭代式创新达成突破性创新的关键技术与重要行业，应鼓励大范围搭建“数据-创新”联合协作平台，积极推动数据要素不断积累、量变引发质变，显著提升中国企业基础研究能力、原始创新能力和颠覆性技术创新能力，以突破“卡脖子”核心技术难题。各国研发创新实践表明，在半导体、微电子与新能源电池等重要技术领域，对于数据要素与迭代式创新的累积将可能促成突破性创新。通过引导技术研发机构与核心企业搭建合作研发平台，促进数据要素与迭代式创新进展交流共享，将能极大地提升研发创新效率，促使科研单位和企业深度合作，最终形成合力，推动中国加快成为“制造强国”和“创新强国”。除关键技术领域外，在商业应用领域也应通过广泛的数据共享与创新合作积累新知识、探索新模式，积极寻求通过接力式的快速迭代达成突破性创新的机会，助推中国数字经济高质量发展。与此同时，应积极开展数字经济与研发创新领域的国际合作，通过数据安全跨境流通与技术创新合作提升中国企业突破性创新水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "第四，应通过进一步完善二手产品交易市场机制与交易监管机制化解数据要素陷阱问题。电子消费品与乘用车市场的实践充分表明，如果二手产品市场足够健全、二手产品交易安全便利，通过迭代式创新小幅度改良的新款产品对于消费者的吸引力将显著下降。改进程度不高的新产品将受到来自二手产品和同世代竞品的双重竞争，开发改良品给企业带来的期望收益将显著下降。迭代式创新的收益降低等同于突破性创新的相对回报上升，从而驱使企业走出当前“舒适区”，更加积极地开展突破性创新活动，推动技术进步与成果转化。通过加强市场监察机制有效打击二手产品市场上的假货销售和以次充好等行为，充分保证二手商品质量，反过来会对新品市场的持续创新产生积极的促进作用。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "高洁、盛昭翰，2004《产品竞争的产业演化模型研究》，《中国管理科学》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "贺灵，2022《数据要素市场化改革、企业家精神与制造业数字化转型），《湖南科技大学学报（社会科学版）》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "胡山、余泳泽，2022《数字经济与企业创新：突破性创新还是渐进性创新》，财经问题研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "李全升、苏秦，2019《市场导向、迭代式创新与新产品开发》，《管理学报》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "李树文、罗瑾琏、葛元骎，202t《大数据分析能力对产品突破性创新的影响》，《管理科学》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "李哲、黄静、简泽，2021a《突破性创新对自愿性管理层业绩预告的影响》，《金融评论》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "李哲、黄静、孙健，2021b《突破性创新对分析师行为的影响-基于上市公司专利分类和引证数据的证据》，《经济管理》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "鞠晓生、卢荻、虞义华，2013《融资约束、营运资本管理与企业创新可持续性》，《经济研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "王永健、谢卫红、王田绘、成明慧，2016《强弱关系与突破式创新关系研究-吸收能力的中介作用和环境动态性的调节效应》，《管理评论》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "谢康、夏正豪、肖静华，2020《大数据成为现实生产要素的企业实现机制：产品创新视角》，《中国工业经济》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "徐翔、赵墨非，2020《数据资本与经济增长路径》，《经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "徐翔、厉克奥博、田晓轩，202t《数据生产要素研究进展），《经济学动态》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "许芳、田萌、徐国虎，2020《大数据应用能力对企业创新绩效的影响研究），《宏观经济研究》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "张吉昌、龙静，2022《数字化转型、动态能力与企业创新绩效-来自高新技术上市企业的经验证据》，《经济与管理》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "Agrawal,A., J. Gans, and A. Goldfarb, 2018, Prediction Machines: The Simple Economics of Artificial Intelligence, Harvard Business Press,Cambridge US.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "54",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "2023年第2期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "Aghion, P., A. Bergeaud, T. Boppart, P.J. Klenow, and H. Li,2019,\"A Theory of Falling Growth and Rising Rents\", NBER Working Paper,No.w26448.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "Ahuja, G., 2000, \"Collaboration Networks, Structural Holes, and Innvation: A Longitudinal Study\",Administrative Science Quarterly,45(3),425-455.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "Ahuja,G.,and C. M. Lampert, 2001, \"Entrepreneurship in the Large Corporation: A Lonitudinal Study of How Established Firms Create Breakthrough Inventions\",Strategic Management Journal,22(6-7),521-543.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "Akcigit, U., and Q. Liu, 2016, \"The Role of Information in Innovation and Competition\",Journal of the European Economic Association, 14(4),828-870.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "Arrow, K., 1962a \"Economic Welfare and the Allocation of Resources\", in R. Nelson, ed.,The Rate and Direction of Inventive Activity,Princeton University Press, Princeton, N.J. US.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "Arrow,K., 1962h \"The Economic Implications of Learning by Doing\", Retiew of Economic Studies, 29(3),155-173.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "Balsmeier, B., L. Fleming, and G. Manso, 2017, \"Independent Boards and Innovation\", Journal of Financial Economics,123(3), 536-557.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "Bobtcheff, C., J. Bolte, and T. Mariotti, 2017, \"Researcher's Dilemma\", Retiex of Economic Studies, 84(3),969-1014.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "Brynjolfsson,E.,L.M. Hitt,and H. H. Kim, 2011, \"Strength in Numbers: How Does Data-drven Decision-making Affect Firm Performance?\",Working Paper.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "Brynjolfsson,E.,and K. McElheran, 2016a \"Data in Action: Data-driven Decision Making in US Manufacturing\",Rotman School of Management Working Paper.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "Brynjolfsson, E., and K. MeElheran, 2016h, \"The Rapid Adoption of Data-driven Decision-making\",American Economic Reriew, 106(5),133-39.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "Choi,J. P., 1991, \"Dynamic R&D Competition Under \"Hazard Rate' Uncertainty\", RAND Journal of Economics, 22,596-610.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "Christensen, C. M., 2013,The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail, Harvard Business Review Press,Cambridge U.S.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "Eeckhout, J., and L. Veldkamp, 2021, \"Data and Market Powe\",Columbia University Working Paper.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "Farboodi,M.,A.Matray,and L. Veldkamp,2018,\"Where Has All the Big Data Gone?\",Working Paper.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "Farboodi, M., R. Mihet, T. Philippon, and L. Veldkamp, 2019, \"Big Data and Firm Dynamics\",AEA Papers and Proceedings, 109,38-42.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "Griliches,Z., and F. R. Lichtenberg, 1984, R&D and Productivity Growth at the Industry Level:Is There Still a Relationship?, University of Chicago Press,Chicago U.S.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "Hadlock,C. J., and J. R. Pierce,2010,\"New Evidence on Measuring Financial Constraints: Moing Beyond the KZ Index\",Review of Financial Studies, 23(5),1909-1940.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "Holmstrom, B., 1999, \"Managerial Incentive Problems: A Dynamic Perspective\", Rerieu of Economic Studies,66(1),169-82.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "Jones,C.L.,and C. Tonetti, 2020, \"Nonrivalry and the Economics of Data\",American Economic Retiew,110(9),2819-58.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "Mailath G. J., and L. Samuelson, 2001, \"Who Wants a Good Reputation\",Review of Economic Studies, 68(2),415-441.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "Makri, M., M. A. Hitt, and P. J. Lane, 2010, \"Complementary Technologies, Knowledge Relatedness, and Invention Outcomes in High Technology Mergers and Acquisitions\", Strategic Management Journal, 31(6), 602-628.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "McAfee,A.,E.Brynjolfsson, T. H. Davenport, D. J. Patil, and D. Barton, 2012, \"Big Data: The Management Revolution\", Harvard Business Retiew, 90(10),60-68.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "MeDermott,C.M.,and G. C.O Connor. 2002, \"Managing Radical Innovation: An Overview of Emergent Strategy Issues\",Journal of Product Innovation Management, 19(6),424-438.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "Muller, O.,M. Fay, and J. Vom Brocke,2018,\"The Effect of Big Data and Analytics on Firm Performance: An Econometric Analysis Considering Industry Characteristics\",Journal of Management Information Systems,35(2),488-509.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "Nelson, R. R., and S. G. Winter, 1982, An Evoutionary Theory of Economic Change, Harvard University Press,Cambridge US.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "Provost, F., and T. Fawcett, 2013, \"Data Science and Its Relationship to Big Data and Data-driven Decision Making\", Big Data, 1 (1),51-59.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "Rosen,R. J.,1991, \"Research and Development with Asymmetric Sizes\",Rand Journal of Economics,22,411-420.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "Song,Y.,and M. Zhao, 2021, \"Dynamic R&D Competition Under Uncertainty and Strategic Disclosure\", Journal of Economic Behatior & Organization, 181, 169-210.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "55",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "Data Factor and Enterprise Innovation:",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "The Perspective of R&D Competition",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "XU Xiangh, ZHAO Mofei\", LI Tao\" and LI Shuaizhen\"",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "(a:School of Economics, Central University of Finance and Economics;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "b:China Center for Internet Economy Research, Central University of Finance and Economics;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "c: School of Economics and Management, Beihang University)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "Summary:Breakthroughs in digital technologies and the rapid growth of the digital economy have made data the most valuable resource of modern society. Expanding global data volume, continuous deep-mining of data value, and growing data trade market have made it more convenient for firms to obtain and use data factors for production. Data factors can help firms get vast knowledge of the market, industry, and macroeconomy they are in, increase decision-making efficiencies and forecasting precisions, and eventually improve productivity and profits.However,two issues arise with the development of data factors and the digital economy. First, the reationship between data factors and enterprise innovation is still unclear, and the increase in data factor usage has not converted into higher innovation capacities. Second, radical innovations have been declining in digital economy sectors, while iterative innovations have been dominating in these sectors.These issues have accelerated monopolization in the digital economy and restrained \"creative destruction\" in Schumpeter's words.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "Existing literature on this topic has focused on either data-driven decision-making or the coordination of data and other production factors. Theoretical analysis from the market competition perspective has been rare, and there is no systematic framework for studying how data factor affects a firm's production, management, and innovation processes. In this paper, we build a microeconomic R&D competition model to analyze how data factor affects firms' innovation activities and market competition results,as an effort to fill current research gaps.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "In our model,the main difference between radical innovation and iterative innovation lies in the impact of innovation on firms'technology capacities and market shares. Radical innovations will help firms build sustained technology and market advantages,while iterative innovations are easily imitated and can only affect firms' market share through an instant dynamic process.In a traditional economy,a firm's success rate of iterative innovations depends on its R&D input and research capacities only. In a digital economy,however,this success rate is also affected by firms'collection and analysis of user data. Meanwhile, firms' radical innovation relieson revolutionary breakthroughs in key technologies,which is barely affected by user data of products in the current generation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "Our theory highlights a negative effect of data factor usage on firms'radical innovation activities, which we define as the“data factor trap\".Firms in more digitized sectors using more data factors are inclined to iterative innovation and thus are less motivated to conduct radical innovation activities. This eventually renders small firms a domianant position for radical innovations, and adverse selection effect arises. In the longer run, small firms get weaker and weaker in the equilibrium path,which further lowers the success rate of radical innovations.The data factor trap gets worse when we allow the firm to exit,and the market falls into a vicious circle of \"winner takes all\" and market polarization,making radical innovation and creative destruction even harder.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "The contribution of this paper is twofold. First,by comparing the equilibrium outcomes of the traditional economy and digital economy, we explain the mechanism through which data factor affects firms' innovation activities and market shares, highlight the existence of the data factor trap,and verify its generality and significance in the digital economy. Second, based on the theoretical results,we discuss the effects of potential solutions to the data factor trap and provide feasible plans to use data factor effectively and build a high-quality digital economy.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "The paper offers four pieces of policy implications.First,the government should adust industry policies on firm",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "innovation to bring firms back to radical innovation projects. Second, the government should design mechanisms to motivate",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "firms to actively share their data factors according to type and content. Third, large-scale joint innovation platforms should",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "be encouraged, as a key scheme to achieve radical innovation through multiple iterative innovations. Fourth, the second-",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "hand market should be promoted and improved to help solve the data factor trap problem.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "Keywords: Data Factor;Radical Innovation;Iterative Innovation;Market Share",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "JEL Classification:D21,L13,032",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "（责任编辑：恒 学）（校对：曹帅）",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "56",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    }
+  ]
+}

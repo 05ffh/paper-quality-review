@@ -1,0 +1,536 @@
+{
+  "paper_id": "EXAMPLE-0018",
+  "source_sha256": "56c972fcfd7708b2e7e03be937831846b9a06995f152efb8c0254195ca472d90",
+  "topic_hint": "吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应",
+  "paper_type": "empirical",
+  "method_tags": [
+    "中介效应",
+    "工具变量"
+  ],
+  "clean_units": 87,
+  "replacement_count": 0,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "导基金的累计规模已达到24666亿元，占当年全国GDP比重达2.2％。从理论上看，政府引导基金具有两大特点，使其有可能对企业关键核心技术创新产生积极影响。其一，政府引导基金能够引导社会资金流向战略性新兴产业和关键核心技术领域，从而缓解被投资企业在关键核心技术创新过程中所面临的融资约束；其二，关键核心技术创新比一般技术创新的失败风险更大，但是政府引导基金具有非盈利性，一般会配套对私人资本的风险补偿和政府让利机制，这使得其比一般风投基金更可能容忍创新失败的风险。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "基于这一理论预测，本文实证检验政府引导基金对企业关键核心技术创新绩效的影响机制和作用效果。具体而言，本文研究两个问题：第一，与其他风投机构相比，政府引导基金型风投机构能否在更大程度上促进企业关键核心技术创新绩效？第二，政府引导基金型风投机构通过何种影响机制来促进企业关键核心技术创新？针对上述问题，本文以2000-2017年中国5495家企业首轮风投（VC）融资的事件作为研究样本，并基于数量、质量、影响力、新颖性和独创性五个维度来构建企业的关键核心技术创新绩效指标，进而展开实证检验。我们发现，与引入其他风投机构投资相比，企业引入政府引导基金型风投机构的投资之后，在关键核心技术领域的发明专利数量和质量、高被引专利数量、新技术专利数量以及专利独创性都比融资前获得较大幅度的提升。然而，政府引导基金型风投对所投资的企业在非关键核心技术领域的专利质量、高被引专利数量、新技术专利数量和专利独创性方面并没有显著提升作用。这一结果表明，政府引导基金促进了企业在关键核心领域的技术创新，但是对在非关键核心领域的技术创新影响有限。进一步地，本文采用工具变量法来解决政府引导基金型风险投资和企业关键核心技术创新之间可能存在的遗漏变量和反向因果等内生性问题，发现在控制上述各类内生性问题之后，实证结果仍然稳健。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "接着，本文分别对比政府引导基金型风投与国有风投机构（非国有风投机构）在推动企业关键核心技术领域创新方面的作用是否存在差异，发现无论是相比于国有还是非国有风投机构，政府引导基金型风投在引导和促进被投资企业关键核心技术创新方面的作用都显著更强。本文还研究了政府引导基金型风投机构对企业关键核心技术创新的影响机制，发现与其他风投机构相比，政府引导基金型风投机构更能容忍创新失败风险，也更可能发挥资金引导作用来缓解企业融资约束，这两条机制有助于解释政府引导基金型风投比其他风投更可能促进企业关键核心技术创新。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "伴随着全球科技竞争进入白热化阶段，关键核心技术已经成为大国博弈的必争之地。虽然目前已有大量的文献探讨企业技术创新的融资与激励问题，但专门针对企业关键核心技术创新的研究才刚刚起步。现有研究主要集中于讨论关键核心技术创新的内涵，其与一般性技术创新的差异以及提升企业关键核心技术创新的措施。研究发现，相比于一般技术创新，关键核心技术创新具有较高的技术复杂性，影响并制约着整个创新生态系统其他组件和整体效用的发挥，且具有可以“卡别人脖子”的战略价值，难以被替代模仿，受到严格技术封锁（陈劲等，2020；谭劲松等，2022）。促进关键核心技术创新的措施主要包括：构建产学研合作的开放式创新体系（Chesbrough et al.，2014），构建数据驱动的新型举国体制（蔡跃洲，2021），发展基础技术科学研究（胡登峰等，2022），构建核心企业与创新生态系统成员适配的耦合网络（Vanhaverbeke et al．，2009），实施制造业发展战略（郑世林和张果果，2022）以及对闲置时间较长的专利进行重组（聂力兵等，2022）。总体而言，目前关于关键核心技术创新的研究存在两个特点：一是多数研究停留在规范分析和案例研究，较缺乏大样本实证研究；二是主要基于技术和创新生态的视角，较少基于融资的视角来探讨如何促进关键核心技术创新。考虑到关键核心技术创新的研发周期长，具有较高的失败风险，其融资难度远超一般技术创新，因此，本文着重于探讨有助于促进关键核心技术创新而非一般性技术创新的融资渠道。具体而言，本文率先发现企业向政府引导基金型风投融资，有助于推动其在关键核心技术领域的创新绩效。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "本文也是对政府引导基金领域文献的有益补充。现有研究主要围绕政府引导基金的引导作用",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "及其对企业发展的影响。来自全球各主要经济体的研究大多发现政府引导基金能够引导外部资金进入风投市场，缓解创业企业面临的融资约束（Jääskeläinen et al．，2007；Brander et al．，2015）。一些文献进一步探究政府引导基金为什么能够发挥引导作用，发现创业企业向政府引导基金型风投融资，可以向其他投资者传递政府支持和认可该企业的信号，有助于缓解创业企业面临的信息不对称问题（Lerner，2002；宫义飞等，2021）。此外，还有一些研究考察政府引导基金对被投资企业未来发展的影响，发现政府引导基金的投资，有助于提升被投资企业未来销售收入和员工增长率（Lerner，1999），增加企业专利数量（黄嵩等，2020），提高企业成功退出的概率（Brander et al．，2015）。在现有研究的基础上，本文在以下两个方面做出贡献：第一，有别于前人研究仅探讨政府引导基金型风投对企业专利数量的影响，本文关注到关键核心技术创新和一般技术创新之间的显著差异，通过实证检验率先发现政府引导基金型风投可以促进企业关键核心技术创新而非一般技术创新，这一发现为人们洞悉政府引导基金与企业技术创新之间的关系提供了新的视角和经验证据；第二，有别于前人主要从政府引导基金对资金的引导作用和缓解企业融资约束出发来探讨其对企业的影响机制，本文还从政府引导基金的非盈利性和风险补偿机制出发，揭示了政府引导基金还能通过提升对企业创新失败风险的容忍度这一崭新的机制来影响企业创新，这一发现拓展了人们对于政府引导基金作用渠道的认知，有助于完善政府引导基金的相关理论。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "二、理论分析与研究假设",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "在本节中，我们从关键核心技术创新的特征出发，探讨中小企业在关键核心技术突破中的作用和面临的难题，以及政府引导基金通过什么机制帮助中小企业解决这些难题，并在此基础上提出本文的研究假设。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "与一般技术创新相比，关键核心技术创新在战略和技术两个维度上都具有鲜明的特征。从战略维度上看，关键核心技术在全球范围内被少数领先企业所垄断，可以“卡别人脖子”，因此受到严格技术封锁，难以通过市场换技术的方式获得，其创新突破对于国家安全和经济发展都具有重要的战略意义（蔡跃洲，2021）。从技术维度上看，关键核心技术是一个复杂的技术体系，由多个关键子技术分支构成，各个子技术可能分属不同学科领域，相互之间依赖性强。因此，为了实现关键核心技术突破，需要研发各个关键子技术的创新生态系统成员，包括上下游、大中小型企业，高校，科研院所和政府进行技术和资源的适配和整合，共同发力（陈劲等，2020；谭劲松等，2022）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "虽然关键核心技术创新突破是创新生态系统各成员共同发力的结果，但是中小企业因其创新效率高、产业链节点重要，使其有可能在关键核心技术突破过程中发挥重要作用。具体而言，第一，研究表明中小企业在创新效率以及创新质量方面的表现显著优于成熟型大企业。例如，Acs＆Audretsch（1988）、Breitzman＆Thomas（2011）基于美国企业的研究发现小型企业在专利的独创性、普适性、专利增长率，以及单位员工的专利产出量等方面都显著优于大型企业；吴超鹏和唐菂（2016）针对中国企业的研究也发现企业规模与专利产出效率呈显著负相关关系。第二，创新型中小企业规模小，资源少，为了生存发展，在战略上需要寻找一些全球产业链上的关键节点进行突破，如长期专注和深耕于某一关键零部件、关键材料或关键工艺，进而实现创新突破并形成核心竞争力（曹虹剑等，2022）。虽然中小企业只是突破某一项关键技术节点，但整体上有利于整个创新生态系统突破关键核心技术，破解重要产品设备的“短板”和“卡脖子”问题。①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "① 政府也认识到中小企业在关键核心技术创新中的作用，对其扶持力度日益增加，例如2018年工业和信息化部、科技部联合财政部印发的《关于支持打造特色载体推动中小企业创新创业升级的实施方案》中强调要“促进中小企业特别是小微企业提升专业化能力和水平，引导中小企业在关键领域核心技术有所突破”。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "虽然中小企业日益成为关键核心技术突破的重要力量，但其创新活动普遍面临两大难题。第一，关键核心技术研发周期长，需要高投入且失败风险大，但是中小企业规模小，内部资金储备少，导致其承受失败风险的能力弱于大企业。因此，在关键核心技术研发的过程中，中小企业比大企业更加需要其高管及投资者具备更高的失败风险容忍度。第二，关键核心技术攻关周期长，因此更需要有长期稳定的外部资金投入作保障，但中小企业普遍面临融资难题。首先，中小企业收入不稳定，缺乏抵押物，存在较严重的信息不对称问题，故难以获得银行信贷资金；其次，虽然股权融资渠道可以为中小企业提供外部资金，但企业却需要承受高昂的股权资本成本（Lee et al．，1996）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "由于中小企业在关键核心技术研发过程中面临研发周期长、失败风险大和融资困难等问题，因此需要政府制定相应的政策和制度来加以引导和激励。与一般风险投资机构相比，政府引导基金出资设立的风险投资机构具有较高的创新失败风险容忍度，并且可以通过发挥对社会资本的引导作用来缓解企业的融资约束，因此可能有利于推动企业的关键核心技术创新，具体分析如下：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "第一，容忍失败风险机制。对创新活动的失败容忍程度，是决定企业创新能否成功的关键因素（Manso，2011）。Tian＆Wang（2014）发现当风险投资的失败容忍程度较高时，其所投资企业的创新能力较强。与其他风投机构相比，政府引导基金所投资的风投基金对所投资企业的创新失败风险容忍度可能较高，原因有二：一是与其他出资方相比，政府引导基金本质是非营利性的，因此它作为风投基金的主要投资方（有限合伙人LP），较不会给风投基金的管理机构（GP）施加短期财务业绩压力，而短期财务业绩压力会导致企业难以容忍创新失败风险，从而不愿投资研发活动（Grahamet al．，2005；杨道广等，2017）；二是针对风投基金的其他投资人（LP）和管理机构（GP）可能会追求短期利益，失败容忍度较低的问题，政府引导基金一般会配套分红让利和风险补偿等机制，来对其他LP和GP进行风险补偿，从而提升其他机构对创新失败风险的容忍度。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "第二，资金引导和缓解企业融资约束机制。与其他风险投资机构相比，政府引导基金型风投能够发挥财政资金的杠杆放大效应，通过政府信用吸引保险资金、社保资金等机构投资者的资金，以及民间资本、国外资本等社会资本聚集，形成资本供给（Lerner，1999；Cumming，2007），并引导这些资金流入政府所需要优先发展的领域，如关系国家安全和国民经济命脉的关键核心技术领域。因此，政府引导基金型风投可在较大程度上缓解企业在关键核心技术创新过程中面临的融资约束。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "总体而言，我们认为政府引导基金设立的风投机构，可以通过容忍失败和资金引导机制来帮助企业解决其在关键核心技术创新过程中所面临的研发周期长、失败风险大和融资困难等问题，故有助于促进企业关键核心技术创新绩效的提升。由此得出本文研究假设：与获得其他风投机构投资的企业相比，获得政府引导基金型风投机构投资的企业融资后在关键核心技术领域的创新绩效比融资前提升较多。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "三、研究设计",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "（一）样本与数据",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "本文从清科私募通数据库收集中国境内企业引入风险投资的事件作为初始样本。考虑到政府引导基金出资参与投资事件的起始年份为2000年，并且须确保投资之后有三年的观测期，本文以2000-2017年作为投资事件的样本期间。进一步按如下步骤筛选样本：（1）剔除被投资企业名称等基本信息缺失的投资事件；（2）由于企业技术创新能力可能受到上市的影响（Bernstein，2015），我们剔除企业上市后才引入风投的投资事件；（3）为了避免不同轮次的风投投资对标的企业的交叉影响，借鉴Nahata（2008），仅保留首轮风投投资的事件；（4）考虑到有一部分样本虽然在首轮融资时引进的风投机构没有政府引导基金背景，但在后续轮次可能会引入有政府引导基金背景的风投机构，这类样本同样受到政府引导基金的影响，因此剔除这部分样本；（5）由于本文的研究目的",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 0,
+      "text": "表2 政府引导基金对企业关键核心技术创新的影响 | 表2 政府引导基金对企业关键核心技术创新的影响 | 表2 政府引导基金对企业关键核心技术创新的影响 | 表2 政府引导基金对企业关键核心技术创新的影响 | 表2 政府引导基金对企业关键核心技术创新的影响\nA栏：政府引导基金对企业关键核心技术创新数量和质量的影响 | A栏：政府引导基金对企业关键核心技术创新数量和质量的影响 | A栏：政府引导基金对企业关键核心技术创新数量和质量的影响 | A栏：政府引导基金对企业关键核心技术创新数量和质量的影响 | A栏：政府引导基金对企业关键核心技术创新数量和质量的影响\n变量 | (1) | (2) | (3) | (4)\n变量 | In(Key Patent) | In(Key Patent Citation) | In(Key Patent) | In(Key Patent Citation)\nGVCxPost | 0.0429**\n(0.0125) | 0.0169\n(0.00698) |  | \nPost | 0.0154\n(0.00721) | 0.00145\n(0.00553) |  | \nGVCxBefore-2 |  |  | 0.0107\n(0.00999) | 0.00713\n(0.00765)\nGVCxBefore-1 |  |  | 0.0123\n(0.0116) | 0.00609\n(0.00844)\nGVCxAfter' |  |  | 0.0497***\n(0.0174) | 0.0214\n(0.0103)\nGVCxAfter |  |  | 0.0390\n(0.0182) | 0.0214\n(0.0107)\nGVCxAfter3 |  |  | 0.0597**\n(0.0194) | 0.0172\n(0.00969)\nBefore-2 |  |  | 0.00511\n(0.00499) | 0.00271\n(0.00326)\nBefore- |  |  | 0.0137\n(0.00925) | 0.00690\n(0.00571)\nAfter |  |  | 0.0348*\n(0.0180) | 0.00804\n(0.0105)\nAfter2 |  |  | 0.0366°\n(0.0220) | 0.00634\n(0.0130)\nAfter |  |  | 0.0283\n(0.0259) | 0.0000397\n(0.0149)\nControls | Control | Control | Control | Control\nFirm & Year FE | Control | Control | Control | Control\nObservations | 32970 | 32970 | 32970 | 32970\nR | 0.398 | 0.282 | 0.399 | 0.283\nB栏：政府引导基金对企业关键核心技术创新其他指标的影响 | B栏：政府引导基金对企业关键核心技术创新其他指标的影响 | B栏：政府引导基金对企业关键核心技术创新其他指标的影响 | B栏：政府引导基金对企业关键核心技术创新其他指标的影响 | B栏：政府引导基金对企业关键核心技术创新其他指标的影响\n变量 | (1) | (2) | (3) | (4)\n变量 | Ln(Key Top 1%) | Ln(Key Top 10%) | Ln(Key New Classes) | Key Originality\nGVCxPost | 0.00264\n(0.00147) | 0.0119*\"\n(0.00458) | 0.0273\n(0.0110) | 0.0691***\n(0.0222)\nPost | -0.000163\n(0.00118) | 0.0000620\n(0.00266) | 0.0187***\n(0.00675) | 0.0350\n(0.0158)\nControls | Control | Control | Control | Control\nFirm & Year FE | Control | Control | Control | Control\nObservations | 32970 | 32970 | 32970 | 32970\nR2 | 0.196 | 0.284 | 0.320 | 0.268",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "注：括号内为聚类稳健标准误差，聚类到公司层面；“、”、·分别表示在10％、5％、1％水平上显著，下表同。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "续表5",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 1,
+      "text": "A栏：政府引导基金型风投与其他风投的失败容忍度差异检验 | A栏：政府引导基金型风投与其他风投的失败容忍度差异检验 | A栏：政府引导基金型风投与其他风投的失败容忍度差异检验\n变量 | VC Failure Tolerance | VC Failure Tolerance\n变量 | (1) | (2)\nEarly Sage Expertise |  | 0.0697\n(0.187)\nConstant | 1.521\n(0.0472) | 1.081*\n(0.152)\nObservations | 1071 | 1071\nR | 0.00700 | 0.0471",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "B栏：中介效应检验",
+      "heading_level": null
+    },
+    {
+      "kind": "table",
+      "index": 2,
+      "text": "变量 | In(Key Patent) | In(Key Patent) | In(Key Patent) | In(Key Patent Citation) | In(Key Patent Citation) | In(Key Patent Citation)\n变量 | (1) | (2) | (3) | (4) | (5) | (6)\nGVCxPost |  | 0.0452\n(0.0148) | 0.0399\n(0.0147) |  | 0.0195\n(0.00810) | 0.0177\n(0.00808)\nVC Failure\nTolerancexPost | 0.0196\n(0.00569) |  | 0.0185\n(0.00568) | 0.00683\n(0.00266) |  | 0.00633\n(0.00266)\nPost | -0.0130\n(0.0135) | 0.0163\n(0.00866) | -0.0179\n(0.0135) | -0.00784\n(0.00814) | 0.00168\n(0.00647) | -0.00998\n(0.00818)\nControls | Control | Control | Control | Control | Control | Control\nFirm & Year FE | Control | Control | Control | Control | Control | Control\nObservations | 23784 | 23784 | 23784 | 23784 | 23784 | 23784\nR2 | 0.391 | 0.391 | 0.392 | 0.284 | 0.284 | 0.285",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "2．资金引导和缓解企业融资约束机制",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "本节检验第二条机制，即资金引导和缓解企业融资约束机制。企业的研发创新活动，在很大程度上依赖于企业的外部股权和债务融资（Brown et al．，2009）。与其他风投基金相比，政府引导基金更可能帮助企业获得外部融资，从而提升企业关键核心技术创新绩效，其原因主要有两个方面：第一，与其他风投基金相比，政府引导基金更可能发挥政策方向引导作用，并利用其向其他投资者让利和风险补偿机制，来引导和撬动社会资本进入关键核心技术领域，这在一定程度上可以缓解企业在关键核心技术创新过程中所面临的融资约束。第二，从创新企业的角度看，由于政府引导基金所代表的政府信用，企业获得政府引导基金型风投的投资，相当于获得了一定程度的声誉认证，有利于增强外部股东和银行对企业创新前景和未来履约能力的信心，从而愿意为企业的关键核心技术创新活动提供资金支持。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "为了检验这一影响机制，本文基于企业所在行业的外部资金依赖程度进行分样本检验。我们预期若缓解融资约束机制存在，则可推测在外部资金依赖程度较高的行业中，政府引导基金型风投的投资对企业关键核心技术创新绩效的影响程度更大。将样本公司按照引入首轮风投前一年所在行业的外部资金依赖程度的中位值，将样本分为高外部资金依赖和低外部资金依赖两组。借鉴Amore et al．（2013），行业的外部资金依赖程度计算步骤如下：首先，行业中某一家公司在某一年的",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "企业外部融资约束来提升企业的关键核心技术创新绩效。这些研究结果的理论意义表现在：目前学术界关于如何推动企业突破关键核心技术创新的经验证据甚少，本文做了一个初步的尝试，考察了政府引导基金在引导和促进企业突破关键核心技术方面所起的作用。未来该领域的研究不仅可以继续探讨其他创新政策在企业突破关键核心技术过程中发挥的作用，还可以进一步考察政府引导基金对企业并购和多元化等其他财务战略决策的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "本文结果对中国政府制定和完善相关政策以推动企业加强关键核心技术攻关具有如下启示：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "第一，完善政府引导基金制度的顶层设计，助推企业关键核心技术突破。本文研究表明政府引导基金之所以能够推动中小企业关键核心技术创新，是因为其对关键核心技术创新的高失败风险和长研发周期具有较高的容忍度，因而能持续地支持企业开展关键技术研发活动。为了增强政府引导基金的这一优势，可以从如下三方面做好政策的顶层设计：一是各级政府引导基金需建立或完善容错机制和绩效评价体系，对于投资于支持企业研发关键技术的引导基金，应设置较高的容错率，并且在此类基金的绩效评价中，适当弱化对其在基金存续期内的经济效益的评价，而重点关注和评估其所投资企业的关键核心技术创新绩效，以及为企业发展和国家安全所创造的长期价值；二是鉴于关键核心技术的研发周期较长的特点，可适当延长政府引导基金所成立的风投基金的存续期；三是鼓励各级政府引导基金将已退出的资金循环再投资，这不仅可以对企业创新活动形成持续的支持，而且由于这些基金在以往投资中积累了丰富的经验，因此其循环再投资有利于拓展其经验去帮助其他企业突破关键核心技术。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "第二，完善关键核心技术攻关的多元化投入机制，缓解企业为创新活动融资的困境。一般而言，关键核心技术研发的失败风险大，因此社会资本的参与意愿不强，但是本文却发现政府引导基金可以引导社会资本流入关键核心技术领域，助推企业突破“卡脖子”技术，而政府引导基金之所以能发挥这一功能，是因为其对社会资本和管理机构的让利和风险补偿机制。为了健全这一机制，政策上可从如下两方面加以完善：一是将政府引导基金制度与科技保险制度相结合，为关键核心技术创新单独设立特定险种，为这类创新活动及其主体提供保险服务，降低社会资金进入关键核心技术创新领域的风险，提升其参与积极性；二是建立投贷联动机制，加强政府引导基金型风投机构的“股权投资”与银行类金融机构“信贷投放”的联动，通过相关制度安排，利用股权投资收益补偿银行信贷风险，为企业关键核心技术创新活动拓展银行融资渠道。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "第三，健全关键核心技术攻关新型举国体制，推动有为政府和有效市场的更好结合。党的十九届四中全会提出，要构建社会主义市场经济条件下关键核心技术攻关新型举国体制。新型举国体制相比于传统举国体制，新的地方就在于其集成了社会主义制度集中力量办大事的体制优势和市场经济有效配置资源的机制优势，从而能更好地推进关键核心技术攻关。政府引导基金正是新型举国体制的典型实践。本文研究发现政府引导基金型风投机构既能像国有风投机构一样发挥政府引导产业投资方向的职能，又能像非国有风投机构一样采用市场化管理机制，因此其在推动企业突破关键核心技术上的效果既优于国有风投机构，也优于民营和外资等非国有风投机构。这充分说明在新的历史条件下，以政府引导基金制度为代表的新型举国体制，能够推动有为政府和有效市场的充分融合，是推动企业突破“卡脖子”技术、实现高水平科技自立自强的重要制度保障。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "蔡跃洲，2021：《中国共产党领导的科技创新治理及其数字化转型-数据驱动的新型举国体制构建完善视角》，《管理世界》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "曹虹剑、张帅、欧阳峣、李科，2022：《创新政策与“专精特新”中小企业创新质量》，《中国工业经济》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "2023年第6期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "陈劲、阳镇、朱子钦，2020：《“十四五”时期“卡脖子”技术的破解：识别框架、战略转向与突破路径》，《改革》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "宫义飞、张可欣、徐荣华、夏雪花，2021：《政府引导基金发挥了“融资造血”功能吗》，《会计研究》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "胡登峰、黄紫微、冯楠、梁中、沈鹤，2022：《关键核心技术突破与国产替代路径及机制-科大讯飞智能语音技术纵向案例研究》，《管理世界》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "黄嵩、倪宣明、张俊超、赵慧敏，2020：《政府引导基金能促进技术创新吗？-基于我国科技型初创企业的实证研究》，《管理评论》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "聂力兵、龚红、赖秀萍，2022：《唤醒“沉睡专利”：知识重组时滞、重组频率与关键核心技术创新》，南开管理评论》（网络首发）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "谭劲松、宋娟、王可欣、赵晓阳、仲淑欣，2022：《创新生态系统视角下核心企业突破关键核心技术“卡脖子”-以中国高速列车牵引系统为例》，南开管理评论》（网络首发）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "吴超鹏、唐菂，2016：《知识产权保护执法力度、技术创新与企业绩效-来自中国上市公司的证据》，《经济研究》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "杨道广、陈汉文、刘启亮，2017：《媒体压力与企业创新》，《经济研究》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "郑世林、张果果，2022：《制造业发展战略提升企业创新的路径分析-来自十大重点领域的证据》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "Acs, Z.J., and D. B. Audretsch,1988,\"Innovation in Large and Small Firms:An Empirical Analysis\",American Economic Retiew, 678-690.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "Amore,M.D., C. Schneider, and A. Zaldokas, 2013,\"Credit Supply and Corporate Innovation\",Journal of Financial Economics, 109(3),835-855.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "Bernstein,S.,2015,\"Does Going Public Affect Innovation\",Journal of Finance,70(4),1365-1403.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "Blanco,L,and D.Wehrheim,2017,\"The Bright Side of Financial Derivatives:Options Trading and Firm Innovation\",Journal of Financial Economics,125(1),99-119.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "Brander,J.A., Q. Du,and T. Hellmann, 2015,\"The Effects of Govemment-Sponsored Venture Capital:International Evidence\", Retiew of Finance,19(2),571-618.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "Brav,A.,W. Jiang, S. Ma, and X. Tian, 2018,\"How does Hedge Fund Activism Reshape Corporate Innovation\",Journal of Financial Economics,130(2),237-264.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "Breitzman,A.,and P. Thomas, 2011,\"Analysis of Small Business Innovation in Green Technologies\",Adoocacy:The Voice of Small Business in Government,1-44.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "Brown,J.R.,S.M.Fazzari,and B.C. Petersen, 2009,\"Financing Innovation and Growth:Cash Flow,External Equity,and the 1990s R&D Boom”,Journal of Finance,64(1),151-185.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "Chesbrough,H.,W. Vanhaverbeke, and J. West,2014,New Frontiers in Open Innovation, Oup Oxford.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "Cumming, D.,2007,\"Govemnment Policy Towards Entrepreneurial Finance:Innovation Investment Funds\",Journal of Business Venturing,22(2),193-235.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "Gorman,M.,and W.A.Sahlman,1989,“What do Venture Capitalists Do\",Journal of Business Venturing,4(4),231-248.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "Graham,J.R., C.R. Harvey,and S. Rajgopal, 2005,\"The Economic Implications of Corporate Financial Reporting\",Journal of Accounting and Economics,40(1-3),3-73.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "Hall,B.H.,A.Jaffe,and M.Trajtenberg,2001,\"The NBER Patent Citation Data File:Lessons,Insights and Methodological Tools\",NBER Working Paper,8498.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "Hall,B.H.,A. Jaffe,and M.Trajtenberg,2005,\"Market Value and Patent Citations\",RAND Journal of Economics,36(1),16-38. Jaäskeläinen, M., M. Maula, and G. Murray, 2007,\"Profit Distribution and Compensation Structures in Publicly and Privately Funded Hybrid Venture Capital Funds\",Research Policy,36(7),913-929.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "Lee,L.,S.Lochhead,J.Ritter, and Q. Zhao, 1996,\"The Costs of Raising Capital\", Journal of Finacial Research,19(1),59-74. Lemer,J.,1999,\"The Govemment as Venture Capitalist:The Long-Run Impact of the SBIR Program\",Journal of Business,72(3), 285-318.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "Lemer,J.,2002,\"When Bureaucrats Meet Entrepreneurs:The Design of Effective \"Public Venture Capital' Programmes”,Economic Journal,112(477),F73-F84.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "Manso,G., 2011,\"Motivating Innovation\",Journal of Finance,66(5),1823-1860.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "Nahata,R., 2008.“Venture Capital Reputation and Investment Performance\",Journal of Financial Economics,90(2),127-151.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "Tian,X.,and T.Y.Wang,2014,\"Tolerance for Failure and Corporate Innovation\",Retiew of Financial Studies,27(1),211-255.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "Vanhaverbeke,W.,V. Gilsing,B.Beerkens,and G.Duysters,2009,\"The Role of Alliance Network Redundancy in the Creation of Core and Non-core Technologies\",Journal of Management Studies, 46(2),215-244.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "Government Guidance Funds and Breakthroughs",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "in Firm's Core Technologies",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "WU Chaopengab and YAN Zehao.d",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "(a:School of Management,Xiamen University;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "b:Center for Accounting Studies,Xiamen University;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "c: School of Economics & Management,Nanchang University;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "d:Institute for Financial & Accounting Studies,Xiamen University)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "Summary:As the scientific and technological capability is becoming an increasingly important indicator fora country's comprehensive strength,how to motivate and facilitate firms to achieve breakthroughs in core technologies in key fields has become an important task of the government. Different from ordinary technology innovation,innovation of core technologies in key fields requires conquering a series of complex and nested technologies in key fields and therefore is more difficult to be duplicated or imitated.Moreover,since core technologies are seldom traded in the market,firms equipped with them are more likely to seize monopoly power and gain a competitive edge in the global market. Specialized in niche industries with great growth potential,small and medium-sized enterprises (SMEs) with high innovation efficiency can often achieve technological breakthroughs in a subcategory of the industrial chain. Due to the increasing importance of SMEs in achieving breakthroughs in core technologies in key fields,the Chinese government has been continuously strengthening its support for the technological innovation activities of SMEs via platforms such as government guidance funds.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "Theoretically speaking,government guidance funds may promote corporate innovation of core technologies in key fields through two channls. First,government guidance funds can attract social capital towards strategic industries and core technologies in key fields,which alleviates the financial constraints faced by firms during their innovation processes. Second,government guidance funds are not profit-oriented, often ceding profits to private capital or compensating it for risk-taking.Therefore,they have higher tolerance forfailure than other venture capital funds.This can be extremely important for innovation of core technologies,which are more vulnerable to failure as compared to other innovation activities.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "In this study,we explore the role of goverment guidance funds i the performance of corporate innovation of core technologies in key fields. Based on a sample of the first round of venture capital financing events for 5495 Chinese SMEs over the period 2000-2017,we find that after financing from govemment guidance funds,SMEs experience a significant increase in the quantity,quality,influence,novelty,and originality of patents of core technologies in key fields,comparing with those financing from other venture capitals.However,such patterns are not observed for corporate innovation outcomes in the fields of ordinary technologies.These results suggest that government guidance funds play a vital role in promoting corporate innovation of core technologies in key fields rather than n ordinary fields. Further,we provide evidence that higher tolerance for failure risk and better facilitation o access to capital can be the underlying economic mechanisms through which government guidance funds affect the innovation of core technologies in key fields.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "Our study contributes to the literature on the determinants of corporate innovation. While existing studies have discussed a series of financial, governance, and institutional factors that can affect corporate innovation,they seldom distinguish corporate innovation of core technologies in key fields from those in ordinary fields. Moreover,there is little research on how to finance the R&D activities of core technologies in key fields,even though their financing difficulty is far greater thn that of ordinary technology innovation. Based on a financing perspective,our study is the first to explore the effect of government guidance funds on corporate innovation of core technologies in key fields. Our study also adds to the literature on government guidance funds. Unlike existing studies which roughly investigate how the introduction of government guidance funds affects a firm's quantity of patents of all types,we separately examine the impact of government guidance funds on innovation of core technologies in key fields and on that in the ordinary fields.Our results indicate that government guidance funds promote innovation of core technologies in key fields rather than ordinary technology innovation, revealing a novel perspective on the effect of government guidance funds on corporate innovation.Moreover,the channel of tolerance for failure revealed in our study also enriches our understanding of the economic mechanisms through which government guidance funds affect corporate innovation.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "Our study has important policy implications. In particular,our results suggest that the government can achieve self-reliance and strength in science and technology by increasing the scale of government guidance funds to facilitate corporate innovation of core technologies in key fields.Moreover,since the success of the goverment guidance funds system depends on proper government guidance and efficient market operations, our findings suggest that institutional innovation that effectively combines the role of the govemment and the market is critical for the innovation of core technologies in key fields.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "Keywords:Government Guidance Funds;Innovation of Core Technologies in Key Fields;Tolerance for Failure JEL Classification:G24,H54,031",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "（责任编辑：昱池）（校对：王红梅）",
+      "heading_level": null
+    }
+  ]
+}

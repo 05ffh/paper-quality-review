@@ -1,0 +1,1132 @@
+{
+  "paper_id": "EXAMPLE-0014",
+  "source_sha256": "0e89a497f49b002429c5cb2e47092ed31fb25ccb2c46674421f148d572b1bb8f",
+  "topic_hint": "县域创业活动、农民增收与共同富裕",
+  "paper_type": "empirical",
+  "method_tags": [
+    "面板模型",
+    "中介效应",
+    "调节效应",
+    "工具变量"
+  ],
+  "clean_units": 186,
+  "replacement_count": 1,
+  "units": [
+    {
+      "kind": "paragraph",
+      "index": 0,
+      "text": "县域创业活动、农民增收与共同富裕",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 1,
+      "text": "-基于中国县级数据的实证研究",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 2,
+      "text": "林嵩谷承应 斯晓夫 严雨姗",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 3,
+      "text": "内容提要：共同富裕是中国特色社会主义的根本原则，是全体人民为之奋斗的目标和矢志不渝的追求。在我国，农村人口占低收入群体的比例较高，并且农民收入普遍偏低。在此背景下，提升农民收入是实现共同富裕的基础条件和物质保障。本文利用2000-2017年中国1749个县级行政区的数据，对县域创业活动与农村居民可支配收入的关系进行了实证分析。研究发现，首先，县域创业有利于农民增收，特别表现为小微型及公司制的创业活动。进一步研究发现，县域创业有利于缩小城乡收入差距。此外，政府规模对创业的减贫效果具有“倒U型”的调节作用，这一作用主要体现在中西部地区。本文通过进一步分析县域之间在基础设施建设和数字经济建设方面的特征差异，发现在未开通高铁的县域和非电子商务示范县域，县域创业与政府规模的共同作用更加明显。最后，本文结合案例分析，进一步探索了特定区域的特色化创业增收道路，为提升农民收入提供了可行路径。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 4,
+      "text": "关键词：县域创业 农民收入 共同富裕 政府规模",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 5,
+      "text": "一、引言",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 6,
+      "text": "改革开放以来，我国在消除贫困方面取得了巨大进展，7.7亿农村贫困人口摆脱贫困，占同期世界减贫人口的70％，世界贫困版图显著缩小。。①贫困地区的脱贫过程中，创业活动的重要性已经得到了社会媒体的普遍关注。然而，在新一轮农村创业热潮中，“一窝蜂”跟风现象并不鲜见，创业对于当地的改变并不明显，特别是部分山区的地方政府大力帮扶农户养殖水产，但农户受技术、资金等多种因素限制，对市场走势把握不准确，最终农户的收入也受到严重负面影响。②这些现象激发了本文对于创业、政府与农民增收和共同富裕之间关系的研究兴趣。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 7,
+      "text": "共同富裕是社会主义的本质要求。党的二十大报告特别指出要增加低收入者收入，完善分配制度，扎实推进共同富裕。在城乡中国的背景下，农村人口在低收入群体的占比高达90％，农民收入普遍偏低，提升低收入群体收入的关键是增加农民收入，这是实现共同富裕的基础条件和物质保障（李实和朱梦冰，2022；史新杰等，2022）。因此，针对如何减少农村贫困、实现增收这一主题进行研究对于中国实现共同富裕具有重要意义和价值（杨灿明，2021）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 8,
+      "text": "近年来，随着创业活动在世界范围内的兴起，学者普遍认为创业是缓解贫困的重要手段（Sutter",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 9,
+      "text": "＊林嵩、谷承应（通讯作者），中央财经大学商学院，邮政编码：100081，电子信箱：linsong1998＠126．com，email@example.com;斯晓夫、严雨姗，浙江大学管理学院，邮政编码：310058，电子信箱：sixiaofu＠zju．edu．cn，yanyushan＠zju．edu．cn。本研究是国家自然科学基金项目（72072192）的阶段性成果。作者感谢匿名审稿专家的宝贵建议，当然文责自负。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 10,
+      "text": "①国务院新闻办公室，2021《人类减贫的中国实践》白皮书，http：／／www．gov．cn／zhengce／2021-04／06／content＿ 5597952.htm。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 11,
+      "text": "②《返乡创业养娃娃鱼遭遇行情过山车-樊俊：农村创业盲目跟风亟待引导》，《中国青年报》2016年4月12日。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 12,
+      "text": "40",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 13,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 14,
+      "text": "2023年第3期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 15,
+      "text": "et al．，2019）。创业可以促进市场蓬勃发展（Sutter et al．，2019），为低收入人群创造和提供多种就业机会，从而增加他们的收入（Naminse et al．，2018）。然而，也有一些研究表明创业对扶贫作用甚微（Matos ＆ Hall，2020）。即使是面向社会问题而发生的社会创业，对于扶贫的作用也很小，不能从根本上消除贫困（Alvarez et al．，2015）。以上研究表明，创业与减贫增收之间的关系需要进一步的理论研究以及相应的实证证据（Sutter et al．，2019）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 16,
+      "text": "已有研究指出，区域创业活动受制度的影响（Bruton et al．，2018；Chowdhury et al．，2019；斯晓夫等，2020）。政府建立社会制度，提供服务（Chowdhury et al．，2019），政府联系为企业带来了大量商业机会和资源，并提高了其生存率（Bruton et al．，2018），但庞大的政府规模和过度监管将对创业活动产生负面影响（Chowdhury et al．，2019）。但是，学者们在研究创业与减贫增收关系时往往忽略了政府这一关键因素（Bruton et al．，2018），对于创业活动与政府之间如何共同影响区域经济活动的研究更加稀缺。在中国，政府是社会各个方面的核心参与者，是孕育和维持创业精神的生态系统中不可或缺的一部分（Bruton et al．，2018）。过往文献已经指出了政府在提高法治水平、促进金融市场发展等方面的努力会促进经济增长（周方召和刘文革，2013）。但在创业活动与农民收入的关系中，政府产生了怎样的影响，这种影响在什么条件下会更明显，需要进一步的研究。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 17,
+      "text": "当前中国贫困人口主要集中于农村地区，国内外学者对中国农村贫困问题及如何减少贫困给予了高度关注，特别是关注了创业活动的影响。创业活动整体上有利于产业结构的优化，促进新产品、新市场的开拓，进而带来“创造性破坏”的创新性增长，推动经济高质量发展（谢绚丽等，2018；赵涛等，2020；万海远，2021），也能够作为衔接金融服务与农民收入的中介变量（张勋等，2019）。也有部分研究直接关注创业与中国贫困问题的关系，其中大多是定性研究（Si et al．，2015；Wu＆Si，2018；郭咏琳和周延风，2021；王胜等，2021），少数研究使用跨省份数据分析中国创业活动与贫困之间的关系，发现创业活动有利于减轻地区贫困（Naminse et al．，2018；Lin et al．，2020）。除此之外，也有一些不同的观点，例如，贫困农户创业并不具有显著的长期减贫效应（单德朋和余港，2020）。因此，从关注创业与中国贫困问题的研究来看，创业与减贫增收的关系仍存在一定分歧，尤其是存在制约因素的情况下，创业减贫的方向和强度仍有待进一步研究与探索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 18,
+      "text": "本文使用中国县域面板数据检验创业活动与政府规模如何共同影响农村居民人均可支配收入。之所以采用县域数据，一方面是因为县域作为我国的基本行政区域，是经济发展的重要支撑力量，县域的发展和经济增长是我国脱贫攻坚和乡村振兴的强有力助推引擎（李永友，2021）。另一方面，使用县域数据既可以克服省际间难以观测的异质性和城市创业距离农村较为遥远的问题，又能增加大量的样本，从而保障结果的稳健性和可信度（毛捷等，2018）。此外，在县域中农村地区占比相对较高（温涛等，2016），并且农民进入县城购置房产、向县城聚集的现象十分普遍，县域创业对农村有较强的辐射作用。因此，使用县域总体的创业活动来探讨其对农民减贫增收的影响是合理的。同时，近年来国家将大量的县域纳入交通铁路网络，大力推进高铁等基础设施的建设（张俊，2017；文雁兵等，2022），利用电子商务等数字化技术的扩散赋能县域发展，这对于推动经济高质量发展、实现乡村振兴具有重要意义（王奇等，2021；汪阳洁等，2022）。结合上述时代背景，在异质性更丰富的县域层面，创业增收的效应以及政府力量的影响是否存在不同？这成为本文的研究主题。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 19,
+      "text": "本文探讨了县域创业活动对农村居民可支配收入的影响，并探索了政府在这一影响中的作用，具有三方面的贡献。首先，使用县域宏观数据证实了创业活动的减贫增收作用，并识别了具体创业活动的规模、类型及行业分布等特质对农民增收的不同作用。本文发现县域创业活动有助于缩小",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 20,
+      "text": "41",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 21,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 22,
+      "text": "2023年第3期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 23,
+      "text": "预算范围内行使职权的客观影响（文雁兵，2014）。相关数据来源于中经网数据库。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 24,
+      "text": "4．控制变量",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 25,
+      "text": "区域经济发展水平（LnperGDP）。当地经济发展程度对增加居民收入有关键作用（孙久文等，2019），考虑到各县域人口的差异，本文使用当地人均GDP的对数度量区域经济发展水平（赵涛等，2020）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 26,
+      "text": "区域金融发展水平（Finance）。地区的金融发展对促进收入增加和合理分配有着积极作用，使用“金融机构贷款余额／地区GDP”对其进行控制（赵涛等，2020）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 27,
+      "text": "第二产业占比（Seclnd）和第三产业占比（Terlnd）。第二、三产业的发展有利于提供充足的就业岗位，从而有助于农户增收（汪德华等，2019），本文分别使用“第二产业增加值／地区GDP”和“第三产业增加值／地区GDP”控制了县域二、三产业发展的影响。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 28,
+      "text": "教育水平（Edu）。教育水平对减贫增收至关重要（孙久文等，2019），因为教育水平有着提升当地人力资本、阻断贫困的代际传递的作用（汪德华等，2019）。本文使用普通中学在校学生数量占总人口的比重控制教育水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 29,
+      "text": "社会福利水平（Welfare）。当地的社会福利对于贫困有重要影响（郭熙保和周强，2016），本文使用各种社会福利收养性单位床位数的对数对其进行控制。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 30,
+      "text": "非农就业规模（NFP）。将县域第二、三产业就业人数加总并取对数，控制工具变量可能对被解释变量产生影响的潜在渠道。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 31,
+      "text": "消费水平（Consume）。消费能带动地区发展，促进减贫增收（郭熙保和罗知，2008）。本文借鉴文献常用做法，使用“社会消费品零售总额／地区GDP”测度居民消费水平。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 32,
+      "text": "储蓄水平（Deposit）。有计划的储蓄行为能减弱贫困程度（郭熙保和周强，2016）。我们使用居民储蓄存款余额的对数对储蓄水平进行控制。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 33,
+      "text": "（三）模型构建与数据说明",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 34,
+      "text": "首先分析县域创业活动对农民收入的影响，基准回归模型如（8）式所示：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 35,
+      "text": "(8)",
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "index": 36,
+      "text": "其中，LnRuralDI 表示县域i在t时期的农村居民人均可支配收入的对数，LnEntre-和分别为县域i在t-1时期新注册企业数的对数和地方政府财政支出与地区GDP的比值，包括前文提及的所有控制变量，均滞后一期， 表示县域固定效应 表示时间固定效应，表示随机扰动项。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 37,
+      "text": "在此基础上，本文进一步检验政府规模在县域创业活动对农民收入影响关系中的“倒U型”调节作用。回归方程如（9）式：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 38,
+      "text": "本文采用两阶段最小二乘法（2SLS）缓解内生性问题。首先，在回归方程中将所有解释变量滞后一期，这样能够在一定程度上减少内生性问题的影响（谢绚丽等，2018；吕冰洋等，2021）。其次，参考近年来权威期刊研究中对工具变量的选择（Zhang et al．，2016；张璇等，2017；李青原和肖泽华，2020；包群和但佳丽，2021），使用“该省、自治区、直辖市当年的新注册企业数／该省、自治区、直辖市当年地级行政区划数”并取自然对数计算地级行政区平均创业活动（LnCityEntre）作为县域创业活动的工具变量。①在相关性方面，反映地级行政区层面当年整体的商业环境、创新环境及创业机会等因素的地级行政区平均创业活动与县域创业活动具有紧密联系。在排他性方面，虽然县域农民收入与地级行政区平均创业活动之间的关联较小，但地级行政区平均创业活动仍存在通过劳动",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 39,
+      "text": "① 数据中的北京、天津和重庆三个直辖市，当年地级行政区划数记为1。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 40,
+      "text": "45",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 41,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 42,
+      "text": "林嵩等：县域创业活动、农民增收与共同富裕",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 43,
+      "text": "（四）稳健性检验",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 44,
+      "text": "本文进行了多种稳健性检验。①第一，为了进一步检验政府规模在县域创业活动与农村居民可支配收入“倒U型”关系中的调节作用，使用utest命令进行检验（吴伟伟和张天一，2021）。结果表明，政府规模调节作用的斜率呈现先正后负的特点，极值点为0.502，恰好处于95％ Fieller区间［0.292,11.651］，“倒U型”整体检验的p值为0.094，小于10％。因此，政府规模的“倒U型”调节作用得到了进一步的验证。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 45,
+      "text": "第二，为了避免因动荡（某些特殊事件导致新注册企业数大量增加）产生偏误，同时考虑到县域人口规模的影响（赵涛等，2020），本文使用县域每万人创业数，即每万人新注册企业数作为县域创业活动的替代性指标。结果表明，县域创业活动对于农民收入的影响仍然显著为正。此外，政府规模平方项与创业活动的交互项显著为负，进一步证明了研究结论的稳健性。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 46,
+      "text": "第三，为了排除县域农村地区之外创业活动的干扰，我们将自变量替换为县域农村创业活动，即整合到县域农村层面的新注册企业数的自然对数。从回归结果看，与前文一致。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 47,
+      "text": "第四，考虑到县域创业活动和政府规模对农民收入影响的时滞性和可能的内生性，本文将所有解释变量滞后两年，即评估前两年的创业活动、政府规模、经济发展水平等如何影响地区当年的农民收入。结果显示，本文主效应及调节效应在控制了内生性后仍然稳健。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 48,
+      "text": "五、典型案例研究",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 49,
+      "text": "本文采用纵向单案例研究方法探讨县域创业活动与农民收入之间的关系，以概括和扩展前文的发现。探索性案例研究适合于研究“如何做”的问题，相对于多案例研究，单案例研究更能解释纵向演进过程（Yin，2018）。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 50,
+      "text": "（一）案例选取",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 51,
+      "text": "本文选择义乌作为研究对象。义乌隶属浙江省金华市，面积1105平方公里，距上海260公里，距浙江省省会杭州市120公里。义乌曾经是贫困县级市，现已发展成为中国十个最富有的县级市之一。2020年义乌常住人口为185万人，外商为1.5万人，每年到义乌市场采购的外商超过50万人次。2021年义乌农民人均可支配收入为46121元，全国排名第二。《中共中央关于制定国民经济和社会发展第十四个五年规划和二O三五年远景目标的建议》中指出，推动县域经济发展，丰富乡村经济业态并扶持边远地区，巩固脱贫攻坚成果，扎实推动共同富裕。②在促进共同富裕的过程中，义乌开展了优化营商环境、培育创业活动等工作，并且取得了积极成效。尽管义乌受制于薄弱的交通条件和匮乏的地方资源，但随着契合当地实际发展情况的创业活动的发展，义乌当地的农民收入大幅提高。因此，本文所选择的义乌案例具有较典型的代表性，为深入理解创业与共同富裕的关系提供更具体的研究情境。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 52,
+      "text": "本文的案例数据主要来源于以下两个方面：一方面是政府档案统计和记录等相关的二手数据资料。这一部分数据包括《义乌县志》、《义乌国民经济和社会发展统计公报》、历年《浙江省统计年鉴》等。另一方面是笔者所在研究团队2012年在义乌开展调研活动时所收集整理的一手数据资料。调研活动的参与者包括73名农民企业家和88名政府官员、地方国有企业经理和商学教授，参与者的平均年龄为42岁。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 53,
+      "text": "① 限于篇幅，未报告稳健性检验实证结果，作者留存备索。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 54,
+      "text": "②中国政府网2020年11月3日，http：／／www．gov．cn／zhengce／2020-11／03／content＿5556991．htm。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 55,
+      "text": "52",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 56,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 57,
+      "text": "2023年第3期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 58,
+      "text": "（二）案例描述",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 59,
+      "text": "1.20世纪50-70年代",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 60,
+      "text": "义乌传统上是一个农业为主的区域，主要由山地组成，不适合大规模的种植。从20世纪50年代到70年代初，义乌农民没有多少资源（大多数人每天的生活费不到0.5元）。1963年初，全县拥有经营许可的个体商贩仅为246人。在“文革”期间，工商业登记停止，正式的个体商业趋于消失。为了养家糊口，义乌农民偷偷进行“鸡毛换糖”的易货贸易。农民用红糖从外地换来鸡毛、鸭毛，当作农田的肥料，以提高农业产量。这些从事“鸡毛换糖”的小贩可以看成义乌最初的企业家，他们发现了市场机会并促进了当地居民间的商品交换。总体来看，这一阶段义乌的创业活动是零散的，当地农民的收入也非常低。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 61,
+      "text": "2.20世纪80年代到90年代中期",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 62,
+      "text": "义乌的集贸贸易最初是从农民自发的地摊开始的。1978年底，稠城镇和廿三里镇的农民自发摆地摊，逐渐发展成为时间和地点相对固定的“路市”。1982年，义乌县政府提出了一系列开拓市场的政策，将小商品经营者视为合法的市场主体。1984年，义乌县进一步明确了“四个许可”，即“允许农民经商、允许长途通行、开放城乡市场、允许多渠道竞争”。1984年12月，义乌县投资60万元，在稠城镇新马路北端建成占地1.35万平方米的专业性小商品市场。经过几个扩张阶段，1988年，义乌第三产业比重（39.2％）首次超过第一产业和第二产业，产业结构发生了根本性变化。到1990年底，义乌小商品市场已成为中国最大的小商品批发专业市场。在整个20世纪90年代，义乌的小商品市场呈现规模化发展的态势，1992年投入使用的小商品市场共有摊位7100个。1995年，小商品城成交额达到152亿元。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 63,
+      "text": "3.20世纪90年代中期至今",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 64,
+      "text": "从1993年开始，义乌小商品城走上了股份制的发展路子，创立中国小商品股份有限公司（后改名为“商城集团”）。与此同时，市场内的一些摊主为了做大生意，自发横向联合，成立了有限责任公司。在互联网兴起的1998年，商城集团与义乌邮政局联合组建了中国小商品城互联网信息公司。20世纪90年代末，义乌已经成为辐射全国的小商品流通中心。在零售业的带动下，义乌发展了服装、林业、珠宝、毛纺、印刷、玩具等典型产业。1999年，义乌开始国际化扩张。2005年，成为全球最大的现代商品批发市场。义乌与几十个国家和地区建立了贸易渠道，义乌的影响力不断扩大。以2019年为例，全年共举办各类会展活动163个，实现进出口总额2967.8亿元，出口2867.9亿元。其中，一般贸易实现出口额509.4亿元，市场采购贸易出口额2343.5亿元。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 65,
+      "text": "（三）案例研究发现",
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "index": 66,
+      "text": "1．创业与农村减贫",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 67,
+      "text": "20世纪50年代到70年代末，中国处于计划经济时期，义乌当地农民的收入比较低。到1980年的时候，义乌当地的农民家庭人纯收入达到199元。随着小商品城的建设，农民收入有了明显改观。1984年底，全县离土经商的农民约3万人，全县社会商品零售总额达到1.77亿元。1985年农民家庭平均纯收入达502元。20世纪90年代中期，随着越来越多的人参与到小商品销售，极大提升了当地人均收入。1996年，全市个体工商户发展到52966户，注册资金达65908万元；私营企业发展到1273家，注册资金达70321万元，农村居民人均纯收入达到了4196元。进入新世纪后，随着义乌成为国际化的商品零售中心，更多的创业者汇聚这里，当地农民的收入得到进一步提升。2012年，义乌各类市场主体超过17万户，带动社会就业超90万人。2019年，全年小商品市场实现交易额4583.1亿元，市场经营户数7.89万户，农村居民人均纯收入达到了42158元。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 68,
+      "text": "不过，创业对于农民收入的作用在一定程度上有所降低。由于无法直接获得小商品零售的数",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 69,
+      "text": "53",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 70,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 71,
+      "text": "2023年第3期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 72,
+      "text": "指标在评估中被排到了最后。这一结果表明，就参与调研的人群来看，他们认为义乌的发展，特别是在减贫方面，最重要的影响因素还是个体企业家的作用，相对来看，政府的直接影响并不明显。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 73,
+      "text": "六、结论与启示",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 74,
+      "text": "本文基于企业工商注册信息和县域宏观数据，构建了1749个县级行政区的非平衡面板数据，通过分析得到了如下结论。第一，县域创业活动有利于增加农民收入，尤其表现为小微型企业和公司制企业的创业活动。不同产业及行业创业活动的积极效果都得到了证明。进一步研究发现，县域创业活动有助于缩小城乡收入差距。机制研究的结果表明，提升当地非农就业水平与推动非农产业发展是县域创业减贫增收的重要机制。第二，政府规模对创业的减贫效果具有“倒U型”的调节作用，即小规模政府有助于创业活动发挥减贫增收的功能，而政府规模的过度扩张会阻碍这一进程。进一步的分析表明，在欠发达地区（尤其是中西部县域、未开通高铁的县域和非电子商务示范县域），创业增收的效果及创业与政府的交互作用更加明显。基于上述研究结论，可以得到如下政策启示：",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 75,
+      "text": "首先，县域创业活动不仅能够帮助农民增收，还能逐步缩小城乡收入差距，充分显示出县域创业对共同富裕的积极影响。展望2035年的远景目标，期望全体人民共同富裕取得更实质性的进展，不能忽视城乡中国背景下低收入群体收入的提升，其中的关键仍是提高农民收入（李实和朱梦冰，2022；史新杰等，2022）。在针对整体样本、东部及中西部县域的研究中，创业活动的增收作用都得到了证实。因此，以农村为主体的县域应大力鼓舞和支持创业活动，以实现积极的减贫作用。这也响应了习近平总书记提出的促进共同富裕的原则之一“提高就业创业能力，增强致富本领。”①",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 76,
+      "text": "其次，创业活动的减贫作用存在地区差异。因此，创业活动的积极倡导要基于区域异质性的特征予以有针对性的设计。相对于发达地区，欠发达地区（中西部县域、未开通高铁县域及非电子商务示范县域）创业活动的增收模式更显著，这说明县域创业活动在一定程度上是“普惠性”的致富之路。在未开通高铁地区及电子商务不发达的地区，县域创业活动仍发挥着助农增收的积极作用。因此，应注重上述地区营商环境的建设，营造创业的良好氛围，持续提供有针对性的帮助和指导，疏解企业创业过程中的难点、痛点，更好地发挥县域创业活动提高就业水平和推动产业发展的作用，实现真正的普惠价值。在高铁开通地区和电子商务发达地区，当地创业活动没有呈现出明显的增收效应，并不代表当地营商软硬环境的建设是无效的。上述地区更应利用好县域优势，积极培育特色产业，与当地有利的营商环境紧密结合，挖掘县域创业企业吸纳就业的能力，保障低收入群体能够切实有效地从当地的创业活动中获益，进而促进共同富裕。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 77,
+      "text": "最后，基层政府的指导和帮助仍是欠发达县域经济发展的主导力量，是乡村振兴的基石。在电子商务不发达的地区，政府力量与当地创业活动更多地是互补关系。因此，为了促进县域创业活动的发展，政府需要更重视营造良好的县域环境，积极建设和完善有利于创业活动的各项软硬件设施，开展多种技能培训项目，帮助农民创造更多的创业就业机会。在中西部及未开通高铁地区，政府的双刃剑效应仍然十分明显。因此，政府在积极发挥正面作用的同时，也要避免政府力量的过度膨胀，响应国务院办公厅做好“放管服”改革工作的号召，坚持放管结合，将资源配置职能更多地交予市场，简政放权，在偏远的县域农村地区发挥出创业活动普惠性的特点和巨大潜力，促进增收和共同富裕，为全球减贫事业贡献中国力量。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 78,
+      "text": "① 习近平，202t《扎实推动共同富裕》，《求是》第20期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 79,
+      "text": "55",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 80,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 81,
+      "text": "林嵩等：县域创业活动、农民增收与共同富裕",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 82,
+      "text": "参考文献",
+      "heading_level": 1
+    },
+    {
+      "kind": "paragraph",
+      "index": 83,
+      "text": "包群、但佳丽，2021《网络地位、共享商业关系与大客户占比》，《经济研究》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 84,
+      "text": "陈东、秦子洋，2022《人工智能与包容性增长-来自全球工业机器人使用的证据》，《经济研究》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 85,
+      "text": "范定祥、廖进中、杨金强，2012《排污约束下企业的投资与定价》，《系统工程理论与实践》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 86,
+      "text": "高帆、石磊，2009《中国各省份劳动生产率增长的收敛性：1978-2006年》，《管理世界》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 87,
+      "text": "葛顺奇、李川川、林乐，202t《外资退出与中国价值链关联：基于外资来源地的研究》，《世界经济》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 88,
+      "text": "郭熙保、罗知，2008《贸易自由化、经济增长与减轻贫困-基于中国省际数据的经验研究》，《管理世界》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 89,
+      "text": "郭熙保、周强，2016《长期多维贫困、不平等与致贫因素》，《经济研究》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 90,
+      "text": "郭咏琳、周延风，202t《从外部帮扶到内生驱动：少数民族BoP实现包容性创新的案例研究》，《管理世界》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 91,
+      "text": "黄祖辉、宋文豪、叶春辉、胡伟斌，2022《政府支持农民工返乡创业的县域经济增长效应-基于返乡创业试点政策的考察》，《中国农村经济》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 92,
+      "text": "康传坤、文强、楚天舒，2020《房子还是儿子？-房价与出生性别比》，《经济学（季刊）第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 93,
+      "text": "黎凯、叶建芳，2007《财政分权下政府干预对债务融资的影响-基于转轨经济制度背景的实证分析》，《管理世界》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 94,
+      "text": "李青原、肖泽华，2020《异质性环境规制工具与企业绿色创新激励-来自上市企业绿色专利的证据》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 95,
+      "text": "李实、朱梦冰，2022《推进收入分配制度改革促进共同富裕实现》，《管理世界》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 96,
+      "text": "李永友，202t《省以下多样化放权策略与经济增长》，《经济研究》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 97,
+      "text": "李政、杨思莹，2017．《创业能否缩小收入分配差距？-基于省级面板数据的分析》，《经济社会体制比较》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 98,
+      "text": "刘蓉、李娜，202t《地方债务密集度攀升的乘数和双重挤出效应研究》，《管理世界》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 99,
+      "text": "吕冰洋、陈怡心、詹静楠，2022《政府预算管理、征税行为与企业经营效率》，《经济研究》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 100,
+      "text": "毛捷、吕冰洋、陈佩霞，2018《分税的事实：度量中国县级财政分权的数据基础》，《经济学（季刊）》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 101,
+      "text": "莫怡青、李力行，2022《零工经济对创业的影响-以外卖平台的兴起为例，《管理世界》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 102,
+      "text": "单德朋、余港，2020《农户创业与贫困减缓》，《财贸研究第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 103,
+      "text": "史新杰、李实、陈天之、方师乐，2022《机会公平视角的共同富裕-来自低收入群体的实证研究》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 104,
+      "text": "斯晓夫、严雨姗、傅颖，2020《创业减贫前沿理论研究与未来方向》，《管理世界》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 105,
+      "text": "宋科、刘家琳、李宙甲，2022《数字普惠金融能缩小县域城乡收入差距吗？-兼论数字普惠金融与传统金融的协同效应》，《中国软科学》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 106,
+      "text": "孙久文、张静、李承璋、卢怡贤，2019《我国集中连片特困地区的战略判断与发展建议》，《管理世界》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 107,
+      "text": "田松青，2010《农民工返乡创业的政府支持体系研究》，《中国行政管理》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 108,
+      "text": "万广华、罗知、张勋、汪晨，2022《城乡分割视角下中国收入不均等与消费关系研究》，《经济研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 109,
+      "text": "万海远，202t《城市社区基础设施投资的创业带动作用》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 110,
+      "text": "汪德华、邹杰、毛中根，2019《“扶教育之贫”的增智和增收效应-对20世纪90年代“国家贫困地区义务教育工程”的评估》，《经济研究》第9期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 111,
+      "text": "汪海粟、姜玉勇，2014《个体工商户的行业分布、生存状态及其或然走向》，《改革》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 112,
+      "text": "汪琼、李栋栋、王克敏，2020《营商“硬环境”与公司现金持有：基于市场竞争和投资机会的研究》，《会计研究》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 113,
+      "text": "汪阳洁、黄浩通、强宏杰、黄季焜，2022《交易成本、销售渠道选择与农产品电子商务发展），《经济研究》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 114,
+      "text": "王奇、牛耕、赵国昌，2021《电子商务发展与乡村振兴：中国经验》，《世界经济》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 115,
+      "text": "王胜、屈阳、王琳、余娜、何佳晓，202t《集中连片贫困山区电商扶贫的探索及启示-以重庆秦巴山区、武陵山区国家级贫困区县为例》，《管理世界》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 116,
+      "text": "温涛、朱炯、王小华，2016《中国农贷的“精英俘获”机制：贫困县与非贫困县的分层比较），《经济研究第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 117,
+      "text": "文雁兵，2014《政府规模的扩张偏向与福利效应-理论新假说与实证再检验》，《中国工业经济》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 118,
+      "text": "文雁兵、张梦婷、俞峰，2022《中国交通基础设施的资源再配置效应》，《经济研究第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 119,
+      "text": "吴伟伟、张天一，202t《非研发补贴与研发补贴对新创企业创新产出的非对称影响研究》，《管理世界》，第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 120,
+      "text": "谢绚丽、沈艳、张皓星、郭峰，2018《数字金融能促进创业吗？-来自中国的证据》，《经济学（季刊）》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 121,
+      "text": "辛宇、宋沛欣、徐莉萍、滕飞，2022《经营投资问责与国有企业规范化运作-基于高管违规视角的经验证据》，《管理世界》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 122,
+      "text": "熊小林、李拓，2018《基本公共服务、财政分权与县域经济发展），《统计研究》第2期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 123,
+      "text": "杨灿明，202t《中国战胜农村贫困的百年实践探索与理论创新》，《管理世界》第11期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 124,
+      "text": "余壮雄、杨扬，2014《市场向西、政治向东-中国国内资本流动方向的测算》，《管理世界》第6期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 125,
+      "text": "张光利、薛慧丽、林嵩，2022《IPO事件对地区创业活动的影响研究》，财经研究》第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 126,
+      "text": "56",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 127,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 128,
+      "text": "2023年第3期",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 129,
+      "text": "张俊，2017《高铁建设与县域经济发展-基于卫星灯光数据的研究》，《经济学（季刊）》第4期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 130,
+      "text": "张睿、张勋、戴若尘，2018《基础设施与企业生产率：市场扩张与外资竞争的视角》，《管理世界》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 131,
+      "text": "张璇、刘贝贝、汪婷、李春涛，2017《信贷寻租、融资约束与企业创新》，《经济研究第5期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 132,
+      "text": "张勋、万广华、张佳佳、何宗樾，2019《数字经济、普惠金融与包容性增长》，《经济研究》第8期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 133,
+      "text": "赵林梦、胡支军、2020《突发事件冲击下基于或有支付机制的创投融资决策》，《经济数学》第3期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 134,
+      "text": "赵涛、张智、梁上坤，2020《数字经济、创业活跃度与高质量发展-来自中国城市的经验证据》，《管理世界》第10期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 135,
+      "text": "周方召、刘文革，2013《宏观视角下的企业家精神差异化配置与经济增长-一个文献述评》，《金融研究》第12期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 136,
+      "text": "朱奕蒙、毕青苗、徐现祥、陈希路，2022《商事制度改革与产业结构变迁：微观视角》，《经济研究》第1期。",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 137,
+      "text": "Alvarez,S. A.,J. B. Barney,and A. M. Newman,2015,\"The Poverty Problem and the Industrialization Solution\",Asia Pacific Journal of Management,32(1),23-37.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 138,
+      "text": "Armey, R. K., 1995, The Freedom Revolution:The New Republican House Majority Leader Tells Why Big Government Failed,Why Freedom Works,and How We Will Rebuild America,Washington,D.C.:Regnery Publishing,Inc.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 139,
+      "text": "Audretsch,D. B.,M.Belitski, F. Chowdhury, and S. Desai, 2021, \"Necssity or Opportunity? Govemment Size,Tax Policy, Corruption, and Implications for Entrepreneurship\", Small Business Economics, 58(4), 2025-2042.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 140,
+      "text": "Bruton, G. D., S. A. Zahra, and L. Cai, 2018, Examining Entrepreneurship Through Indigenous Lenses\",Entrepreneurship Theory and Practice, 42(3), 351-361.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 141,
+      "text": "Chang,Q.,Y.Zhou,G.Liu,D.Wang,and X. Zhang,2021,\"How Does Government Intervention Afeet the Formation of Zombie Firms\",Economic Modelling,94,768-779.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 142,
+      "text": "Chowdhury, F., D. B. Audretsch, and M. Belitski, 2019, \"Institutions and Entrepreneurship Quality\",Entrepreneurship Theory and Practice,43(1),51-81.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 143,
+      "text": "Lin,S.,C.Winkler, S.Wang,and H. Chen, 2020, \"Regional Determinants of Poverty Alleviation Through Entrepreneurship in China\",Entrepreneurship & Regional Detelopment, 32(1-2), 41-62.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 144,
+      "text": "Matos, S., and J. Hall, 2020,\"An Exploratory Study of Entrepreneurs in Impoverished Communities:When Institutional Factors and Individual Characteristics Result in Non-Productive Entrepreneurship\",Entrepreneurship & Regional Detelopment,32(1-2),134-155.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 145,
+      "text": "Michael,S. C.,and J. A. Pearce, 2009, \"The Need for Innovation as a Rationale for Government Involvement in Entrepreneurship\", Entrepreneurship & Regional Development, 21(3), 285-302.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 146,
+      "text": "Mohabir,N., Y. Jiang,and R. Ma, 2017, \"Chinese Floating Migrants:Rural-Urban Migrant Labourers'Intentions to Stay or Return\", Habitat International, 60, 101-110.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 147,
+      "text": "Moore, E. M., L. A. Dau, and J. Doh, 2020, \"Does Monetary Aid Catalyse New Business Creation? Analysing the Impact of Global Aid Flows on Formal and Informal Entrepreneurship,Journal of Management Studies, 57(3), 438-469.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 148,
+      "text": "Naminse, E. Y., J. Zhuang, and F. Zhu, 2018, \"The Relaion Between Entrepreneurship and Rural Poverty Alleviation in China\", Management Decision,57,2593-2611.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 149,
+      "text": "Nguyen,C. P.,and T. D. Su,2022\"The Influences of Govemment Spending on Energy Poverty: Evidence from Developing Countries\",Energy,238,121785.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 150,
+      "text": "A.Wu,S.Chen, S. Chen, and Y. Su, 2015, Entrepreneurship and Poverty Reduction:A Case Study of Yiwu, China\",Asia Pacific Journa of Management, 32, 119-143.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 151,
+      "text": "Sutter,C., G. D. Bruton, and J. Chen,2019, \"Entrepreneurship as a Solution to Extreme Poverty: A Review and Future Research Directions\", Journal of Business Venturing,34(1),197-214.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 152,
+      "text": "Wu,J.,and S. Si,2018, \"Poverty Reduction Through Entrepreneurship: Incentives,Social Networks,and Sustainability\",Asian Business &Management,17(4),243-259.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 153,
+      "text": "Yin, R. K., 2018, Case Study Research and Applications: Design and Methods(Sixth Edition),Los Angeles: SAGE Publications,Inc.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 154,
+      "text": "Zhang,H.,K. Y.Qiu,G.Chan,S.Wang,D. Zhou, and X. Ren,2020, \"Solar Photovoltaic Interventions Have Reduced Rural Poverty in China\",Nature Communications,11(1),1-10.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 155,
+      "text": "Zhang,M.,L.Ma, B. Zhang,and Z. Yi, 2016, Pyramidal Structure, Political Intervention and Firms Tax Burden:Evidence from Chinas Local SOEs\",Journal of Corporate Finance, 36, 15-25.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 156,
+      "text": "57",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 157,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 158,
+      "text": "林 嵩等：县域创业活动、农民增收与共同富裕",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 159,
+      "text": "County-level Entrepreneurship, Farmers'Income Increase",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 160,
+      "text": "and Common Prosperity: An Empirical Study Based on Chinese",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 161,
+      "text": "County-level Data",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 162,
+      "text": "LIN Song,GU Chengying\", SI Xiaofub and YAN Yushanb",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 163,
+      "text": "(a: School of Business, Central University of Finance and Economics;",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 164,
+      "text": "b:School of Management,Zhejiang University)",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 165,
+      "text": "Summary: Common prosperty,the fundamental principle of socialism with Chinese characteristics,is seen as the ultimate goal and unswerving pursuit of the whole nation. In China, wher rural residents take up a large proportion of the low-income population with the fact that farmers are generally underpaid, it is imperative to increase their income which serves as the basic requirement and material guarantee for attaining the objective.Given the experiences along this arduous march, entrepreneurship,by every means a significance for povrty reduction,boosted economic growth,technological development and social progress. So, whether it is still applicable to county areas,where critical for tackling Three Rural Issues(of agriculture,rural areas and rural people) and for rural vitalization in China, is worth analyzing. In addition, based on the reality that the Chinese government is a central player in all aspects of society,the literature has pointed out its importance in the past, especially given the relationship between entrepreneurship and regional development.In rural areas,the role is way much prominent,with the local government's promotion and guidance being the cornerstone of rural revitalization and the leading force in boosting the countys economy.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 166,
+      "text": "On account of the analysis above and the existing research, an empirical analysis has been conducted on the relationship between county-level entrepreneurship and rural residents'disposable income,after applying unbalanced panel data on 1,749 county-level administrative regions in China from 2000-2017.Having mitigating the endogeneity by two-stage least squares(2SLS),the study found that:(1) county-level entrepreneurship is conducve to increasing farmers' incomes which can be manifested in entrepreneurial activities of all kinds, especially in those of small and micro enterprises and corporate enterprises. With promotion of employment and industries served as two important mechanisms, it also helps narrow the income gap between urban and rural areas. (2) the size of government determines an “inverted U-shaped”moderating effect on the level of poverty alleviation by entrepreneurship. If the size is originally on a small scale,the effect of poverty alleviation by entrepreneurship increases as it expands. However, the expansion would reduce the effect once the size reaches a certain level.(3) the role of entrepreneurship and government is markedly heterogeneous. Entrepreneurial activity exerts a more significant effect on local farmers'incomes in the central and western counties,as well as in counties without high-speed rail and e-commerce demonstration programme, both of which show a more pronounced degree of combined effect of county-level entrepreneurship and government size.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 167,
+      "text": "The paper contributes in three aspects:(1) It confirms the fact with macro-level county data that entrepreneurial",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 168,
+      "text": "activity boosts poverty reduction while narrowing income cap between urban and rural areas and clarifies the different effects",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 169,
+      "text": "of specific entrepreneurial activities in terms of their size,type and sector on farmers'incomes. In addition,it further",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 170,
+      "text": "explores the important mechanisms through which county entrepreneurial activities play an income-generating role. All of",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 171,
+      "text": "the results above enrich the literature on regional entrepreneurship and provide theoretical implication for poverty",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 172,
+      "text": "alleviation,income growth and common prosperity in rural China. (2) It identifies thejoint role of entrepreneurship and",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 173,
+      "text": "government in promoting income growth among rural residents. With tests for heterogeneity across different types of",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 174,
+      "text": "counties,the findings reveal that the role is more pronounced in less developed regions,suggesting that county-level",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 175,
+      "text": "entrepreneurship boosting income growth is to some extent a 'universal' path to prosperity, and that the more",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 176,
+      "text": "underdeveloped a region is,the more crucial the role of government undertakes.These push forward the research on the role",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 177,
+      "text": "of government in entrepreneurship and render insights into the role of entrepreneurship and government.(3) It probes the",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 178,
+      "text": "distinctive entrepreneurial paths of specific regions for income growth based on case studies,setting a more concrete",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 179,
+      "text": "research context for a deeper understanding of the relationship between entrepreneurship and common prosperity,as well as",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 180,
+      "text": "providing referable theoretical findings for the relationship between government and the market.",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 181,
+      "text": "Keywords: County-level Entrepreneurship;Farmers'Income;Common Prosperity;Government Size",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 182,
+      "text": "JEL Classification:M13,O15,H11",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 183,
+      "text": "（责任编辑：王利娜）（校对：王红梅）",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 184,
+      "text": "58",
+      "heading_level": null
+    },
+    {
+      "kind": "paragraph",
+      "index": 185,
+      "text": "(C)1994-2023 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net",
+      "heading_level": null
+    }
+  ]
+}
