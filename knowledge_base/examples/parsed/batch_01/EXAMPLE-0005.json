@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0005",
-  "source_sha256": "dbafca462fb234b1a53d95115d71c391cf369dd5cd92dcecbb549305a3a71d16",
+  "source_sha256": "5811ea8f9c83a68a1131f26318d40b6f5f23bfd8add4cddaa3d9d0cab3a9284d",
   "topic_hint": "企业社会责任与公司价值＊",
   "paper_type": "empirical",
   "method_tags": [
@@ -9,7 +9,7 @@
     "问卷调查"
   ],
   "clean_units": 134,
-  "replacement_count": 1,
+  "replacement_count": 6,
   "units": [
     {
       "kind": "paragraph",
@@ -62,7 +62,7 @@
     {
       "kind": "paragraph",
       "index": 8,
-      "text": "＊史永东、王淏淼，东北财经大学金融科技学院、应用金融研究中心和金融学院，邮政编码：116025，电子信箱：ydshi＠263．net，XXXXXXXXXX＠qq．com。本文研究得到国家自然科学基金项目（71971046,72172029）和国家社会科学基金重大项目（19ZDA094）的资助。作者感谢甄红线教授、张博辉教授、赵永刚和宋明勇的宝贵建议，感谢中证指数有限公司给予数据支持，感谢匿名审稿专家的建设性意见。当然，文责自负。",
+      "text": "＊史永东、王淏淼，某高校、应用金融研究中心和金融学院，邮编：XXXXXX，电子信箱：email@redacted，email@redacted。本文研究得到国家自然科学基金项目（71971046,72172029）和国家社会科学基金重大项目（19ZDA094）的资助。作者感谢甄红线教授、张博辉教授、赵永刚和宋明勇的宝贵建议，感谢中证指数有限公司给予数据支持，感谢匿名审稿专家的建设性意见。当然，文责自负。",
       "heading_level": null
     },
     {
@@ -770,13 +770,13 @@
     {
       "kind": "paragraph",
       "index": 125,
-      "text": "(a:School of Fintech,Dongbei University of Finance and Economics;",
+      "text": "(a:School of Fintech,XX University of Finance and Economics;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 126,
-      "text": "b:School of Finance,Dongbei University of Finance and Economics)",
+      "text": "b:School of Finance,XX University of Finance and Economics)",
       "heading_level": null
     },
     {

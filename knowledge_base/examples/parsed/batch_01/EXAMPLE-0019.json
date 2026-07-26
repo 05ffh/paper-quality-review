@@ -1,11 +1,11 @@
 {
   "paper_id": "EXAMPLE-0019",
-  "source_sha256": "b1d25131d684c52bf2e3ad0f9975a92ec743a2ca7e916167d0744569cda121d3",
+  "source_sha256": "0a9f643f475665514e42e96f8a1b021e7353b4eae23075984b956f7bed175f4a",
   "topic_hint": "数字经济与实体经济融合发展的理论探索",
   "paper_type": "theoretical",
   "method_tags": [],
   "clean_units": 92,
-  "replacement_count": 0,
+  "replacement_count": 2,
   "units": [
     {
       "kind": "paragraph",
@@ -70,7 +70,7 @@
     {
       "kind": "paragraph",
       "index": 10,
-      "text": "＊陈雨露，南开大学、中国式现代化发展研究院，邮政编码：300071。",
+      "text": "＊陈雨露，南开大学、中国式现代化发展研究院，邮编：XXXXXX。",
       "heading_level": null
     },
     {
@@ -526,7 +526,7 @@
     {
       "kind": "paragraph",
       "index": 86,
-      "text": "Kuhn,T.S.,and I. Hacking,2012, The Structure of Scientific Revolutions,The University of Chicago Press.",
+      "text": "Kuhn,T.S.,and I. Hacking,2012, The Structure of Scientific Revolutions,XX University of Chicago Press.",
       "heading_level": null
     },
     {

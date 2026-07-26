@@ -1,13 +1,13 @@
 {
   "paper_id": "EXAMPLE-0012",
-  "source_sha256": "b461e3823eb6e93e8dd07c8655db27862081062ab378a3166f8f52d06506f4f8",
+  "source_sha256": "a1b078385ff2bcb149d7a3d8f5964f35d332086f8cbb198887142f898f3f81ae",
   "topic_hint": "政治经济学视域下的新质生产力及其形成发展”",
   "paper_type": "empirical",
   "method_tags": [
     "中介效应"
   ],
   "clean_units": 81,
-  "replacement_count": 0,
+  "replacement_count": 3,
   "units": [
     {
       "kind": "paragraph",
@@ -66,7 +66,7 @@
     {
       "kind": "paragraph",
       "index": 9,
-      "text": "方敏，北京大学经济学院，邮政编码：100871，电子信箱：fm＠pku．edu．cn；杨虎涛，中国社会科学院经济研究所，中国社会科学院大学经济学院，邮政编码：100836，电子信箱：86288256＠qq．com。本文系国家社科基金重大项目“促进数字经济与实体经济深度融合的政治经济学研究”（23ZDA043）的阶段性成果。",
+      "text": "方敏，某高校，邮编：XXXXXX，电子信箱：email@redacted；杨虎涛，中国社会科学院经济研究所，中国社会科学院大学经济学院，邮编：XXXXXX，电子信箱：email@redacted。本文系国家社科基金重大项目“促进数字经济与实体经济深度融合的政治经济学研究”（23ZDA043）的阶段性成果。",
       "heading_level": null
     },
     {

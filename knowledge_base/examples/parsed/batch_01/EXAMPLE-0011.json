@@ -1,13 +1,13 @@
 {
   "paper_id": "EXAMPLE-0011",
-  "source_sha256": "f101e79b6e2ef4e4aa32d2e717da29a4f2c61814b2cb95856851496059d18e46",
+  "source_sha256": "2b8a38a45671b4e5c34d833b0514e22359f45dba35027dc2248d79da9829859e",
   "topic_hint": "·新质生产力研究专稿·",
   "paper_type": "theoretical",
   "method_tags": [
     "熵值法"
   ],
   "clean_units": 72,
-  "replacement_count": 0,
+  "replacement_count": 3,
   "units": [
     {
       "kind": "paragraph",
@@ -60,7 +60,7 @@
     {
       "kind": "paragraph",
       "index": 8,
-      "text": "＊洪银兴，南京大学长江三角洲经济社会发展研究中心，邮政编码：210008，电子信箱：yinxing＠nju．edu．cn；王坤沂，南京大学经济学院，邮政编码：210008，电子信箱：929056204＠qq．com。",
+      "text": "＊洪银兴，南京大学长江三角洲经济社会发展研究中心，邮编：XXXXXX，电子信箱：email@redacted；王坤沂，某高校，邮编：XXXXXX，电子信箱：email@redacted。",
       "heading_level": null
     },
     {

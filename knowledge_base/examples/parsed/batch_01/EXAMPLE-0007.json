@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0007",
-  "source_sha256": "11a567ab6bda77be26882a6a416399366c6f3d0fc9caee5ecdc8d55d73e9efc4",
+  "source_sha256": "8f3af4d3f5db70dd02ac6fe2499eed1c52b378550527d3e0d09c32c9019261fe",
   "topic_hint": "胡增玺、马述忠：市场一体化对企业数字创新的影响",
   "paper_type": "empirical",
   "method_tags": [
@@ -10,7 +10,7 @@
     "工具变量"
   ],
   "clean_units": 161,
-  "replacement_count": 0,
+  "replacement_count": 1,
   "units": [
     {
       "kind": "paragraph",
@@ -891,7 +891,7 @@
     {
       "kind": "paragraph",
       "index": 144,
-      "text": "(China Academy of Digital Trade,Zhejiang University)",
+      "text": "(China Academy of Digital Trade,XX University)",
       "heading_level": null
     },
     {

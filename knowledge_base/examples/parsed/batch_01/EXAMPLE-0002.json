@@ -1,11 +1,11 @@
 {
   "paper_id": "EXAMPLE-0002",
-  "source_sha256": "4ec5f71ce47d2fbdfe6dcfe1ac2f20e908a63aee8a803da42af8aa0d18208e55",
+  "source_sha256": "560003e1d2166850b5d84184d0a7589396d79d98ae508a2b77b291e13f40f868",
   "topic_hint": "·新质生产力研究专稿·",
   "paper_type": "theoretical",
   "method_tags": [],
   "clean_units": 69,
-  "replacement_count": 0,
+  "replacement_count": 1,
   "units": [
     {
       "kind": "paragraph",
@@ -70,7 +70,7 @@
     {
       "kind": "paragraph",
       "index": 10,
-      "text": "＊刘伟，中国人民大学，邮政编码：100872。",
+      "text": "＊刘伟，中国人民大学，邮编：XXXXXX。",
       "heading_level": null
     },
     {

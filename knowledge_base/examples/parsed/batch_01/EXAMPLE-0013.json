@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0013",
-  "source_sha256": "292fe12826334758c4e5f3f0b4fa413ad0d818615ca258edb7cb3f280825afeb",
+  "source_sha256": "37937df5025207f2c675dddf337136af47d4c20015ef6890a043f7d4a958a57a",
   "topic_hint": "数据要素与企业创新：基于研发竞争的视角",
   "paper_type": "empirical",
   "method_tags": [
@@ -8,7 +8,7 @@
     "调节效应"
   ],
   "clean_units": 109,
-  "replacement_count": 0,
+  "replacement_count": 10,
   "units": [
     {
       "kind": "paragraph",
@@ -55,7 +55,7 @@
     {
       "kind": "paragraph",
       "index": 7,
-      "text": "＊徐翔，中央财经大学经济学院、中国互联网经济研究院，邮政编码：100081，电子信箱：seanxuxiang＠126．com；赵墨非（通讯作者），北京航空航天大学经济管理学院，邮政编码：100191，电子信箱：zhaomf．06＠gmail．com；李涛、李帅臻，中央财经大学经济学院，邮政编码：100081，电子信箱：litao＠cufe．edu．cn，lisz6778＠163．com。本文受国家社会科学基金重大项目（22＆ZD070）、北京高等学校卓越青年科学家计划（BJJWZYJH01201910034034）与国家自然科学基金青年项目（72103016）资助。作者感谢匿名审稿专家的宝贵建议。当然，文责自负。",
+      "text": "＊徐翔，某高校、中国互联网经济研究院，邮编：XXXXXX，电子信箱：email@redacted；赵墨非（通讯作者），北京航空航天大学经济管理学院，邮编：XXXXXX，电子信箱：zhaomf．email@redacted；李涛、李帅臻，某高校，邮编：XXXXXX，电子信箱：email@redacted，email@redacted。本文受国家社会科学基金重大项目（22＆ZD070）、北京高等学校卓越青年科学家计划（BJJWZYJH01201910034034）与国家自然科学基金青年项目（72103016）资助。作者感谢匿名审稿专家的宝贵建议。当然，文责自负。",
       "heading_level": null
     },
     {
@@ -379,7 +379,7 @@
     {
       "kind": "paragraph",
       "index": 61,
-      "text": "Arrow, K., 1962a \"Economic Welfare and the Allocation of Resources\", in R. Nelson, ed.,The Rate and Direction of Inventive Activity,Princeton University Press, Princeton, N.J. US.",
+      "text": "Arrow, K., 1962a \"Economic Welfare and the Allocation of Resources\", in R. Nelson, ed.,The Rate and Direction of Inventive Activity,XX University Press, Princeton, N.J. US.",
       "heading_level": null
     },
     {
@@ -409,7 +409,7 @@
     {
       "kind": "paragraph",
       "index": 66,
-      "text": "Brynjolfsson,E.,and K. McElheran, 2016a \"Data in Action: Data-driven Decision Making in US Manufacturing\",Rotman School of Management Working Paper.",
+      "text": "Brynjolfsson,E.,and K. McElheran, 2016a \"Data in Action: Data-driven Decision Making in US Manufacturing\",XX University of Management Working Paper.",
       "heading_level": null
     },
     {
@@ -433,7 +433,7 @@
     {
       "kind": "paragraph",
       "index": 70,
-      "text": "Eeckhout, J., and L. Veldkamp, 2021, \"Data and Market Powe\",Columbia University Working Paper.",
+      "text": "Eeckhout, J., and L. Veldkamp, 2021, \"Data and Market Powe\",XX University Working Paper.",
       "heading_level": null
     },
     {
@@ -505,7 +505,7 @@
     {
       "kind": "paragraph",
       "index": 82,
-      "text": "Nelson, R. R., and S. G. Winter, 1982, An Evoutionary Theory of Economic Change, Harvard University Press,Cambridge US.",
+      "text": "Nelson, R. R., and S. G. Winter, 1982, An Evoutionary Theory of Economic Change, XX University Press,Cambridge US.",
       "heading_level": null
     },
     {
@@ -559,19 +559,19 @@
     {
       "kind": "paragraph",
       "index": 91,
-      "text": "(a:School of Economics, Central University of Finance and Economics;",
+      "text": "(a:School of Economics, XX University of Finance and Economics;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 92,
-      "text": "b:China Center for Internet Economy Research, Central University of Finance and Economics;",
+      "text": "b:China Center for Internet Economy Research, XX University of Finance and Economics;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 93,
-      "text": "c: School of Economics and Management, Beihang University)",
+      "text": "c: School of Economics and Management, XX University)",
       "heading_level": null
     },
     {

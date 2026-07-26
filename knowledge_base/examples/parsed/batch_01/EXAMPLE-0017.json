@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0017",
-  "source_sha256": "425d7a892581a8ae59410eeb3789f92031e398e5c98044f42927d1e96c9a58f6",
+  "source_sha256": "fcd2fee658cb5abb4015681547a065c82fd2cead1c3de9f1d246cf9a64bcda32",
   "topic_hint": "共同机构持股与企业ESG表现＊",
   "paper_type": "empirical",
   "method_tags": [
@@ -8,7 +8,7 @@
     "工具变量"
   ],
   "clean_units": 109,
-  "replacement_count": 0,
+  "replacement_count": 5,
   "units": [
     {
       "kind": "paragraph",
@@ -61,7 +61,7 @@
     {
       "kind": "paragraph",
       "index": 8,
-      "text": "雷雷，西南财经大学会计学院，邮政编码：611130，电子信箱：lei＿lei＠swufe．edu．cn；张大永，西南财经大学经济与管理研究院，邮政编码：611130，电子信箱：dzhang＠swufe．edu．cn；姬强（通讯作者），中国科学院科技战略咨询研究院，邮政编码：100190，电子信箱：jqwxnjq＠163．com。本文研究得到国家自然科学基金专项项目（72348003）、国家自然科学优秀青年基金项目（72022020）、国家自然科学基金面上项目（71974159、71974181）的资助。作者感谢匿名审稿专家提供的建设性建议。当然，文责自负。",
+      "text": "雷雷，某高校，邮编：XXXXXX，电子信箱：lei＿email@redacted；张大永，西南财经大学经济与管理研究院，邮编：XXXXXX，电子信箱：email@redacted；姬强（通讯作者），中国科学院科技战略咨询研究院，邮编：XXXXXX，电子信箱：email@redacted。本文研究得到国家自然科学基金专项项目（72348003）、国家自然科学优秀青年基金项目（72022020）、国家自然科学基金面上项目（71974159、71974181）的资助。作者感谢匿名审稿专家提供的建设性建议。当然，文责自负。",
       "heading_level": null
     },
     {
@@ -601,13 +601,13 @@
     {
       "kind": "paragraph",
       "index": 96,
-      "text": "(a:School of Accounting,Southwestern University of Finance and Economics;",
+      "text": "(a:School of Accounting,XX University of Finance and Economics;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 97,
-      "text": "b:Research Institute of Economics and Management, Southwestern University of Finance and Economics;",
+      "text": "b:XX University of Economics and Management, XX University of Finance and Economics;",
       "heading_level": null
     },
     {

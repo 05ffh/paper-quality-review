@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0016",
-  "source_sha256": "333e4bc5731cd2186a96d453fb6ab1ba658b7ead4d5e875f00f45fd64f7621fd",
+  "source_sha256": "4b822f777fb2acd4f0e065d2e1883f7962a251834ce8a2ec8bcb1f61e13805ea",
   "topic_hint": "客户企业数字化、供应商企业ESG表现",
   "paper_type": "empirical",
   "method_tags": [
@@ -10,7 +10,7 @@
     "工具变量"
   ],
   "clean_units": 128,
-  "replacement_count": 0,
+  "replacement_count": 6,
   "units": [
     {
       "kind": "paragraph",
@@ -63,7 +63,7 @@
     {
       "kind": "paragraph",
       "index": 8,
-      "text": "肖红军，中国社会科学院工业经济研究所，邮政编码：100006，电子信箱：xiaohjxiaohj＠126．com；沈洪涛，暨南大学管理学院、暨南大学人与自然生命共同体重点实验室，邮政编码：510632，电子信箱：tshenht＠jnu．edu．cn；周艳坤（通讯作者），北京工商大学商学院，邮政编码：100048，电子信箱：zykruc＠163．com。本研究得到国家社会科学基金重大项目（20＆ZD073）、国家社会科学基金重点项目（21AGL003）、中国社会科学院登峰战略企业管理优势学科建设项目以及北京工商大学数字商科与首都发展创新中心项目（SZSK202313）的资助。作者感谢匿名审稿专家提供的建设性意见。当然，文责自负。",
+      "text": "肖红军，中国社会科学院工业经济研究所，邮编：XXXXXX，电子信箱：email@redacted；沈洪涛，某高校、暨南大学人与自然生命共同体重点实验室，邮编：XXXXXX，电子信箱：email@redacted；周艳坤（通讯作者），某高校，邮编：XXXXXX，电子信箱：email@redacted。本研究得到国家社会科学基金重大项目（20＆ZD073）、国家社会科学基金重点项目（21AGL003）、中国社会科学院登峰战略企业管理优势学科建设项目以及北京工商大学数字商科与首都发展创新中心项目（SZSK202313）的资助。作者感谢匿名审稿专家提供的建设性意见。当然，文责自负。",
       "heading_level": null
     },
     {
@@ -729,19 +729,19 @@
     {
       "kind": "paragraph",
       "index": 117,
-      "text": "b:School of Management,Jinan University;",
+      "text": "b:School of Management,XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 118,
-      "text": "c:Key Laboratory of Philosophy and Social Science in Guangdong Province,Jinan University;",
+      "text": "c:Key Laboratory of Philosophy and Social Science in Guangdong Province,XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 119,
-      "text": "d:Business School,Beijing Technology and Business University)",
+      "text": "d:XX University,Beijing Technology and XX University)",
       "heading_level": null
     },
     {

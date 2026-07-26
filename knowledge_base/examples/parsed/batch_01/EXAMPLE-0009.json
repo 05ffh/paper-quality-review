@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0009",
-  "source_sha256": "d64d2ca7aee5996d6b6db1dea2fd1c80f309d5ef94ae048a21cdf2e0002d3a6f",
+  "source_sha256": "855c36efc59b5fd2b3700a3b922b1d0602a7b8cf11298f1b50f901d5632807a3",
   "topic_hint": "企业ESG表现与创新",
   "paper_type": "empirical",
   "method_tags": [
@@ -9,7 +9,7 @@
     "问卷调查"
   ],
   "clean_units": 130,
-  "replacement_count": 0,
+  "replacement_count": 4,
   "units": [
     {
       "kind": "paragraph",
@@ -62,7 +62,7 @@
     {
       "kind": "paragraph",
       "index": 8,
-      "text": "＊方先明、胡丁（通讯作者），南京大学商学院，邮政编码：210093，电子信箱：huding＠smail．nju．ed．cn。本研究得到江苏高校哲学社会科学研究重大项目（2020SJZDA049）的资助。作者感谢匿名审稿专家提出的宝贵意见，文责自负。",
+      "text": "＊方先明、胡丁（通讯作者），某高校，邮编：XXXXXX，电子信箱：email@redacted。本研究得到江苏高校哲学社会科学研究重大项目（2020SJZDA049）的资助。作者感谢匿名审稿专家提出的宝贵意见，文责自负。",
       "heading_level": null
     },
     {
@@ -740,7 +740,7 @@
     {
       "kind": "paragraph",
       "index": 120,
-      "text": "(Business School,Nanjing University)",
+      "text": "(XX University,XX University)",
       "heading_level": null
     },
     {

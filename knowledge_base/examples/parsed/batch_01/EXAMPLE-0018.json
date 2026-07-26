@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0018",
-  "source_sha256": "56c972fcfd7708b2e7e03be937831846b9a06995f152efb8c0254195ca472d90",
+  "source_sha256": "5969687f43c963024682a6707da0704adc96e683204fd8adcaa9890c6411c59e",
   "topic_hint": "吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应",
   "paper_type": "empirical",
   "method_tags": [
@@ -8,7 +8,7 @@
     "工具变量"
   ],
   "clean_units": 87,
-  "replacement_count": 0,
+  "replacement_count": 4,
   "units": [
     {
       "kind": "paragraph",
@@ -469,25 +469,25 @@
     {
       "kind": "paragraph",
       "index": 73,
-      "text": "(a:School of Management,Xiamen University;",
+      "text": "(a:School of Management,XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 74,
-      "text": "b:Center for Accounting Studies,Xiamen University;",
+      "text": "b:Center for Accounting Studies,XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 75,
-      "text": "c: School of Economics & Management,Nanchang University;",
+      "text": "c: School of Economics & Management,XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 76,
-      "text": "d:Institute for Financial & Accounting Studies,Xiamen University)",
+      "text": "d:Institute for Financial & Accounting Studies,XX University)",
       "heading_level": null
     },
     {

@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0006",
-  "source_sha256": "f31cb98e4f31ae8441b23a74a9c0cce9a656068d03c5b958b2c01f737c8bea42",
+  "source_sha256": "cf8219d8e46aeaff42eb95699fc774569121b4134f4230b16598caba80bc1f77",
   "topic_hint": "方福前等：数字基础设施与代际收入向上流动性",
   "paper_type": "empirical",
   "method_tags": [
@@ -11,7 +11,7 @@
     "问卷调查"
   ],
   "clean_units": 130,
-  "replacement_count": 0,
+  "replacement_count": 4,
   "units": [
     {
       "kind": "paragraph",
@@ -700,7 +700,7 @@
     {
       "kind": "paragraph",
       "index": 112,
-      "text": "Solon,G.,2004,“A Model of Intergenerational Mobility Variation over Time and Place\",Generational Income Mobility in North America and Europe,Cambridge University Press,Cambridge,UK.",
+      "text": "Solon,G.,2004,“A Model of Intergenerational Mobility Variation over Time and Place\",Generational Income Mobility in North America and Europe,XX University Press,Cambridge,UK.",
       "heading_level": null
     },
     {
@@ -736,19 +736,19 @@
     {
       "kind": "paragraph",
       "index": 118,
-      "text": "(a:School of Economics,Renmin University of China;b:School of Economics,",
+      "text": "(a:School of Economics,XX University of China;b:School of Economics,",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 119,
-      "text": "Capital University of Economics and Business;c:School of Statistics,Beijing",
+      "text": "XX University of Economics and Business;c:School of Statistics,Beijing",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 120,
-      "text": "Normal University;d:Institutes of Digital Finance,Peking University)",
+      "text": "XX University;d:Institutes of Digital Finance,XX University)",
       "heading_level": null
     },
     {

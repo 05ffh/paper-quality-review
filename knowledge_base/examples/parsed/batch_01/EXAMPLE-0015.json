@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0015",
-  "source_sha256": "7017d150ed45c6a322cdfe04a4661b919a7bfb704c08b89f767499cb7e4efc18",
+  "source_sha256": "fc407799902427ad1b423679672e5e002e6f053667bf7c886a4d495366e008fd",
   "topic_hint": "ESG绿色溢出、供应链传导与企业绿色创新＊",
   "paper_type": "empirical",
   "method_tags": [
@@ -10,7 +10,7 @@
     "工具变量"
   ],
   "clean_units": 152,
-  "replacement_count": 1,
+  "replacement_count": 8,
   "units": [
     {
       "kind": "paragraph",
@@ -57,7 +57,7 @@
     {
       "kind": "paragraph",
       "index": 7,
-      "text": "＊严兵，南开大学跨国公司研究中心、南开大学经济行为与政策模拟实验室，邮政编码：300071，电子信箱：yanbing＠nankai．edu．cn；程敏、王乃合，南开大学经济学院，邮政编码：300071，电子信箱：XXXXXXXXXX＠mail．nankai．edu．cn，naihew＠nankai．edu．cn。本文研究得到国家社会科学基金重大项目（23ZDA057）的资助。作者感谢匿名审稿专家提供的建设性意见，文责自负。",
+      "text": "＊严兵，南开大学跨国公司研究中心、南开大学经济行为与政策模拟实验室，邮编：XXXXXX，电子信箱：email@redacted；程敏、王乃合，某高校，邮编：XXXXXX，电子信箱：email@redacted，email@redacted。本文研究得到国家社会科学基金重大项目（23ZDA057）的资助。作者感谢匿名审稿专家提供的建设性意见，文责自负。",
       "heading_level": null
     },
     {
@@ -783,7 +783,7 @@
     {
       "kind": "paragraph",
       "index": 128,
-      "text": "Spence,M., 1974,Market Signaling:Informational Transfer in Hiring and Related Sereening Processes,Harvard University Press.",
+      "text": "Spence,M., 1974,Market Signaling:Informational Transfer in Hiring and Related Sereening Processes,XX University Press.",
       "heading_level": null
     },
     {
@@ -855,19 +855,19 @@
     {
       "kind": "paragraph",
       "index": 140,
-      "text": "(a:Center for Transnationals'Studies,Nankai University;",
+      "text": "(a:Center for Transnationals'Studies,XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 141,
-      "text": "b:The Laboratory for Economic Behaviors and Policy Simulation,Nankai University;",
+      "text": "b:The Laboratory for Economic Behaviors and Policy Simulation,XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 142,
-      "text": "c:School of Economics,Nankai University)",
+      "text": "c:School of Economics,XX University)",
       "heading_level": null
     },
     {

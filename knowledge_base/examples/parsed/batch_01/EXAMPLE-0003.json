@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0003",
-  "source_sha256": "dfe46634c6bb8da0412c1536ecc7afc8dd6d5d93deb59fa9e55f4fadd95c2c83",
+  "source_sha256": "27f12bb3827688c1ec98a1ce5dc58ca4bde2a70744da6f94c3bc2fb740339f2a",
   "topic_hint": "碳排放规制、企业减排激励与全要素生产率",
   "paper_type": "empirical",
   "method_tags": [
@@ -9,7 +9,7 @@
     "调节效应"
   ],
   "clean_units": 130,
-  "replacement_count": 1,
+  "replacement_count": 5,
   "units": [
     {
       "kind": "paragraph",
@@ -62,7 +62,7 @@
     {
       "kind": "paragraph",
       "index": 8,
-      "text": "＊胡珺、方祺，海南大学管理学院，邮政编码：570228，电子信箱：jnuhujun＠163．com，fq138XXXXXXXX＠163．com；龙文滨（通讯作者），广东外语外贸大学会计学院，邮政编码：510006，电子信箱：songri2000＠126．com。本研究得到国家自然科学基金青年项目（71902050）、国家自然科学基金面上项目（72072045）、国家自然科学基金地区科学基金项目（72062012）及海南省自然科学基金高层次人才项目（722RC640）资助。作者感谢匿名审稿专家提供的建设性意见。当然，文责自负。",
+      "text": "＊胡珺、方祺，海南大学管理学院，邮编：XXXXXX，电子信箱：email@redacted，email@redacted；龙文滨（通讯作者），某高校，邮编：XXXXXX，电子信箱：email@redacted。本研究得到国家自然科学基金青年项目（71902050）、国家自然科学基金面上项目（72072045）、国家自然科学基金地区科学基金项目（72062012）及海南省自然科学基金高层次人才项目（722RC640）资助。作者感谢匿名审稿专家提供的建设性意见。当然，文责自负。",
       "heading_level": null
     },
     {
@@ -740,7 +740,7 @@
     {
       "kind": "paragraph",
       "index": 121,
-      "text": "(a:School of Management, Hainan University; b: School of Accounting,Guangdong University of Foreign Studies) Summary:Exploring sustainable sources of economic growth has long been an important research topic in economics.Over the past 40 years of China's development, the resource reallocation effect of the labor factor in the dual economic structure and the “demographic dividend” formed by the surplus of labor factors have made great contributions to China's economic growth.However,with the gradual fading of the “demographic dividend” and the prominent problem of environmental pollution,the endogenous driving force of China's economic development needs to change from labor-intensive to total factor productivity (TFP) support. In order to achieve green, low-carbon,and sustainable development,China announced the launch of the pilot construction of Carbon Emission Trading System(CETS) at the end of October 2011. Since 2013, eight pilot carbon markets have been established in three provinces and five cties,including Shenzhen,Shanghai,Beijing, Guangdong, Hubei,Tianjin,Chongqing and Fujian,to carry out carbon emission rights trading.",
+      "text": "(a:School of Management, XX University; b: School of Accounting,XX University of Foreign Studies) Summary:Exploring sustainable sources of economic growth has long been an important research topic in economics.Over the past 40 years of China's development, the resource reallocation effect of the labor factor in the dual economic structure and the “demographic dividend” formed by the surplus of labor factors have made great contributions to China's economic growth.However,with the gradual fading of the “demographic dividend” and the prominent problem of environmental pollution,the endogenous driving force of China's economic development needs to change from labor-intensive to total factor productivity (TFP) support. In order to achieve green, low-carbon,and sustainable development,China announced the launch of the pilot construction of Carbon Emission Trading System(CETS) at the end of October 2011. Since 2013, eight pilot carbon markets have been established in three provinces and five cties,including Shenzhen,Shanghai,Beijing, Guangdong, Hubei,Tianjin,Chongqing and Fujian,to carry out carbon emission rights trading.",
       "heading_level": null
     },
     {

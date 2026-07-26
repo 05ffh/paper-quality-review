@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0014",
-  "source_sha256": "0e89a497f49b002429c5cb2e47092ed31fb25ccb2c46674421f148d572b1bb8f",
+  "source_sha256": "f114d46da3eff939f20d891da04aa726fa2d6bda69653fcaf8e0e38158e4ce34",
   "topic_hint": "县域创业活动、农民增收与共同富裕",
   "paper_type": "empirical",
   "method_tags": [
@@ -10,7 +10,7 @@
     "工具变量"
   ],
   "clean_units": 186,
-  "replacement_count": 1,
+  "replacement_count": 7,
   "units": [
     {
       "kind": "paragraph",
@@ -69,7 +69,7 @@
     {
       "kind": "paragraph",
       "index": 9,
-      "text": "＊林嵩、谷承应（通讯作者），中央财经大学商学院，邮政编码：100081，电子信箱：linsong1998＠126．com，email@example.com;斯晓夫、严雨姗，浙江大学管理学院，邮政编码：310058，电子信箱：sixiaofu＠zju．edu．cn，yanyushan＠zju．edu．cn。本研究是国家自然科学基金项目（72072192）的阶段性成果。作者感谢匿名审稿专家的宝贵建议，当然文责自负。",
+      "text": "＊林嵩、谷承应（通讯作者），某高校，邮编：XXXXXX，电子信箱：email@redacted，email@redacted;斯晓夫、严雨姗，某高校，邮编：XXXXXX，电子信箱：email@redacted，email@redacted。本研究是国家自然科学基金项目（72072192）的阶段性成果。作者感谢匿名审稿专家的宝贵建议，当然文责自负。",
       "heading_level": null
     },
     {
@@ -993,13 +993,13 @@
     {
       "kind": "paragraph",
       "index": 163,
-      "text": "(a: School of Business, Central University of Finance and Economics;",
+      "text": "(a: School of Business, XX University of Finance and Economics;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 164,
-      "text": "b:School of Management,Zhejiang University)",
+      "text": "b:School of Management,XX University)",
       "heading_level": null
     },
     {

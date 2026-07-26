@@ -1,11 +1,11 @@
 {
   "paper_id": "EXAMPLE-0004",
-  "source_sha256": "87ff35f0de0d64abadc0c0534a6bd35fd5c72d970ff305000a08f38185cdac68",
+  "source_sha256": "7de352d75cc4d69ac4a1e529908969c72841b5459995f594ed1721f8c4f1a6a4",
   "topic_hint": "生产力现代化转型形成新质生产力的逻辑＊",
   "paper_type": "theoretical",
   "method_tags": [],
   "clean_units": 58,
-  "replacement_count": 0,
+  "replacement_count": 2,
   "units": [
     {
       "kind": "paragraph",
@@ -58,7 +58,7 @@
     {
       "kind": "paragraph",
       "index": 8,
-      "text": "＊任保平，南京大学数字经济与管理学院，邮政编码：215163，电子信箱：xdrbp＠126．com。",
+      "text": "＊任保平，南京大学数字经济与管理学院，邮编：XXXXXX，电子信箱：email@redacted。",
       "heading_level": null
     },
     {

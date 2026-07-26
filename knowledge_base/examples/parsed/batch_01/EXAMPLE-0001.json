@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0001",
-  "source_sha256": "d7ea16bf379db60239c73780604e3683fc7ac752d00029520c4e2cd90bb0e8fc",
+  "source_sha256": "a940c30a39377a5bacbc65455f897a25decfdb63690b14971aa3033f36010221",
   "topic_hint": "企业数字化转型的测度难题：",
   "paper_type": "empirical",
   "method_tags": [
@@ -8,7 +8,7 @@
     "调节效应"
   ],
   "clean_units": 201,
-  "replacement_count": 0,
+  "replacement_count": 6,
   "units": [
     {
       "kind": "paragraph",
@@ -61,7 +61,7 @@
     {
       "kind": "paragraph",
       "index": 8,
-      "text": "＊金星晔、左从江、李涛，中央财经大学经济学院；方明月（通讯作者），中国农业大学经济管理学院，邮政编码：100083，电子信箱：fmingyue＠163．com；聂辉华，中国人民大学经济学院。本研究是国家社科基金重大项目（22＆ZD070）、国家自然科学基金项目（72002213,72273144）、中央财经大学青年科研创新团队支持计划和科教融合研究生学术新星孵化计划的阶段性成果。作者感谢匿名审稿人的有益建议，文责自负。",
+      "text": "＊金星晔、左从江、李涛，某高校；方明月（通讯作者），某高校，邮编：XXXXXX，电子信箱：email@redacted；聂辉华，某高校。本研究是国家社科基金重大项目（22＆ZD070）、国家自然科学基金项目（72002213,72273144）、中央财经大学青年科研创新团队支持计划和科教融合研究生学术新星孵化计划的阶段性成果。作者感谢匿名审稿人的有益建议，文责自负。",
       "heading_level": null
     },
     {
@@ -1153,19 +1153,19 @@
     {
       "kind": "paragraph",
       "index": 189,
-      "text": "(a: School of Economics, Central University of Financial and Economics;",
+      "text": "(a: School of Economics, XX University of Financial and Economics;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 190,
-      "text": "b: College of Economics and Management, China Agricultural University;",
+      "text": "b: College of Economics and Management, XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 191,
-      "text": "c:School of Economics,Renmin University of China)",
+      "text": "c:School of Economics,XX University of China)",
       "heading_level": null
     },
     {

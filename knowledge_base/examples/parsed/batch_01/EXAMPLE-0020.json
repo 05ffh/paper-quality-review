@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0020",
-  "source_sha256": "f989ac374b05840a95c03b9d0058d101c9c460543bbbc651f2ba5130753c45ba",
+  "source_sha256": "72c5a74bc62bfa97ece86cf07ec77654bf469c846ce528c690d9d8b322178333",
   "topic_hint": "ESG的就业效应研究：来自中国上市公司的证据＊",
   "paper_type": "empirical",
   "method_tags": [
@@ -8,7 +8,7 @@
     "中介效应"
   ],
   "clean_units": 161,
-  "replacement_count": 0,
+  "replacement_count": 6,
   "units": [
     {
       "kind": "paragraph",
@@ -49,7 +49,7 @@
     {
       "kind": "paragraph",
       "index": 6,
-      "text": "＊毛其淋，南开大学跨国公司研究中心、南开大学经济行为与政策模拟实验室，邮政编码：300071，电子信箱：maoqilin＠nankai．edu．cn；王玥清（通讯作者），南开大学经济学院，邮政编码：300071，电子信箱：wangyq＿nku＠163．com。本文研究得到国家自然科学基金项目（72073074,72203110）、国家社会科学基金重点项目（22AZD054）、霍英东教育基金会高等院校青年教师基金项目（171075）的资助。作者感谢匿名审稿专家的宝贵意见，文责自负。",
+      "text": "＊毛其淋，南开大学跨国公司研究中心、南开大学经济行为与政策模拟实验室，邮编：XXXXXX，电子信箱：email@redacted；王玥清（通讯作者），某高校，邮编：XXXXXX，电子信箱：wangyq＿email@redacted。本文研究得到国家自然科学基金项目（72073074,72203110）、国家社会科学基金重点项目（22AZD054）、霍英东教育基金会高等院校青年教师基金项目（171075）的资助。作者感谢匿名审稿专家的宝贵意见，文责自负。",
       "heading_level": null
     },
     {
@@ -829,19 +829,19 @@
     {
       "kind": "paragraph",
       "index": 135,
-      "text": "(a:Center for Transnationals'Studies,Nankai University;",
+      "text": "(a:Center for Transnationals'Studies,XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 136,
-      "text": "b:Economic Behavior and Policy Simulation laboratory,Nan Kai University;",
+      "text": "b:Economic Behavior and Policy Simulation laboratory,XX University;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 137,
-      "text": "c:School of Economics,Nankai University)",
+      "text": "c:School of Economics,XX University)",
       "heading_level": null
     },
     {

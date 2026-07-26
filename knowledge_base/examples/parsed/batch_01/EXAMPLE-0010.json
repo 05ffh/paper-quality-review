@@ -1,6 +1,6 @@
 {
   "paper_id": "EXAMPLE-0010",
-  "source_sha256": "ca825e0ddcce97f4a9cd44b7525aef86ec53050fdff44427aaf9d3c6411d3d76",
+  "source_sha256": "dea176891b7fe1a831d86f77b4cb62a343fbfee3e4e4e9a96691c0b9a9fb246f",
   "topic_hint": "知识产权行政保护与企业数字化转型＊",
   "paper_type": "empirical",
   "method_tags": [
@@ -11,7 +11,7 @@
     "问卷调查"
   ],
   "clean_units": 163,
-  "replacement_count": 0,
+  "replacement_count": 5,
   "units": [
     {
       "kind": "paragraph",
@@ -52,7 +52,7 @@
     {
       "kind": "paragraph",
       "index": 6,
-      "text": "＊甄红线、王玺、方红星，东北财经大学会计学院、中国内部控制研究中心，邮政编码：116025，电子信箱：zhx223＠163．com，wx10014870＠126．com，hxfang＠dufe．edu．cn。本文研究得到国家自然科学基金（72172029,71971046）和国家社会科学基金重大项目（19ZDA094）的资助。作者感谢第五届中国制度经济学论坛、第八届全国经济学研究生学术年会的支持。当然，文责自负。",
+      "text": "＊甄红线、王玺、方红星，某高校、中国内部控制研究中心，邮编：XXXXXX，电子信箱：email@redacted，email@redacted，email@redacted。本文研究得到国家自然科学基金（72172029,71971046）和国家社会科学基金重大项目（19ZDA094）的资助。作者感谢第五届中国制度经济学论坛、第八届全国经济学研究生学术年会的支持。当然，文责自负。",
       "heading_level": null
     },
     {
@@ -940,13 +940,13 @@
     {
       "kind": "paragraph",
       "index": 153,
-      "text": "(a:School of Accounting, Dongbei University of Finance and Economics;",
+      "text": "(a:School of Accounting, XX University of Finance and Economics;",
       "heading_level": null
     },
     {
       "kind": "paragraph",
       "index": 154,
-      "text": "b:China Internal Control Research Center, Dongbei University of Finance and Economics)",
+      "text": "b:China Internal Control Research Center, XX University of Finance and Economics)",
       "heading_level": null
     },
     {
