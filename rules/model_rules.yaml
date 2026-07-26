@@ -476,6 +476,11 @@ model_rule_trigger_guard:
   - 正文仅出现内生性问题，不足以触发 IV。
   - 正文仅出现机制分析，不足以触发中介效应模型。
   - 正文仅出现调查数据，不足以触发自编问卷信度效度规则。
+  positive_trigger_examples:
+  - 正文出现线性回归方程（y=ax+b 形式）或明确声明"使用OLS/最小二乘/多元回归"→ 必须触发 model_ols_rules，不得标为 N/A。
+  - 正文出现"回归结果""回归分析""基准回归"等章节标题且含系数表→ 必须触发 model_ols_rules（除非已确认使用 Logit/Probit/面板模型等替代方法）。
+  - 正文对连续被解释变量做回归且未声明使用非线性模型→ 必须触发 model_ols_rules 通用实证检查（至少 MM-GEN-001/002/004/005）。
+  positive_trigger_guard: "若 detected_methods 含 OLS/多元线性回归/线性回归 任一项，或 paper_text 中出现形如 'Y = β0 + β1X' 的方程，则 model_ols_rules 组必须标记为 triggered，不得进入 not_applicable。仅当论文明确声明使用面板固定效应/Logit/Probit 等替代估计方法时方可标 N/A。"
 model_rule_evaluation_order:
 - 确认是否为实证论文。
 - 执行通用实证规则。

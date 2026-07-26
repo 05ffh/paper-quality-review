@@ -74,6 +74,42 @@ def validate_diagnostic_result(path: Path) -> tuple[bool, list[str]]:
         if "text" not in p or not p.get("text"):
             errors.append(f"pass_item[{i}]({p.get('id','?')})缺 text")
 
+    # P6-P7: priority_actions 类型校验（必须为对象列表，不能是字符串）
+    priority_actions = data.get("priority_actions", []) or []
+    if not isinstance(priority_actions, list):
+        errors.append("priority_actions 不是 list")
+    else:
+        for i, pa in enumerate(priority_actions):
+            if isinstance(pa, str):
+                errors.append(
+                    f"priority_actions[{i}] 是字符串'{pa[:40]}...'，必须是对象 "
+                    f"{{priority, action, issue_ref, expected}}"
+                )
+            elif isinstance(pa, dict):
+                for f in ("priority", "action", "issue_ref", "expected"):
+                    if f not in pa or pa.get(f) in (None, ""):
+                        errors.append(f"priority_actions[{i}]缺字段: {f}")
+            else:
+                errors.append(f"priority_actions[{i}]类型错误: {type(pa).__name__}")
+
+    # P6: manual_confirmation_items 字段校验
+    manual_items = data.get("manual_confirmation_items", []) or []
+    if not isinstance(manual_items, list):
+        errors.append("manual_confirmation_items 不是 list")
+    else:
+        mc_required = ["id", "item", "location", "reason", "how_to_check"]
+        for i, mc in enumerate(manual_items):
+            if not isinstance(mc, dict):
+                errors.append(
+                    f"manual_confirmation_items[{i}] 不是对象而是 {type(mc).__name__}"
+                )
+                continue
+            for f in mc_required:
+                if f not in mc or mc.get(f) in (None, ""):
+                    errors.append(
+                        f"manual_confirmation_items[{i}]({mc.get('id','?')})缺字段: {f}"
+                    )
+
     return (len(errors) == 0, errors)
 
 # ---------- 分项检查 ----------
