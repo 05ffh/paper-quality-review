@@ -1,0 +1,8 @@
+{
+  "batch": "batch_01",
+  "started_at": "2026-07-26T07:30:37.819108+00:00",
+  "papers": [],
+  "total_chunks": 0,
+  "skipped_idempotent": 20,
+  "ended_at": "2026-07-26T07:30:37.941196+00:00"
+}

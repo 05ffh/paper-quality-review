@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0019
-source_sha256: c56ebdc79ff9012b5a9cb0e64aebef178b4a6d341a998a84ad5524634f6e38c0
-topic_hint: 数字经济与实体经济融合（理论）
+source_sha256: b1d25131d684c52bf2e3ad0f9975a92ec743a2ca7e916167d0744569cda121d3
+topic_hint: 数字经济与实体经济融合发展的理论探索
 paper_type: theoretical
 method_tags: []
-batch: batch_04
-chunk_count: 82
-clean_units: 87
-replacement_count: 6
+batch: batch_01
+chunk_count: 85
+clean_units: 92
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:19:27.131590+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:28:06.666313+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

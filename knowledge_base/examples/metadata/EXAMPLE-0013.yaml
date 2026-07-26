@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0013
-source_sha256: 3d9e755d49108d1d0a85833ad0613371075c5ebb5d51793a1bf1fa16be3af49b
-topic_hint: 县域创业与农民增收共同富裕
+source_sha256: 292fe12826334758c4e5f3f0b4fa413ad0d818615ca258edb7cb3f280825afeb
+topic_hint: 数据要素与企业创新：基于研发竞争的视角
 paper_type: empirical
-method_tags: [panel, did]
-batch: batch_03
-chunk_count: 166
-clean_units: 176
-replacement_count: 14
+method_tags: [中介效应, 调节效应]
+batch: batch_01
+chunk_count: 107
+clean_units: 109
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:09:57.659181+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:40.687524+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0008
-source_sha256: 5365d50b875cfc78752b15d1ec0a0ab4af4eb5819dc1a08b4d29d460e662d7f3
-topic_hint: 市场一体化与数字创新
+source_sha256: 532848aa276f097559732c05c7486b250f840346c525e8596d6e69fa2b7de608
+topic_hint: 黄勃等：数字技术创新与中国企业高质量发展
 paper_type: empirical
-method_tags: [did, panel]
-batch: batch_02
-chunk_count: 143
-clean_units: 149
-replacement_count: 12
+method_tags: [面板模型]
+batch: batch_01
+chunk_count: 95
+clean_units: 98
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:09:00.366452+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:21.789843+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

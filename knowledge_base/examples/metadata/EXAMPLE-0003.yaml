@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0003
-source_sha256: 2251ec0e3c65a33f483f7696b6e257315997f1288ba3b877dd20c2d316bd2595
-topic_hint: 政治经济学新质生产力
-paper_type: theoretical
-method_tags: []
+source_sha256: dfe46634c6bb8da0412c1536ecc7afc8dd6d5d93deb59fa9e55f4fadd95c2c83
+topic_hint: 碳排放规制、企业减排激励与全要素生产率
+paper_type: empirical
+method_tags: [DID, 面板模型, 调节效应]
 batch: batch_01
-chunk_count: 72
-clean_units: 74
-replacement_count: 16
+chunk_count: 128
+clean_units: 130
+replacement_count: 1
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:08:12.525509+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:01.673393+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

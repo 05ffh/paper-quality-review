@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0009
-source_sha256: 156ac149aacd4956c54e08cf13c7f80682caf54195b84d46fc8a2b05e7d3bb8c
+source_sha256: d64d2ca7aee5996d6b6db1dea2fd1c80f309d5ef94ae048a21cdf2e0002d3a6f
 topic_hint: 企业ESG表现与创新
 paper_type: empirical
-method_tags: [panel]
-batch: batch_02
-chunk_count: 116
-clean_units: 120
-replacement_count: 12
+method_tags: [中介效应, 调节效应, 问卷调查]
+batch: batch_01
+chunk_count: 125
+clean_units: 130
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:09:07.107406+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:26.867091+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

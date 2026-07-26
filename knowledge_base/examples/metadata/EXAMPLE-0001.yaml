@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0001
-source_sha256: a74dff7854c9ad0fbe975380d41c039eaf6520638e69b85fa9996a9075ff50f7
-topic_hint: 新质生产力理论
-paper_type: theoretical
-method_tags: []
+source_sha256: d7ea16bf379db60239c73780604e3683fc7ac752d00029520c4e2cd90bb0e8fc
+topic_hint: 企业数字化转型的测度难题：
+paper_type: empirical
+method_tags: [中介效应, 调节效应]
 batch: batch_01
-chunk_count: 67
-clean_units: 63
-replacement_count: 7
+chunk_count: 174
+clean_units: 201
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:07:59.949518+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:26:53.594286+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

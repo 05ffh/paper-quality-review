@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0004
-source_sha256: 26e5ffc0b2b5868497385740a50f90453a39545bf109da003e8038f634d4de16
-topic_hint: 数字基础设施与代际流动
-paper_type: empirical
-method_tags: [did, mediation]
+source_sha256: 87ff35f0de0d64abadc0c0534a6bd35fd5c72d970ff305000a08f38185cdac68
+topic_hint: 生产力现代化转型形成新质生产力的逻辑＊
+paper_type: theoretical
+method_tags: []
 batch: batch_01
-chunk_count: 119
-clean_units: 120
-replacement_count: 10
+chunk_count: 53
+clean_units: 58
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:08:19.817125+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:04.576763+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

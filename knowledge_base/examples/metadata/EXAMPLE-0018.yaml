@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0018
-source_sha256: 3af608a6f467303f40691184455a933f6070664282dbdd2a837654552a2f123f
-topic_hint: 政府引导基金与关键核心技术创新
+source_sha256: 56c972fcfd7708b2e7e03be937831846b9a06995f152efb8c0254195ca472d90
+topic_hint: 吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应
 paper_type: empirical
-method_tags: [did, panel]
-batch: batch_04
-chunk_count: 80
-clean_units: 78
-replacement_count: 9
+method_tags: [中介效应, 工具变量]
+batch: batch_01
+chunk_count: 88
+clean_units: 87
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:19:20.827729+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:28:03.789564+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

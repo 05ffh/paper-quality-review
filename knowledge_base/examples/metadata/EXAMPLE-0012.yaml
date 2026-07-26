@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0012
-source_sha256: 25466119b65ef3daed699ab4fa6b0e38e935f4907245ff8ed6ad472ca83d86dd
-topic_hint: 生产力现代化转型与新质生产力
-paper_type: theoretical
-method_tags: []
-batch: batch_03
-chunk_count: 50
-clean_units: 50
-replacement_count: 9
+source_sha256: b461e3823eb6e93e8dd07c8655db27862081062ab378a3166f8f52d06506f4f8
+topic_hint: 政治经济学视域下的新质生产力及其形成发展”
+paper_type: empirical
+method_tags: [中介效应]
+batch: batch_01
+chunk_count: 75
+clean_units: 81
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:09:50.081107+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:37.662375+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

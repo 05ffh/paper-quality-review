@@ -1,0 +1,109 @@
+{
+  "batch": "batch_01",
+  "started_at": "2026-07-26T07:26:48.015544+00:00",
+  "papers": [
+    {
+      "paper_id": "EXAMPLE-0001",
+      "chunks": 174,
+      "topic_hint": "企业数字化转型的测度难题："
+    },
+    {
+      "paper_id": "EXAMPLE-0002",
+      "chunks": 69,
+      "topic_hint": "·新质生产力研究专稿·"
+    },
+    {
+      "paper_id": "EXAMPLE-0003",
+      "chunks": 128,
+      "topic_hint": "碳排放规制、企业减排激励与全要素生产率"
+    },
+    {
+      "paper_id": "EXAMPLE-0004",
+      "chunks": 53,
+      "topic_hint": "生产力现代化转型形成新质生产力的逻辑＊"
+    },
+    {
+      "paper_id": "EXAMPLE-0005",
+      "chunks": 130,
+      "topic_hint": "企业社会责任与公司价值＊"
+    },
+    {
+      "paper_id": "EXAMPLE-0006",
+      "chunks": 126,
+      "topic_hint": "方福前等：数字基础设施与代际收入向上流动性"
+    },
+    {
+      "paper_id": "EXAMPLE-0007",
+      "chunks": 151,
+      "topic_hint": "胡增玺、马述忠：市场一体化对企业数字创新的影响"
+    },
+    {
+      "paper_id": "EXAMPLE-0008",
+      "chunks": 95,
+      "topic_hint": "黄勃等：数字技术创新与中国企业高质量发展"
+    },
+    {
+      "paper_id": "EXAMPLE-0009",
+      "chunks": 125,
+      "topic_hint": "企业ESG表现与创新"
+    },
+    {
+      "paper_id": "EXAMPLE-0010",
+      "chunks": 149,
+      "topic_hint": "知识产权行政保护与企业数字化转型＊"
+    },
+    {
+      "paper_id": "EXAMPLE-0011",
+      "chunks": 63,
+      "topic_hint": "·新质生产力研究专稿·"
+    },
+    {
+      "paper_id": "EXAMPLE-0012",
+      "chunks": 75,
+      "topic_hint": "政治经济学视域下的新质生产力及其形成发展”"
+    },
+    {
+      "paper_id": "EXAMPLE-0013",
+      "chunks": 107,
+      "topic_hint": "数据要素与企业创新：基于研发竞争的视角"
+    },
+    {
+      "paper_id": "EXAMPLE-0014",
+      "chunks": 173,
+      "topic_hint": "县域创业活动、农民增收与共同富裕"
+    },
+    {
+      "paper_id": "EXAMPLE-0015",
+      "chunks": 142,
+      "topic_hint": "ESG绿色溢出、供应链传导与企业绿色创新＊"
+    },
+    {
+      "paper_id": "EXAMPLE-0016",
+      "chunks": 126,
+      "topic_hint": "客户企业数字化、供应商企业ESG表现"
+    },
+    {
+      "paper_id": "EXAMPLE-0017",
+      "chunks": 100,
+      "topic_hint": "共同机构持股与企业ESG表现＊"
+    },
+    {
+      "paper_id": "EXAMPLE-0018",
+      "chunks": 88,
+      "topic_hint": "吴超鹏、严泽浩：政府基金引导与企业核心技术突破：机制与效应"
+    },
+    {
+      "paper_id": "EXAMPLE-0019",
+      "chunks": 85,
+      "topic_hint": "数字经济与实体经济融合发展的理论探索"
+    },
+    {
+      "paper_id": "EXAMPLE-0020",
+      "chunks": 143,
+      "topic_hint": "ESG的就业效应研究：来自中国上市公司的证据＊"
+    }
+  ],
+  "total_chunks": 2302,
+  "skipped_idempotent": 0,
+  "ended_at": "2026-07-26T07:28:11.050142+00:00"
+}

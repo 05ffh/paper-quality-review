@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0014
-source_sha256: 2f2177b19d4c1c46a29de0f53ed466006e6d7561442b0d49898920ca950f6331
-topic_hint: 数据要素与企业创新
+source_sha256: 0e89a497f49b002429c5cb2e47092ed31fb25ccb2c46674421f148d572b1bb8f
+topic_hint: 县域创业活动、农民增收与共同富裕
 paper_type: empirical
-method_tags: [theoretical_model]
-batch: batch_03
-chunk_count: 101
-clean_units: 102
-replacement_count: 11
+method_tags: [面板模型, 中介效应, 调节效应, 工具变量]
+batch: batch_01
+chunk_count: 173
+clean_units: 186
+replacement_count: 1
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:10:04.178623+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:44.680733+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0010
-source_sha256: cde260a3a4a9696f1de04a3cc1fcd6b0e2a571648907e3b944e989b83d1d4815
-topic_hint: ESG风险溢价与公司价值
+source_sha256: ca825e0ddcce97f4a9cd44b7525aef86ec53050fdff44427aaf9d3c6411d3d76
+topic_hint: 知识产权行政保护与企业数字化转型＊
 paper_type: empirical
-method_tags: [asset_pricing]
-batch: batch_02
-chunk_count: 125
-clean_units: 123
-replacement_count: 13
+method_tags: [DID, 面板模型, 调节效应, 工具变量, 问卷调查]
+batch: batch_01
+chunk_count: 149
+clean_units: 163
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:09:16.130230+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:31.063842+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

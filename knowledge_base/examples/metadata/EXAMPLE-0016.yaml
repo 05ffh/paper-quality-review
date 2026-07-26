@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0016
-source_sha256: 20b97c176d8c19edff677b8f895aafd00cfeefaab8178a49e9a35a85c3a9acdd
-topic_hint: 客户企业数字化与供应商ESG
+source_sha256: 333e4bc5731cd2186a96d453fb6ab1ba658b7ead4d5e875f00f45fd64f7621fd
+topic_hint: 客户企业数字化、供应商企业ESG表现
 paper_type: empirical
-method_tags: [panel]
-batch: batch_04
-chunk_count: 122
-clean_units: 121
-replacement_count: 22
+method_tags: [DID, 面板模型, 中介效应, 工具变量]
+batch: batch_01
+chunk_count: 126
+clean_units: 128
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:19:07.033811+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:54.336707+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

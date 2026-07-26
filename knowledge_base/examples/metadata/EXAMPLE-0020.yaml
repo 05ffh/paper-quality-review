@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0020
-source_sha256: ee64005edbd833631f8bd8e2c8cc6aa4ff86cc1df78492c5d7f9137d2c15b235
-topic_hint: ESG的就业效应
+source_sha256: f989ac374b05840a95c03b9d0058d101c9c460543bbbc651f2ba5130753c45ba
+topic_hint: ESG的就业效应研究：来自中国上市公司的证据＊
 paper_type: empirical
-method_tags: [panel]
-batch: batch_04
-chunk_count: 136
-clean_units: 150
-replacement_count: 13
+method_tags: [面板模型, 中介效应]
+batch: batch_01
+chunk_count: 143
+clean_units: 161
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:19:40.897693+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:28:11.043140+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

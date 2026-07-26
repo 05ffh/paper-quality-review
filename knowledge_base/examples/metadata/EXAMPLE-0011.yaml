@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0011
-source_sha256: 8884a33403663484b569245e39fc25be7478c9f0a3d0cbfab532d025bee15b4b
-topic_hint: 知识产权行政保护与企业数字化转型
-paper_type: empirical
-method_tags: [did, panel]
-batch: batch_03
-chunk_count: 140
-clean_units: 151
-replacement_count: 15
+source_sha256: f101e79b6e2ef4e4aa32d2e717da29a4f2c61814b2cb95856851496059d18e46
+topic_hint: ·新质生产力研究专稿·
+paper_type: theoretical
+method_tags: [熵值法]
+batch: batch_01
+chunk_count: 63
+clean_units: 72
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:09:41.593620+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:27:34.270938+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main

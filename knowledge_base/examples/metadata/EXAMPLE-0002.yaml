@@ -1,16 +1,16 @@
 paper_id: EXAMPLE-0002
-source_sha256: 622f2b5b92b59e40b57552269848ab120583814415867683663d8e9096ef2ca6
-topic_hint: 碳排放规制与全要素生产率
-paper_type: empirical
-method_tags: [did]
+source_sha256: 4ec5f71ce47d2fbdfe6dcfe1ac2f20e908a63aee8a803da42af8aa0d18208e55
+topic_hint: ·新质生产力研究专稿·
+paper_type: theoretical
+method_tags: []
 batch: batch_01
-chunk_count: 125
-clean_units: 126
-replacement_count: 7
+chunk_count: 69
+clean_units: 69
+replacement_count: 0
 deident_status: approved
 admission_source: online_top_journal
 admission_confirmed_by_user: true
 kb_layer: example_reference
 can_be_error_evidence: false  # 补齐清单原则 1
-ingested_at: 2026-07-11T14:08:07.559770+00:00
-embedding_model: BAAI/bge-small-zh-v1.5
+ingested_at: 2026-07-26T07:26:56.766468+00:00
+embedding_model: /home/ffh/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/snapshots/main
