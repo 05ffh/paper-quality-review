@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""batch_check.py — 经管论文智检 Skill 批量处理脚本（v1.7）
+"""batch_check.py --- 经管论文智检 Skill 批量处理脚本（v1.7）
 
 接受论文路径列表，自动执行解析→验证→汇总流水线。
 （判断层仍由 agent 完成——本脚本只做 I/O + 模板生成 + 汇总）
@@ -28,7 +28,6 @@ from datetime import datetime
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-
 def parse_paper(input_path: Path, out_dir: Path) -> Path:
     out_json = out_dir / "paper_text.json"
     script = REPO_ROOT / "scripts" / "parse_paper.py"
@@ -39,7 +38,6 @@ def parse_paper(input_path: Path, out_dir: Path) -> Path:
     if result.returncode != 0:
         raise RuntimeError(f"解析失败({input_path.name}): {result.stderr.strip()}")
     return out_json
-
 
 def generate_template(parsed_json: Path, out_dir: Path) -> Path:
     data = json.loads(parsed_json.read_text(encoding="utf-8"))
@@ -70,7 +68,6 @@ def generate_template(parsed_json: Path, out_dir: Path) -> Path:
     out.write_text(json.dumps(template, ensure_ascii=False, indent=2), encoding="utf-8")
     return out
 
-
 def validate_json(json_path: Path) -> tuple[bool, str]:
     script = REPO_ROOT / "scripts" / "self_check.py"
     result = subprocess.run(
@@ -78,7 +75,6 @@ def validate_json(json_path: Path) -> tuple[bool, str]:
         capture_output=True, text=True,
     )
     return result.returncode == 0, result.stdout.strip()
-
 
 def render_report(json_path: Path, source_path: Path, out_dir: Path) -> Path:
     out_docx = out_dir / f"经管论文智检报告_{source_path.stem}.docx"
@@ -92,9 +88,8 @@ def render_report(json_path: Path, source_path: Path, out_dir: Path) -> Path:
         raise RuntimeError(f"渲染失败({source_path.name}): {result.stderr.strip()}")
     return out_docx
 
-
 def main() -> int:
-    ap = argparse.ArgumentParser(description="批量论文质检 — 解析+模板+验证+汇总")
+    ap = argparse.ArgumentParser(description="批量论文质检 --- 解析+模板+验证+汇总")
     ap.add_argument("papers", nargs="+", help="论文 DOCX/PDF 路径（支持通配符）")
     ap.add_argument("--out", default="./batch_output", help="输出目录 (默认 ./batch_output)")
     ap.add_argument("--skip-validate", action="store_true", help="跳过 JSON 校验")
@@ -152,7 +147,6 @@ def main() -> int:
         print(f"\n📊 汇总: {csv_path} ({len(summary_rows)} 篇)")
 
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())

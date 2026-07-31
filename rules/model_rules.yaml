@@ -456,6 +456,42 @@ rules:
   - 理论框架（如5C1S）与模型结果之间缺少特征重要性桥梁
   evidence_requirement: 必须确认论文使用树模型（GBM/RF/XGBoost等），且模型结果未包含特征重要性。需指出特征重要性缺失导致无法回扣理论框架或文献综述中讨论的评分要素。
   suggestion_template: 建议在模型结果章节增加特征重要性图表或表格，展示各变量对预测的贡献度排序，并与理论框架对应讨论。
+- rule_id: MM-AHP-001
+  group_id: model_ahp_rules
+  domain: 数据、变量与口径质检 / 方法模型与实证结果质检
+  issue_type: AHP 层次分析法计算步骤不完整
+  default_level: 黄色：建议补充
+  applies_when:
+  - detected_methods contains AHP or 层次分析法 or 判断矩阵
+  inspect_locations:
+  - 指标体系
+  - AHP 层次分析法
+  - 权重计算
+  trigger_signals:
+  - 使用 AHP 但未列出判断矩阵构造依据（专家来源或文献出处）
+  - 判断矩阵未报告一致性检验（λmax、CI、RI、CR）
+  - 未说明权重计算方法和步骤
+  - 缺少综合得分计算公式
+  evidence_requirement: 必须确认论文使用 AHP 层次分析法，并引用判断矩阵与权重计算部分。需检查：(1)判断矩阵构造依据是否说明；(2)是否报告了一致性检验（CR 值）；(3)权重计算过程是否清晰。如果所有判断矩阵 CR<0.1 且数值完整呈现→可入 pass_items。
+  suggestion_template: 建议补充判断矩阵构造依据（专家来源或文献出处）、一致性检验结果（λmax、CI、RI、CR）、权重计算方法和综合得分公式。所有判断矩阵应保证 CR<0.1 通过一致性检验。
+- rule_id: MM-KMV-001
+  group_id: model_kmv_rules
+  domain: 数据、变量与口径质检 / 方法模型与实证结果质检
+  issue_type: KMV 模型参数估计与计算步骤说明不足
+  default_level: 黄色：建议补充
+  applies_when:
+  - detected_methods contains KMV or KMV模型 or KMV信用风险度量模型 or 违约距离
+  inspect_locations:
+  - 模型设定
+  - 参数估计
+  - 实证分析
+  trigger_signals:
+  - 使用 KMV 模型但未说明违约点（DP）定义与计算方式
+  - 未说明资产价值波动率（σA）的估计方法
+  - 未列出 KMV 模型推导公式（几何布朗运动→DD→EDF 全链条或至少违约距离 DD 计算）
+  - 结果解读缺少行业基准参照（如未对比穆迪 KMV 经验阈值 DD>3 为安全）
+  evidence_requirement: 必须确认论文使用 KMV 模型。需检查：(1)违约点定义；(2)波动率估计方法；(3)模型推导链条是否完整（至少 DD 计算公式）；(4)DD 到 EDF 的映射是否说明；(5)输入数据来源是否可追溯。若 DD 推导完整且数据来源清晰→可入 pass_items。若结果解读缺少行业基准参照→判绿色提醒。
+  suggestion_template: 建议补充违约点（DP）定义、资产价值波动率（σA）估计方法、完整推导公式（至少含 DD=d2 计算式），并在结果解读中对比行业经验阈值或同类研究结果区间。
 false_detection_exclusion_v2:
   description: 迭代v2误检排除记录，2026-07-15。
   exclusions:

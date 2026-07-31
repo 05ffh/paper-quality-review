@@ -95,6 +95,8 @@ rule_groups:
     - SN-STRUCT-001
     - SN-ABSTRACT-EN-002
     - SN-TABLE-FMT-001
+    - SN-REF-FMT-001
+    - SN-DENSE-PARA-001
   model_general_empirical_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
@@ -179,6 +181,16 @@ rule_groups:
     - MM-ML-003
     - MM-ML-004
     - MM-ML-005
+  model_ahp_rules:
+    domain: 数据、变量与口径质检 / 方法模型与实证结果质检
+    source: rules/model_rules.yaml
+    rule_ids:
+    - MM-AHP-001
+  model_kmv_rules:
+    domain: 数据、变量与口径质检 / 方法模型与实证结果质检
+    source: rules/model_rules.yaml
+    rule_ids:
+    - MM-KMV-001
 new_rules_v2:
   description: 迭代v2新增规则，2026-07-15。
   added_rules:
