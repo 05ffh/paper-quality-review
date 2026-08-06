@@ -39,10 +39,36 @@ RED_EXTRA_REQUIRED = ["normative_basis"]  # 红色 issue 额外必填
 REQUIRED_TOP_FIELDS = ["overall_risk_level", "summary_counts"]
 
 
-def validate_diagnostic_result(path: Path) -> tuple[bool, list[str]]:
+def _validate_with_json_schema(data: dict) -> tuple[list[str], bool]:
+    """可选：用 JSON Schema 校验 diagnostic_result.json 结构。需要 jsonschema 库。
+    返回 (错误列表, 是否实际执行了校验)。"""
+    schema_path = _REPO_ROOT / "schemas" / "diagnostic_result.schema.json"
+    if not schema_path.exists():
+        return [f"JSON Schema 文件不存在: {schema_path}"], False
+    try:
+        from jsonschema import validate, ValidationError
+    except ImportError:
+        return [], False  # 库未安装时静默跳过
+    try:
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        validate(instance=data, schema=schema)
+        return [], True
+    except ValidationError as e:
+        return [f"JSON Schema 校验失败: {e.message} (路径: {'/'.join(str(p) for p in e.absolute_path)})"], True
+    except Exception as e:
+        return [f"JSON Schema 校验异常: {e}"], True
+
+
+def validate_diagnostic_result(path: Path, use_json_schema: bool = False) -> tuple[bool, list[str]]:
     """校验 diagnostic_result.json 必填字段。返回 (通过, 错误列表)。"""
     errors: list[str] = []
     data = json.loads(path.read_text(encoding="utf-8"))
+
+    # 可选：JSON Schema 结构校验
+    json_schema_applied = False
+    if use_json_schema:
+        schema_errors, json_schema_applied = _validate_with_json_schema(data)
+        errors.extend(schema_errors)
 
     # 顶层必填
     for f in REQUIRED_TOP_FIELDS:
@@ -110,7 +136,7 @@ def validate_diagnostic_result(path: Path) -> tuple[bool, list[str]]:
                         f"manual_confirmation_items[{i}]({mc.get('id','?')})缺字段: {f}"
                     )
 
-    return (len(errors) == 0, errors)
+    return (len(errors) == 0, errors, json_schema_applied)
 
 # ---------- 分项检查 ----------
 
@@ -264,6 +290,8 @@ def main() -> int:
                     help="可选：用合成 PNG 走一次 Ark（需 ARK_API_KEY）")
     ap.add_argument("--validate", metavar="DIAGNOSTIC_JSON",
                     help="校验 diagnostic_result.json 的 Schema 合规性（阻塞性门禁）")
+    ap.add_argument("--json-schema", action="store_true",
+                    help="与 --validate 配合使用，附加 JSON Schema 结构校验（需 jsonschema 库）")
     args = ap.parse_args()
 
     # --validate 模式：只校验 Schema，不走自检流程
@@ -272,9 +300,15 @@ def main() -> int:
         if not path.exists():
             print(f"❌ 文件不存在：{path}", file=sys.stderr)
             return 2
-        passed, errors = validate_diagnostic_result(path)
+        passed, errors, js_applied = validate_diagnostic_result(path, use_json_schema=args.json_schema)
         if passed:
-            print(f"✅ Schema 校验通过：{path}")
+            msg = f"✅ Schema 校验通过：{path}"
+            if args.json_schema:
+                if js_applied:
+                    msg += "（含 JSON Schema 结构校验）"
+                else:
+                    msg += "（JSON Schema 未执行：jsonschema 库未安装，pip install jsonschema）"
+            print(msg)
             return 0
         else:
             print(f"❌ Schema 校验失败（{len(errors)} 项）：")

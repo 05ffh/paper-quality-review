@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/05ffh/econ-paper-check-skill/schemas/diagnostic_result.schema.json",
+  "title": "经管论文智检 Skill - 诊断结果 Schema",
+  "description": "Agent 产出 diagnostic_result.json 的结构化契约。与 references/issue_schema.md 和 scripts/render_report.py 实际读取字段保持一致。",
+  "type": "object",
+  "required": [
+    "paper_profile",
+    "overall_risk_level",
+    "summary_counts",
+    "issues"
+  ],
+  "properties": {
+    "paper_profile": {
+      "type": "object",
+      "description": "论文画像。由 Agent 在 trigger_plan 之前生成。",
+      "required": ["paper_type"],
+      "properties": {
+        "paper_type": {
+          "type": "string",
+          "enum": [
+            "经管类实证论文",
+            "经管类课程论文",
+            "案例分析论文",
+            "问卷调查论文",
+            "调查数据库论文",
+            "理论综述型论文",
+            "非经管类论文",
+            "不确定"
+          ]
+        },
+        "data_type": {
+          "type": "string",
+          "description": "截面数据 / 面板数据 / 时间序列 / 调查数据 / 案例材料 / 不确定"
+        },
+        "sample_object": { "type": "string" },
+        "sample_period": { "type": "string" },
+        "detected_methods": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "trigger_plan": {
+          "type": "object",
+          "properties": {
+            "triggered_rule_groups": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "not_applicable_rule_groups": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "manual_confirmation_items": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "overall_risk_level": {
+      "type": "string",
+      "enum": ["高风险", "中风险", "低风险", "需人工确认"],
+      "description": "按强制映射规则确定：红≥3→高风险，红1-2→中风险，红0且黄≤5→低风险"
+    },
+    "summary_counts": {
+      "type": "object",
+      "description": "问题计数。render_report.py 兼容 summary_counts 和 counts 两种字段名。",
+      "required": ["pass", "red", "yellow", "green", "manual", "na"],
+      "properties": {
+        "pass":    { "type": "integer", "minimum": 0 },
+        "red":     { "type": "integer", "minimum": 0 },
+        "yellow":  { "type": "integer", "minimum": 0 },
+        "green":   { "type": "integer", "minimum": 0 },
+        "manual":  { "type": "integer", "minimum": 0 },
+        "na":      { "type": "integer", "minimum": 0 }
+      }
+    },
+    "pass_items": {
+      "type": "array",
+      "description": "通过项。每个诊断域至少1项，实证论文不少于5项。",
+      "items": {
+        "type": "object",
+        "required": ["id", "domain", "text"],
+        "properties": {
+          "id":     { "type": "string", "pattern": "^PASS-\\d+$" },
+          "domain": { "type": "string" },
+          "text":   { "type": "string", "minLength": 1 },
+          "evidence": { "type": "string" }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "description": "问题列表（含红/黄/绿/灰各级）。",
+      "items": {
+        "type": "object",
+        "required": [
+          "issue_id", "rule_id", "domain", "level", "issue_type",
+          "location", "evidence", "evidence_strength", "explanation",
+          "suggestion", "confidence"
+        ],
+        "properties": {
+          "issue_id": {
+            "type": "string",
+            "description": "推荐前缀: TQ/LT/DV/MM/SN + 序号",
+            "pattern": "^(TQ|LT|DV|MM|SN)-\\d+$"
+          },
+          "rule_id": {
+            "type": "string",
+            "description": "对应规则库中的 rule_id，如 TQ-QUESTION-001",
+            "pattern": "^(TQ|LT|DV|SN|MM)-[A-Z]+(?:-[A-Z]+)*-\\d+$"
+          },
+          "domain": { "type": "string" },
+          "level": {
+            "type": "string",
+            "enum": ["红色：必改问题", "黄色：建议补充", "绿色：优化提升", "灰色：需人工确认"]
+          },
+          "issue_type": { "type": "string" },
+          "location": { "type": "string" },
+          "evidence": { "type": "string" },
+          "evidence_strength": {
+            "type": "string",
+            "enum": ["强", "中", "弱"]
+          },
+          "explanation": { "type": "string" },
+          "suggestion": { "type": "string" },
+          "confidence": {
+            "type": "string",
+            "enum": ["高", "中", "低"]
+          },
+          "need_manual_confirmation": { "type": "boolean" },
+          "normative_basis": {
+            "description": "红色 issue 必填。KB-A 规范依据。",
+            "type": "object"
+          },
+          "vision_evidence": {
+            "description": "M3 v0.3.1 视觉辅助证据块。",
+            "type": "object"
+          }
+        }
+      }
+    },
+    "not_applicable_items": {
+      "type": "array",
+      "description": "不适用规则组。trigger_plan 中判定为 not_applicable 的每项独立列出。",
+      "items": {
+        "type": "object",
+        "required": ["id", "rule_group", "reason"],
+        "properties": {
+          "id":         { "type": "string", "pattern": "^NA-\\d+$" },
+          "rule_group": { "type": "string" },
+          "reason":     { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "manual_confirmation_items": {
+      "type": "array",
+      "description": "需人工确认项。",
+      "items": {
+        "type": "object",
+        "required": ["id", "item", "location", "reason", "how_to_check"],
+        "properties": {
+          "id":           { "type": "string", "pattern": "^MC-\\d+$" },
+          "item":         { "type": "string" },
+          "location":     { "type": "string" },
+          "reason":       { "type": "string" },
+          "how_to_check": { "type": "string" }
+        }
+      }
+    },
+    "priority_actions": {
+      "type": "array",
+      "description": "优先修改行动。必须是对象列表，不得为字符串列表。",
+      "items": {
+        "type": "object",
+        "required": ["priority", "action", "issue_ref", "expected"],
+        "properties": {
+          "priority":  { "type": "integer", "minimum": 1 },
+          "action":    { "type": "string", "minLength": 1 },
+          "issue_ref": { "type": "string" },
+          "expected":  { "type": "string" }
+        }
+      }
+    }
+  }
+}

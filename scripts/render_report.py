@@ -99,7 +99,7 @@ def add_para(document: Document, text: str, bold_label: Optional[str] = None) ->
 
 
 def _issue_card(doc: Document, idx: int, f: dict) -> None:
-    add_heading(doc, f"{idx}. {f.get('issue_id', '')}｜{f.get('issue_type', '')}", 2)
+    add_heading(doc, f"{idx}. {f.get('issue_type', '')}", 2)
     rows = [
         ["项目", "内容"],
         ["问题等级", f.get("level", "")],
@@ -284,7 +284,7 @@ def write_report(result: Dict[str, object], source_name: str, output_path: Path)
                "方法模型与实证结果质检", "结构表达与学术规范质检"]
     for d in domains:
         add_heading(doc, d, 2)
-        d_issues = [f.get("issue_id", "") for f in issues if f.get("domain") == d]
+        d_issues = [f.get("issue_type", "") for f in issues if f.get("domain") == d]
         d_pass = [p.get("id", "") for p in passes if p.get("domain") == d]
         add_para(doc, "通过项编号：" + ("、".join(d_pass) if d_pass else "无"))
         add_para(doc, "问题编号：" + ("、".join(d_issues) if d_issues else "无"))
