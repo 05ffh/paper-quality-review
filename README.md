@@ -104,50 +104,23 @@ python3 scripts/self_check.py --audit-rules  # 规则一致性审计
 
 ```
 econ-paper-check-skill/
-├── SKILL.md                     Skill 入口：定位、边界、执行流程、PDF 降级策略
-├── README.md                    本文件
-├── install.sh                   一键安装脚本
-├── requirements-core.txt        核心依赖（必装）
-├── requirements-kb.txt          KB 增强依赖（可选：ChromaDB 语义搜索）
-├── requirements-vision.txt      视觉辅助依赖（可选：火山方舟 PDF 图片识别）
-├── agent_instructions/          判断协议（大模型必读）
-│   ├── evidence_requirement.md      证据要求、红色硬伤清单、三层判定
-│   ├── semantic_check_protocol.md   语义判断协议与交叉核对
-│   ├── issue_writing_protocol.md    问题写作规范与 KB 引用红线
-│   └── vision_protocol.md           视觉证据协议
-├── references/                  方法论 Schema
-│   ├── paper_profile_schema.md      论文画像结构
-│   ├── diagnostic_domains.md        五大诊断域定义
-│   ├── issue_schema.md              Issue 数据结构与字段说明
-│   └── report_structure.md          报告章节结构
-├── rules/                       规则库（YAML）
-│   ├── rule_registry.yaml           规则注册表（68 条）与能力口径
-│   ├── non_model_rules.yaml         非模型规则（35 条）
-│   └── model_rules.yaml             模型规则（33 条，含 5 条 ML）
-├── schemas/                     输出契约
-│   └── diagnostic_result.schema.json    JSON Schema 结构校验
-├── scripts/                     纯 I/O 脚本
-│   ├── doctor.py                    环境自检（4 分组：依赖/知识库/组件/视觉）
-│   ├── self_check.py                安装自检 + Schema 校验 + 规则审计
-│   ├── parse_paper.py               统一解析入口（自动派发 docx/pdf）
-│   ├── parse_docx.py                docx → paper_text.json
-│   ├── parse_pdf.py                 pdf → paper_text.json
-│   ├── render_report.py             diagnostic_result → DOCX 报告
-│   ├── render_report_html.py        diagnostic_result → HTML 预览
-│   ├── kb_query.py                  KB-A/B 双路由检索（JSONL 优先）
-│   ├── kb_common.py                 Token 化 / 隐私扫描 / 文本清洗
-│   ├── kb_ingest.py                 KB-B 论文入库与 JSONL 索引构建
-│   ├── kb_admin.py                  KB 快照 / 回滚 / 完整性自检
-│   ├── batch_check.py               批量解析 + 模板生成 + CSV 汇总
-│   └── vision/                      视觉辅助管线（dispatcher/provider/normalizer/scorer）
-├── knowledge_base/              知识库
-│   ├── norms/                       KB-A 规范层（GB/T 7714 + 伍德里奇，18 条）
-│   └── examples/index/              KB-B 范例层（JSONL 索引，2191 cards，零依赖）
+├── SKILL.md                     Skill 入口
+├── agent_instructions/          判断协议：证据要求、语义判断、写作规范、视觉协议
+├── references/                  方法论 Schema：论文画像、诊断域、Issue 结构、报告结构
+├── rules/                       规则库（68 条）：注册表 + 非模型规则 + 模型规则
+├── schemas/                     输出契约：diagnostic_result JSON Schema
+├── scripts/                     I/O 脚本：解析、渲染、KB 检索、自检、批量
+│   ├── parse_paper.py           统一解析入口（自动派发 docx/pdf）
+│   ├── render_report.py         diagnostic_result → DOCX 报告
+│   ├── kb_query.py              KB-A/B 双路由检索
+│   ├── doctor.py                环境自检
+│   ├── self_check.py            安装自检 + Schema 校验 + 规则审计
+│   └── vision/                  视觉辅助管线（可选）
+├── knowledge_base/              知识库：KB-A 规范（18条）+ KB-B 范例（2191 cards）
 ├── templates/                   报告模板
-├── examples/                    示例文件
+├── examples/                    示例
 ├── docs/                        文档
-│   └── CHECK_CATALOG.md             68 条规则人类可读索引
-├── benchmarks/                  质量基准体系（开发者用）
+├── benchmarks/                  质量基准（开发者用）
 └── tests/                       测试
 ```
 
