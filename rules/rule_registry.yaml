@@ -4,18 +4,18 @@ description: 规则注册表，负责管理规则组、触发顺序、不适用�
 
 # === 能力口径说明（对外宣称口径以本段为权威来源）===
 # 本 Skill 检测能力由三类构成，合计 71 项：
-#   A. 已注册规则 64 条（non_model_rules 33 + model_rules 31，含 ML 5 条）— agent 按条件触发执行
+#   A. 已注册规则 68 条（non_model_rules 35 + model_rules 33，含 ML 5 条）— agent 按条件触发执行
 #   B. 强制交叉核对 7 项（semantic_check_protocol.md §9bis）— agent 必须逐项执行并留痕
 #   C. 红色硬伤边界 7 条（evidence_requirement.md §9bis）— 命中则强制判红不得降级
 # 三类在报告中应分别统计并展示，不得混为一谈。
 # 规则数变更：修改 non_model_rules.yaml 或 model_rules.yaml 中 rules 列表后，
 # 必须同步更新本段数字。
 capability_breakdown:
-  total_items: 78
-  registered_rules: 64
+  total_items: 82
+  registered_rules: 68
   registered_rules_breakdown:
-    non_model_rules: 33
-    model_rules: 31
+    non_model_rules: 35
+    model_rules: 33
   mandatory_cross_checks: 7
   hard_red_lines: 7
 
