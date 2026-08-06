@@ -203,12 +203,17 @@ econ-paper-check-skill/
 │   ├── rule_registry.yaml
 │   ├── non_model_rules.yaml
 │   └── model_rules.yaml
+├── schemas/                输出契约
+│   └── diagnostic_result.schema.json    JSON Schema 结构校验
+├── docs/                   辅助文档
+│   └── CHECK_CATALOG.md                 68条规则人类可读索引
 ├── agent_instructions/     判断协议
 │   ├── evidence_requirement.md
 │   ├── semantic_check_protocol.md
 │   └── issue_writing_protocol.md
 ├── scripts/                纯 I/O 脚本
 │   ├── preflight.sh              依赖前置检查
+│   ├── self_check.py             环境自检 + Schema 校验
 │   ├── parse_paper.py            统一解析入口（自动派发 docx/pdf）
 │   ├── parse_docx.py             docx → paper_text.json
 │   ├── parse_pdf.py              pdf → paper_text.json（自动降级）
