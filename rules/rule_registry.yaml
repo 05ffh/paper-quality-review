@@ -75,6 +75,7 @@ rule_groups:
     - DV-CONSIST-001
     - DV-INDEX-001
     - DV-CASE-001
+    - MM-COEF-001
   non_model_structure_norm_rules:
     domain: 结构表达与学术规范质检
     source: rules/non_model_rules.yaml
@@ -95,6 +96,7 @@ rule_groups:
     - SN-STRUCT-001
     - SN-ABSTRACT-EN-002
     - SN-TABLE-FMT-001
+    - SN-REF-003
     - SN-REF-FMT-001
     - SN-DENSE-PARA-001
   model_general_empirical_rules:

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""doctor.py · M3 v1.6.0-rc.3 · v0.3.1 轻量化
+"""doctor.py · 经管论文智检 Skill 环境自检
 
-**4 分组结构**（v0.3.1 P0-10 / 第 7 节）：
-  [1] 基础依赖         python-docx / pypdf / pdfplumber / pypdfium2 / jinja2 / pyyaml / jsonschema
-  [2] 知识库           KB-A(18 条规范) · KB-B(20 篇 · 2198 chunks · 可选)
-  [3] 报告组件         render_report / render_report_html / build_reference_card
+**4 分组结构**：
+  [1] 基础依赖         python-docx / pypdf / pdfplumber / jinja2 / pyyaml / jsonschema
+  [2] 知识库           KB-A(18 条规范) · KB-B(20 篇范例 · JSONL/ChromaDB)
+  [3] 报告组件         parse / render / kb_query / self_check
   [4] 视觉辅助         三态：未配置 ⚪ / 已配置未验证 🟡 / 已验证可用 ✅
 
 设计原则：
@@ -111,37 +111,39 @@ def check_kb() -> dict:
 
     kba_status = "ok" if kba_norms > 0 else "missing"
 
-    # KB-B · Chroma 可选
-    kbb_available = False
-    kbb_reason = ""
+    # KB-B · 优先 JSONL，回退 ChromaDB
+    jsonl_path = kb_root / "examples" / "index" / "kb_b_cards.jsonl"
+    kbb_available = jsonl_path.exists()
+    kbb_method = ""
     kbb_papers = 0
-    try:
-        import chromadb  # noqa: F401
-        kbb_available = True
-        ledger = kb_root / "vector_db" / "active" / "_source_sha_ledger.json"
-        if ledger.exists():
+    if kbb_available:
+        kbb_method = "JSONL"
+        manifest = kb_root / "examples" / "index" / "manifest.json"
+        if manifest.exists():
             try:
-                data = json.loads(ledger.read_text(encoding="utf-8"))
-                if isinstance(data, dict):
-                    kbb_papers = len(data)
+                m = json.loads(manifest.read_text(encoding="utf-8"))
+                kbb_papers = m.get("source_files", 0)
             except Exception:
                 pass
-    except ImportError:
-        kbb_reason = "chromadb 未安装（可选：pip install -r requirements-kb.txt）"
+    else:
+        try:
+            import chromadb  # noqa: F401
+            kbb_available = True
+            kbb_method = "ChromaDB"
+            ledger = kb_root / "vector_db" / "active" / "_source_sha_ledger.json"
+            if ledger.exists():
+                try:
+                    kbb_papers = len(json.loads(ledger.read_text(encoding="utf-8")))
+                except Exception:
+                    pass
+        except ImportError:
+            kbb_method = "未安装（pip install -r requirements-kb.txt）"
 
     return {
         "group": "知识库",
         "status": "ok" if kba_status == "ok" else "warn",
-        "kb_a": {
-            "status": kba_status,
-            "norms_count": kba_norms,
-            "domains": sorted(set(kba_domains)),
-        },
-        "kb_b": {
-            "available": kbb_available,
-            "reason": kbb_reason,
-            "papers_count": kbb_papers,
-        },
+        "kb_a": {"status": kba_status, "norms_count": kba_norms, "domains": sorted(set(kba_domains))},
+        "kb_b": {"available": kbb_available, "method": kbb_method, "papers_count": kbb_papers},
     }
 
 
@@ -157,9 +159,8 @@ def check_report() -> dict:
         "parse_pdf.py": scripts_dir / "parse_pdf.py",
         "render_report.py": scripts_dir / "render_report.py",
         "render_report_html.py": scripts_dir / "render_report_html.py",
-        "build_reference_card.py": scripts_dir / "build_reference_card.py",
         "kb_query.py": scripts_dir / "kb_query.py",
-        "kb_admin.py": scripts_dir / "kb_admin.py",
+        "self_check.py": scripts_dir / "self_check.py",
     }
     present = {k: v.exists() for k, v in files.items()}
     missing = [k for k, ok in present.items() if not ok]
@@ -312,7 +313,7 @@ def _run_smoke_test() -> dict:
 def render_human(result: dict) -> str:
     lines = []
     lines.append("=" * 60)
-    lines.append("经管论文智检 Skill · 环境自检 (v1.6.2)")
+    lines.append("经管论文智检 Skill · 环境自检")
     lines.append("=" * 60)
     lines.append("")
 
@@ -326,9 +327,8 @@ def render_human(result: dict) -> str:
     kba_icon = "✅" if kb["kb_a"]["status"] == "ok" else "❌"
     kbb_icon = "✅" if kb["kb_b"]["available"] else "⚪"
     kba_line = f"KB-A {kba_icon} {kb['kb_a']['norms_count']} 条规范 · 域: {', '.join(kb['kb_a']['domains']) or '空'}"
-    kbb_line = f"KB-B {kbb_icon} " + (
-        f"{kb['kb_b']['papers_count']} 篇范例" if kb["kb_b"]["available"] else "未启用（pip install -r requirements-kb.txt 可开启）"
-    )
+    kbb_detail = f"{kb['kb_b']['papers_count']} 篇范例 · {kb['kb_b'].get('method', '')}" if kb["kb_b"]["available"] else f"未启用（{kb['kb_b'].get('method', '')}）"
+    kbb_line = f"KB-B {kbb_icon} {kbb_detail}"
     lines.append(f"[2] 知识库           {kba_line}")
     lines.append(f"                     {kbb_line}")
 
@@ -413,7 +413,7 @@ def main():
     args = ap.parse_args()
 
     result = {
-        "version": "v1.6.2",
+        "version": "v1.9",
         "core": check_core(),
         "kb": check_kb(),
         "report": check_report(),

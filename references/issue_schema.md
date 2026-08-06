@@ -80,6 +80,40 @@ diagnostic_result.json 为**平铺结构**（无顶层 `diagnostic_result` 包�
 - confidence
 - need_manual_confirmation
 
+### 3bis. evidence_items（红色问题结构化证据）
+
+红色问题建议提供 `evidence_items` 数组，列出至少两条相互关联、可定位的原生文本证据。每条包含：
+
+- `location`：定位信息，如 "段落#73" 或 "表格#3"
+- `quote`：原文逐字引用
+- `source_type`：证据来源类型，如 "DOCX原生文本" / "PDF原生文本" / "视觉解析"
+
+`evidence` 字段仍保留为自由文本概述，`evidence_items` 提供逐字可回溯的结构化证据链。
+
+### 3ter. contradiction_review（数值冲突反证）
+
+涉及数值、显著性、方向或口径冲突的红色候选，应填写 `contradiction_review` 结构化反证：
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `kind` | string | 冲突类型：数值 / 显著性 / 方向 / 口径 / 样本量 |
+| `occurrence_count` | int | 该冲突在论文中出现次数 |
+| `likely_typo` | bool | 是否为孤立可唯一解释的笔误 |
+| `changes_substantive_conclusion` | bool | 修正后是否改变研究结论 |
+| `alternative_explanation_checked` | bool | 是否已完成替代解释检查 |
+| `evidence_readable` | bool | 证据是否可读（不可读→灰色） |
+| `adjacent_level_consistent` | bool | 邻近文字中的显著性水平是否一致 |
+| `table_marker_consistent` | bool | 表格星号标注是否一致 |
+| `statistic_or_pvalue_consistent` | bool | t/z 统计量或 p 值是否支持 |
+| `context_uniquely_supports_correction` | bool | 上下文是否唯一支持修正方向 |
+| `table_claims_opposite` | bool | 表格是否支持相反的结论 |
+| `final_severity_reason` | string | 最终判级理由简述 |
+
+按 evidence_requirement.md §9quater 三层判定：
+- **红色**：`likely_typo=false` 且 `changes_substantive_conclusion=true`
+- **黄色**：`occurrence_count > 1` 或无法唯一解释
+- **绿色**：`likely_typo=true` 且 `changes_substantive_conclusion=false`
+
 ## 4. 状态允许值
 
 - 通过

@@ -18,6 +18,7 @@ CLI:
     python scripts/self_check.py                # 基础自检（默认）
     python scripts/self_check.py --json         # 机器可读
     python scripts/self_check.py --with-vision  # 可选：合成图片走一次 Ark
+    python scripts/self_check.py --audit-rules  # 规则定义-vs-注册表一致性审计
 """
 from __future__ import annotations
 import argparse
@@ -59,9 +60,10 @@ def _validate_with_json_schema(data: dict) -> tuple[list[str], bool]:
         return [f"JSON Schema 校验异常: {e}"], True
 
 
-def validate_diagnostic_result(path: Path, use_json_schema: bool = False) -> tuple[bool, list[str]]:
-    """校验 diagnostic_result.json 必填字段。返回 (通过, 错误列表)。"""
+def validate_diagnostic_result(path: Path, use_json_schema: bool = False) -> tuple[bool, list[str], list[str]]:
+    """校验 diagnostic_result.json 必填字段。返回 (通过, 错误列表, 警告列表)。"""
     errors: list[str] = []
+    warnings: list[str] = []
     data = json.loads(path.read_text(encoding="utf-8"))
 
     # 可选：JSON Schema 结构校验
@@ -78,7 +80,7 @@ def validate_diagnostic_result(path: Path, use_json_schema: bool = False) -> tup
     issues = data.get("issues", [])
     if not isinstance(issues, list):
         errors.append("issues 不是 list")
-        return False, errors
+        return False, errors, warnings
 
     for i, iss in enumerate(issues):
         for f in REQUIRED_ISSUE_FIELDS:
@@ -92,6 +94,26 @@ def validate_diagnostic_result(path: Path, use_json_schema: bool = False) -> tup
                     f"issue[{i}]({iss.get('issue_id','?')})红色但 normative_basis 为空 "
                     f"— 应通过 kb_query.py 填充规范依据"
                 )
+            # evidence_items 建议（非阻塞警告）
+            ei = iss.get("evidence_items")
+            if not isinstance(ei, list) or len(ei) < 2:
+                warnings.append(
+                    f"issue[{i}]({iss.get('issue_id','?')})红色建议提供 ≥2 条 evidence_items "
+                    f"（当前未提供或不足 2 条）"
+                )
+            # severity_reason 建议
+            if not iss.get("severity_reason"):
+                warnings.append(
+                    f"issue[{i}]({iss.get('issue_id','?')})红色建议填写 severity_reason"
+                )
+        # contradiction_review 结构校验
+        cr = iss.get("contradiction_review")
+        if isinstance(cr, dict):
+            for f in ("kind", "occurrence_count", "likely_typo", "changes_substantive_conclusion"):
+                if f not in cr:
+                    warnings.append(
+                        f"issue[{i}]({iss.get('issue_id','?')}).contradiction_review 缺字段: {f}"
+                    )
 
     # pass_items 基础校验
     for i, p in enumerate(data.get("pass_items", []) or []):
@@ -136,7 +158,72 @@ def validate_diagnostic_result(path: Path, use_json_schema: bool = False) -> tup
                         f"manual_confirmation_items[{i}]({mc.get('id','?')})缺字段: {f}"
                     )
 
-    return (len(errors) == 0, errors, json_schema_applied)
+    return (len(errors) == 0, errors, warnings, json_schema_applied)
+
+# ---------- 规则库审计 ----------
+
+def audit_rules() -> tuple[bool, str]:
+    """校验规则定义文件与注册表的 rule_id 一致性。返回 (通过, 消息)。"""
+    try:
+        import yaml
+    except ImportError:
+        return False, "❌ 规则审计失败：pyyaml 未安装"
+
+    repo = _REPO_ROOT
+
+    # 1. 从定义文件中递归收集所有 rule_id
+    def_ids: set[str] = set()
+
+    def _collect_rules_from_list(rules_list: list) -> None:
+        for item in rules_list:
+            if isinstance(item, dict):
+                if "rule_id" in item:
+                    def_ids.add(str(item["rule_id"]))
+                for key in ("sub_rules", "variants"):
+                    sub = item.get(key)
+                    if isinstance(sub, list):
+                        _collect_rules_from_list(sub)
+
+    for yaml_path in [repo / "rules/non_model_rules.yaml", repo / "rules/model_rules.yaml"]:
+        if not yaml_path.exists():
+            return False, f"❌ 规则审计失败：{yaml_path.name} 不存在"
+        data = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
+        # 顶层 rules 列表
+        top_rules = data.get("rules")
+        if isinstance(top_rules, list):
+            _collect_rules_from_list(top_rules)
+        # 嵌套 _rules 节（如 model_ml_rules）
+        for key, val in data.items():
+            if isinstance(val, dict) and key.endswith("_rules"):
+                nested = val.get("rules")
+                if isinstance(nested, list):
+                    _collect_rules_from_list(nested)
+
+    # 2. 从注册表中收集所有 rule_ids
+    registry = yaml.safe_load((repo / "rules/rule_registry.yaml").read_text(encoding="utf-8")) or {}
+    reg_ids: set[str] = set()
+    for group in (registry.get("rule_groups") or {}).values():
+        if isinstance(group, dict):
+            for rid in (group.get("rule_ids") or []):
+                reg_ids.add(str(rid))
+
+    # 3. 比对
+    only_def = def_ids - reg_ids
+    only_reg = reg_ids - def_ids
+    breakdown = (registry.get("capability_breakdown") or {})
+
+    lines = []
+    if not only_def and not only_reg:
+        declared = breakdown.get("registered_rules", "?")
+        lines.append(f"规则定义 {len(def_ids)} 条 ↔ 注册表 {len(reg_ids)} 条（声明 {declared} 条）一致")
+        return True, "✅ " + "；".join(lines)
+
+    if only_def:
+        lines.append(f"定义有但注册表无 ({len(only_def)}): {sorted(only_def)}")
+    if only_reg:
+        lines.append(f"注册表有但定义无 ({len(only_reg)}): {sorted(only_reg)}")
+    return False, "❌ 规则不一致：" + "；".join(lines)
+
 
 # ---------- 分项检查 ----------
 
@@ -292,7 +379,15 @@ def main() -> int:
                     help="校验 diagnostic_result.json 的 Schema 合规性（阻塞性门禁）")
     ap.add_argument("--json-schema", action="store_true",
                     help="与 --validate 配合使用，附加 JSON Schema 结构校验（需 jsonschema 库）")
+    ap.add_argument("--audit-rules", action="store_true",
+                    help="规则定义-vs-注册表一致性审计（与 --validate 互斥）")
     args = ap.parse_args()
+
+    # --audit-rules 模式：只审计规则一致性
+    if args.audit_rules:
+        ok, msg = audit_rules()
+        print(msg)
+        return 0 if ok else 1
 
     # --validate 模式：只校验 Schema，不走自检流程
     if args.validate:
@@ -300,7 +395,7 @@ def main() -> int:
         if not path.exists():
             print(f"❌ 文件不存在：{path}", file=sys.stderr)
             return 2
-        passed, errors, js_applied = validate_diagnostic_result(path, use_json_schema=args.json_schema)
+        passed, errors, warnings, js_applied = validate_diagnostic_result(path, use_json_schema=args.json_schema)
         if passed:
             msg = f"✅ Schema 校验通过：{path}"
             if args.json_schema:
@@ -309,11 +404,15 @@ def main() -> int:
                 else:
                     msg += "（JSON Schema 未执行：jsonschema 库未安装，pip install jsonschema）"
             print(msg)
+            for w in warnings:
+                print(f"⚠️  {w}")
             return 0
         else:
             print(f"❌ Schema 校验失败（{len(errors)} 项）：")
             for e in errors:
                 print(f"   - {e}")
+            for w in warnings:
+                print(f"⚠️  {w}")
             return 1
 
     r = run(with_vision=args.with_vision)

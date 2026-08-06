@@ -44,35 +44,121 @@ sys.path.insert(0, str(ROOT))
 VDB_ROOT = ROOT / "knowledge_base/vector_db/active"
 NORMS_ROOT = ROOT / "knowledge_base/norms"
 PARSED_ROOT = ROOT / "knowledge_base/examples/parsed"
+INDEX_DIR = ROOT / "knowledge_base/examples/index"
 
-# ---- 轻量搜索（零依赖，读 JSON 做关键词匹配） ----
+# ---- 轻量搜索（零依赖，优先 JSONL 索引，回退解析 JSON）----
 
 class LightweightKBSearch:
     """不依赖 chromadb / sentence-transformers 的 KB-B 轻量搜索。
-    直接读 parsed JSON 文件，做关键词+主题匹配，即开即用。"""
+    优先使用预构建 JSONL 索引（~1.3MB 单文件），回退到 parsed JSON。"""
 
     def __init__(self):
+        self._cards: list[dict] = []
         self._papers: list[dict] = []
         self._loaded = False
+        self._use_jsonl = (INDEX_DIR / "kb_b_cards.jsonl").exists()
 
     def _load(self):
         if self._loaded:
             return
-        for batch_dir in sorted(PARSED_ROOT.glob("batch_*")):
-            for jf in sorted(batch_dir.glob("EXAMPLE-*.json")):
-                try:
-                    d = json.loads(jf.read_text(encoding="utf-8"))
-                    self._papers.append(d)
-                except Exception:
-                    continue
+        # 优先 JSONL 索引
+        if self._use_jsonl:
+            try:
+                cards_path = INDEX_DIR / "kb_b_cards.jsonl"
+                self._cards = [
+                    json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines()
+                    if line.strip()
+                ]
+            except Exception:
+                self._cards = []
+        # 回退：读独立 JSON 文件
+        if not self._cards:
+            for batch_dir in sorted(PARSED_ROOT.glob("batch_*")):
+                for jf in sorted(batch_dir.glob("EXAMPLE-*.json")):
+                    try:
+                        d = json.loads(jf.read_text(encoding="utf-8"))
+                        self._papers.append(d)
+                    except Exception:
+                        continue
         self._loaded = True
+
+    def _search_jsonl(self, query: str, topk: int = 3,
+                      method: str = None) -> list[dict]:
+        """使用 JSONL 索引进行字符 2-gram + TF-IDF 检索。"""
+        import math as _math
+        try:
+            from scripts.kb_common import token_counts, STOPWORDS as _STOPWORDS
+        except ImportError:
+            # 降级：简单关键词匹配
+            _STOPWORDS = set()
+            def token_counts(text):
+                from collections import Counter
+                c = Counter()
+                for seg in __import__('re').findall(r"[一-鿿]+|[A-Za-z0-9]+", text):
+                    if __import__('re').fullmatch(r"[A-Za-z0-9]+", seg):
+                        if len(seg) >= 2:
+                            c[seg.lower()] += 1
+                    else:
+                        for idx in range(len(seg) - 1):
+                            c[seg[idx:idx+2]] += 1
+                return c
+
+        query_counts = token_counts(query)
+        query_tokens = set(query_counts)
+        informative = {t for t in query_tokens if t not in _STOPWORDS}
+        candidates = []
+        normalized_query = __import__('re').sub(r"\s+", "", query).lower()
+
+        for card in self._cards:
+            if method:
+                tags = [t.lower() for t in (card.get("method_tags") or [])]
+                if method.lower() not in tags:
+                    continue
+            searchable = f"{card.get('section', '')} {card.get('text', '')}"
+            card_counts = token_counts(searchable)
+            matched = query_tokens & set(card_counts)
+            informative_matched = informative & matched
+            if len(matched) < 2 or not informative_matched:
+                continue
+            score = sum(
+                (1.0 + _math.log1p(card_counts[t])) * (1.5 if t in informative else 0.5)
+                for t in matched
+            )
+            compact_text = __import__('re').sub(r"\s+", "", str(card.get("text", ""))).lower()
+            if normalized_query and normalized_query in compact_text:
+                score += 8.0
+            tags = card.get("method_tags") or []
+            score += sum(2.5 for tag in tags if tag and tag.lower() in query.lower())
+            candidates.append({
+                "card_id": card.get("card_id"),
+                "paper_id": card.get("paper_id"),
+                "paper_type": card.get("paper_type"),
+                "method_tags": tags,
+                "section": card.get("section", ""),
+                "snippet": card.get("text", ""),
+                "match_score": round(score, 3),
+                "source_type": "example_reference",
+                "use_scope": "仅用于修改方向和结构表达参照",
+                "not_for_severity": True,
+            })
+
+        candidates.sort(key=lambda x: (-x["match_score"], x["card_id"] or ""))
+        return candidates[:topk]
 
     def search(self, query: str, topk: int = 3,
                topic: str = None, method: str = None,
                paper_type: str = None) -> dict:
         self._load()
+
+        # JSONL 路径
+        if self._cards:
+            items = self._search_jsonl(query, topk, method)
+            notice = None if items else f"KB-B JSONL 未命中「{query}」"
+            return {"route": "B-jsonl", "items": items, "notice": notice}
+
+        # 回退：独立 JSON 文件
         if not self._papers:
-            return {"route": "B-lightweight", "items": [], "notice": "未找到 KB-B 论文 JSON"}
+            return {"route": "B-lightweight", "items": [], "notice": "未找到 KB-B 论文数据；运行 kb_ingest.py 生成索引"}
 
         qlower = query.lower()
         scored = []

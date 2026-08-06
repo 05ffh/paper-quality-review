@@ -137,6 +137,41 @@
           "vision_evidence": {
             "description": "M3 v0.3.1 视觉辅助证据块。",
             "type": "object"
+          },
+          "evidence_items": {
+            "description": "红色 issue 建议提供 ≥2 条可定位的原生文本证据。每项含 location/quote/source_type。",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["location", "quote", "source_type"],
+              "properties": {
+                "location": { "type": "string" },
+                "quote": { "type": "string" },
+                "source_type": { "type": "string" }
+              }
+            }
+          },
+          "contradiction_review": {
+            "description": "数值/显著性/方向冲突的结构化反证。命中 §9quater 时填写。",
+            "type": "object",
+            "properties": {
+              "kind": { "type": "string", "enum": ["数值", "显著性", "方向", "口径", "样本量"] },
+              "occurrence_count": { "type": "integer", "minimum": 1 },
+              "likely_typo": { "type": "boolean" },
+              "changes_substantive_conclusion": { "type": "boolean" },
+              "alternative_explanation_checked": { "type": "boolean" },
+              "evidence_readable": { "type": "boolean" },
+              "adjacent_level_consistent": { "type": "boolean" },
+              "table_marker_consistent": { "type": "boolean" },
+              "statistic_or_pvalue_consistent": { "type": "boolean" },
+              "context_uniquely_supports_correction": { "type": "boolean" },
+              "table_claims_opposite": { "type": "boolean" },
+              "final_severity_reason": { "type": "string" }
+            }
+          },
+          "severity_reason": {
+            "description": "判级理由简述。红色问题必填。",
+            "type": "string"
           }
         }
       }

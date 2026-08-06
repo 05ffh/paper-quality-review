@@ -1,0 +1,109 @@
+{
+  "source_files": 20,
+  "source_units": 2191,
+  "indexed_cards": 2191,
+  "card_limit": 500,
+  "privacy_gate": "passed",
+  "papers": [
+    {
+      "paper_id": "EXAMPLE-0001",
+      "paper_type": "empirical",
+      "card_count": 178
+    },
+    {
+      "paper_id": "EXAMPLE-0002",
+      "paper_type": "theoretical",
+      "card_count": 74
+    },
+    {
+      "paper_id": "EXAMPLE-0003",
+      "paper_type": "empirical",
+      "card_count": 119
+    },
+    {
+      "paper_id": "EXAMPLE-0004",
+      "paper_type": "theoretical",
+      "card_count": 63
+    },
+    {
+      "paper_id": "EXAMPLE-0005",
+      "paper_type": "empirical",
+      "card_count": 116
+    },
+    {
+      "paper_id": "EXAMPLE-0006",
+      "paper_type": "empirical",
+      "card_count": 129
+    },
+    {
+      "paper_id": "EXAMPLE-0007",
+      "paper_type": "empirical",
+      "card_count": 144
+    },
+    {
+      "paper_id": "EXAMPLE-0008",
+      "paper_type": "empirical",
+      "card_count": 78
+    },
+    {
+      "paper_id": "EXAMPLE-0009",
+      "paper_type": "empirical",
+      "card_count": 109
+    },
+    {
+      "paper_id": "EXAMPLE-0010",
+      "paper_type": "empirical",
+      "card_count": 139
+    },
+    {
+      "paper_id": "EXAMPLE-0011",
+      "paper_type": "theoretical",
+      "card_count": 68
+    },
+    {
+      "paper_id": "EXAMPLE-0012",
+      "paper_type": "empirical",
+      "card_count": 77
+    },
+    {
+      "paper_id": "EXAMPLE-0013",
+      "paper_type": "empirical",
+      "card_count": 96
+    },
+    {
+      "paper_id": "EXAMPLE-0014",
+      "paper_type": "empirical",
+      "card_count": 155
+    },
+    {
+      "paper_id": "EXAMPLE-0015",
+      "paper_type": "empirical",
+      "card_count": 134
+    },
+    {
+      "paper_id": "EXAMPLE-0016",
+      "paper_type": "empirical",
+      "card_count": 119
+    },
+    {
+      "paper_id": "EXAMPLE-0017",
+      "paper_type": "empirical",
+      "card_count": 97
+    },
+    {
+      "paper_id": "EXAMPLE-0018",
+      "paper_type": "empirical",
+      "card_count": 92
+    },
+    {
+      "paper_id": "EXAMPLE-0019",
+      "paper_type": "theoretical",
+      "card_count": 72
+    },
+    {
+      "paper_id": "EXAMPLE-0020",
+      "paper_type": "empirical",
+      "card_count": 132
+    }
+  ]
+}
