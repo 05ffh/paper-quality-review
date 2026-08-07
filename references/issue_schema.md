@@ -1,6 +1,6 @@
 # issue_schema.md
 
-# 经管论文智检 Skill：结构化诊断结果 Schema
+# 论文质量审查：结构化诊断结果 Schema
 
 > **权威来源说明：** 本节字段名以 `scripts/render_report.py` 的实际读取字段为准。
 > 凡本节与 render_report.py 不一致处，以 render_report.py 为准。

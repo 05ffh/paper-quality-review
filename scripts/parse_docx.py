@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""经管论文智检 Skill - DOCX 解析脚本（纯 I/O，无判断逻辑）。
+"""论文质量审查 - DOCX 解析脚本（纯 I/O，无判断逻辑）。
 
 用法：
     python scripts/parse_docx.py 论文.docx --out paper_text.json

@@ -79,7 +79,7 @@ def build_briefing() -> str:
 
     lines = []
     lines.append("━" * 58)
-    lines.append(f"  经管论文智检 Skill · {CURRENT_VERSION} · 能力摘要")
+    lines.append(f"  论文质量审查 · {CURRENT_VERSION} · 能力摘要")
     lines.append("━" * 58)
     lines.append("")
     lines.append("  ✅ 已启用能力")
@@ -131,7 +131,7 @@ def main():
     """CLI: `python3 scripts/capability_briefing.py [--force]`"""
     import argparse
 
-    ap = argparse.ArgumentParser(description="经管论文智检 Skill · 能力摘要")
+    ap = argparse.ArgumentParser(description="论文质量审查 · 能力摘要")
     ap.add_argument("--force", action="store_true", help="强制显示，不消费幂等锁")
     ap.add_argument("--reset", action="store_true", help="重置锁，下次调用会再显示一次")
     args = ap.parse_args()

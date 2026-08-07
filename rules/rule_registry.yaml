@@ -1,5 +1,5 @@
 version: 1.6.2
-skill_name: 经管论文智检
+skill_name: 论文质量审查
 description: 规则注册表，负责管理规则组、触发顺序、不适用逻辑和冲突处理。v2迭代修正版。
 capability_breakdown:
   total_items: 82

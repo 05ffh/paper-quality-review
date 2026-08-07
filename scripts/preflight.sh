@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 经管论文智检 Skill - 依赖前置检查
+# 论文质量审查 - 依赖前置检查
 # 用法：bash scripts/preflight.sh
 # 效果：
 #   1. 检查 python3 是否可用

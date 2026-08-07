@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""经管论文智检 Skill - DOCX 报告渲染脚本（纯 I/O，无判断逻辑）。
+"""论文质量审查 - DOCX 报告渲染脚本（纯 I/O，无判断逻辑）。
 
 用法：
     python scripts/render_report.py diagnostic_result.json --out 报告.docx --source 原论文.docx
@@ -43,7 +43,7 @@ def _display_level(value: str) -> str:
 
 
 DISCLAIMER = (
-    "本报告由论文结构化质量诊断系统基于用户上传的文档自动生成，仅用于学术论文提交前的写作规范与论证质量自查，"
+    "本报告由论文质量审查系统基于用户上传的文档自动生成，仅用于学术论文提交前的写作规范与论证质量自查，"
     "不替代导师、答辩委员或学校正式评审意见。对于无法可靠解析的表格、公式、图片或主观方法选择，报告中已标注为"
     "“需人工确认”。本系统不进行查重，不判断数据真实性，不联网核验参考文献真伪，也不提供论文代写服务。"
 )
@@ -208,7 +208,7 @@ def write_report(result: Dict[str, object], source_name: str, output_path: Path)
 
     title = doc.add_paragraph()
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = title.add_run("论文结构化质量诊断报告")
+    run = title.add_run("论文质量审查报告")
     run.bold = True
     run.font.size = Pt(22)
     try:
@@ -373,7 +373,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         output_path = Path(args.out).expanduser().resolve()
     else:
         stem = Path(source_name).stem if source_name != "未提供" else "论文"
-        output_path = result_path.with_name(f"经管论文智检报告_{stem}_{today}.docx")
+        output_path = result_path.with_name(f"论文质量审查报告_{stem}_{today}.docx")
 
     write_report(result, source_name, output_path)
     print(f"已生成 DOCX 质检报告：{output_path}")

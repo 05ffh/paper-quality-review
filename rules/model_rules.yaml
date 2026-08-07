@@ -1,5 +1,5 @@
 version: '1.6.2'
-skill_name: 经管论文智检
+skill_name: 论文质量审查
 description: 模型方法与实证结果质检规则库。所有模型规则必须条件触发。v2迭代修正版。
 global_principles:
 - 模型类规则必须条件触发。

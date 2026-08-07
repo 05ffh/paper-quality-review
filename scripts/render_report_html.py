@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""经管论文智检 Skill - HTML 预览版报告渲染脚本（webchat 友好）。
+"""论文质量审查 - HTML 预览版报告渲染脚本（webchat 友好）。
 
 用法：
     python scripts/render_report_html.py diagnostic_result.json --out 报告.html --source 原论文.docx
@@ -20,7 +20,7 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 DISCLAIMER = (
-    "本报告由论文结构化质量诊断系统基于用户上传的文档自动生成，仅用于学术论文提交前的写作规范与论证质量自查，"
+    "本报告由论文质量审查系统基于用户上传的文档自动生成，仅用于学术论文提交前的写作规范与论证质量自查，"
     "不替代导师、答辩委员或学校正式评审意见。对于无法可靠解析的表格、公式、图片或主观方法选择，报告中已标注为"
     "“需人工确认”。本系统不进行查重，不判断数据真实性，不联网核验参考文献真伪，也不提供论文代写服务。"
 )
@@ -225,7 +225,7 @@ def write_html(result: Dict[str, object], source_name: str, output_path: Path) -
     html_doc = f"""<!DOCTYPE html>
 <html lang="zh-CN"><head>
 <meta charset="utf-8"/>
-<title>论文结构化质量诊断报告 · {e(source_name)}</title>
+<title>论文质量审查报告 · {e(source_name)}</title>
 <style>
   :root {{ --border:#e2e6ee; --text:#1f2530; --muted:#6b7280; }}
   * {{ box-sizing:border-box; }}
@@ -271,7 +271,7 @@ def write_html(result: Dict[str, object], source_name: str, output_path: Path) -
   .vision-notice {{ margin-top:6px; padding:6px 10px; background:#fff7d9; border-left:3px solid #d4a800; color:#7a5900; font-size:12px; }}
 </style>
 </head><body><div class="wrap">
-<h1>论文结构化质量诊断报告</h1>
+<h1>论文质量审查报告</h1>
 <div class="sub">基于多维规则引擎与证据门禁的提交前质量审查</div>
 
 <h2>一、检测基本信息</h2>
@@ -342,7 +342,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         output_path = Path(args.out).expanduser().resolve()
     else:
         stem = Path(source_name).stem if source_name != "未提供" else "论文"
-        output_path = result_path.with_name(f"经管论文智检报告_{stem}_{today}.html")
+        output_path = result_path.with_name(f"论文质量审查报告_{stem}_{today}.html")
 
     write_html(result, source_name, output_path)
     print(f"已生成 HTML 预览报告：{output_path}")

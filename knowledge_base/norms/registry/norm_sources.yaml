@@ -13,7 +13,7 @@ sources:
   # ---- 来源 1：Skill 已审核规则库（内置） ----
   - source_id: "skill_audited_rule_v1_1"
     source_type: "skill_audited_rule"
-    source_name: "经管论文智检 Skill 已审核规则库"
+    source_name: "论文质量审查 已审核规则库"
     source_version: "1.1"
     source_locator: "rules/rule_registry.yaml + rules/non_model_rules.yaml + rules/model_rules.yaml"
     applicable_scope:

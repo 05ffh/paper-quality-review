@@ -1,6 +1,6 @@
 crop_type: table
 description: 描述性统计表 - 4 行 5 列
-image_path: /root/.openclaw/workspace/econ-paper-check-skill/benchmarks/runs/20260713-phaseC-S02/artifacts/vision/artifacts/page_18.png
+image_path: /root/.openclaw/workspace/paper-quality-review/benchmarks/runs/20260713-phaseC-S02/artifacts/vision/artifacts/page_18.png
 s02_aligned: true
 aligned_at: '2026-07-13T17:38:00+08:00'
 source_run: 20260713-phaseC-S02

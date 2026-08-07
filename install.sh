@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# 经管论文智检 Skill - 一键安装到 ArkClaw / Claude Code / OpenClaw
+# 论文质量审查 Skill - 一键安装到 ArkClaw / Claude Code / OpenClaw
 #
 # 用法：
-#   bash install.sh                    # 装到 ~/.agents/skills/econ-paper-check-skill/
-#   bash install.sh --plugin           # 装到 ~/.openclaw/plugin-skills/econ-paper-check-skill/
+#   bash install.sh                    # 装到 ~/.agents/skills/paper-quality-review/
+#   bash install.sh --plugin           # 装到 ~/.openclaw/plugin-skills/paper-quality-review/
 #   bash install.sh --dest <path>      # 自定义目标目录
 #
 # 安装动作：
@@ -13,14 +13,14 @@
 
 set -eu
 
-DEFAULT_DEST="$HOME/.agents/skills/econ-paper-check-skill"
+DEFAULT_DEST="$HOME/.agents/skills/paper-quality-review"
 DEST=""
 MODE="user"
 
 while [ $# -gt 0 ]; do
   case "$1" in
     --plugin)
-      DEST="$HOME/.openclaw/plugin-skills/econ-paper-check-skill"
+      DEST="$HOME/.openclaw/plugin-skills/paper-quality-review"
       MODE="plugin"
       shift
       ;;
@@ -72,7 +72,7 @@ cat <<EOF
 
 在 ArkClaw / OpenClaw 中触发此 skill：
   直接在对话中说：
-    "帮我用经管论文智检检查这篇论文" 并上传 .docx / .pdf
+    "帮我用论文质量审查检查这篇论文" 并上传 .docx / .pdf
 
 或在 Claude Code：
   Skill 会通过 SKILL.md frontmatter 的中文触发词自动匹配。

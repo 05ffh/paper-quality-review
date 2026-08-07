@@ -1,6 +1,6 @@
 crop_type: table
 description: 清晰基准回归表，2 变量 × 3 列，含显著性星号
-image_path: /root/.openclaw/workspace/econ-paper-check-skill/benchmarks/runs/20260713-phaseC-S02/artifacts/vision/artifacts/page_20.png
+image_path: /root/.openclaw/workspace/paper-quality-review/benchmarks/runs/20260713-phaseC-S02/artifacts/vision/artifacts/page_20.png
 s02_aligned: true
 aligned_at: '2026-07-13T17:38:00+08:00'
 source_run: 20260713-phaseC-S02

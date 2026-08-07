@@ -436,7 +436,7 @@ def main() -> int:
         print(json.dumps(r, ensure_ascii=False, indent=2))
     else:
         print("=" * 60)
-        print("经管论文智检 Skill · 安装自检")
+        print("论文质量审查 · 安装自检")
         print("=" * 60)
         for item in r["results"]:
             print(f"  [{item['section']:15s}] {item['msg']}")

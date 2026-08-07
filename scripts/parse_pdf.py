@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""经管论文智检 Skill - PDF 解析脚本（纯 I/O，无判断逻辑）。
+"""论文质量审查 - PDF 解析脚本（纯 I/O，无判断逻辑）。
 
 用法：
     python scripts/parse_pdf.py 论文.pdf --out paper_text.json

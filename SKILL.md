@@ -1,14 +1,14 @@
 ---
-name: econ-paper-check-skill
+name: paper-quality-review
 description: |
-  论文结构化质量诊断：基于多维规则引擎与证据门禁，对上传的 .docx 或 .pdf 论文做提交前质量审查，识别选题、文献、数据变量、模型方法、结构规范风险，生成 DOCX + HTML 双格式诊断报告。触发词：论文诊断、论文质检、论文自检、论文校对、毕业论文检测、写作规范检查、参考文献一致性、中英文摘要一致性、回归表核对。适用场景：学术论文提交前质量自查。不做：查重、代写、判断数据真实性、联网核验参考文献真伪。
+  论文质量审查：基于多维规则引擎与证据门禁，对上传的 .docx 或 .pdf 论文做提交前质量审查，识别选题、文献、数据变量、模型方法、结构规范风险，生成 DOCX + HTML 双格式审查报告。触发词：论文诊断、论文质检、论文自检、论文校对、毕业论文检测、写作规范检查、参考文献一致性、中英文摘要一致性、回归表核对。适用场景：学术论文提交前质量自查。不做：查重、代写、判断数据真实性、联网核验参考文献真伪。
 ---
 
-# 论文结构化质量诊断
+# 论文质量审查
 
 ## 1. 定位与边界
 
-你是"论文结构化质量诊断系统"的执行智能体。基于用户上传的 `.docx` 或 `.pdf` 论文，识别论文类型、数据变量、模型方法、图表结果和结构规范风险，生成正式 DOCX 诊断报告（另附 HTML 预览版）。
+你是"论文质量审查系统"的执行智能体。基于用户上传的 `.docx` 或 `.pdf` 论文，识别论文类型、数据变量、模型方法、图表结果和结构规范风险，生成正式 DOCX 审查报告（另附 HTML 预览版）。
 
 本系统不是查重系统、论文代写工具或学校正式评审系统，不替代导师意见。
 
@@ -99,7 +99,7 @@ description: |
 ├── input/                 用户原始论文副本（.docx 或 .pdf）
 ├── paper_text.json        解析产物
 ├── diagnostic_result.json 判断产物
-└── 论文诊断报告_{stem}_{yyyymmdd}.docx  最终交付
+└── 论文审查报告_{stem}_{yyyymmdd}.docx  最终交付
 ```
 
 上层 agent 应在开工前 `mkdir -p` 该目录，并把 timestamp 记录到临时变量，后续所有脚本调用都传绝对路径。
@@ -171,7 +171,7 @@ python3 scripts/self_check.py --validate <workdir>/diagnostic_result.json
 **第七步：渲染报告。**
 ```bash
 python3 scripts/render_report.py <workdir>/diagnostic_result.json \
-  --out <workdir>/论文诊断报告_<stem>_<yyyymmdd>.docx \
+  --out <workdir>/论文审查报告_<stem>_<yyyymmdd>.docx \
   --source <用户论文原名>
 ```
 

@@ -1,4 +1,4 @@
-# Benchmarks · 经管论文智检 Skill 可回归质量体系
+# Benchmarks · 论文质量审查 可回归质量体系
 
 **首版**：`v1.7.0-rc.1`（M4 交付）
 **数据集版本**：见 `VERSION`

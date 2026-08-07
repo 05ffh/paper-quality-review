@@ -1,10 +1,10 @@
-# 论文结构化质量诊断
+# 论文质量审查
 
 > **68 条规则 · 18 项规范依据 · 5 大诊断域 · 4 级分级反馈** — 不是"问一下 AI"，是有规则引擎与证据门禁的学术审查系统
 >
 > 广东金融学院火山杯智能体创新大赛 · 方向二（科研工具与代码开发类 · 论文校对）参赛作品
 
-上传论文，获得一份结构化的诊断报告——不是查重，不是代写，是用**确定的规则**和**可定位的证据**告诉学生：改哪里、为什么改、怎么改。
+上传论文，获得一份结构化的审查报告——不是查重，不是代写，是用**确定的规则**和**可定位的证据**告诉学生：改哪里、为什么改、怎么改。
 
 **核心理念**：脚本做 I/O，大模型做判断。规则库约束大模型不越界，证据门禁确保每个问题都锚定在论文原文中。
 
@@ -26,8 +26,8 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/05ffh/paper-structured-diagnosis.git
-cd paper-structured-diagnosis
+git clone https://github.com/05ffh/paper-quality-review.git
+cd paper-quality-review
 pip install --break-system-packages -r requirements-core.txt
 python3 scripts/doctor.py
 ```
@@ -36,7 +36,7 @@ python3 scripts/doctor.py
 
 ## 输出格式
 
-报告标题为**《论文结构化质量诊断报告》**，副标题 **「基于多维规则引擎与证据门禁的提交前质量审查」**，包含 11 个章节：
+报告标题为**《论文质量审查报告》**，副标题 **「基于多维规则引擎与证据门禁的提交前质量审查」**，包含 11 个章节：
 
 1. 检测基本信息
 2. 论文画像识别结果
@@ -93,7 +93,7 @@ python3 scripts/self_check.py --validate result.json   # 输出 Schema 校验（
 ## 目录结构
 
 ```
-paper-structured-diagnosis/
+paper-quality-review/
 ├── SKILL.md                     Skill 入口
 ├── agent_instructions/          判断协议：证据要求、语义判断、写作规范、视觉协议
 ├── references/                  方法论 Schema：论文画像、诊断域、Issue 结构、报告结构
@@ -118,7 +118,7 @@ paper-structured-diagnosis/
 
 ## PDF 支持策略
 
-- **推荐 Word**：`.docx` 解析最稳定，诊断结论最可靠
+- **推荐 Word**：`.docx` 解析最稳定，审查结论最可靠
 - **文本 PDF 支持**：`pdfplumber` 解析，证据强度自动下调一档，表格/公式相关问题默认转灰色
 - **扫描件保护**：若 `empty_pages / total_pages ≥ 0.7`，识别为扫描件并提示用户上传 Word 或先 OCR
 - **不做 OCR**：本系统边界内不集成 OCR

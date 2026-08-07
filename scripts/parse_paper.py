@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""经管论文智检 Skill - 统一解析入口。
+"""论文质量审查 - 统一解析入口。
 
 根据输入文件扩展名自动派发到 parse_docx.py 或 parse_pdf.py，
 保证上层 agent 只需要一条命令，不用关心格式判断细节。
@@ -49,7 +49,7 @@ def _print_pdf_warning(input_path: Path) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="经管论文智检：DOCX/PDF 统一解析入口")
+    parser = argparse.ArgumentParser(description="论文质量审查：DOCX/PDF 统一解析入口")
     parser.add_argument("input", help="论文文件路径（.docx 或 .pdf）")
     parser.add_argument("--out", "-o", help="输出 JSON 路径")
     args = parser.parse_args()

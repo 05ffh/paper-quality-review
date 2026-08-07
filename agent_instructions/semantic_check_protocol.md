@@ -1,6 +1,6 @@
 # semantic_check_protocol.md
 
-# 经管论文智检 Skill：语义判断执行协议
+# 论文质量审查：语义判断执行协议
 
 ## 1. 文件作用
 

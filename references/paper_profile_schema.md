@@ -1,6 +1,6 @@
 # paper_profile_schema.md
 
-# 经管论文智检 Skill：论文画像 Schema
+# 论文质量审查：论文画像 Schema
 
 ## 1. 文件作用
 

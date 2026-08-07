@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""batch_check.py --- 经管论文智检 Skill 批量处理脚本（v1.7）
+"""batch_check.py --- 论文质量审查 批量处理脚本（v1.7）
 
 接受论文路径列表，自动执行解析→验证→汇总流水线。
 （判断层仍由 agent 完成——本脚本只做 I/O + 模板生成 + 汇总）
@@ -77,7 +77,7 @@ def validate_json(json_path: Path) -> tuple[bool, str]:
     return result.returncode == 0, result.stdout.strip()
 
 def render_report(json_path: Path, source_path: Path, out_dir: Path) -> Path:
-    out_docx = out_dir / f"经管论文智检报告_{source_path.stem}.docx"
+    out_docx = out_dir / f"论文质量审查报告_{source_path.stem}.docx"
     script = REPO_ROOT / "scripts" / "render_report.py"
     result = subprocess.run(
         [sys.executable, str(script), str(json_path),

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""doctor.py · 经管论文智检 Skill 环境自检
+"""doctor.py · 论文质量审查 环境自检
 
 **4 分组结构**：
   [1] 基础依赖         python-docx / pypdf / pdfplumber / jinja2 / pyyaml / jsonschema
@@ -313,7 +313,7 @@ def _run_smoke_test() -> dict:
 def render_human(result: dict) -> str:
     lines = []
     lines.append("=" * 60)
-    lines.append("经管论文智检 Skill · 环境自检")
+    lines.append("论文质量审查 · 环境自检")
     lines.append("=" * 60)
     lines.append("")
 
@@ -407,7 +407,7 @@ def render_human(result: dict) -> str:
 
 
 def main():
-    ap = argparse.ArgumentParser(description="经管论文智检 Skill · 环境自检 (v0.3.1)")
+    ap = argparse.ArgumentParser(description="论文质量审查 · 环境自检 (v0.3.1)")
     ap.add_argument("--json", action="store_true", help="输出 JSON")
     ap.add_argument("--smoke-test", action="store_true", help="主动运行 Ark 视觉 smoke test（会真实调用 API）")
     args = ap.parse_args()
