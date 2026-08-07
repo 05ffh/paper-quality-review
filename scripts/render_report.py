@@ -47,10 +47,28 @@ DISCLAIMER = (
     "不替代导师、答辩委员或学校正式评审意见。对于无法可靠解析的表格、公式、图片或主观方法选择，报告中已标注为"
     "“需人工确认”。本系统不进行查重，不判断数据真实性，不联网核验参考文献真伪，也不提供论文代写服务。"
 )
-
 # 中国高校论文标准字体：正文宋体，标题黑体。两者均为 Windows/macOS 系统预装字体，无版权风险。
 CJK_BODY_FONT = "宋体"
 CJK_HEADING_FONT = "黑体"
+
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+
+
+def _load_rule_group_names() -> dict[str, str]:
+    """从 rule_registry.yaml 读取 rule_group → 中文名称映射，用于报告展示。"""
+    try:
+        import yaml
+        registry = yaml.safe_load((_REPO_ROOT / "rules/rule_registry.yaml").read_text(encoding="utf-8")) or {}
+        return {
+            gid: g.get("group_name", gid)
+            for gid, g in (registry.get("rule_groups") or {}).items()
+            if isinstance(g, dict)
+        }
+    except Exception:
+        return {}
+
+
+RULE_GROUP_NAMES = _load_rule_group_names()
 
 
 
@@ -328,7 +346,8 @@ def write_report(result: Dict[str, object], source_name: str, output_path: Path)
         add_heading(doc, "附：不适用规则说明", 2)
         rows = [["编号", "规则组", "不适用原因"]]
         for n in na_items:
-            rows.append([n.get("id", ""), n.get("rule_group", ""), n.get("reason", "")])
+            gid = n.get("rule_group", "")
+            rows.append([n.get("id", ""), RULE_GROUP_NAMES.get(gid, gid), n.get("reason", "")])
         add_table(doc, rows)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

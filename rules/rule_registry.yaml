@@ -1,15 +1,6 @@
-version: '1.6.2'
+version: 1.6.2
 skill_name: 经管论文智检
 description: 规则注册表，负责管理规则组、触发顺序、不适用逻辑和冲突处理。v2迭代修正版。
-
-# === 能力口径说明（对外宣称口径以本段为权威来源）===
-# 本 Skill 检测能力由三类构成，合计 82 项：
-#   A. 已注册规则 68 条（non_model_rules 35 + model_rules 33，含 ML 5 条）— agent 按条件触发执行
-#   B. 强制交叉核对 7 项（semantic_check_protocol.md §9bis）— agent 必须逐项执行并留痕
-#   C. 红色硬伤边界 7 条（evidence_requirement.md §9bis）— 命中则强制判红不得降级
-# 三类在报告中应分别统计并展示，不得混为一谈。
-# 规则数变更：修改 non_model_rules.yaml 或 model_rules.yaml 中 rules 列表后，
-# 必须同步更新本段数字。
 capability_breakdown:
   total_items: 82
   registered_rules: 68
@@ -18,7 +9,6 @@ capability_breakdown:
     model_rules: 33
   mandatory_cross_checks: 7
   hard_red_lines: 7
-
 global_principles:
 - 必须先生成 paper_profile，再触发规则。
 - 必须先生成 trigger_plan，再执行规则。
@@ -49,6 +39,7 @@ unsupported_tasks:
 - 联网核验参考文献真伪
 rule_groups:
   non_model_topic_rules:
+    group_name: 选题与研究问题规范
     domain: 选题与研究问题质检
     source: rules/non_model_rules.yaml
     rule_ids:
@@ -64,6 +55,7 @@ rule_groups:
     - LT-GAP-001
     - LT-THEORY-001
     - LT-HYP-001
+    group_name: 文献综述与理论链条规范
   non_model_data_variable_rules:
     domain: 数据、变量与口径质检
     source: rules/non_model_rules.yaml
@@ -76,6 +68,7 @@ rule_groups:
     - DV-INDEX-001
     - DV-CASE-001
     - MM-COEF-001
+    group_name: 数据、变量与口径规范
   non_model_structure_norm_rules:
     domain: 结构表达与学术规范质检
     source: rules/non_model_rules.yaml
@@ -99,6 +92,7 @@ rule_groups:
     - SN-REF-003
     - SN-REF-FMT-001
     - SN-DENSE-PARA-001
+    group_name: 结构表达与学术规范
   model_general_empirical_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
@@ -110,12 +104,14 @@ rule_groups:
     - MM-GEN-005
     - MM-GEN-006
     - MM-GBM-001
+    group_name: 一般实证模型规范
   model_ols_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-OLS-001
     - MM-OLS-002
+    group_name: OLS回归模型规范
   model_panel_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
@@ -123,56 +119,66 @@ rule_groups:
     - MM-PANEL-001
     - MM-PANEL-002
     - MM-PANEL-003
+    group_name: 面板数据模型规范
   model_logit_probit_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-LP-001
     - MM-LP-002
+    group_name: Logit/Probit模型规范
   model_mediation_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-MED-001
     - MM-MED-002
+    group_name: 中介效应模型规范
   model_moderation_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-MOD-001
+    group_name: 调节效应模型规范
   model_did_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-DID-001
     - MM-DID-002
+    group_name: DID双重差分模型规范
   model_iv_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-IV-001
+    group_name: 工具变量模型规范
   model_questionnaire_scale_rules:
     domain: 数据、变量与口径质检 / 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-Q-001
     - MM-Q-002
+    group_name: 问卷量表信效度规范
   model_entropy_index_rules:
     domain: 数据、变量与口径质检 / 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-ENT-001
+    group_name: 熵值法综合指数规范
   model_case_analysis_rules:
     domain: 数据、变量与口径质检 / 结构表达与学术规范质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-CASE-001
+    group_name: 案例分析论文规范
   model_valuation_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-VAL-001
     - MM-VAL-002
+    group_name: 估值模型规范
   model_ml_rules:
     domain: 方法模型与实证结果质检
     source: rules/model_rules.yaml
@@ -183,16 +189,19 @@ rule_groups:
     - MM-ML-003
     - MM-ML-004
     - MM-ML-005
+    group_name: 机器学习模型规范
   model_ahp_rules:
     domain: 数据、变量与口径质检 / 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-AHP-001
+    group_name: AHP层次分析法规范
   model_kmv_rules:
     domain: 数据、变量与口径质检 / 方法模型与实证结果质检
     source: rules/model_rules.yaml
     rule_ids:
     - MM-KMV-001
+    group_name: KMV模型规范
 new_rules_v2:
   description: 迭代v2新增规则，2026-07-15。
   added_rules:

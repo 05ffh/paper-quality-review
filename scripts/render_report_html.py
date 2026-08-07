@@ -24,6 +24,23 @@ DISCLAIMER = (
     "不替代导师、答辩委员或学校正式评审意见。对于无法可靠解析的表格、公式、图片或主观方法选择，报告中已标注为"
     "“需人工确认”。本系统不进行查重，不判断数据真实性，不联网核验参考文献真伪，也不提供论文代写服务。"
 )
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+
+
+def _load_rule_group_names() -> dict[str, str]:
+    try:
+        import yaml
+        registry = yaml.safe_load((_REPO_ROOT / "rules/rule_registry.yaml").read_text(encoding="utf-8")) or {}
+        return {
+            gid: g.get("group_name", gid)
+            for gid, g in (registry.get("rule_groups") or {}).items()
+            if isinstance(g, dict)
+        }
+    except Exception:
+        return {}
+
+
+RULE_GROUP_NAMES = _load_rule_group_names()
 
 LEVEL_COLOR = {
     "红色": ("#c0392b", "#fce4e4", "🔴"),
@@ -169,7 +186,7 @@ def write_html(result: Dict[str, object], source_name: str, output_path: Path) -
     na_html = ""
     if na_items:
         rows = "".join(
-            f"<tr><td>{e(n.get('id', ''))}</td><td>{e(n.get('rule_group', ''))}</td>"
+            f"<tr><td>{e(n.get('id', ''))}</td><td>{e(RULE_GROUP_NAMES.get(n.get('rule_group', ''), n.get('rule_group', '')))}</td>"
             f"<td>{e(n.get('reason', ''))}</td></tr>"
             for n in na_items
         )
