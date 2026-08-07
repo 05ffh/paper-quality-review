@@ -77,7 +77,7 @@ def test_core_requirements_has_no_test_deps():
 
 
 def test_benchmark_requirements_exists():
-    p = REPO_ROOT / "requirements-benchmark.txt"
+    p = REPO_ROOT / "benchmarks/requirements-benchmark.txt"
     assert p.exists(), "requirements-benchmark.txt 缺失（Addendum §4.1）"
     assert "pytest" in p.read_text(encoding="utf-8")
 
