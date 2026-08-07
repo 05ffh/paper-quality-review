@@ -26,6 +26,22 @@ try:
 except ImportError as exc:  # pragma: no cover
     raise SystemExit("缺少 python-docx，请先执行：pip install python-docx") from exc
 
+LEVEL_DISPLAY = {
+    "红色": "红色：必改问题",
+    "黄色": "黄色：建议补充",
+    "绿色": "绿色：优化提升",
+    "灰色": "灰色：需人工确认",
+}
+
+
+def _display_level(value: str) -> str:
+    value = str(value or "")
+    for short, long in LEVEL_DISPLAY.items():
+        if value.startswith(short):
+            return long
+    return value
+
+
 DISCLAIMER = (
     "本报告由“经管论文智检 Skill”基于用户上传的 Word/PDF 文档自动生成，仅用于本科论文和课程论文写作规范自检，"
     "不替代导师、答辩委员或学校正式评审意见。对于无法可靠解析的表格、公式、图片或主观方法选择，报告中已标注为"
@@ -99,10 +115,10 @@ def add_para(document: Document, text: str, bold_label: Optional[str] = None) ->
 
 
 def _issue_card(doc: Document, idx: int, f: dict) -> None:
-    add_heading(doc, f"{idx}. {f.get('issue_type', '')}", 2)
+    add_heading(doc, f"{idx}. {f.get('issue_id', '')}｜{f.get('issue_type', '')}", 2)
     rows = [
         ["项目", "内容"],
-        ["问题等级", f.get("level", "")],
+        ["问题等级", _display_level(f.get("level", ""))],
         ["所属诊断域", f.get("domain", "")],
         ["所在位置", f.get("location", "")],
         ["原文证据", f.get("evidence", "")],
@@ -241,7 +257,7 @@ def write_report(result: Dict[str, object], source_name: str, output_path: Path)
         add_para(doc, "本次检测未单独列出通过项。")
 
     issues = result.get("issues", []) or []
-    by_level = {lv: [f for f in issues if f.get("level") == lv] for lv in ["红色", "黄色", "绿色", "灰色"]}
+    by_level = {lv: [f for f in issues if _display_level(f.get("level")).startswith(lv)] for lv in ["红色", "黄色", "绿色", "灰色"]}
     manual_items = result.get("manual_confirmation_items", []) or []
 
     add_heading(doc, "五、红色必改问题", 1)

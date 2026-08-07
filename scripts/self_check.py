@@ -33,8 +33,9 @@ _REPO_ROOT = Path(__file__).resolve().parent.parent
 # ---------- diagnostic_result.json Schema 校验 ----------
 
 REQUIRED_ISSUE_FIELDS = [
-    "issue_id", "level", "domain", "location", "evidence",
-    "evidence_strength", "explanation", "suggestion",
+    "issue_id", "rule_id", "domain", "level", "issue_type",
+    "location", "evidence", "evidence_strength", "explanation",
+    "suggestion", "confidence", "need_manual_confirmation",
 ]
 RED_EXTRA_REQUIRED = ["normative_basis"]  # 红色 issue 额外必填
 REQUIRED_TOP_FIELDS = ["overall_risk_level", "summary_counts"]
@@ -82,12 +83,26 @@ def validate_diagnostic_result(path: Path, use_json_schema: bool = False) -> tup
         errors.append("issues 不是 list")
         return False, errors, warnings
 
+    # rule_id 必须来自当前注册表，防止幻觉 ID 混入正式结果
+    registered_rule_ids: set[str] = set()
+    try:
+        import yaml as _yaml
+        registry = _yaml.safe_load((_REPO_ROOT / "rules/rule_registry.yaml").read_text(encoding="utf-8")) or {}
+        for group in (registry.get("rule_groups") or {}).values():
+            if isinstance(group, dict):
+                registered_rule_ids.update(str(x) for x in (group.get("rule_ids") or []))
+    except Exception as e:
+        errors.append(f"无法读取规则注册表: {e}")
+
     for i, iss in enumerate(issues):
         for f in REQUIRED_ISSUE_FIELDS:
             if f not in iss or iss.get(f) in (None, ""):
                 errors.append(f"issue[{i}]({iss.get('issue_id','?')})缺必填字段: {f}")
+        rid = str(iss.get("rule_id", ""))
+        if registered_rule_ids and rid and rid not in registered_rule_ids:
+            errors.append(f"issue[{i}]({iss.get('issue_id','?')})使用未注册 rule_id: {rid}")
         # 红色额外校验
-        if iss.get("level") == "红色":
+        if str(iss.get("level", "")).startswith("红色"):
             nb = iss.get("normative_basis")
             if nb is None or (isinstance(nb, dict) and not nb):
                 errors.append(

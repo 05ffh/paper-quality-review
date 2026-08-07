@@ -6,7 +6,11 @@
     "data_type": "面板数据",
     "sample_object": "中国 30 个省级行政区",
     "sample_period": "2011—2022",
-    "detected_methods": ["面板固定效应", "熵值法", "中介效应"],
+    "detected_methods": [
+      "面板固定效应",
+      "熵值法",
+      "中介效应"
+    ],
     "trigger_plan": {
       "triggered_rule_groups": [
         "non_model_topic_rules",
@@ -40,16 +44,46 @@
     "na": 5
   },
   "pass_items": [
-    {"id": "PASS-01", "domain": "选题与研究问题质检", "text": "题目已体现研究对象与核心变量", "evidence": "段落#1：《数字经济对区域共同富裕的影响研究——基于中国省级面板数据》"},
-    {"id": "PASS-02", "domain": "文献综述与理论链条质检", "text": "文献综述已按主题分类", "evidence": "段落#28—段落#42：分为数字经济文献、共同富裕文献、二者关系文献三类"},
-    {"id": "PASS-03", "domain": "数据、变量与口径质检", "text": "已呈现变量定义表", "evidence": "表格#1：包含被解释变量、核心解释变量、控制变量"},
-    {"id": "PASS-04", "domain": "方法模型与实证结果质检", "text": "已呈现模型方程与固定效应设定", "evidence": "段落#78：Y_{it} = α + βX_{it} + γZ_{it} + μ_i + λ_t + ε_{it}"},
-    {"id": "PASS-05", "domain": "结构表达与学术规范质检", "text": "中英文摘要与关键词均已呈现", "evidence": "段落#3—段落#7"},
-    {"id": "PASS-06", "domain": "方法模型与实证结果质检", "text": "已包含基准回归、稳健性、机制分析三层结构", "evidence": "表格#3、表格#4、表格#5"}
+    {
+      "id": "PASS-01",
+      "domain": "选题与研究问题质检",
+      "text": "题目已体现研究对象与核心变量",
+      "evidence": "段落#1：《数字经济对区域共同富裕的影响研究——基于中国省级面板数据》"
+    },
+    {
+      "id": "PASS-02",
+      "domain": "文献综述与理论链条质检",
+      "text": "文献综述已按主题分类",
+      "evidence": "段落#28—段落#42：分为数字经济文献、共同富裕文献、二者关系文献三类"
+    },
+    {
+      "id": "PASS-03",
+      "domain": "数据、变量与口径质检",
+      "text": "已呈现变量定义表",
+      "evidence": "表格#1：包含被解释变量、核心解释变量、控制变量"
+    },
+    {
+      "id": "PASS-04",
+      "domain": "方法模型与实证结果质检",
+      "text": "已呈现模型方程与固定效应设定",
+      "evidence": "段落#78：Y_{it} = α + βX_{it} + γZ_{it} + μ_i + λ_t + ε_{it}"
+    },
+    {
+      "id": "PASS-05",
+      "domain": "结构表达与学术规范质检",
+      "text": "中英文摘要与关键词均已呈现",
+      "evidence": "段落#3—段落#7"
+    },
+    {
+      "id": "PASS-06",
+      "domain": "方法模型与实证结果质检",
+      "text": "已包含基准回归、稳健性、机制分析三层结构",
+      "evidence": "表格#3、表格#4、表格#5"
+    }
   ],
   "issues": [
     {
-      "issue_id": "R-01",
+      "issue_id": "SN-001",
       "rule_id": "SN-ABSTRACT-EN-001",
       "domain": "结构表达与学术规范质检",
       "level": "红色",
@@ -59,10 +93,11 @@
       "evidence_strength": "强",
       "explanation": "样本期间的中英表述不一致，属于第 9bis 节红色硬伤强制清单第 4 项：中英文摘要关键信息不一致。",
       "suggestion": "建议建立中英文摘要对照表，统一样本期间、研究对象、方法与结论表述。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "R-02",
+      "issue_id": "MM-001",
       "rule_id": "MM-GEN-005",
       "domain": "方法模型与实证结果质检",
       "level": "红色",
@@ -72,10 +107,11 @@
       "evidence_strength": "强",
       "explanation": "文字描述的大小排序（东＞中＞西）与表格实际系数排序（西＞东＞中）不一致，属于第 9bis 节硬伤第 3 项。",
       "suggestion": "建议重新核对分组回归系数并调整正文表述；若基于稳健性另有解释，需在文中显式说明依据的是哪一列。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "R-03",
+      "issue_id": "DV-001",
       "rule_id": "DV-INDEX-001",
       "domain": "数据、变量与口径质检",
       "level": "红色",
@@ -85,10 +121,11 @@
       "evidence_strength": "强",
       "explanation": "熵值法核心步骤缺失，将导致综合指数无法复核，属于影响数据可复核性的核心问题。",
       "suggestion": "建议补充指标体系表（含正负向属性）、min-max 标准化公式、熵值权重公式 wj = (1-ej) / Σ(1-ej) 以及综合得分计算过程。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "R-04",
+      "issue_id": "MM-002",
       "rule_id": "MM-GEN-003",
       "domain": "方法模型与实证结果质检",
       "level": "红色",
@@ -98,10 +135,11 @@
       "evidence_strength": "强",
       "explanation": "论文使用双向固定效应模型，未采用 DID/IV 等因果识别策略，不宜使用“导致/证明因果”等强因果表述。",
       "suggestion": "建议改为“显著促进”“存在显著正向影响”等稳妥表述；如需保留因果结论，需补充明确的识别策略与局限性讨论。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "Y-01",
+      "issue_id": "TQ-001",
       "rule_id": "TQ-QUESTION-001",
       "domain": "选题与研究问题质检",
       "level": "黄色",
@@ -111,10 +149,11 @@
       "evidence_strength": "中",
       "explanation": "引言末段研究问题过于宽泛，未落到可回答、可验证的层面。",
       "suggestion": "建议在引言末段用 2—3 个具体问题界定：影响方向如何？通过何种机制？在东中西部是否存在异质性？",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "Y-02",
+      "issue_id": "LT-001",
       "rule_id": "LT-REVIEW-001",
       "domain": "文献综述与理论链条质检",
       "level": "黄色",
@@ -124,10 +163,11 @@
       "evidence_strength": "中",
       "explanation": "文献综述结束后直接进入研究设计，未评述本文相对已有研究的边际贡献。",
       "suggestion": "建议在综述末段补充已有研究不足与本文切入点，说明本文在样本、机制或指标构建上的边际补充。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "Y-03",
+      "issue_id": "DV-002",
       "rule_id": "DV-SAMPLE-001",
       "domain": "数据、变量与口径质检",
       "level": "黄色",
@@ -137,10 +177,11 @@
       "evidence_strength": "中",
       "explanation": "样本筛选过程不透明，读者无法复核样本口径。",
       "suggestion": "建议增加样本筛选流程表：初始样本 → 剔除原因 → 剔除数量 → 最终样本。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "Y-04",
+      "issue_id": "MM-003",
       "rule_id": "MM-GEN-002",
       "domain": "方法模型与实证结果质检",
       "level": "黄色",
@@ -150,10 +191,11 @@
       "evidence_strength": "中",
       "explanation": "变量符号与下标说明不完整，影响模型可解释性。",
       "suggestion": "建议在模型方程下方补充：i 表示省份，t 表示年份；μ_i 为省份固定效应，λ_t 为年度固定效应；ε_{it} 为聚类到省份的稳健标准误。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "Y-05",
+      "issue_id": "MM-004",
       "rule_id": "MM-PANEL-002",
       "domain": "方法模型与实证结果质检",
       "level": "黄色",
@@ -163,10 +205,11 @@
       "evidence_strength": "中",
       "explanation": "未说明选择固定效应的理由。",
       "suggestion": "建议报告 Hausman 检验结果，或从省份异质性角度说明选择个体固定效应的理论依据。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "Y-06",
+      "issue_id": "MM-005",
       "rule_id": "MM-MED-002",
       "domain": "方法模型与实证结果质检",
       "level": "黄色",
@@ -176,10 +219,11 @@
       "evidence_strength": "中",
       "explanation": "中介路径未完整展开。",
       "suggestion": "建议围绕三段式效应解释中介机制：X 对 M（第一阶段）、加入 M 后 X 对 Y（第二阶段），并报告 Sobel 检验或 Bootstrap 结果。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "Y-07",
+      "issue_id": "SN-002",
       "rule_id": "SN-TABLE-001",
       "domain": "结构表达与学术规范质检",
       "level": "黄色",
@@ -189,10 +233,11 @@
       "evidence_strength": "中",
       "explanation": "回归表注释不完整，影响可读性与规范性。",
       "suggestion": "建议统一在表注中说明：括号内为聚类到省份的稳健标准误；***、**、* 分别代表 1%、5%、10% 显著性水平。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "Y-08",
+      "issue_id": "SN-003",
       "rule_id": "SN-REF-001",
       "domain": "结构表达与学术规范质检",
       "level": "黄色",
@@ -202,10 +247,11 @@
       "evidence_strength": "中",
       "explanation": "存在正文引用未列入参考文献的情况。",
       "suggestion": "建议逐条核对正文引用与文末参考文献，确保双向对应；建议使用 Zotero 或 EndNote 统一管理。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "G-01",
+      "issue_id": "SN-004",
       "rule_id": "SN-KEYWORDS-001",
       "domain": "结构表达与学术规范质检",
       "level": "绿色",
@@ -215,10 +261,11 @@
       "evidence_strength": "弱",
       "explanation": "关键词大小写与顺序未统一。",
       "suggestion": "建议统一英文关键词大小写形式，保留 3—5 个核心关键词。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "G-02",
+      "issue_id": "SN-005",
       "rule_id": "SN-ADVICE-001",
       "domain": "结构表达与学术规范质检",
       "level": "绿色",
@@ -228,10 +275,11 @@
       "evidence_strength": "中",
       "explanation": "建议内容缺少具体主体与可执行动作。",
       "suggestion": "建议按“研究发现 → 对应主体 → 具体行动 → 预期效果”的四段式改写政策建议。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "G-03",
+      "issue_id": "SN-006",
       "rule_id": "SN-LANG-001",
       "domain": "结构表达与学术规范质检",
       "level": "绿色",
@@ -241,10 +289,11 @@
       "evidence_strength": "弱",
       "explanation": "语言存在轻微冗余。",
       "suggestion": "建议删除冗余表达，保持学术表达简洁。",
-      "need_manual_confirmation": false
+      "need_manual_confirmation": false,
+      "confidence": "高"
     },
     {
-      "issue_id": "M-01",
+      "issue_id": "MM-006",
       "rule_id": "MM-GEN-004",
       "domain": "方法模型与实证结果质检",
       "level": "灰色",
@@ -254,10 +303,11 @@
       "evidence_strength": "弱",
       "explanation": "回归表部分列无法稳定解析，无法核对样本量、R²、固定效应设定。",
       "suggestion": "建议人工确认第 5—7 列是否包含样本量、R²、固定效应说明；若缺失，请补充。",
-      "need_manual_confirmation": true
+      "need_manual_confirmation": true,
+      "confidence": "高"
     },
     {
-      "issue_id": "M-02",
+      "issue_id": "SN-007",
       "rule_id": "SN-REF-001",
       "domain": "结构表达与学术规范质检",
       "level": "灰色",
@@ -267,25 +317,83 @@
       "evidence_strength": "弱",
       "explanation": "参考文献格式规范性无法在脚本层稳定核对。",
       "suggestion": "建议按学校 GB/T 7714 模板人工核对参考文献格式。",
-      "need_manual_confirmation": true
+      "need_manual_confirmation": true,
+      "confidence": "高"
     }
   ],
   "manual_confirmation_items": [
-    {"id": "MC-01", "item": "回归表#3 第 5—7 列", "location": "表格#3", "reason": "文本抽取为空，疑似图片嵌入", "how_to_check": "打开原文档确认该区域是否为图片；如为图片，请另存为可编辑表格"},
-    {"id": "MC-02", "item": "参考文献格式", "location": "参考文献段落#150—段落#182", "reason": "特殊字符导致丢字符，无法稳定核对格式", "how_to_check": "对照 GB/T 7714 或学院模板逐条人工核对"}
+    {
+      "id": "MC-01",
+      "item": "回归表#3 第 5—7 列",
+      "location": "表格#3",
+      "reason": "文本抽取为空，疑似图片嵌入",
+      "how_to_check": "打开原文档确认该区域是否为图片；如为图片，请另存为可编辑表格"
+    },
+    {
+      "id": "MC-02",
+      "item": "参考文献格式",
+      "location": "参考文献段落#150—段落#182",
+      "reason": "特殊字符导致丢字符，无法稳定核对格式",
+      "how_to_check": "对照 GB/T 7714 或学院模板逐条人工核对"
+    }
   ],
   "not_applicable_items": [
-    {"id": "NA-01", "rule_group": "model_did_rules", "reason": "当前论文未检测到 DID、双重差分、处理组、对照组或政策时点相关内容，因此不触发 DID 规则。该项不构成论文问题。"},
-    {"id": "NA-02", "rule_group": "model_iv_rules", "reason": "当前论文未检测到 IV、工具变量、2SLS 或两阶段最小二乘相关内容，因此不触发 IV/2SLS 规则。该项不构成论文问题。"},
-    {"id": "NA-03", "rule_group": "model_logit_probit_rules", "reason": "论文被解释变量为连续变量，未使用 Logit/Probit 或二元选择模型，因此不触发该规则组。"},
-    {"id": "NA-04", "rule_group": "model_questionnaire_scale_rules", "reason": "论文使用官方公开省级面板数据，非自编问卷或量表，因此不触发信度效度规则。"},
-    {"id": "NA-05", "rule_group": "model_case_analysis_rules", "reason": "当前论文属于面板数据实证论文，非案例分析论文，因此不触发案例分析专项规则。"}
+    {
+      "id": "NA-01",
+      "rule_group": "model_did_rules",
+      "reason": "当前论文未检测到 DID、双重差分、处理组、对照组或政策时点相关内容，因此不触发 DID 规则。该项不构成论文问题。"
+    },
+    {
+      "id": "NA-02",
+      "rule_group": "model_iv_rules",
+      "reason": "当前论文未检测到 IV、工具变量、2SLS 或两阶段最小二乘相关内容，因此不触发 IV/2SLS 规则。该项不构成论文问题。"
+    },
+    {
+      "id": "NA-03",
+      "rule_group": "model_logit_probit_rules",
+      "reason": "论文被解释变量为连续变量，未使用 Logit/Probit 或二元选择模型，因此不触发该规则组。"
+    },
+    {
+      "id": "NA-04",
+      "rule_group": "model_questionnaire_scale_rules",
+      "reason": "论文使用官方公开省级面板数据，非自编问卷或量表，因此不触发信度效度规则。"
+    },
+    {
+      "id": "NA-05",
+      "rule_group": "model_case_analysis_rules",
+      "reason": "当前论文属于面板数据实证论文，非案例分析论文，因此不触发案例分析专项规则。"
+    }
   ],
   "priority_actions": [
-    {"priority": 1, "action": "重新核对分组回归系数并统一正文/摘要/结论的排序描述", "issue_ref": "R-02", "expected": "消除结论方向与回归表的矛盾，保障结论可信度"},
-    {"priority": 2, "action": "补齐熵值法指标体系表、标准化公式、权重公式与综合得分计算过程", "issue_ref": "R-03", "expected": "让共同富裕综合指数可被读者独立复核"},
-    {"priority": 3, "action": "建立中英文摘要对照表，统一样本期间与关键信息", "issue_ref": "R-01", "expected": "消除中英文摘要不一致的硬伤"},
-    {"priority": 4, "action": "将强因果表述调整为“显著促进/影响”，或补充明确的识别策略", "issue_ref": "R-04", "expected": "避免相关关系被写成强因果结论"},
-    {"priority": 5, "action": "补齐引言研究问题、样本筛选流程、模型下标含义、中介三段式解释", "issue_ref": "Y-01, Y-03, Y-04, Y-06", "expected": "提升整体规范性，降低黄色问题密度"}
+    {
+      "priority": 1,
+      "action": "重新核对分组回归系数并统一正文/摘要/结论的排序描述",
+      "issue_ref": "MM-001",
+      "expected": "消除结论方向与回归表的矛盾，保障结论可信度"
+    },
+    {
+      "priority": 2,
+      "action": "补齐熵值法指标体系表、标准化公式、权重公式与综合得分计算过程",
+      "issue_ref": "DV-001",
+      "expected": "让共同富裕综合指数可被读者独立复核"
+    },
+    {
+      "priority": 3,
+      "action": "建立中英文摘要对照表，统一样本期间与关键信息",
+      "issue_ref": "SN-001",
+      "expected": "消除中英文摘要不一致的硬伤"
+    },
+    {
+      "priority": 4,
+      "action": "将强因果表述调整为“显著促进/影响”，或补充明确的识别策略",
+      "issue_ref": "MM-002",
+      "expected": "避免相关关系被写成强因果结论"
+    },
+    {
+      "priority": 5,
+      "action": "补齐引言研究问题、样本筛选流程、模型下标含义、中介三段式解释",
+      "issue_ref": "Y-01, Y-03, Y-04, Y-06",
+      "expected": "提升整体规范性，降低黄色问题密度"
+    }
   ]
 }

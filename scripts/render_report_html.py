@@ -109,7 +109,7 @@ def render_issue_card(idx: int, f: dict) -> str:
 
     return f"""
 <div class="card" style="border-left:6px solid {color}; background:{bg};">
-  <div class="card-head">{emoji} <strong>{idx}. {e(f.get('issue_type', ''))}</strong> <span class="tag" style="background:{color}">{e(level)}</span></div>
+  <div class="card-head">{emoji} <strong>{idx}. {e(f.get('issue_id', ''))}｜{e(f.get('issue_type', ''))}</strong> <span class="tag" style="background:{color}">{e(level)}</span></div>
   <table class="mini">
     {kv_row('所属诊断域', f.get('domain', ''))}
     {kv_row('所在位置', f.get('location', ''))}
