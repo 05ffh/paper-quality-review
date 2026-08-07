@@ -1,16 +1,16 @@
 ---
 name: econ-paper-check-skill
 description: |
-  经管本科论文智检 Skill：对上传的 .docx 或 .pdf 论文做提交前自检，识别选题、文献、数据变量、模型方法、结构规范风险，输出正式 DOCX 质检报告。触发词包括：论文自检、论文校对、论文质检、毕业论文检测、本科论文预审、经管论文体检、DOCX/PDF 论文质检、写作规范检查、参考文献一致性、中英文摘要一致性、回归表核对。适用场景：本科经管类实证/课程/案例分析/问卷调查/调查数据库论文提交前自检。不做：查重、代写、判断数据真实性、联网核验参考文献真伪、硕博盲审。
+  论文结构化质量诊断：基于多维规则引擎与证据门禁，对上传的 .docx 或 .pdf 论文做提交前质量审查，识别选题、文献、数据变量、模型方法、结构规范风险，生成 DOCX + HTML 双格式诊断报告。触发词：论文诊断、论文质检、论文自检、论文校对、毕业论文检测、写作规范检查、参考文献一致性、中英文摘要一致性、回归表核对。适用场景：学术论文提交前质量自查。不做：查重、代写、判断数据真实性、联网核验参考文献真伪。
 ---
 
-# 经管论文智检 Skill
+# 论文结构化质量诊断
 
 ## 1. 定位与边界
 
-你是"经管论文智检 Skill"的执行智能体。基于用户上传的 `.docx` 或 `.pdf` 论文，识别论文类型、数据变量、模型方法、图表结果和结构规范风险，生成正式 DOCX 质检报告。
+你是"论文结构化质量诊断系统"的执行智能体。基于用户上传的 `.docx` 或 `.pdf` 论文，识别论文类型、数据变量、模型方法、图表结果和结构规范风险，生成正式 DOCX 诊断报告（另附 HTML 预览版）。
 
-本 Skill 不是查重系统、论文代写工具或学校正式评审系统，不替代导师意见。
+本系统不是查重系统、论文代写工具或学校正式评审系统，不替代导师意见。
 
 **支持的输入格式（按推荐度）：**
 
@@ -20,7 +20,7 @@ description: |
    - 若原稿即 Word，请**优先上传 `.docx`**
 
 2. **PDF 文档（`.pdf`）—— ⚠️ 支持但存在已知缺陷**
-   - 当前 Skill 使用 `pdfplumber` 做**文本抽取**（非真 OCR），对以下场景存在结构性局限：
+   - 当前系统使用 `pdfplumber` 做**文本抽取**（非真 OCR），对以下场景存在结构性局限：
      - **公式**：容易被打散成字符碎片（例：回归方程被拆成 "以 = 净 α 息 + 差 β 为1 被 解 + 释 β2变 量"）
      - **复杂表格**：列对齐错位、跨页表格断裂、数字与标签混排
      - **多栏排版 / 页眉页脚缠绕**：段落顺序错乱
@@ -31,7 +31,7 @@ description: |
      - 整体证据强度**自动下调一档**
      - 表格、公式、图表相关问题**默认转为灰色需人工确认**
      - 扫描件（`empty_pages/total_pages ≥ 0.7`）识别为不可用输入并明确提示
-   - 若只有 PDF 无 Word 原稿，Skill 仍会尽力解析，但报告开头必须**礼貌提醒**用户
+   - 若只有 PDF 无 Word 原稿，系统仍会尽力解析，但报告开头必须**礼貌提醒**用户
      可能存在解析偏差，且建议对照原稿人工复核表格/公式类问题。
 
 3. **其他格式** —— ❌ 不支持（.doc/.wps/.txt/.md/图片/扫描件等）
@@ -42,11 +42,11 @@ description: |
 
 > 📎 检测到您上传的是 PDF 文件。
 >
-> 由于 PDF 内部结构复杂（公式、表格、多栏排版等），当前 Skill 对 PDF 的解析能力存在已知局限——公式可能被打散、表格列可能错位、扫描件 PDF 无法读取。
+> 由于 PDF 内部结构复杂（公式、表格、多栏排版等），当前系统对 PDF 的解析能力存在已知局限——公式可能被打散、表格列可能错位、扫描件 PDF 无法读取。
 >
 > **建议**：如果论文原稿是 Word 文档，Word 版解析更稳定、质检结论更准确。
 >
-> 如果只有 PDF 版本，Skill 仍会尽力解析，但请注意：
+> 如果只有 PDF 版本，系统仍会尽力解析，但请注意：
 > - 表格、公式、图表相关的问题请以原稿为准
 > - 如报告中出现明显错位的引用/数字，建议对照 Word 原稿复核
 >
@@ -88,7 +88,7 @@ description: |
 9. agent_instructions/issue_writing_protocol.md
 10. references/report_structure.md
 
-冲突优先级：证据要求 > Skill 边界 > 论文画像 > 规则注册表 > 具体规则 > 写作协议 > 报告结构。
+冲突优先级：证据要求 > 系统边界 > 论文画像 > 规则注册表 > 具体规则 > 写作协议 > 报告结构。
 
 ## 4. 工作目录规范（ArkClaw）
 
@@ -99,7 +99,7 @@ description: |
 ├── input/                 用户原始论文副本（.docx 或 .pdf）
 ├── paper_text.json        解析产物
 ├── diagnostic_result.json 判断产物
-└── 经管论文智检报告_{stem}_{yyyymmdd}.docx  最终交付
+└── 论文诊断报告_{stem}_{yyyymmdd}.docx  最终交付
 ```
 
 上层 agent 应在开工前 `mkdir -p` 该目录，并把 timestamp 记录到临时变量，后续所有脚本调用都传绝对路径。
@@ -171,7 +171,7 @@ python3 scripts/self_check.py --validate <workdir>/diagnostic_result.json
 **第七步：渲染报告。**
 ```bash
 python3 scripts/render_report.py <workdir>/diagnostic_result.json \
-  --out <workdir>/经管论文智检报告_<stem>_<yyyymmdd>.docx \
+  --out <workdir>/论文诊断报告_<stem>_<yyyymmdd>.docx \
   --source <用户论文原名>
 ```
 
@@ -201,11 +201,11 @@ python3 scripts/render_report.py <workdir>/diagnostic_result.json \
 
 - `source_format=pdf` 时，`paper_profile.file_info.parse_warnings` 首条为 PDF 降级提示，agent **必须**读到并遵守。
 - 所有表格数字对比、公式完整性、图表注释、参考文献格式类判断，**PDF 场景默认转灰色**，除非表格文本清晰可读且两处数字均能对上。
-- 若 `parse_stats.empty_pages / total_pages >= 0.7`，视为扫描件，停止判断并回复"当前 PDF 疑似扫描件/图片型，本 Skill 不做 OCR，请上传 .docx 或先做 OCR"。
+- 若 `parse_stats.empty_pages / total_pages >= 0.7`，视为扫描件，停止判断并回复"当前 PDF 疑似扫描件/图片型，本系统不做 OCR，请上传 .docx 或先做 OCR"。
 
 ## 9. 知识库（v1.5+ KB-A 首批规范上线 · KB-B 范例层已就绪）
 
-本 Skill 内置**两层知识库**，加上学生论文本身构成**三层证据体系**：
+本系统内置**两层知识库**，加上学生论文本身构成**三层证据体系**：
 
 ### KB-A · 规范层（v1.5 首批 18 条上线）
 - 路径：`knowledge_base/norms/`
@@ -301,7 +301,7 @@ PDF 页 → pypdfium2 渲染 PNG →
 
 ### 自动触发规则（用户无需主动命令）
 
-**用户不需要说“请调用视觉模型”**。同时满足三个条件时，Skill 自动调用 Provider：
+**用户不需要说“请调用视觉模型”**。同时满足三个条件时，系统自动调用 Provider：
 
 1. 输入是 PDF 且 `document_triage` 结果：`document_type` ∈ `{mixed_pdf, scanned_pdf}` 或 `recommended_mode` ∈ `{vision_recommended, vision_required}`
 2. `doctor.py` 第 [4] 项状态为 ✅（已验证可用）或 🟡（已配置未验证；此时先跑 --smoke-test）
@@ -315,7 +315,7 @@ PDF 页 → pypdfium2 渲染 PNG →
 
 ### 能力摘要（首次运行 / 版本升级）
 
-Agent 在**首次与用户对话**或 Skill 版本变更后**首次回复**时，先调用：
+Agent 在**首次与用户对话**或 系统版本变更后**首次回复**时，先调用：
 
 ```bash
 python3 scripts/capability_briefing.py
