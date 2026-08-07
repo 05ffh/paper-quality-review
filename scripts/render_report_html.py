@@ -20,9 +20,9 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 DISCLAIMER = (
-    "本报告由“经管论文智检 Skill”基于用户上传的 Word/PDF 文档自动生成，仅用于本科论文和课程论文写作规范自检，"
+    "本报告由论文结构化质量诊断系统基于用户上传的文档自动生成，仅用于学术论文提交前的写作规范与论证质量自查，"
     "不替代导师、答辩委员或学校正式评审意见。对于无法可靠解析的表格、公式、图片或主观方法选择，报告中已标注为"
-    "“需人工确认”。本 Skill 不进行查重，不判断数据真实性，不联网核验参考文献真伪，也不提供论文代写服务。"
+    "“需人工确认”。本系统不进行查重，不判断数据真实性，不联网核验参考文献真伪，也不提供论文代写服务。"
 )
 
 LEVEL_COLOR = {
@@ -109,7 +109,7 @@ def render_issue_card(idx: int, f: dict) -> str:
 
     return f"""
 <div class="card" style="border-left:6px solid {color}; background:{bg};">
-  <div class="card-head">{emoji} <strong>{idx}. {e(f.get('issue_id', ''))}｜{e(f.get('issue_type', ''))}</strong> <span class="tag" style="background:{color}">{e(level)}</span></div>
+  <div class="card-head">{emoji} <strong>{idx}. {e(f.get('issue_type', ''))}</strong> <span class="tag" style="background:{color}">{e(level)}</span></div>
   <table class="mini">
     {kv_row('所属诊断域', f.get('domain', ''))}
     {kv_row('所在位置', f.get('location', ''))}
@@ -187,19 +187,28 @@ def write_html(result: Dict[str, object], source_name: str, output_path: Path) -
 
     actions_html = ""
     if actions:
+        issue_map = {f.get("issue_id", ""): f for f in issues}
+        def _friendly_ref(ref: str) -> str:
+            parts = [r.strip() for r in ref.split(",") if r.strip()]
+            resolved = []
+            for r in parts:
+                iss = issue_map.get(r, {})
+                resolved.append(iss.get("issue_type", r) if iss else r)
+            return "、".join(resolved) if resolved else ref
         rows = "".join(
             f"<tr><td>{e(a.get('priority', ''))}</td><td>{e(a.get('action', ''))}</td>"
-            f"<td>{e(a.get('issue_ref', ''))}</td><td>{e(a.get('expected', ''))}</td></tr>"
+            f"<td>{e(_friendly_ref(a.get('issue_ref', '')))}</td>"
+            f"<td>{e(a.get('expected', ''))}</td></tr>"
             for a in actions
         )
-        actions_html = f"""<table class="std"><thead><tr><th>优先级</th><th>修改行动</th><th>对应问题编号</th><th>预期效果</th></tr></thead><tbody>{rows}</tbody></table>"""
+        actions_html = f"""<table class="std"><thead><tr><th>优先级</th><th>修改行动</th><th>关联问题</th><th>预期效果</th></tr></thead><tbody>{rows}</tbody></table>"""
     else:
         actions_html = "<p class='empty'>本次检测未生成优先修改行动清单。</p>"
 
     html_doc = f"""<!DOCTYPE html>
 <html lang="zh-CN"><head>
 <meta charset="utf-8"/>
-<title>经管论文智检报告 · {e(source_name)}</title>
+<title>论文结构化质量诊断报告 · {e(source_name)}</title>
 <style>
   :root {{ --border:#e2e6ee; --text:#1f2530; --muted:#6b7280; }}
   * {{ box-sizing:border-box; }}
@@ -245,8 +254,8 @@ def write_html(result: Dict[str, object], source_name: str, output_path: Path) -
   .vision-notice {{ margin-top:6px; padding:6px 10px; background:#fff7d9; border-left:3px solid #d4a800; color:#7a5900; font-size:12px; }}
 </style>
 </head><body><div class="wrap">
-<h1>经管本科论文智检报告</h1>
-<div class="sub">基于经管论文智检 Skill 的提交前自检反馈</div>
+<h1>论文结构化质量诊断报告</h1>
+<div class="sub">基于多维规则引擎与证据门禁的提交前质量审查</div>
 
 <h2>一、检测基本信息</h2>
 <table class="std"><tbody>

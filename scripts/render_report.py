@@ -43,29 +43,14 @@ def _display_level(value: str) -> str:
 
 
 DISCLAIMER = (
-    "本报告由“经管论文智检 Skill”基于用户上传的 Word/PDF 文档自动生成，仅用于本科论文和课程论文写作规范自检，"
+    "本报告由论文结构化质量诊断系统基于用户上传的文档自动生成，仅用于学术论文提交前的写作规范与论证质量自查，"
     "不替代导师、答辩委员或学校正式评审意见。对于无法可靠解析的表格、公式、图片或主观方法选择，报告中已标注为"
-    "“需人工确认”。本 Skill 不进行查重，不判断数据真实性，不联网核验参考文献真伪，也不提供论文代写服务。"
+    "“需人工确认”。本系统不进行查重，不判断数据真实性，不联网核验参考文献真伪，也不提供论文代写服务。"
 )
 
-
-# 中文字体 fallback链：优先黑体/宋体，sandbox 没装则回退 DejaVu Sans / 默认字体。
-# python-docx 写入字体名不会校验存在性，Word/WPS 打开时自动回退；
-# 但在无中文字体的 headless Linux 下转 PDF 时可能乱码，
-# 因此我们在写入前运行一次探测，确实可用才指定中文字体。
-def _detect_cjk_fonts() -> tuple[str, str]:
-    """返回 (中文正文字体, 中文标题字体)。无中文字体时回退 (None-string, None-string) 但保留中文名以依赖文字处理器回退。
-
-    优先级：宋体 / SimSun / Noto Serif CJK / 任意 CJK fallback。
-    在 python-docx 层面只能写字体名，实际渲染交给 Word/WPS；
-    本函数主要保持接口一致，为后续可选的 PDF 渲染预留探测钩子。
-    """
-    # 默认写 宋体/黑体，在 Windows/macOS/Linux 带中文字体的环境都能正常显示。
-    # 否则 Word 会自动回退。保留接口方便后续扩展为探测 fc-list。
-    return "宋体", "黑体"
-
-
-CJK_BODY_FONT, CJK_HEADING_FONT = _detect_cjk_fonts()
+# 中国高校论文标准字体：正文宋体，标题黑体。两者均为 Windows/macOS 系统预装字体，无版权风险。
+CJK_BODY_FONT = "宋体"
+CJK_HEADING_FONT = "黑体"
 
 
 
@@ -101,7 +86,12 @@ def add_table(document: Document, rows: List[List[str]], header: bool = True) ->
 
 
 def add_heading(document: Document, text: str, level: int = 1) -> None:
-    document.add_heading(text, level=level)
+    h = document.add_heading(text, level=level)
+    pPr = h._element.get_or_add_pPr()
+    outline = OxmlElement("w:outlineLvl")
+    outline.set(qn("w:val"), str(level - 1))
+    pPr.append(outline)
+    return h
 
 
 def add_para(document: Document, text: str, bold_label: Optional[str] = None) -> None:
@@ -115,7 +105,7 @@ def add_para(document: Document, text: str, bold_label: Optional[str] = None) ->
 
 
 def _issue_card(doc: Document, idx: int, f: dict) -> None:
-    add_heading(doc, f"{idx}. {f.get('issue_id', '')}｜{f.get('issue_type', '')}", 2)
+    add_heading(doc, f"{idx}. {f.get('issue_type', '')}", 2)
     rows = [
         ["项目", "内容"],
         ["问题等级", _display_level(f.get("level", ""))],
@@ -185,17 +175,22 @@ def write_report(result: Dict[str, object], source_name: str, output_path: Path)
         styles["Normal"]._element.rPr.rFonts.set(qn("w:eastAsia"), CJK_BODY_FONT)
         styles["Normal"].font.size = Pt(10.5)
     except Exception:
-        # 字体设置失败不影响文档可用性，Word/WPS 会自动回退。
         pass
+    for level in [1, 2, 3]:
+        try:
+            hs = styles[f"Heading {level}"]
+            hs.font.name = CJK_HEADING_FONT
+            hs._element.rPr.rFonts.set(qn("w:eastAsia"), CJK_HEADING_FONT)
+        except Exception:
+            pass
 
     profile = result.get("paper_profile", {}) or {}
-    # 兼容两种字段名：早期契约用 `summary_counts`，diagnostic 内核实际输出 `counts`。
     counts = result.get("summary_counts") or result.get("counts") or {}
     today = _dt.datetime.now().strftime("%Y-%m-%d")
 
     title = doc.add_paragraph()
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = title.add_run("经管本科论文智检报告")
+    run = title.add_run("论文结构化质量诊断报告")
     run.bold = True
     run.font.size = Pt(22)
     try:
@@ -205,7 +200,7 @@ def write_report(result: Dict[str, object], source_name: str, output_path: Path)
         pass
     sub = doc.add_paragraph()
     sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    sub.add_run("基于经管论文智检 Skill 的提交前自检反馈").font.size = Pt(12)
+    sub.add_run("基于多维规则引擎与证据门禁的提交前质量审查").font.size = Pt(12)
     doc.add_paragraph("")
 
     add_heading(doc, "一、检测基本信息", 1)
@@ -305,13 +300,22 @@ def write_report(result: Dict[str, object], source_name: str, output_path: Path)
         add_para(doc, "通过项编号：" + ("、".join(d_pass) if d_pass else "无"))
         add_para(doc, "问题编号：" + ("、".join(d_issues) if d_issues else "无"))
 
+    def _friendly_ref(ref: str) -> str:
+        parts = [r.strip() for r in ref.split(",") if r.strip()]
+        resolved = []
+        for r in parts:
+            iss = issue_map.get(r, {})
+            resolved.append(iss.get("issue_type", r) if iss else r)
+        return "、".join(resolved) if resolved else ref
+
     add_heading(doc, "十、优先修改行动清单", 1)
     actions = result.get("priority_actions", []) or []
     if actions:
-        rows = [["优先级", "修改行动", "对应问题编号", "预期效果"]]
+        issue_map = {f.get("issue_id", ""): f for f in issues}
+        rows = [["优先级", "修改行动", "关联问题", "预期效果"]]
         for a in actions:
             rows.append([str(a.get("priority", "")), a.get("action", ""),
-                         a.get("issue_ref", ""), a.get("expected", "")])
+                         _friendly_ref(a.get("issue_ref", "")), a.get("expected", "")])
         add_table(doc, rows)
     else:
         add_para(doc, "本次检测未生成优先修改行动清单。")
