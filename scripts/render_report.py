@@ -242,8 +242,8 @@ def write_report(result: Dict[str, object], source_name: str, output_path: Path)
         ["样本对象", str(profile.get("sample_object", "不确定，需人工确认"))],
         ["样本期间", str(profile.get("sample_period", "不确定，需人工确认"))],
         ["已识别方法", "、".join(profile.get("detected_methods", []) or ["未识别"])],
-        ["触发规则组", "、".join(tp.get("triggered_rule_groups", []) or ["无"])],
-        ["不适用规则组", "、".join(tp.get("not_applicable_rule_groups", []) or ["无"])],
+        ["触发规则组", "、".join(RULE_GROUP_NAMES.get(g, g) for g in (tp.get("triggered_rule_groups") or [])) or "无"],
+        ["不适用规则组", "、".join(RULE_GROUP_NAMES.get(g, g) for g in (tp.get("not_applicable_rule_groups") or [])) or "无"],
         ["需人工确认事项", "、".join(tp.get("manual_confirmation_items", []) or ["无"])],
     ])
 
