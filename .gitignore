@@ -63,3 +63,4 @@ docs/consent/*.consent.md
 # 环境锁（每台机器不同）不进版本控制；但 dependency_lock_hash 会被记录到 metrics
 benchmarks/env/lock.txt
 
+benchmarks/runs/
