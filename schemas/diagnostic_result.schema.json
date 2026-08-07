@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/05ffh/econ-paper-check-skill/schemas/diagnostic_result.schema.json",
-  "title": "经管论文智检 Skill - 诊断结果 Schema",
+  "$id": "https://github.com/05ffh/paper-structured-diagnosis/schemas/diagnostic_result.schema.json",
+  "title": "论文结构化质量诊断 - 诊断结果 Schema",
   "description": "Agent 产出 diagnostic_result.json 的结构化契约。与 references/issue_schema.md 和 scripts/render_report.py 实际读取字段保持一致。",
   "type": "object",
   "required": [

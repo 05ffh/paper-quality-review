@@ -3,7 +3,7 @@
 # 校验：benchmarks/lib/schema_validator.py
 
 $schema: "https://json-schema.org/draft/2020-12/schema"
-$id: "https://github.com/05ffh/econ-paper-check-skill/schema/sample_manifest.v0.2.yaml"
+$id: "https://github.com/05ffh/paper-structured-diagnosis/schema/sample_manifest.v0.2.yaml"
 title: "M4 Benchmark sample_manifest.yaml"
 type: object
 additionalProperties: false

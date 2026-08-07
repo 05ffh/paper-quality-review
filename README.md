@@ -24,8 +24,8 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/05ffh/econ-paper-check-skill.git
-cd econ-paper-check-skill
+git clone https://github.com/05ffh/paper-structured-diagnosis.git
+cd paper-structured-diagnosis
 pip install --break-system-packages -r requirements-core.txt
 python3 scripts/doctor.py
 ```
@@ -101,7 +101,7 @@ python3 scripts/self_check.py --validate result.json   # 输出 Schema 校验（
 ## 目录结构
 
 ```
-econ-paper-check-skill/
+paper-structured-diagnosis/
 ├── SKILL.md                     Skill 入口
 ├── agent_instructions/          判断协议：证据要求、语义判断、写作规范、视觉协议
 ├── references/                  方法论 Schema：论文画像、诊断域、Issue 结构、报告结构

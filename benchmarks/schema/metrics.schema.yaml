@@ -3,7 +3,7 @@
 # 校验：benchmarks/lib/schema_validator.py
 
 $schema: "https://json-schema.org/draft/2020-12/schema"
-$id: "https://github.com/05ffh/econ-paper-check-skill/schema/metrics.v0.2.yaml"
+$id: "https://github.com/05ffh/paper-structured-diagnosis/schema/metrics.v0.2.yaml"
 title: "M4 Benchmark metrics.json"
 type: object
 additionalProperties: true   # 允许扩展字段（便于 Phase B 演进）
