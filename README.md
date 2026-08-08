@@ -95,13 +95,15 @@ python3 scripts/self_check.py --validate result.json   # 输出 Schema 校验（
 ```
 paper-quality-review/
 ├── SKILL.md                     Skill 入口
+├── AGENT_README.md              Agent 学习指南（必读文件清单）
 ├── agent_instructions/          判断协议：证据要求、语义判断、写作规范、视觉协议
 ├── references/                  方法论 Schema：论文画像、诊断域、Issue 结构、报告结构
 ├── rules/                       规则库（68 条）：注册表 + 非模型规则 + 模型规则
 ├── schemas/                     输出契约：diagnostic_result JSON Schema
 ├── scripts/                     I/O 脚本：解析、渲染、KB 检索、自检、批量
 │   ├── parse_paper.py           统一解析入口（自动派发 docx/pdf）
-│   ├── render_report.py         diagnostic_result → DOCX 报告
+│   ├── render_report_html.py    diagnostic_result → HTML 报告（主交付）
+│   ├── render_report.py         diagnostic_result → DOCX 存档
 │   ├── kb_query.py              KB-A/B 双路由检索
 │   ├── doctor.py                环境自检
 │   ├── self_check.py            安装自检 + Schema 校验 + 规则审计
