@@ -177,3 +177,23 @@ python3 scripts/render_report.py <json> --out <路径>.docx --source <原名>
 - `issue_type`：自由文本，描述具体发现了什么问题
 
 详见 `references/issue_schema.md` §3。
+
+### 5. paper_profile 字段必须完整填充，不能留空
+
+报告渲染依赖 `paper_profile` 中的字段来展示画像信息。以下字段缺失或为空时，报告会显示"未识别"或"无"：
+
+- `paper_profile.detected_methods` — 论文使用的方法列表（如 `["固定效应模型", "中介效应"]`）
+- `paper_profile.trigger_plan.triggered_rule_groups` — 触发的规则组
+- `paper_profile.trigger_plan.not_applicable_rule_groups` — 不适用的规则组
+- `paper_profile.trigger_plan.manual_confirmation_items` — 人工确认事项
+
+**必须在写出 issues 之前填充这些字段**（参见 SKILL.md 第二、三步）。不要等写完 issues 再反推 trigger_plan——trigger_plan 是诊断的输入，不是输出。
+
+### 6. 数组字段必须用列表格式，禁止用逗号分隔的字符串
+
+`detected_methods`、`triggered_rule_groups`、`not_applicable_rule_groups` 等字段在 Schema 中定义为 `array`（列表）。
+
+**正确**：`"detected_methods": ["固定效应模型", "中介效应"]`
+**错误**：`"detected_methods": "固定效应模型, 中介效应"` ← 渲染时会按字符遍历，显示为「固、定、效、应、模、型、,、中、介、效、应」
+
+写完 `diagnostic_result.json` 后运行 `self_check.py --validate` 可拦截此类错误。
