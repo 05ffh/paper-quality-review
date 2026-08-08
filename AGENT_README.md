@@ -109,3 +109,31 @@
 - [ ] 已确认学习完毕，可以开始执行
 
 全部确认后，按 `SKILL.md` 第 5 节执行流程开始工作。
+
+---
+
+## 常见陷阱
+
+### 1. 不要通过工具参数传递 diagnostic_result.json
+
+`diagnostic_result.json` 是一个包含多条 issue、每条多层嵌套的大型 JSON（通常 5000—15000 字符）。**禁止**将其作为工具调用（tool call / function call）的字符串参数传递。
+
+原因：
+- 中文字符需要正确转义，嵌套层级深，模型在单次 tool call 参数中容易丢失引号、括号或逗号
+- 一旦有一个字符出错，整个 JSON 解析失败
+- 这是 LLM 通过 tool parameter 生成大型结构化数据的已知不可靠模式
+
+正确做法：**直接将 JSON 写入文件**（`Write` 到工作目录的 `diagnostic_result.json`），不经过任何工具参数。写完后再调用 `self_check.py --validate` 校验。
+
+如果使用的 agent 框架必须通过工具写入，建议分段操作：先写顶层结构（paper_profile + summary_counts），再逐条追加 issue。
+
+### 2. 必须同时渲染 HTML 和 DOCX
+
+HTML 是**主交付格式**，DOCX 是辅助存档。渲染时必须同时调用两个脚本，缺一不可：
+
+```bash
+python3 scripts/render_report_html.py <json> --out <路径>.html --source <原名>
+python3 scripts/render_report.py <json> --out <路径>.docx --source <原名>
+```
+
+如果只封装了 DOCX 渲染工具而漏掉了 HTML，需在工具层补充 `render_report_html` 工具，参数与 DOCX 渲染一致。
