@@ -95,17 +95,17 @@
 
 ## 学习完成检查清单
 
-- [ ] 已读 `SKILL.md` — 知道完整执行流程和 PDF 降级策略
-- [ ] 已读 `paper_profile_schema.md` — 知道画像字段
-- [ ] 已读 `diagnostic_domains.md` — 知道五大诊断域
-- [ ] 已读 `rule_registry.yaml` — 知道 68 条规则如何条件触发
-- [ ] 已读 `non_model_rules.yaml` + `model_rules.yaml` — 知道每条规则的具体判定标准
-- [ ] 已读 `semantic_check_protocol.md` — 知道 7 项交叉核对
-- [ ] 已读 `evidence_requirement.md` — 知道红色硬伤清单 + 三层判定
-- [ ] 已读 `issue_writing_protocol.md` — 知道 location 三要素格式
-- [ ] 已读 `issue_schema.md` — 知道 diagnostic_result.json 结构
-- [ ] 已读 `report_structure.md` — 知道 11 章节结构
-- [ ] 已确认脚本调用方式（parse → kb_query → validate → render）
+- [ ] 已读 `SKILL.md` — 完整执行流程和 PDF 降级策略
+- [ ] 已读 `references/paper_profile_schema.md` — 画像字段
+- [ ] 已读 `references/diagnostic_domains.md` — 五大诊断域
+- [ ] 已读 `rules/rule_registry.yaml` — 68 条规则的条件触发逻辑
+- [ ] 已读 `rules/non_model_rules.yaml` + `rules/model_rules.yaml` — 每条规则的具体判定标准
+- [ ] 已读 `agent_instructions/semantic_check_protocol.md` — 7 项交叉核对
+- [ ] 已读 `agent_instructions/evidence_requirement.md` — 红色硬伤清单 + 三层判定
+- [ ] 已读 `agent_instructions/issue_writing_protocol.md` — location 三要素格式
+- [ ] 已读 `references/issue_schema.md` — diagnostic_result.json 结构
+- [ ] 已读 `references/report_structure.md` — 11 章节结构
+- [ ] 已确认脚本调用方式（`parse_paper.py` → `kb_query.py` → `self_check.py --validate` → `render_report_html.py`）
 - [ ] 已确认学习完毕，可以开始执行
 
 全部确认后，按 `SKILL.md` 第 5 节执行流程开始工作。
