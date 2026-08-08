@@ -81,7 +81,7 @@
 | `bash scripts/preflight.sh` | 首次运行，检查依赖 |
 | `python3 scripts/parse_paper.py <文件> --out <路径>` | 第一步：解析论文 |
 | `python3 scripts/kb_query.py --prefer A --issue-type <类型> --query "<描述>"` | 第五步半：查询规范依据 |
-| `python3 scripts/self_check.py --validate <diagnostic_result.json>` | 第六步半：Schema 门禁校验 |
+| `python3 scripts/self_check.py --validate <diagnostic_result.json>` | 第六步半：Schema 门禁校验（阻塞性，不通过禁止渲染） |
 | `python3 scripts/render_report_html.py <json> --out <html> --source <原名>` | 第七步：渲染 HTML 主交付 |
 | `python3 scripts/render_report.py <json> --out <docx> --source <原名>` | 第七步：渲染 DOCX 存档 |
 
@@ -157,3 +157,23 @@ python3 scripts/render_report.py <json> --out <路径>.docx --source <原名>
 - `全文` ← 禁止范围过宽
 
 详见 `agent_instructions/issue_writing_protocol.md` §4「location 字段写作规范」。
+
+### 4. issue_type 是问题描述，不是诊断域标签
+
+`issue_type` 字段用于报告中的问题卡片标题，必须是学生能看懂的中文问题描述。
+
+**正确示例**：
+- `中英文摘要关键信息不一致`
+- `核心变量口径前后不一致：自变量个数自相矛盾`
+- `训练/测试集划分与防过拟合设计未披露`
+
+**禁止写法**（以下为真实踩坑记录）：
+- `methods` ← 这是诊断域，不是问题描述
+- `writing` ← 同上
+- `选题与研究问题` ← 这是 `domain` 字段的值，不是 `issue_type`
+
+`domain` 和 `issue_type` 是两个不同的字段：
+- `domain`：固定枚举值，如「选题与研究问题质检」「方法模型与实证结果质检」
+- `issue_type`：自由文本，描述具体发现了什么问题
+
+详见 `references/issue_schema.md` §3。
