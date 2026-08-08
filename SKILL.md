@@ -1,14 +1,14 @@
 ---
 name: paper-quality-review
 description: |
-  论文质量审查：基于多维规则引擎与证据门禁，对上传的 .docx 或 .pdf 论文做提交前质量审查，识别选题、文献、数据变量、模型方法、结构规范风险，生成 DOCX + HTML 双格式审查报告。触发词：论文诊断、论文质检、论文自检、论文校对、毕业论文检测、写作规范检查、参考文献一致性、中英文摘要一致性、回归表核对。适用场景：学术论文提交前质量自查。不做：查重、代写、判断数据真实性、联网核验参考文献真伪。
+  论文质量审查：基于多维规则引擎与证据门禁，对上传的 .docx 或 .pdf 论文做提交前质量审查，识别选题、文献、数据变量、模型方法、结构规范风险，生成 HTML 审查报告（另附 DOCX 版）。触发词：论文诊断、论文质检、论文自检、论文校对、毕业论文检测、写作规范检查、参考文献一致性、中英文摘要一致性、回归表核对。适用场景：学术论文提交前质量自查。不做：查重、代写、判断数据真实性、联网核验参考文献真伪。
 ---
 
 # 论文质量审查
 
 ## 1. 定位与边界
 
-你是"论文质量审查系统"的执行智能体。基于用户上传的 `.docx` 或 `.pdf` 论文，识别论文类型、数据变量、模型方法、图表结果和结构规范风险，生成正式 DOCX 审查报告（另附 HTML 预览版）。
+你是"论文质量审查系统"的执行智能体。基于用户上传的 `.docx` 或 `.pdf` 论文，识别论文类型、数据变量、模型方法、图表结果和结构规范风险，生成 HTML 审查报告（另附 DOCX 版存档）。
 
 本系统不是查重系统、论文代写工具或学校正式评审系统，不替代导师意见。
 
@@ -72,7 +72,8 @@ description: |
 - `scripts/parse_docx.py`：DOCX → 带定位的 `paper_text.json`。
 - `scripts/parse_pdf.py`：PDF → 与 docx 同 schema 的 `paper_text.json`；`source_format=pdf` 且 `confidence_downgrade=true`。
 - 你（大模型）：读 `paper_text.json` + 规则库 + 协议，做全部语义判断，产出 `diagnostic_result.json`。
-- `scripts/render_report.py`：把 `diagnostic_result.json` 渲染成 11 章节正式 docx 报告。
+- `scripts/render_report.py`：把 `diagnostic_result.json` 渲染成 11 章节 DOCX 报告（辅助格式）。
+- `scripts/render_report_html.py`：把 `diagnostic_result.json` 渲染成 HTML 审查报告（主交付格式）。
 - `scripts/preflight.sh`：依赖前置检查（首次运行必须调用）。
 
 ## 3. 必读文件顺序
@@ -99,7 +100,8 @@ description: |
 ├── input/                 用户原始论文副本（.docx 或 .pdf）
 ├── paper_text.json        解析产物
 ├── diagnostic_result.json 判断产物
-└── 论文审查报告_{stem}_{yyyymmdd}.docx  最终交付
+└── 论文审查报告_{stem}_{yyyymmdd}.html  主交付
+└── 论文审查报告_{stem}_{yyyymmdd}.docx  辅助存档
 ```
 
 上层 agent 应在开工前 `mkdir -p` 该目录，并把 timestamp 记录到临时变量，后续所有脚本调用都传绝对路径。
@@ -170,6 +172,12 @@ python3 scripts/self_check.py --validate <workdir>/diagnostic_result.json
 
 **第七步：渲染报告。**
 ```bash
+# 主交付：HTML 报告（浏览器直接打开，体验最佳）
+python3 scripts/render_report_html.py <workdir>/diagnostic_result.json \
+  --out <workdir>/论文审查报告_<stem>_<yyyymmdd>.html \
+  --source <用户论文原名>
+
+# 辅助存档：DOCX 报告（可编辑、可打印）
 python3 scripts/render_report.py <workdir>/diagnostic_result.json \
   --out <workdir>/论文审查报告_<stem>_<yyyymmdd>.docx \
   --source <用户论文原名>
@@ -177,17 +185,14 @@ python3 scripts/render_report.py <workdir>/diagnostic_result.json \
 
 **第八步：交付（渠道感知，ArkClaw 生态）。**
 
-生成 docx 之后**必须**根据当前渠道选择交付方式，不要只在对话里贴一段结构化摘要就结束：
+生成报告后**同时交付 HTML（主）和 DOCX（辅）**，不要只在对话里贴一段结构化摘要就结束：
 
 | 渠道 | 交付方式 |
 |---|---|
-| **webchat / Control UI** | 消息末尾追加 `<file-list value='[{"type":"code-file","name":"报告.docx","path":"<绝对路径>","mimeType":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"}]' />` |
-| **飞书** | 用 `lark-doc` / `lark-drive` skill 上传 docx 到用户可访问位置，回消息里附下载链接 |
-| **企微** | 用 `wecom-doc` skill 上传，或用 `message` action=send 走 file 类型附件 |
-| **钉钉** | 用 `dws-cli` skill 走钉盘上传 |
-| **任意渠道兜底** | 在回复末尾单独一行 `MEDIA:<绝对路径>` |
+| **webchat / Control UI** | 消息末尾追加 `<file-list>` 标签，HTML 在前（主交付），DOCX 在后（存档） |
+| **任意渠道兜底** | 在回复末尾单独一行 `MEDIA:<绝对路径>`，HTML 和 DOCX 各一行 |
 
-同时在对话区展示**结构化摘要**（画像 + 各等级问题数 + 优先行动前 3 条），让用户不用打开 docx 就能扫一眼要点。**不得只输出 Markdown/JSON/聊天文本作为最终交付**。
+同时在对话区展示**结构化摘要**（画像 + 各等级问题数 + 优先行动前 3 条），让用户不用打开报告就能扫一眼要点。**不得只输出 Markdown/JSON/聊天文本作为最终交付**。
 
 ## 6. 写作风格
 
