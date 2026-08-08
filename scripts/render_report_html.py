@@ -288,8 +288,8 @@ def write_html(result: Dict[str, object], source_name: str, output_path: Path) -
 
 <h2>二、论文画像识别结果</h2>
 <table class="std"><tbody>
-  {kv_row('触发规则组', '、'.join(tp.get('triggered_rule_groups', []) or ['无']))}
-  {kv_row('不适用规则组', '、'.join(tp.get('not_applicable_rule_groups', []) or ['无']))}
+  {kv_row('触发规则组', '、'.join(RULE_GROUP_NAMES.get(g, g) for g in (tp.get('triggered_rule_groups') or [])) or '无')}
+  {kv_row('不适用规则组', '、'.join(RULE_GROUP_NAMES.get(g, g) for g in (tp.get('not_applicable_rule_groups') or [])) or '无')}
   {kv_row('需人工确认事项', '、'.join(tp.get('manual_confirmation_items', []) or ['无']))}
 </tbody></table>
 
