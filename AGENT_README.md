@@ -6,6 +6,33 @@
 
 ---
 
+## 环境准备
+
+首次使用前，确认 Python 3.9+ 环境已安装以下依赖。**以下为必装项**，缺一不可：
+
+```bash
+pip install --break-system-packages -r requirements-core.txt
+```
+
+这条命令安装 10 个包，覆盖全部基础能力：
+
+| 包 | 用途 |
+|---|---|
+| `python-docx` | DOCX 论文解析 |
+| `pypdf` + `pdfplumber` | PDF 文本抽取 |
+| `lxml` | XML/HTML 处理（python-docx 底层依赖） |
+| `pyyaml` | 规则库与 KB-A 规范文件读取 |
+| `jinja2` | 报告模板渲染 |
+| `markdown` | Markdown 转 HTML |
+| `pypdfium2` + `Pillow` | PDF 页面缩略图 |
+| `jsonschema` | diagnostic_result.json 结构校验 |
+
+装完后运行 `bash scripts/preflight.sh` 验证，或 `python3 scripts/doctor.py` 查看完整状态。
+
+> **可选增强**：`requirements-kb.txt`（ChromaDB 语义搜索，JSONL 索引已覆盖基本检索，可不装）。视觉辅助见 `agent_instructions/vision_protocol.md`，未装不影响基础诊断。
+
+---
+
 ## 能力速览
 
 完成学习后你应当具备以下能力：
